@@ -1,0 +1,171 @@
+# =============================================================================
+#                               GAMING HORIZON
+#                          BEYOND THE HORIZON
+# =============================================================================
+#
+#                             FUNDING CONFIGURATION
+#
+# This file controls the "Sponsor" button displayed by GitHub on supported
+# repository pages.
+#
+# Gaming Horizon is an independently developed browser-first gaming ecosystem.
+# Funding and community support may help with infrastructure, development,
+# tooling, testing, platform operations, and the continued evolution of the
+# project.
+#
+# IMPORTANT
+# -----------------------------------------------------------------------------
+# Only enable funding providers that are officially operated by Gaming Horizon.
+# Do not add unofficial accounts, temporary links, or third-party profiles
+# that are not controlled by the project.
+#
+# GitHub documentation:
+# .github/FUNDING.yml
+#
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# ✦ GITHUB SPONSORS
+# -----------------------------------------------------------------------------
+#
+# Enable this only after the Gaming Horizon GitHub account has been approved
+# and activated for GitHub Sponsors.
+#
+# Example:
+# github: [thegaminghorizon]
+#
+github:
+
+
+# -----------------------------------------------------------------------------
+# ✦ PATREON
+# -----------------------------------------------------------------------------
+#
+# Add an official Gaming Horizon Patreon username only if one is created.
+#
+# Example:
+# patreon: gaminghorizon
+#
+patreon:
+
+
+# -----------------------------------------------------------------------------
+# ✦ OPEN COLLECTIVE
+# -----------------------------------------------------------------------------
+#
+# Intended for projects operating an official Open Collective.
+#
+# Example:
+# open_collective: gaming-horizon
+#
+open_collective:
+
+
+# -----------------------------------------------------------------------------
+# ✦ KO-FI
+# -----------------------------------------------------------------------------
+#
+# Add an official Ko-fi username only if Gaming Horizon begins using Ko-fi.
+#
+# Example:
+# ko_fi: gaminghorizon
+#
+ko_fi:
+
+
+# -----------------------------------------------------------------------------
+# ✦ TIDELIFT
+# -----------------------------------------------------------------------------
+#
+# Relevant primarily when a supported Gaming Horizon package becomes available
+# through the Tidelift ecosystem.
+#
+# Example:
+# tidelift: npm/package-name
+#
+tidelift:
+
+
+# -----------------------------------------------------------------------------
+# ✦ COMMUNITY BRIDGE
+# -----------------------------------------------------------------------------
+#
+# Enable only if Gaming Horizon becomes an official Community Bridge project.
+#
+community_bridge:
+
+
+# -----------------------------------------------------------------------------
+# ✦ LIBERAPAY
+# -----------------------------------------------------------------------------
+#
+# Add an official Liberapay username only if the project adopts the platform.
+#
+liberapay:
+
+
+# -----------------------------------------------------------------------------
+# ✦ ISSUEHUNT
+# -----------------------------------------------------------------------------
+#
+# Enable only if Gaming Horizon officially participates in IssueHunt.
+#
+issuehunt:
+
+
+# -----------------------------------------------------------------------------
+# ✦ LFX CROWDFUNDING
+# -----------------------------------------------------------------------------
+#
+# Intended for projects officially participating in LFX Crowdfunding.
+#
+lfx_crowdfunding:
+
+
+# -----------------------------------------------------------------------------
+# ✦ POLAR
+# -----------------------------------------------------------------------------
+#
+# Add the official Gaming Horizon Polar username if Polar is adopted for
+# project funding or issue-based rewards.
+#
+polar:
+
+
+# -----------------------------------------------------------------------------
+# ✦ BUY ME A COFFEE
+# -----------------------------------------------------------------------------
+#
+# Add an official Gaming Horizon Buy Me a Coffee username only if one exists.
+#
+buy_me_a_coffee:
+
+
+# -----------------------------------------------------------------------------
+# ✦ THANKS.DEV
+# -----------------------------------------------------------------------------
+#
+# Enable only if Gaming Horizon officially begins accepting support through
+# thanks.dev.
+#
+thanks_dev:
+
+
+# -----------------------------------------------------------------------------
+# ✦ GAMING HORIZON DIRECT SUPPORT
+# -----------------------------------------------------------------------------
+#
+# GitHub allows up to four custom sponsorship URLs.
+#
+# This is the preferred location for Gaming Horizon's own official support
+# page once its permanent public URL has been finalized.
+#
+# Example:
+#
+# custom:
+#   - https://your-official-support-page.example
+#
+# Do not publish temporary, preview, private, or unverified payment links.
+#
+custom:
