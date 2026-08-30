@@ -57,7 +57,73 @@ There is always another world beyond the horizon.
 
 <br>
 
-ABOUT · ECOSYSTEM · PLATFORM · DEVELOPMENT · REPOSITORY · CONTRIBUTE · NETWORK · LICENSE
+VISION · ECOSYSTEM · PLATFORM · STANDARD · DEVELOPMENT · REPOSITORY · CONTRIBUTE · NETWORK · LICENSE
+
+</div>
+
+<div align="center">
+
+THE NEXT HORIZON OF GAMING
+
+BUILT AS AN ECOSYSTEM.
+
+DESIGNED TO KEEP EVOLVING.
+
+<br>
+
+<table>
+<tr>
+<td align="center" width="25%">
+
+🌐
+
+BROWSER-FIRST
+
+Primary access through the modern web.
+
+</td>
+<td align="center" width="25%">
+
+🧭
+
+ECOSYSTEM-DRIVEN
+
+Discovery, community, creativity, competition, technology, and exploration.
+
+</td>
+<td align="center" width="25%">
+
+🛠️
+
+ACTIVE DEVELOPMENT
+
+Research, design, building, testing, learning, and continuous iteration.
+
+</td>
+<td align="center" width="25%">
+
+✦
+
+FUTURE-FOCUSED
+
+Room for ideas and experiences beyond today's categories.
+
+</td>
+</tr>
+</table>
+
+<br>
+
+Gaming Horizon is not one feature, one page, or one destination.
+It is an expanding direction for how gaming, people, creativity, competition, and technology can exist together.
+
+</div>
+
+<div align="center">
+
+THE EXPERIENCE IN ONE LINE
+
+DISCOVER → CONNECT → CREATE → COMPETE → BUILD → EXPLORE
 
 </div>
 
@@ -232,6 +298,130 @@ The Horizon should keep moving.
 ONE HORIZON. MANY POSSIBILITIES.
 
 PLAYERS · CREATORS · DEVELOPERS · COMPETITORS · COMMUNITIES · EXPLORERS
+
+</div>
+
+🧩 Built as a Connected System
+
+Gaming Horizon is being structured as a set of connected experience layers. Each layer can evolve independently while still contributing to one wider ecosystem.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+01 / EXPERIENCE
+
+HORIZON PLATFORM
+
+The digital gateway.
+
+The browser-first experience connecting people with Gaming Horizon.
+
+Discovery
+Navigation
+Interaction
+Modern Interfaces
+
+</td>
+
+<td width="50%" valign="top">
+
+02 / COMMUNITY
+
+HORIZON NETWORK
+
+Where people connect.
+
+The human layer connecting players, creators, developers, competitors, communities, and Explorers.
+
+Community Spaces
+Events
+Collaboration
+Participation
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+03 / INNOVATION
+
+HORIZON LABS
+
+Where possibilities are tested.
+
+A space for concepts, prototypes, experimental interfaces, emerging technology, and ideas that may influence future experiences.
+
+Concepts
+Prototypes
+Experimental UX
+Research
+
+</td>
+
+<td width="50%" valign="top">
+
+04 / TECHNOLOGY
+
+HORIZON DEVELOPERS
+
+The systems behind the Horizon.
+
+Technical projects, documentation, tooling, libraries, integrations, and selected open development.
+
+Developer Tools
+Documentation
+Integrations
+Open Development
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+05 / COMPETITION
+
+HORIZON COMPETE
+
+Challenge. Progress. Achieve.
+
+Competitive experiences built around participation, progression, community, and skill.
+
+Challenges
+Rankings
+Events
+Tournaments
+
+</td>
+
+<td width="50%" valign="top">
+
+06 / FUTURE
+
+HORIZON BEYOND
+
+For what does not exist yet.
+
+Ideas, systems, technologies, communities, and experiences beyond today's categories.
+
+New Formats
+New Experiences
+New Technology
+New Possibilities
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+PLATFORM × COMMUNITY × CREATIVITY
+
+COMPETITION × TECHNOLOGY × FUTURE
 
 </div>
 
@@ -416,7 +606,9 @@ Status labels describe current project direction and may evolve as development c
 
 🗂️ Repository
 
-The repository is being organized so that the README remains a high-level product and project showcase, while deeper information lives in dedicated documentation.
+The repository is being organized so the README remains a high-level product and project showcase, while deeper information lives in focused documentation and implementation directories.
+
+The goal is simple: make the front page easy to understand, make the deeper material easy to find, and keep the project scalable as it grows.
 
 The-Gaming-Horizon/
 │
@@ -435,6 +627,34 @@ The-Gaming-Horizon/
 ├── src/                     # application/source development
 └── tests/                   # testing as implementation grows
 
+Repository principles
+
+PRINCIPLE
+
+DIRECTION
+
+Clarity
+
+Important information should be easy to find.
+
+Separation
+
+Product storytelling, documentation, source, and assets should not compete for the same space.
+
+Scalability
+
+Structure should remain understandable as the project expands.
+
+Truthfulness
+
+Status, availability, and capabilities should reflect what actually exists.
+
+Consistency
+
+Naming, visuals, documentation, and contribution standards should feel like one project.
+
+<br>
+
 Visual asset library
 
 Current branding resources are organized under:
@@ -444,11 +664,11 @@ assets/branding/banners/
 
 The asset library will expand with real platform screenshots, interface showcases, documentation graphics, and approved project visuals as development continues.
 
-🔭 What Comes Next
+🔭 Beyond the Current Repository
 
 The repository will grow in deliberate stages.
 
-Planned documentation areas include:
+As the repository expands, focused documentation can cover:
 
 VISION · ECOSYSTEM · PLATFORM · DIRECTION · DISCOVERY · COMMUNITY · CREATORS · DEVELOPERS · COMPETE · TECHNOLOGY · DEVELOPMENT · LABS · NETWORK · BEYOND
 
@@ -459,6 +679,28 @@ Additional repository standards will be introduced for security, contributions, 
 THE GOAL IS NOT TO CREATE MORE FILES.
 
 THE GOAL IS TO CREATE A BETTER SYSTEM.
+
+</div>
+
+✦ Why Gaming Horizon
+
+The project is guided by a few deliberate choices:
+
+Discovery over clutter — help people find meaningful experiences without overwhelming them.
+
+Community over passive audiences — design spaces where participation matters.
+
+Creativity over consumption alone — give ideas room to become projects, media, tools, and experiences.
+
+Progress over empty competition — competition should encourage skill, participation, and growth.
+
+Technology with purpose — use technology because it improves the experience, not because it looks futuristic.
+
+Evolution over artificial finality — Gaming Horizon is expected to learn, change, and expand.
+
+<div align="center">
+
+THE FUTURE SHOULD FEEL UNDISCOVERED.
 
 </div>
 
@@ -544,6 +786,16 @@ Third-party intellectual property remains subject to the rights and terms of its
 
 <div align="center">
 
+GAMING · COMMUNITY · CREATIVITY · COMPETITION · TECHNOLOGY · FUTURE
+
+<br>
+
+Built for the web. Built for people. Built to evolve.
+
+</div>
+
+<div align="center">
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/branding/banners/gaming-horizon-dark-banner.png">
   <source media="(prefers-color-scheme: light)" srcset="./assets/branding/banners/gaming-horizon-light-banner.png">
@@ -556,7 +808,7 @@ Third-party intellectual property remains subject to the rights and terms of its
 
 B E Y O N D   T H E   H O R I Z O N
 
-<br> 
+<br>
 
 DISCOVER · PLAY · CONNECT · CREATE · COMPETE · EXPLORE
 
