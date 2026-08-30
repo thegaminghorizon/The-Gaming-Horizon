@@ -4,28 +4,23 @@
                          BEYOND THE HORIZON
 ===============================================================================
 
-                         OFFICIAL ASSET SYSTEM
+                          OFFICIAL ASSET LIBRARY
                            assets/README.md
 
 ===============================================================================
 
-IMPORTANT PATH RULE
-
-This README is located inside:
-
+DOCUMENT LOCATION
 assets/README.md
 
-Therefore asset references in this document begin from:
+RELATIVE PATH RULE
 
-branding/
-screenshots/
-showcase/
-social/
+This README already lives inside /assets.
 
-NOT:
+Correct:
+branding/logos/gaming-horizon-logo-source.png
 
-assets/branding/
-assets/screenshots/
+Incorrect:
+assets/branding/logos/gaming-horizon-logo-source.png
 
 ===============================================================================
 -->
@@ -36,252 +31,164 @@ assets/screenshots/
 
 <img
   src="branding/logos/gaming-horizon-logo-source.png"
-  width="620"
+  width="560"
   alt="Gaming Horizon Official Logo"
 />
 
 <br><br>
 
-<h1>
-  <strong>GAMING HORIZON</strong>
-</h1>
-
-<h3>
-  <strong>
-    B E Y O N D &nbsp; T H E &nbsp; H O R I Z O N
-  </strong>
-</h3>
-
-<br>
-
-<h2>
-  <strong>OFFICIAL ASSET SYSTEM</strong>
-</h2>
+<h1>Gaming Horizon Asset Library</h1>
 
 <p>
   <strong>
-    The visual infrastructure behind Gaming Horizon.
+    Official visual resources for the Gaming Horizon ecosystem.
   </strong>
 </p>
 
 <p>
-  Branding, identity, screenshots, interface captures, showcase media,
-  social resources, and future visual systems — organized as one
-  maintainable asset library.
+  Branding, identity, screenshots, presentation media, showcase graphics,
+  and future visual resources — organized as a maintainable project system.
 </p>
 
 <br>
 
 <img
-  src="https://img.shields.io/badge/ASSET_SYSTEM-OFFICIAL-7C3AED?style=for-the-badge"
-  alt="Official Asset System"
+  src="https://img.shields.io/badge/ASSET_LIBRARY-OFFICIAL-7C3AED?style=flat-square"
+  alt="Official Asset Library"
 />
 
-&nbsp;
-
 <img
-  src="https://img.shields.io/badge/IDENTITY-GAMING_HORIZON-2563EB?style=for-the-badge"
+  src="https://img.shields.io/badge/IDENTITY-GAMING_HORIZON-2563EB?style=flat-square"
   alt="Gaming Horizon Identity"
 />
 
-&nbsp;
+<img
+  src="https://img.shields.io/badge/STATUS-ACTIVE_DEVELOPMENT-22C55E?style=flat-square"
+  alt="Active Development"
+/>
 
 <img
-  src="https://img.shields.io/badge/STATUS-EVOLVING-22C55E?style=for-the-badge"
-  alt="Evolving Asset Library"
+  src="https://img.shields.io/badge/STANDARD-STRUCTURED-0EA5E9?style=flat-square"
+  alt="Structured Asset System"
 />
 
 <br><br>
 
-<img
-  src="https://img.shields.io/badge/BRANDING-LOGOS-8B5CF6?style=flat-square"
-  alt="Branding Logos"
-/>
-
-<img
-  src="https://img.shields.io/badge/MEDIA-SCREENSHOTS-0EA5E9?style=flat-square"
-  alt="Media Screenshots"
-/>
-
-<img
-  src="https://img.shields.io/badge/VISUALS-SHOWCASE-6366F1?style=flat-square"
-  alt="Showcase Visuals"
-/>
-
-<img
-  src="https://img.shields.io/badge/NETWORK-SOCIAL-EC4899?style=flat-square"
-  alt="Social Assets"
-/>
+<code>BRANDING</code>
+&nbsp; • &nbsp;
+<code>SCREENSHOTS</code>
+&nbsp; • &nbsp;
+<code>SHOWCASE</code>
+&nbsp; • &nbsp;
+<code>SOCIAL</code>
 
 <br><br>
-
-<h2>
-  <strong>
-    IDENTITY · CONSISTENCY · QUALITY · CLARITY · EVOLUTION
-  </strong>
-</h2>
-
-<br>
-
-<blockquote>
-  <strong>
-    There is always another world beyond the horizon.
-  </strong>
-</blockquote>
-
-<br>
 
 <strong>
-  <a href="#overview">OVERVIEW</a>
+  <a href="#-overview">Overview</a>
   &nbsp; · &nbsp;
-  <a href="#architecture">ARCHITECTURE</a>
+  <a href="#-structure">Structure</a>
   &nbsp; · &nbsp;
-  <a href="#branding">BRANDING</a>
+  <a href="#-branding">Branding</a>
   &nbsp; · &nbsp;
-  <a href="#logos">LOGOS</a>
+  <a href="#-screenshots">Screenshots</a>
   &nbsp; · &nbsp;
-  <a href="#screenshots">SCREENSHOTS</a>
+  <a href="#-showcase">Showcase</a>
   &nbsp; · &nbsp;
-  <a href="#showcase">SHOWCASE</a>
+  <a href="#-standards">Standards</a>
   &nbsp; · &nbsp;
-  <a href="#social">SOCIAL</a>
+  <a href="#-workflow">Workflow</a>
   &nbsp; · &nbsp;
-  <a href="#standards">STANDARDS</a>
-  &nbsp; · &nbsp;
-  <a href="#governance">GOVERNANCE</a>
+  <a href="#-governance">Governance</a>
 </strong>
 
 <br><br>
 
 </div>
 
----
-
-<a id="overview"></a>
-
-<div align="center">
-
-<h1>
-  <strong>01 — ASSET SYSTEM OVERVIEW</strong>
-</h1>
-
-<h3>
-  <code>ONE PROJECT · ONE VISUAL LANGUAGE · ONE SOURCE OF TRUTH</code>
-</h3>
-
-</div>
+> [!NOTE]
+> This directory is the central visual-resource layer for Gaming Horizon.
+> Assets should be added because they serve a real project purpose — not simply
+> to increase the number of files in the repository.
 
 ---
 
-The Gaming Horizon asset system is the central home for visual resources used
-across the project.
+## ✦ Overview
 
-It exists to make Gaming Horizon easier to:
+The Gaming Horizon asset library provides a consistent home for visual
+resources used across the wider project.
 
-- recognize;
-- maintain;
-- document;
-- present;
-- scale;
-- protect;
-- and evolve.
+Its purpose is to keep official media:
 
-This directory is not intended to become a collection of unrelated images.
+- organized;
+- recognizable;
+- maintainable;
+- reusable;
+- appropriately named;
+- technically suitable;
+- visually consistent;
+- and accurately connected to Gaming Horizon.
 
-Every official asset should have:
+The asset system can support the repository, documentation, website,
+community environments, platform presentation, development communication,
+social channels, and future Gaming Horizon experiences.
 
-| Requirement | Meaning |
-|---|---|
-| **Purpose** | A clear reason for existing |
-| **Location** | A predictable directory |
-| **Name** | A descriptive filename |
-| **Source** | A known original or approved origin |
-| **Quality** | Appropriate visual resolution and clarity |
-| **Status** | Current, experimental, archived, or replaced |
-| **Usage** | A defined role within Gaming Horizon |
-| **Integrity** | No unnecessary distortion of project identity |
+### Core objectives
 
-<br>
+| Objective | Standard |
+| --- | --- |
+| **Identity** | Keep Gaming Horizon visually recognizable |
+| **Organization** | Give every asset a predictable home |
+| **Quality** | Maintain professional public presentation |
+| **Consistency** | Prevent visual fragmentation across the project |
+| **Accuracy** | Ensure visuals represent Gaming Horizon truthfully |
+| **Scalability** | Keep the library understandable as it grows |
+| **Performance** | Avoid unnecessarily heavy media |
+| **Traceability** | Preserve important source assets and meaningful variants |
 
-<div align="center">
+### What belongs here
 
-<h2>
-  <strong>THE ASSET LIBRARY IS INFRASTRUCTURE.</strong>
-</h2>
+Appropriate resources include:
 
-<h1>
-  <strong>NOT A DUMPING GROUND.</strong>
-</h1>
+```text
+Official Branding
+Logo Assets
+Approved Banners
+Platform Screenshots
+Feature Screenshots
+Repository Graphics
+Showcase Media
+Community Visuals
+Social Presentation Assets
+Future Approved Visual Resources
+```
 
-</div>
+### What should stay out
 
----
+Avoid turning this directory into storage for:
 
-## Asset system objectives
+```text
+Random Drafts
+Temporary Exports
+Private Files
+Unapproved Logo Redesigns
+Duplicate Screenshots
+Debug Captures
+Unrelated Media
+Personal Images
+Low-quality Disposable Graphics
+```
 
-<table>
-
-<tr>
-
-<td width="25%" valign="top">
-
-### **01**
-## **IDENTITY**
-
-Keep Gaming Horizon recognizable across every official surface.
-
-</td>
-
-<td width="25%" valign="top">
-
-### **02**
-## **ORDER**
-
-Make important assets easy to locate and understand.
-
-</td>
-
-<td width="25%" valign="top">
-
-### **03**
-## **QUALITY**
-
-Preserve professional presentation across repository and platform media.
-
-</td>
-
-<td width="25%" valign="top">
-
-### **04**
-## **SCALE**
-
-Allow the visual system to expand without becoming disorganized.
-
-</td>
-
-</tr>
-
-</table>
+> [!IMPORTANT]
+> Not every image created for Gaming Horizon needs to become an official
+> repository asset. Fewer well-maintained assets are more valuable than a
+> large collection of confusing variations.
 
 ---
 
-<a id="architecture"></a>
+## ✦ Structure
 
-<div align="center">
-
-<h1>
-  <strong>02 — ASSET ARCHITECTURE</strong>
-</h1>
-
-<h2>
-  <strong>STRUCTURED FOR TODAY. READY FOR WHAT COMES NEXT.</strong>
-</h2>
-
-</div>
-
----
-
-The recommended asset architecture is:
+The asset library is organized primarily by **purpose**.
 
 ```text
 assets/
@@ -289,6 +196,8 @@ assets/
 ├── README.md
 │
 ├── branding/
+│   │
+│   ├── README.md
 │   │
 │   ├── logos/
 │   │   ├── gaming-horizon-logo-source.png
@@ -305,7 +214,6 @@ assets/
 │   └── icons/
 │
 ├── screenshots/
-│   │
 │   ├── website/
 │   └── features/
 │
@@ -314,424 +222,300 @@ assets/
 └── social/
 ```
 
-This structure should evolve only when a real organizational need exists.
+Some directories shown above represent the intended structure and should only
+be introduced when relevant assets actually exist.
 
-Do not create unnecessary directories only to make the repository appear
-larger.
-
----
-
-## Directory map
+### Directory responsibilities
 
 | Directory | Responsibility |
-|---|---|
-| `branding/` | Official visual identity |
-| `branding/logos/` | Logo sources and approved variants |
-| `branding/banners/` | Large-format presentation artwork |
+| --- | --- |
+| `branding/` | Official Gaming Horizon visual identity |
+| `branding/logos/` | Source logo and approved logo variants |
+| `branding/banners/` | Large-format presentation graphics |
 | `branding/icons/` | Compact identity resources |
 | `screenshots/` | Real Gaming Horizon interface captures |
-| `screenshots/website/` | Major platform/page screenshots |
-| `screenshots/features/` | Focused feature captures |
-| `showcase/` | Curated concept and ecosystem visuals |
-| `social/` | Official channel and preview graphics |
+| `screenshots/website/` | Major platform and website views |
+| `screenshots/features/` | Focused feature and component captures |
+| `showcase/` | Curated concept and ecosystem presentation |
+| `social/` | Official communication and preview graphics |
+
+### Architecture principle
+
+```text
+                    GAMING HORIZON
+                          │
+                          ▼
+                    ASSET SYSTEM
+                          │
+          ┌───────────────┼───────────────┐
+          │               │               │
+          ▼               ▼               ▼
+      BRANDING       SCREENSHOTS       SHOWCASE
+          │                               │
+          └───────────────┬───────────────┘
+                          ▼
+                        SOCIAL
+```
+
+Each area serves a different purpose.
+
+**Branding** defines identity.
+
+**Screenshots** document real interfaces.
+
+**Showcase** communicates broader visual ideas.
+
+**Social** adapts the identity for official communication.
 
 ---
 
-<a id="branding"></a>
+## ✦ Branding
 
-<div align="center">
-
-<h1>
-  <strong>03 — BRANDING SYSTEM</strong>
-</h1>
-
-<h3>
-  <code>LOGOS · MARKS · ICONS · PRESENTATION</code>
-</h3>
-
-</div>
-
----
-
-The `branding/` directory contains the identity resources that define how
-Gaming Horizon appears across official environments.
+The `branding/` directory contains the core identity resources for Gaming
+Horizon.
 
 ```text
 branding/
-│
+├── README.md
 ├── logos/
 ├── banners/
 └── icons/
 ```
 
-The branding system should remain:
+Detailed branding guidance belongs in:
 
-**recognizable · controlled · flexible · consistent**
+```text
+branding/README.md
+```
 
-Temporary design experiments should not automatically become official brand
-assets.
+### Visual direction
 
----
+Gaming Horizon should generally feel:
 
-## Visual direction
+| Character | Direction |
+| --- | --- |
+| **Premium** | Controlled composition and intentional detail |
+| **Futuristic** | Forward-looking without generic cyberpunk styling |
+| **Cinematic** | Atmospheric depth and scale where appropriate |
+| **Confident** | Strong hierarchy without unnecessary visual noise |
+| **Accessible** | Visual quality without compromising clarity |
+| **Evolving** | Flexible enough to grow with the project |
 
-Gaming Horizon is designed around a visual identity associated with:
+### Atmospheric foundation
 
-- discovery;
-- gaming;
-- possibility;
-- technology;
-- progress;
-- exploration;
-- creativity;
-- community;
-- and the future.
+Common environmental directions include:
 
-### Atmospheric direction
-
-Typical environments may include:
-
-`MIDNIGHT BLACK`
-
-`DEEP NAVY`
-
-`CHARCOAL`
-
-`ATMOSPHERIC BLUE`
-
-`COSMIC DEPTH`
+```text
+MIDNIGHT BLACK
+DEEP CHARCOAL
+DARK NAVY
+ATMOSPHERIC BLUE
+COSMIC DEPTH
+```
 
 ### Energy accents
 
-Common Gaming Horizon visual accents include:
+Common accent directions include:
 
-`PURPLE`
+```text
+PURPLE
+ELECTRIC BLUE
+CYAN
+VIOLET
+SUBTLE MAGENTA
+```
 
-`ELECTRIC BLUE`
+These should function as accents rather than making every element equally
+bright.
 
-`CYAN`
+### Avoid
 
-`VIOLET`
+The Gaming Horizon identity should avoid becoming:
 
-`SUBTLE MAGENTA`
-
-These should be used with restraint.
-
-The goal is **premium futuristic design**, not uncontrolled neon.
-
----
-
-## Visual character
-
-<table>
-
-<tr>
-
-<td width="33%" valign="top">
-
-### **PREMIUM**
-
-Clean composition, deliberate typography, controlled spacing.
-
-</td>
-
-<td width="33%" valign="top">
-
-### **FUTURISTIC**
-
-Forward-looking without becoming generic cyberpunk.
-
-</td>
-
-<td width="33%" valign="top">
-
-### **CINEMATIC**
-
-Atmosphere, depth, lighting, and scale where appropriate.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="33%" valign="top">
-
-### **CLEAR**
-
-Visual impact should never destroy usability.
-
-</td>
-
-<td width="33%" valign="top">
-
-### **CONFIDENT**
-
-Strong identity without unnecessary decoration.
-
-</td>
-
-<td width="33%" valign="top">
-
-### **EVOLVING**
-
-The design system can expand while remaining recognizable.
-
-</td>
-
-</tr>
-
-</table>
+```text
+Generic Cyberpunk
+Cheap Neon
+Childish Gaming Graphics
+Corporate SaaS Generic
+Overloaded Futurism
+Excessive Visual Noise
+Uncontrolled Glow
+Inconsistent Identity Variants
+```
 
 ---
 
-<a id="logos"></a>
+## ✦ Logo System
 
-<div align="center">
-
-<h1>
-  <strong>04 — OFFICIAL LOGO SYSTEM</strong>
-</h1>
-
-<h2>
-  <strong>THE PRIMARY IDENTITY OF GAMING HORIZON</strong>
-</h2>
-
-</div>
-
----
-
-Current logo directory:
+Current location:
 
 ```text
 branding/logos/
 ```
 
-<br>
-
 <div align="center">
+
+<br>
 
 <img
   src="branding/logos/gaming-horizon-logo-source.png"
-  width="620"
+  width="540"
   alt="Gaming Horizon Official Source Logo"
 />
 
 <br><br>
 
-<h2>
-  <strong>OFFICIAL SOURCE LOGO</strong>
-</h2>
+<strong>Official Gaming Horizon source identity</strong>
 
-<code>gaming-horizon-logo-source.png</code>
+<br><br>
 
 </div>
 
----
+### Current logo register
 
-## Logo registry
+| Asset | Purpose | Classification |
+| --- | --- | --- |
+| `gaming-horizon-logo-source.png` | Primary identity reference | **Source** |
+| `gaming-horizon-logo-mark.png` | Compact logo mark | Approved variant |
+| `gaming-horizon-logo-mark-square.png` | Square-format mark | Approved variant |
+| `gaming-horizon-logo-readme.png` | Repository-oriented presentation | Supporting |
 
-| Asset | Role | Priority |
-|---|---|:---:|
-| `gaming-horizon-logo-source.png` | Primary source/reference logo | **PRIMARY** |
-| `gaming-horizon-logo-mark.png` | Isolated logo mark | Secondary |
-| `gaming-horizon-logo-mark-square.png` | Square-format logo mark | Secondary |
-| `gaming-horizon-logo-readme.png` | README/documentation presentation | Supporting |
-
----
-
-### `gaming-horizon-logo-source.png`
-
-**Purpose**
-
-Primary reference for the Gaming Horizon logo system.
-
-Use this asset when:
-
-- identity accuracy matters;
-- documentation needs the official logo;
-- a source reference is required;
-- or a new approved derivative is being prepared.
-
-This file should not be overwritten by edited variants.
-
----
-
-### `gaming-horizon-logo-mark.png`
-
-**Purpose**
-
-Compact version of the Gaming Horizon mark.
-
-Useful for:
-
-- cards;
-- UI surfaces;
-- compact documentation;
-- navigation;
-- repository elements;
-- small presentation areas.
-
----
-
-### `gaming-horizon-logo-mark-square.png`
-
-**Purpose**
-
-Square-format presentation for areas where a balanced compact composition is
-required.
-
-Possible uses:
-
-- profile-style containers;
-- square previews;
-- compact identity blocks;
-- future app surfaces.
-
----
-
-### `gaming-horizon-logo-readme.png`
-
-**Purpose**
-
-Presentation-oriented variant intended primarily for documentation and
-repository use.
-
----
-
-## Logo hierarchy
+### Source logo
 
 ```text
-SOURCE LOGO
-    │
-    ├── LOGO MARK
-    │
-    ├── SQUARE MARK
-    │
-    └── README PRESENTATION
+branding/logos/gaming-horizon-logo-source.png
 ```
 
-The source logo remains the highest-priority visual reference.
+The source logo is the primary current reference for the Gaming Horizon
+identity.
 
----
+It should be preserved and should not be overwritten simply to create a new
+variation.
 
-<div align="center">
+Use it where:
 
-<h1>
-  <strong>05 — LOGO INTEGRITY</strong>
-</h1>
+- identity accuracy matters;
+- the official project identity is being documented;
+- a high-quality reference is required;
+- an approved derivative is being prepared.
 
-<h3>
-  <code>PRESERVE · RESPECT · RECOGNIZE</code>
-</h3>
+### Logo mark
 
-</div>
+```text
+branding/logos/gaming-horizon-logo-mark.png
+```
 
----
+A compact version intended for environments where the full source presentation
+is unnecessary.
 
-The Gaming Horizon logo should remain immediately recognizable.
+Possible use cases include:
 
-### Do not
+- interface cards;
+- navigation;
+- documentation;
+- compact identity modules;
+- repository components.
 
-Avoid unnecessarily:
+### Square mark
 
-- stretching;
-- compressing;
-- rotating;
-- skewing;
-- distorting;
-- recoloring;
-- redrawing;
-- changing geometry;
-- altering proportions;
-- adding excessive glow;
-- adding uncontrolled shadows;
-- cropping important areas;
-- covering the mark;
-- or recreating unofficial versions.
+```text
+branding/logos/gaming-horizon-logo-mark-square.png
+```
 
-### Do
+A balanced square presentation intended for compact or square visual
+environments.
 
-Maintain:
+### README variant
 
-- correct proportions;
-- adequate surrounding space;
-- strong contrast;
-- visual clarity;
+```text
+branding/logos/gaming-horizon-logo-readme.png
+```
+
+A supporting presentation asset prepared for repository and documentation use.
+
+### Logo integrity
+
+Official logo assets should not be unnecessarily:
+
+- stretched;
+- compressed;
+- skewed;
+- rotated;
+- recolored;
+- redrawn;
+- cropped;
+- blurred;
+- covered;
+- distorted;
+- or modified geometrically.
+
+Preserve:
+
+- proportions;
 - recognizable geometry;
-- appropriate scale;
-- and consistency with the official source.
-
----
-
-## Clear-space principle
-
-The logo should have enough surrounding space to remain visually independent
-from nearby content.
-
-Do not crowd the mark against:
-
-- page edges;
-- other logos;
-- text;
-- buttons;
-- decorative elements;
-- or interface controls.
-
----
-
-## Background compatibility
-
-Use the version that remains clearest against the surrounding environment.
-
-Before publishing, verify:
-
-- edge visibility;
+- clear space;
 - contrast;
-- logo detail;
-- background interference;
-- and readability at the intended size.
+- resolution;
+- visual balance.
 
----
+### Logo review checklist
 
-## Logo quality checklist
-
-- [ ] Correct logo version
+- [ ] Official asset used
 - [ ] Correct proportions
-- [ ] No unwanted crop
-- [ ] No visible distortion
+- [ ] No destructive crop
+- [ ] No unauthorized redesign
 - [ ] Adequate contrast
-- [ ] Sufficient clear space
 - [ ] Appropriate resolution
-- [ ] Correct filename
-- [ ] Correct repository directory
-- [ ] No unapproved redesign
+- [ ] Clear surrounding space
+- [ ] Correct repository path
+- [ ] Appropriate use case
+- [ ] Source version preserved
 
 ---
 
-## Banner inventory
+## ✦ Banner System
 
-Although banners are not used as the primary visual of this README, approved
-banner resources can remain available under:
+Current location:
 
 ```text
 branding/banners/
 ```
 
-Current files:
+### Current banner register
 
-| Asset | Intended role |
-|---|---|
-| `gaming-horizon-github-banner.png` | Repository presentation |
+| Asset | Intended use |
+| --- | --- |
+| `gaming-horizon-github-banner.png` | GitHub/repository presentation |
 | `gaming-horizon-readme-hero.png` | Large documentation presentation |
-| `gaming-horizon-dark-banner.png` | Dark-theme presentation |
-| `gaming-horizon-light-banner.png` | Light-theme presentation |
+| `gaming-horizon-dark-banner.png` | Dark visual environment |
+| `gaming-horizon-light-banner.png` | Light visual environment |
 
-The source logo remains the primary identity reference.
+Banners are supporting media.
+
+They are **not** the authoritative source of the Gaming Horizon identity.
+
+The logo system remains the identity foundation.
+
+### Banner principles
+
+A Gaming Horizon banner should:
+
+- establish atmosphere;
+- preserve logo integrity;
+- maintain readable hierarchy;
+- work at wide dimensions;
+- avoid unnecessary text density;
+- preserve important safe areas;
+- remain visually useful when resized.
+
+Avoid turning banners into screenshots filled with paragraphs of text.
+
+Important project information should remain real Markdown or HTML wherever
+practical.
 
 ---
 
-## Icon system
+## ✦ Icon System
 
 Planned location:
 
@@ -739,7 +523,7 @@ Planned location:
 branding/icons/
 ```
 
-Possible future resources may include:
+Compact resources may eventually include approved assets such as:
 
 ```text
 gaming-horizon-icon.png
@@ -748,54 +532,46 @@ gaming-horizon-favicon.png
 gaming-horizon-app-icon.png
 ```
 
-Icons should remain recognizable at smaller dimensions.
+These names describe potential future structure only.
 
-Do not simply shrink a complex asset if doing so destroys readability.
+Do not create files simply because they are listed here.
 
----
+### Icon principles
 
-<a id="screenshots"></a>
+Icons should be:
 
-<div align="center">
+- recognizable at small sizes;
+- visually simple enough for their environment;
+- connected to the primary Gaming Horizon identity;
+- free from unnecessary detail;
+- technically appropriate for their destination.
 
-<h1>
-  <strong>06 — SCREENSHOT SYSTEM</strong>
-</h1>
-
-<h2>
-  <strong>REAL EXPERIENCES. REAL INTERFACES.</strong>
-</h2>
-
-<h3>
-  <code>WEBSITE · PLATFORM · FEATURES · DEVELOPMENT</code>
-</h3>
-
-</div>
+A favicon or small application icon may require simplification rather than
+simply shrinking a complex source asset.
 
 ---
 
-Screenshots document the real Gaming Horizon experience.
+## ✦ Screenshots
+
+Screenshots should document **real Gaming Horizon experiences**.
 
 Recommended structure:
 
 ```text
 screenshots/
-│
 ├── website/
 └── features/
 ```
 
----
+### Website screenshots
 
-## Website screenshots
-
-Location:
+Recommended location:
 
 ```text
 screenshots/website/
 ```
 
-Recommended assets may include:
+Possible future filenames:
 
 ```text
 gaming-horizon-homepage.png
@@ -809,19 +585,15 @@ gaming-horizon-labs.png
 gaming-horizon-404.png
 ```
 
-These should represent real Gaming Horizon interfaces.
+### Feature screenshots
 
----
-
-## Feature screenshots
-
-Location:
+Recommended location:
 
 ```text
 screenshots/features/
 ```
 
-Examples:
+Possible examples:
 
 ```text
 gaming-horizon-search.png
@@ -831,122 +603,72 @@ gaming-horizon-roadmap-module.png
 gaming-horizon-discovery-interface.png
 ```
 
-Feature screenshots should focus on one meaningful interaction or interface
-area.
+### Screenshot standard
 
----
+A public screenshot should:
 
-## Screenshot presentation standard
+- represent a real interface;
+- show useful context;
+- keep important UI visible;
+- preserve readable text;
+- avoid accidental cropping;
+- avoid unrelated browser content;
+- avoid developer tools unless specifically documenting development;
+- contain no private information.
 
-Before adding a screenshot:
+### Remove before capture
 
-### Clean the environment
-
-Avoid:
-
-- browser developer tools;
-- unrelated tabs;
-- private information;
-- notifications;
-- personal account data;
-- unfinished overlays;
-- unnecessary cursor placement;
-- temporary debug information.
-
-### Frame the experience
-
-Ensure:
-
-- the important area is visible;
-- text is readable;
-- UI elements are not unintentionally cropped;
-- viewport size is useful;
-- interface proportions are preserved.
-
-### Represent the truth
-
-A screenshot should show what exists.
-
-Do not use concept imagery as evidence that a feature is already available.
-
----
-
-## Recommended screenshot naming
-
-### Good
+Check for:
 
 ```text
-gaming-horizon-homepage.png
-gaming-horizon-roadmap.png
-gaming-horizon-community.png
-gaming-horizon-game-discovery.png
-gaming-horizon-development.png
+Personal Tabs
+Notifications
+Account Details
+Private Messages
+Email Addresses
+Debug Panels
+Developer Tools
+Authentication Information
+Temporary Modals
+Unrelated Windows
 ```
 
-### Avoid
+### Screenshot truth rule
 
-```text
-Screenshot 1.png
-Screenshot 2026-08-30.png
-image.png
-latest.png
-final-screen.png
-```
+A screenshot means:
 
----
+> **This interface actually exists in the represented state.**
 
-## Screenshot status model
+A concept illustration is not a screenshot.
 
-Screenshots may eventually be organized by status where useful:
+A future mockup is not a screenshot.
 
-| Status | Meaning |
-|---|---|
-| **CURRENT** | Matches the present experience |
-| **DEVELOPMENT** | Represents active development |
-| **EXPERIMENTAL** | Shows an experimental interface |
-| **ARCHIVED** | Historical reference |
-| **REPLACED** | Superseded by a newer capture |
+An experimental UI should be identified accordingly.
 
-Do not delete useful historical screenshots automatically if they have
-documentation value.
+### Suggested states
 
-Archive them intentionally.
+| State | Meaning |
+| --- | --- |
+| `CURRENT` | Represents the present interface |
+| `DEVELOPMENT` | Captured during active development |
+| `EXPERIMENTAL` | Represents a test or prototype |
+| `ARCHIVED` | Historical reference |
+| `REPLACED` | Superseded by a newer capture |
 
 ---
 
-<a id="showcase"></a>
+## ✦ Showcase
 
-<div align="center">
-
-<h1>
-  <strong>07 — SHOWCASE SYSTEM</strong>
-</h1>
-
-<h2>
-  <strong>VISUAL STORYTELLING BEYOND THE INTERFACE</strong>
-</h2>
-
-</div>
-
----
-
-Location:
+Recommended location:
 
 ```text
 showcase/
 ```
 
-Showcase visuals can help communicate:
+Showcase visuals are curated project presentations that can communicate ideas
+which are not best represented by ordinary interface screenshots.
 
-- ecosystem ideas;
-- future directions;
-- technology concepts;
-- community themes;
-- project storytelling;
-- design philosophy;
-- and experimental possibilities.
-
-Possible future naming:
+Possible future examples:
 
 ```text
 gaming-horizon-ecosystem-showcase.png
@@ -956,68 +678,53 @@ gaming-horizon-future-showcase.png
 gaming-horizon-world.png
 ```
 
----
+### Appropriate uses
 
-## Showcase vs screenshot
+Showcase visuals may support:
 
-These categories must remain distinct.
+- ecosystem explanations;
+- project storytelling;
+- conceptual direction;
+- documentation;
+- future-facing visual exploration;
+- community campaigns;
+- technology concepts.
+
+### Screenshot vs showcase
 
 | Screenshot | Showcase |
-|---|---|
+| --- | --- |
 | Real interface | Curated visual |
-| Documents actual UI | Communicates a concept |
-| Product evidence | Storytelling/support |
-| Should reflect current reality | May explore possibilities |
-| Used for feature documentation | Used for broader presentation |
+| Documents functionality | Communicates an idea |
+| Product evidence | Presentation support |
+| Reflects a real state | May explore possibilities |
+| UI-focused | Story-focused |
 
-A showcase should never silently imply that an unbuilt experience already
-exists.
+### Concept labeling
 
----
+When relevant, clearly label media as:
 
-## Concept labeling
+```text
+CONCEPT
+EXPERIMENTAL
+EXPLORATION
+FUTURE DIRECTION
+NOT CURRENT PRODUCT UI
+```
 
-Where relevant, concept assets should be clearly described as:
-
-`CONCEPT`
-
-`EXPERIMENTAL`
-
-`EXPLORATION`
-
-`FUTURE DIRECTION`
-
-`NOT CURRENT PRODUCT UI`
-
-Clarity strengthens trust.
+This distinction protects project credibility.
 
 ---
 
-<a id="social"></a>
+## ✦ Social
 
-<div align="center">
-
-<h1>
-  <strong>08 — SOCIAL ASSET SYSTEM</strong>
-</h1>
-
-<h2>
-  <strong>ONE IDENTITY ACROSS EVERY OFFICIAL CHANNEL</strong>
-</h2>
-
-</div>
-
----
-
-Location:
+Recommended location:
 
 ```text
 social/
 ```
 
-Social assets can support official Gaming Horizon communication.
-
-Possible resources:
+Possible future assets may include:
 
 ```text
 gaming-horizon-github-social-preview.png
@@ -1026,52 +733,32 @@ gaming-horizon-announcement.png
 gaming-horizon-social-preview.png
 ```
 
----
+### Social standard
 
-## Social consistency
+Official social graphics should preserve:
 
-Official social visuals should preserve:
+- Gaming Horizon identity;
+- recognizable logo usage;
+- clear hierarchy;
+- readable messaging;
+- platform-appropriate dimensions;
+- controlled visual effects.
 
-- logo integrity;
-- typography hierarchy;
-- Gaming Horizon visual character;
-- clear messaging;
-- appropriate contrast;
-- and recognizable identity.
+Consistency does not require every platform graphic to be identical.
 
-Different platforms may require different dimensions.
-
-Consistency does not mean every asset should be identical.
-
-It means every asset should still clearly belong to Gaming Horizon.
+It requires every official visual to remain recognizably Gaming Horizon.
 
 ---
 
-<a id="standards"></a>
+## ✦ Standards
 
-<div align="center">
+A professional asset library depends on predictable standards.
 
-<h1>
-  <strong>09 — ASSET STANDARDS</strong>
-</h1>
+### Naming
 
-<h2>
-  <strong>QUALITY IS PART OF THE IDENTITY</strong>
-</h2>
+Use lowercase filenames separated with hyphens.
 
-<h3>
-  <code>NAMING · FORMAT · QUALITY · PERFORMANCE · ACCESSIBILITY</code>
-</h3>
-
-</div>
-
----
-
-## Naming standard
-
-Use lowercase filenames separated by hyphens.
-
-### Recommended
+**Recommended**
 
 ```text
 gaming-horizon-logo-source.png
@@ -1082,132 +769,100 @@ gaming-horizon-development-roadmap.png
 gaming-horizon-community-showcase.png
 ```
 
-### Avoid
+**Avoid**
 
 ```text
 Screenshot 1.png
-IMG_3498.png
 image123.png
-logo-new.png
-final-logo.png
-final-final-logo.png
-latest2.png
-new new banner.png
+new-logo.png
+final.png
+final-final.png
+banner2.png
+latest new banner.png
 ```
 
----
+### Naming formula
 
-## Naming formula
-
-When practical, use:
+When practical:
 
 ```text
 gaming-horizon-[asset]-[variant].[extension]
 ```
 
-Examples:
+For example:
 
 ```text
 gaming-horizon-logo-source.png
-gaming-horizon-logo-square.png
 gaming-horizon-banner-dark.png
 gaming-horizon-homepage-mobile.png
+gaming-horizon-icon-square.png
 ```
 
----
+### File formats
 
-## File-format standard
-
-| Format | Recommended use |
-|---|---|
-| **PNG** | Logos, transparency, screenshots, high-quality visual assets |
+| Format | Recommended role |
+| --- | --- |
+| **PNG** | Logos, transparency, screenshots, high-quality graphics |
 | **WebP** | Optimized web presentation |
 | **SVG** | Approved scalable vector resources |
-| **JPG/JPEG** | Photographic imagery where transparency is unnecessary |
+| **JPG/JPEG** | Photography without transparency |
 
-Do not convert formats without a reason.
+### Source preservation
 
----
+If a source file exists, preserve it.
 
-## Source preservation
-
-Whenever an official source exists:
-
-**preserve it.**
-
-Do not overwrite:
+For example:
 
 ```text
 gaming-horizon-logo-source.png
 ```
 
-with an edited version.
+should remain the original reference.
 
-Instead create:
+Create derivative versions separately.
 
-```text
-gaming-horizon-logo-mark.png
-gaming-horizon-logo-square.png
-gaming-horizon-logo-readme.png
-```
+### Resolution
 
-Source preservation prevents quality loss and identity drift.
-
----
-
-## Resolution standard
-
-Assets should be large enough for their intended use without being
-unnecessarily heavy.
+Use enough resolution for the intended use while avoiding unnecessarily large
+files.
 
 Consider:
 
-- display size;
 - GitHub rendering;
-- website performance;
-- retina/high-density screens;
+- web presentation;
+- high-density displays;
 - transparency;
-- compression;
-- future reuse.
-
----
-
-## Performance standard
-
-High quality does not require unnecessarily large files.
-
-Before committing large media, consider:
-
-- pixel dimensions;
-- compression;
-- format;
-- visual difference after optimization;
-- repository size;
+- reuse;
 - loading performance.
 
----
+### Performance
 
-## Duplicate control
+High-quality media does not need to be unnecessarily heavy.
 
-Before adding a new asset:
+Before committing a large asset, evaluate:
 
-1. Search the existing directory.
-2. Check whether an equivalent asset already exists.
-3. Determine whether the new version is meaningfully different.
-4. Use a descriptive variant name if both should remain.
+```text
+Dimensions
+Compression
+Format
+Visual Difference
+Repository Size
+Loading Cost
+```
 
-Avoid:
+### Duplicate control
+
+Avoid version chains such as:
 
 ```text
 logo.png
 logo2.png
 logo-new.png
-logo-new2.png
 logo-final.png
 logo-final-final.png
 ```
 
-Prefer:
+Prefer meaningful names:
 
 ```text
 gaming-horizon-logo-source.png
@@ -1218,11 +873,15 @@ gaming-horizon-logo-monochrome.png
 
 ---
 
-## Accessibility standard
+## ✦ Accessibility
 
-Whenever assets appear in Markdown or HTML, provide useful alternative text.
+Visual quality includes usability.
 
-### Good
+### Alternative text
+
+Use meaningful image descriptions.
+
+**Good**
 
 ```html
 <img
@@ -1231,7 +890,7 @@ Whenever assets appear in Markdown or HTML, provide useful alternative text.
 />
 ```
 
-### Avoid
+**Avoid**
 
 ```html
 <img
@@ -1240,98 +899,34 @@ Whenever assets appear in Markdown or HTML, provide useful alternative text.
 />
 ```
 
-Alternative text should identify the visual clearly without becoming
-unnecessarily verbose.
+### Important information
 
----
-
-## Text inside images
-
-Important information should not exist only inside an image where avoidable.
+Where practical, important content should remain real text rather than being
+embedded only inside an image.
 
 Prefer:
 
-- real Markdown headings;
-- real HTML text;
-- accessible labels;
-- selectable content.
+- Markdown headings;
+- HTML headings;
+- selectable text;
+- accessible links;
+- real labels.
 
-Images should support content, not replace essential information.
-
----
-
-## Color guidance
-
-The asset library should not invent new "official" color values without an
-approved source.
-
-When precise brand color values are formally established, they should be
-documented in a dedicated brand specification rather than guessed from
-screenshots or rendered assets.
-
-Until then, maintain the established visual direction:
-
-`PURPLE · BLUE · CYAN · VIOLET`
-
-with controlled atmospheric neutrals.
+Visual assets should support the information architecture.
 
 ---
 
-## Visual quality checklist
+## ✦ Relative Paths
 
-Before committing a visual asset:
-
-- [ ] Correct project identity
-- [ ] Correct directory
-- [ ] Clear filename
-- [ ] Appropriate dimensions
-- [ ] Good visual quality
-- [ ] No accidental crop
-- [ ] No private information
-- [ ] No unnecessary duplication
-- [ ] Correct format
-- [ ] Appropriate compression
-- [ ] Accurate representation
-- [ ] Useful alt text when embedded
-- [ ] Rights/usage considered
-
----
-
-<div align="center">
-
-<h1>
-  <strong>10 — RELATIVE PATH SYSTEM</strong>
-</h1>
-
-<h2>
-  <strong>PATHS DEPEND ON WHERE THE DOCUMENT LIVES</strong>
-</h2>
-
-</div>
-
----
-
-This file is:
+This README lives at:
 
 ```text
 assets/README.md
 ```
 
-Therefore this README should use:
+Therefore asset paths are relative to the `assets/` directory.
 
-```text
-branding/logos/...
-branding/banners/...
-screenshots/...
-showcase/...
-social/...
-```
-
----
-
-## From `assets/README.md`
-
-### Correct
+### Correct from this file
 
 ```html
 <img
@@ -1340,7 +935,7 @@ social/...
 />
 ```
 
-### Incorrect
+### Incorrect from this file
 
 ```text
 assets/branding/logos/gaming-horizon-logo-source.png
@@ -1352,74 +947,63 @@ The incorrect version would resolve to:
 assets/assets/branding/logos/gaming-horizon-logo-source.png
 ```
 
----
+### Path matrix
 
-## From root `README.md`
+| Markdown location | Correct source-logo path |
+| --- | --- |
+| `/README.md` | `assets/branding/logos/gaming-horizon-logo-source.png` |
+| `/assets/README.md` | `branding/logos/gaming-horizon-logo-source.png` |
+| `/assets/branding/README.md` | `logos/gaming-horizon-logo-source.png` |
+| `/docs/VISION.md` | `../assets/branding/logos/gaming-horizon-logo-source.png` |
 
-Use:
+> [!TIP]
+> Always calculate image paths from the directory containing the Markdown file,
+> not from the repository root.
+
+<details>
+<summary><strong>Image troubleshooting</strong></summary>
+
+<br>
+
+If a GitHub image does not render:
+
+1. Verify the exact filename.
+2. Check uppercase and lowercase characters.
+3. Confirm the extension.
+4. Confirm the file exists on the same branch.
+5. Identify the Markdown file's current directory.
+6. Calculate the relative path from that location.
+7. Open the image directly in GitHub to confirm the file itself loads.
+
+For this document:
+
+```text
+assets/README.md
+```
+
+and this image:
 
 ```text
 assets/branding/logos/gaming-horizon-logo-source.png
 ```
 
-Example:
-
-```html
-<img
-  src="assets/branding/logos/gaming-horizon-logo-source.png"
-  alt="Gaming Horizon Official Logo"
-/>
-```
-
----
-
-## From `docs/*.md`
-
-A document such as:
+the correct reference is:
 
 ```text
-docs/VISION.md
+branding/logos/gaming-horizon-logo-source.png
 ```
 
-would typically reference assets through:
+</details>
+
+---
+
+<a id="workflow"></a>
+
+## ✦ Workflow
+
+A maintained asset library needs a clear lifecycle.
 
 ```text
-../assets/branding/logos/gaming-horizon-logo-source.png
-```
-
----
-
-## Path reference table
-
-| Document location | Logo path |
-|---|---|
-| `/README.md` | `assets/branding/logos/gaming-horizon-logo-source.png` |
-| `/assets/README.md` | `branding/logos/gaming-horizon-logo-source.png` |
-| `/docs/VISION.md` | `../assets/branding/logos/gaming-horizon-logo-source.png` |
-
-Always calculate paths from the location of the Markdown file itself.
-
----
-
-<div align="center">
-
-<h1>
-  <strong>11 — ASSET LIFECYCLE</strong>
-</h1>
-
-<h3>
-  <code>CREATE → REVIEW → APPROVE → USE → UPDATE → ARCHIVE</code>
-</h3>
-
-</div>
-
----
-
-Assets should have a lifecycle.
-
-```text
-IDEA
-  ↓
 CREATE
   ↓
 REVIEW
@@ -1433,137 +1017,52 @@ MAINTAIN
 REPLACE / ARCHIVE
 ```
 
-This prevents outdated visual resources from remaining active indefinitely.
-
----
-
-## Suggested asset states
+### Suggested states
 
 | State | Meaning |
-|---|---|
-| **SOURCE** | Original reference asset |
-| **APPROVED** | Ready for official use |
-| **ACTIVE** | Currently used |
-| **EXPERIMENTAL** | Testing or exploration |
-| **REPLACED** | Superseded by another asset |
-| **ARCHIVED** | Historical reference |
-| **DEPRECATED** | Should no longer be used |
+| --- | --- |
+| `SOURCE` | Original reference asset |
+| `APPROVED` | Cleared for official use |
+| `ACTIVE` | Currently used |
+| `EXPERIMENTAL` | Being tested |
+| `REPLACED` | Superseded by another asset |
+| `ARCHIVED` | Preserved for historical reference |
+| `DEPRECATED` | Should no longer be used |
 
-Status tracking can be introduced later if the library grows large enough to
-require it.
+Formal asset metadata does not need to be implemented until the scale of the
+library makes it useful.
 
----
+### Adding a new asset
 
-## Replacing an asset
+Before committing:
 
-When replacing an important visual:
+1. Define its purpose.
+2. Select the correct directory.
+3. Search for duplicates.
+4. Choose a descriptive filename.
+5. Preserve the source if creating a derivative.
+6. Review visual quality.
+7. Check for private information.
+8. Verify that the visual accurately represents Gaming Horizon.
+9. Optimize reasonably.
+10. Use a meaningful commit.
+
+### Replacing an asset
+
+When an important asset changes:
 
 1. Verify the replacement.
-2. Update all references.
-3. Check root README paths.
-4. Check documentation paths.
-5. Check social or website references where applicable.
-6. Preserve the previous source if history is useful.
-7. Avoid leaving two "current" versions without explanation.
+2. Update repository references.
+3. Update documentation references.
+4. Check GitHub rendering.
+5. Preserve historical context where useful.
+6. Avoid leaving multiple unexplained active versions.
 
 ---
 
-## Archiving
+## ✦ Quality Gate
 
-If an old asset remains useful historically, archive it rather than deleting
-context.
-
-A future structure could include:
-
-```text
-archive/
-```
-
-only when enough historical material exists to justify it.
-
-Do not create an archive directory prematurely.
-
----
-
-<div align="center">
-
-<h1>
-  <strong>12 — TRUTHFUL VISUAL PRESENTATION</strong>
-</h1>
-
-<h2>
-  <strong>SHOW WHAT EXISTS. LABEL WHAT DOES NOT.</strong>
-</h2>
-
-</div>
-
----
-
-Premium presentation requires accuracy.
-
-Visual assets should not imply:
-
-- a feature is live when it is not;
-- a partnership exists when it does not;
-- a product is available when it is still conceptual;
-- a screenshot represents real UI when it is concept art;
-- an experiment is a confirmed release.
-
-When appropriate, use labels such as:
-
-`IN DEVELOPMENT`
-
-`EXPERIMENTAL`
-
-`CONCEPT`
-
-`COMING SOON`
-
-`AVAILABLE AT LAUNCH`
-
-`NOT YET ANNOUNCED`
-
-`ARCHIVED`
-
----
-
-## Screenshot truth standard
-
-Real screenshot:
-
-> Shows an actual Gaming Horizon interface.
-
-Concept showcase:
-
-> Communicates an idea or visual direction.
-
-Prototype:
-
-> Represents something being tested.
-
-Marketing visual:
-
-> Supports project presentation.
-
-These categories should not be mixed without explanation.
-
----
-
-<div align="center">
-
-<h1>
-  <strong>13 — ASSET REVIEW FRAMEWORK</strong>
-</h1>
-
-<h2>
-  <strong>EVERY OFFICIAL ASSET SHOULD EARN ITS PLACE</strong>
-</h2>
-
-</div>
-
----
-
-Before committing a new asset, ask:
+Before treating an asset as official, review the following.
 
 <table>
 
@@ -1571,7 +1070,7 @@ Before committing a new asset, ask:
 
 <td width="33%" valign="top">
 
-### **IDENTITY**
+### Identity
 
 Does it clearly belong to Gaming Horizon?
 
@@ -1579,7 +1078,7 @@ Does it clearly belong to Gaming Horizon?
 
 <td width="33%" valign="top">
 
-### **PURPOSE**
+### Purpose
 
 Why does this asset need to exist?
 
@@ -1587,9 +1086,9 @@ Why does this asset need to exist?
 
 <td width="33%" valign="top">
 
-### **QUALITY**
+### Quality
 
-Is it strong enough for official use?
+Is it suitable for official public presentation?
 
 </td>
 
@@ -1599,7 +1098,7 @@ Is it strong enough for official use?
 
 <td width="33%" valign="top">
 
-### **ACCURACY**
+### Accuracy
 
 Does it represent the project truthfully?
 
@@ -1607,15 +1106,15 @@ Does it represent the project truthfully?
 
 <td width="33%" valign="top">
 
-### **ORGANIZATION**
+### Structure
 
-Is it in the correct directory?
+Is it stored in the correct directory?
 
 </td>
 
 <td width="33%" valign="top">
 
-### **NAMING**
+### Naming
 
 Does the filename explain itself?
 
@@ -1627,15 +1126,15 @@ Does the filename explain itself?
 
 <td width="33%" valign="top">
 
-### **DUPLICATION**
+### Duplication
 
-Does an equivalent asset already exist?
+Is another asset already serving the same role?
 
 </td>
 
 <td width="33%" valign="top">
 
-### **PERFORMANCE**
+### Performance
 
 Is the file reasonably optimized?
 
@@ -1643,7 +1142,7 @@ Is the file reasonably optimized?
 
 <td width="33%" valign="top">
 
-### **RIGHTS**
+### Rights
 
 Can Gaming Horizon legitimately publish it?
 
@@ -1653,392 +1152,122 @@ Can Gaming Horizon legitimately publish it?
 
 </table>
 
----
+### Final checklist
 
-## Approval mindset
-
-Not every created image needs to become an official project asset.
-
-Keeping fewer, stronger resources often creates a better brand system than
-keeping every variation.
-
-<div align="center">
-
-<h2>
-  <strong>QUALITY OVER QUANTITY.</strong>
-</h2>
-
-</div>
-
----
-
-<div align="center">
-
-<h1>
-  <strong>14 — REPOSITORY INTEGRATION</strong>
-</h1>
-
-<h2>
-  <strong>ASSETS SHOULD SERVE THE PROJECT</strong>
-</h2>
-
-</div>
+- [ ] Correct Gaming Horizon identity
+- [ ] Clear purpose
+- [ ] Correct directory
+- [ ] Descriptive filename
+- [ ] Appropriate resolution
+- [ ] Good visual quality
+- [ ] No accidental crop
+- [ ] No sensitive information
+- [ ] No unnecessary duplication
+- [ ] Appropriate format
+- [ ] Reasonable file size
+- [ ] Truthful representation
+- [ ] Source rights considered
+- [ ] Useful alt text where embedded
 
 ---
 
-Visual assets may support:
+## ✦ Truthful Presentation
 
-### Root repository
+Premium presentation depends on trust.
+
+Visuals should not falsely imply:
+
+- a feature is already available;
+- an experiment is production-ready;
+- a concept image is actual product UI;
+- a partnership exists;
+- a release is confirmed;
+- an unofficial design is official.
+
+Use explicit status language when needed:
+
+```text
+IN DEVELOPMENT
+EXPERIMENTAL
+CONCEPT
+COMING SOON
+AVAILABLE AT LAUNCH
+NOT YET ANNOUNCED
+ARCHIVED
+```
+
+### Presentation categories
+
+**Screenshot**  
+A real Gaming Horizon interface.
+
+**Prototype**  
+An interface or experience being tested.
+
+**Concept**  
+A visual exploration of a possible direction.
+
+**Showcase**  
+A curated visual supporting broader storytelling.
+
+**Promotional asset**  
+Media created for official project communication.
+
+These should not be silently treated as interchangeable.
+
+---
+
+## ✦ Repository Integration
+
+Assets should serve the wider repository rather than exist in isolation.
+
+Possible consumers include:
 
 ```text
 README.md
-```
-
-### Documentation
-
-```text
+assets/README.md
+assets/branding/README.md
 docs/
-```
-
-### Website/application
-
-```text
+.github/
 src/
 public/
 ```
 
-### GitHub infrastructure
+### Single-source principle
+
+Prefer:
 
 ```text
-.github/
+ONE MAINTAINED SOURCE
+         ↓
+MULTIPLE REFERENCES
 ```
 
-### Project communication
+instead of:
 
 ```text
-social/
-showcase/
+COPY A
+COPY B
+COPY C
+COPY D
 ```
 
-The same file should not be duplicated across several directories simply for
-convenience unless there is a technical reason.
+unless separate optimized versions are technically necessary.
 
-Prefer referencing a single maintained source.
+This reduces:
+
+- repository size;
+- inconsistent updates;
+- visual drift;
+- maintenance effort.
 
 ---
 
-<div align="center">
+## ✦ Current Register
 
-<h1>
-  <strong>15 — CONTRIBUTION STANDARD</strong>
-</h1>
+The following official visual resources currently exist in the asset library.
 
-<h3>
-  <code>RELEVANT · INTENTIONAL · ORGANIZED · ACCURATE</code>
-</h3>
-
-</div>
-
----
-
-When contributing visual assets:
-
-1. Use the correct directory.
-2. Follow naming conventions.
-3. Preserve source files.
-4. Avoid unnecessary duplicates.
-5. Explain meaningful visual changes.
-6. Verify image rendering before completion.
-7. Confirm that the asset does not contain sensitive information.
-8. Ensure the visual accurately represents the project.
-9. Optimize unnecessarily large media where reasonable.
-10. Use clear commit messages.
-
----
-
-## Example commits
-
-### New logo variant
-
-```text
-Add Gaming Horizon logo variant
-```
-
-### Website screenshot
-
-```text
-Add Gaming Horizon homepage showcase
-```
-
-### Updated screenshot
-
-```text
-Update Gaming Horizon development screenshot
-```
-
-### New showcase visual
-
-```text
-Add Gaming Horizon ecosystem showcase
-```
-
-### Asset organization
-
-```text
-Organize Gaming Horizon visual assets
-```
-
----
-
-<a id="governance"></a>
-
-<div align="center">
-
-<h1>
-  <strong>16 — BRAND & ASSET GOVERNANCE</strong>
-</h1>
-
-<h2>
-  <strong>PROTECT THE IDENTITY OF THE HORIZON</strong>
-</h2>
-
-<h3>
-  <code>IDENTITY · ATTRIBUTION · RESPONSIBILITY</code>
-</h3>
-
-</div>
-
----
-
-Gaming Horizon branding, logos, visual identity, screenshots, artwork,
-promotional graphics, and related project resources may be subject to separate
-copyright, trademark, brand, or usage terms.
-
-The presence of an asset in this repository does **not** automatically grant
-permission to use Gaming Horizon branding in a way that falsely implies:
-
-- endorsement;
-- sponsorship;
-- partnership;
-- authorization;
-- certification;
-- ownership;
-- official status;
-- or affiliation.
-
-Third-party names, trademarks, services, games, artwork, and intellectual
-property remain the property of their respective owners.
-
----
-
-## Repository legal references
-
-From `assets/README.md`, the repository root is one level above.
-
-### License
-
-```text
-../LICENSE
-```
-
-### Brand guidelines
-
-When available:
-
-```text
-../BRAND.md
-```
-
-### Project notice
-
-When available:
-
-```text
-../NOTICE
-```
-
-### Security policy
-
-When available:
-
-```text
-../SECURITY.md
-```
-
----
-
-## Third-party content
-
-Third-party content should not be treated as Gaming Horizon-owned material.
-
-Where external assets are legitimately used, maintain appropriate:
-
-- attribution;
-- licensing;
-- source information;
-- ownership recognition;
-- and usage restrictions.
-
----
-
-<div align="center">
-
-<h1>
-  <strong>17 — FUTURE ASSET SYSTEM</strong>
-</h1>
-
-<h2>
-  <strong>DESIGNED TO EXPAND WITHOUT LOSING CONTROL</strong>
-</h2>
-
-</div>
-
----
-
-As Gaming Horizon grows, the asset system may eventually expand to include
-additional areas such as:
-
-```text
-branding/icons/
-screenshots/website/
-screenshots/features/
-showcase/
-social/
-```
-
-Potential future categories should only be introduced when needed.
-
-The project should resist unnecessary complexity.
-
----
-
-## Possible future systems
-
-### Device-specific screenshots
-
-```text
-screenshots/
-├── desktop/
-├── tablet/
-└── mobile/
-```
-
-Only if device-specific documentation becomes substantial.
-
-### Archived resources
-
-```text
-archive/
-```
-
-Only when historical visual material becomes important enough to justify its
-own system.
-
-### Design references
-
-```text
-references/
-```
-
-Only for approved internal/public design references that belong in the
-repository.
-
-### Video previews
-
-```text
-video/
-```
-
-Only if repository-hosted video assets become genuinely useful.
-
----
-
-## What should not happen
-
-Avoid creating structures like:
-
-```text
-assets/
-├── random/
-├── misc/
-├── new/
-├── old/
-├── final/
-├── final-final/
-└── temporary/
-```
-
-Directory names should communicate purpose.
-
----
-
-<div align="center">
-
-<h1>
-  <strong>18 — ASSET SYSTEM GOLDEN RULES</strong>
-</h1>
-
-</div>
-
----
-
-### **01 — PRESERVE THE SOURCE**
-
-Never destroy the original reference simply to create a derivative.
-
-### **02 — NAME WITH PURPOSE**
-
-A filename should explain what the file is.
-
-### **03 — ORGANIZE BEFORE THE LIBRARY GROWS**
-
-Structure is easier to maintain when established early.
-
-### **04 — DO NOT FAKE PRODUCT REALITY**
-
-Concept visuals are not screenshots.
-
-### **05 — PROTECT THE LOGO**
-
-Identity consistency matters.
-
-### **06 — KEEP QUALITY HIGH**
-
-Official visuals should represent the project professionally.
-
-### **07 — OPTIMIZE RESPONSIBLY**
-
-High resolution does not require unnecessary file size.
-
-### **08 — KEEP PATHS CORRECT**
-
-Relative paths depend on document location.
-
-### **09 — REMOVE DUPLICATION**
-
-One maintained source is better than five confusing copies.
-
-### **10 — ALLOW THE SYSTEM TO EVOLVE**
-
-Do not design the directory structure as though the project will never change.
-
----
-
-<div align="center">
-
-<h1>
-  <strong>19 — CURRENT ASSET REGISTER</strong>
-</h1>
-
-<h3>
-  <code>AVAILABLE NOW</code>
-</h3>
-
-</div>
-
----
-
-## Logos
+### Branding / Logos
 
 ```text
 branding/logos/
@@ -2048,7 +1277,7 @@ branding/logos/
 └── gaming-horizon-logo-readme.png
 ```
 
-## Banners
+### Branding / Banners
 
 ```text
 branding/banners/
@@ -2058,7 +1287,7 @@ branding/banners/
 └── gaming-horizon-light-banner.png
 ```
 
-## Planned expansion
+### Expanding when needed
 
 ```text
 branding/icons/
@@ -2068,91 +1297,209 @@ showcase/
 social/
 ```
 
-This register should be updated as important asset categories are introduced.
+The register should describe what actually exists.
+
+Planned assets should not be represented as currently available.
 
 ---
 
-<div align="center">
+<a id="governance"></a>
 
-<h1>
-  <strong>20 — FINAL STANDARD</strong>
-</h1>
+## ✦ Governance
 
-<h2>
-  <strong>EVERY VISUAL SHOULD STRENGTHEN THE HORIZON.</strong>
-</h2>
+Gaming Horizon branding, logos, visual identity, artwork, screenshots,
+promotional graphics, and related project resources may be subject to
+separate copyright, trademark, brand, or usage terms.
 
-</div>
+The presence of a visual asset in this repository does **not** automatically
+grant permission to use Gaming Horizon branding in a way that falsely implies:
+
+- endorsement;
+- authorization;
+- sponsorship;
+- certification;
+- partnership;
+- ownership;
+- or official affiliation.
+
+Third-party trademarks, games, services, products, artwork, and other
+intellectual property remain the property of their respective owners.
+
+### Repository references
+
+From `assets/README.md`:
+
+**License**
+
+```text
+../LICENSE
+```
+
+**Brand policy — when added**
+
+```text
+../BRAND.md
+```
+
+**Project notice — when added**
+
+```text
+../NOTICE
+```
+
+**Security policy — when added**
+
+```text
+../SECURITY.md
+```
+
+### Sensitive information
+
+Never commit visuals containing:
+
+```text
+Passwords
+Authentication Codes
+API Keys
+Access Tokens
+Private Keys
+Recovery Codes
+Session Tokens
+Private Messages
+Personal Account Information
+```
+
+> [!WARNING]
+> Always inspect screenshots before committing them publicly. Visual assets can
+> expose sensitive information just as easily as source code.
 
 ---
 
-The Gaming Horizon visual system should remain:
+## ✦ Future Direction
 
-<table>
+The asset library is designed to expand without becoming unnecessarily
+complex.
 
-<tr>
+Potential future areas may include:
 
-<td align="center" width="20%">
+```text
+branding/icons/
+screenshots/website/
+screenshots/features/
+showcase/
+social/
+```
 
-### **CLEAR**
+Additional structures should be introduced only if genuine needs emerge.
 
-Easy to understand.
+### Possible future device structure
 
-</td>
+If screenshot volume eventually requires it:
 
-<td align="center" width="20%">
+```text
+screenshots/
+├── desktop/
+├── tablet/
+└── mobile/
+```
 
-### **PREMIUM**
+### Possible archive
 
-Strong enough for official presentation.
+If historical visual resources become significant:
 
-</td>
+```text
+archive/
+```
 
-<td align="center" width="20%">
+### Possible video library
 
-### **CONSISTENT**
+If repository-hosted video becomes useful:
 
-Recognizably Gaming Horizon.
+```text
+video/
+```
 
-</td>
+None of these should be created prematurely.
 
-<td align="center" width="20%">
+### Avoid meaningless organization
 
-### **TRUTHFUL**
+Do not create directories such as:
 
-Accurate to the project.
+```text
+random/
+misc/
+new/
+old/
+final/
+final-final/
+temporary/
+others/
+```
 
-</td>
+Directory names should communicate responsibility.
 
-<td align="center" width="20%">
+---
 
-### **EVOLVING**
+## ✦ Golden Rules
 
-Ready for what comes next.
+### 01 — Preserve the source
 
-</td>
+Never destroy an important original simply to create a variant.
 
-</tr>
+### 02 — Name with purpose
 
-</table>
+A filename should explain itself.
 
-<br>
+### 03 — Store with purpose
 
-<div align="center">
+Put assets where their responsibility belongs.
 
-<h2>
-  <strong>ORGANIZE WHAT EXISTS.</strong>
-</h2>
+### 04 — Protect the identity
 
-<h2>
-  <strong>PRESERVE WHAT MATTERS.</strong>
-</h2>
+Do not casually redesign official Gaming Horizon branding.
 
-<h1>
-  <strong>BUILD WHAT COMES NEXT.</strong>
-</h1>
+### 05 — Represent reality
 
-</div>
+Concept art is not product evidence.
+
+### 06 — Choose quality
+
+Official assets should be appropriate for public presentation.
+
+### 07 — Optimize responsibly
+
+High quality does not require excessive file size.
+
+### 08 — Keep paths correct
+
+Relative paths depend on the Markdown file's location.
+
+### 09 — Avoid duplication
+
+One maintained source is better than several confusing copies.
+
+### 10 — Evolve intentionally
+
+Growth should strengthen the system rather than fragment it.
+
+---
+
+## ✦ The Asset Standard
+
+A Gaming Horizon visual should ultimately be:
+
+| | Standard | Meaning |
+|:---:|---|---|
+| **01** | **Clear** | Easy to understand |
+| **02** | **Premium** | Suitable for official presentation |
+| **03** | **Consistent** | Recognizably Gaming Horizon |
+| **04** | **Truthful** | Accurate to the project |
+| **05** | **Purposeful** | Exists for a meaningful reason |
+| **06** | **Maintainable** | Easy to locate and update |
+| **07** | **Accessible** | Supports clear communication |
+| **08** | **Efficient** | Appropriately optimized |
+| **09** | **Protected** | Preserves project identity |
+| **10** | **Evolving** | Ready for what comes next |
 
 ---
 
@@ -2162,63 +1509,31 @@ Ready for what comes next.
 
 <img
   src="branding/logos/gaming-horizon-logo-source.png"
-  width="560"
+  width="420"
   alt="Gaming Horizon Official Logo"
 />
 
 <br><br>
 
-<h1>
-  <strong>GAMING HORIZON</strong>
-</h1>
-
-<h3>
-  <strong>
-    B E Y O N D &nbsp; T H E &nbsp; H O R I Z O N
-  </strong>
-</h3>
+<strong>GAMING HORIZON</strong>
 
 <br>
 
-<h2>
-  <strong>
-    DISCOVER · PLAY · CONNECT · CREATE · COMPETE · EXPLORE
-  </strong>
-</h2>
+<sub>Official Visual Asset System</sub>
 
-<br>
+<br><br>
 
-<h3>
-  <code>
-    IDENTITY · CONSISTENCY · QUALITY · CLARITY · EVOLUTION
-  </code>
-</h3>
+<code>
+  IDENTITY · CONSISTENCY · QUALITY · CLARITY · EVOLUTION
+</code>
 
-<br>
+<br><br>
 
-<h2>
-  <strong>ONE ECOSYSTEM.</strong>
-</h2>
+<strong>Organize what exists. Preserve what matters. Build what comes next.</strong>
 
-<h1>
-  <strong>ONE RECOGNIZABLE IDENTITY.</strong>
-</h1>
+<br><br>
 
-<br>
-
-<blockquote>
-  <strong>
-    There is always another world beyond the horizon.
-  </strong>
-</blockquote>
-
-<br>
-
-<strong>© 2026 GAMING HORIZON</strong>
-
-<br>
-
-<strong>BEYOND THE HORIZON</strong>
+<sub>© 2026 Gaming Horizon · Beyond the Horizon</sub>
 
 <br><br>
 
