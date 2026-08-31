@@ -27,10 +27,10 @@ RELATIVE PATH RULE
 Official logo:
 ../../assets/branding/logos/gaming-horizon-logo-source.png
 
-GitHub system:
-../README.md
+GitHub System:
+../GITHUB-SYSTEM.md
 
-Repository README:
+Root README:
 ../../README.md
 
 Contributing:
@@ -41,6 +41,9 @@ Code of Conduct:
 
 Security:
 ../../SECURITY.md
+
+Support:
+../../SUPPORT.md
 
 License:
 ../../LICENSE
@@ -53,9 +56,9 @@ License:
 <br>
 
 <img
-  src="../../assets/branding/logos/gaming-horizon-logo-source.png"
-  width="500"
-  alt="Gaming Horizon Official Logo"
+src="../../assets/branding/logos/gaming-horizon-logo-source.png"
+width="500"
+alt="Gaming Horizon Official Logo"
 />
 
 <br><br>
@@ -77,7 +80,9 @@ License:
 <br>
 
 <!-- ========================================================= -->
+
 <!--                       SYSTEM STATUS                       -->
+
 <!-- ========================================================= -->
 
 <a href="#status">
@@ -114,7 +119,9 @@ License:
 <br><br>
 
 <!-- ========================================================= -->
+
 <!--                       ISSUE AREAS                         -->
+
 <!-- ========================================================= -->
 
 <a href="#bug-reports">
@@ -151,7 +158,9 @@ License:
 <br><br>
 
 <!-- ========================================================= -->
+
 <!--                       ISSUE PROCESS                       -->
+
 <!-- ========================================================= -->
 
 <a href="#before-opening-an-issue">
@@ -188,7 +197,9 @@ License:
 <br><br>
 
 <!-- ========================================================= -->
+
 <!--                       QUICK LINKS                         -->
+
 <!-- ========================================================= -->
 
 <a href="https://github.com/thegaminghorizon/The-Gaming-Horizon/issues">
@@ -219,14 +230,10 @@ License:
 <br><br>
 
 <code>REPORT</code>
-&nbsp; • &nbsp;
-<code>REPRODUCE</code>
-&nbsp; • &nbsp;
-<code>DISCUSS</code>
-&nbsp; • &nbsp;
-<code>TRIAGE</code>
-&nbsp; • &nbsp;
-<code>RESOLVE</code>
+  •   <code>REPRODUCE</code>
+  •   <code>DISCUSS</code>
+  •   <code>TRIAGE</code>
+  •   <code>RESOLVE</code>
 
 <br><br>
 
@@ -277,18 +284,18 @@ ACTIVE DEVELOPMENT
 
 Current responsibilities include:
 
-| Area | Status |
-| --- | --- |
-| Structured issue submission | Active |
-| Bug reporting guidance | Defined |
+| Area                        | Status  |
+| --------------------------- | ------- |
+| Structured issue submission | Active  |
+| Bug reporting guidance      | Defined |
 | Feature discussion guidance | Defined |
-| Documentation feedback | Defined |
-| Improvement reporting | Defined |
-| Security boundary | Defined |
-| Issue quality standards | Active |
-| Triage workflow | Active |
-| Contributor guidance | Active |
-| Governance | Active |
+| Documentation feedback      | Defined |
+| Improvement reporting       | Defined |
+| Security boundary           | Defined |
+| Issue quality standards     | Active  |
+| Triage workflow             | Active  |
+| Contributor guidance        | Active  |
+| Governance                  | Active  |
 
 The available issue forms or template files may evolve as Gaming Horizon
 develops.
@@ -976,11 +983,11 @@ SESSION INFORMATION
 
 When including code or logs:
 
-- include only the relevant portion;
-- remove secrets;
-- use Markdown code blocks;
-- preserve useful error context;
-- avoid pasting enormous unrelated logs.
+* include only the relevant portion;
+* remove secrets;
+* use Markdown code blocks;
+* preserve useful error context;
+* avoid pasting enormous unrelated logs.
 
 Example:
 
@@ -1239,16 +1246,16 @@ SCOPE CLARIFICATION
 
 ## ✦ Issue States
 
-| State | Meaning |
-| --- | --- |
-| `OPEN` | Issue remains unresolved |
-| `TRIAGE` | Being reviewed or classified |
+| State               | Meaning                         |
+| ------------------- | ------------------------------- |
+| `OPEN`              | Issue remains unresolved        |
+| `TRIAGE`            | Being reviewed or classified    |
 | `NEEDS INFORMATION` | Additional details are required |
-| `PLANNED` | Accepted for future work |
-| `IN PROGRESS` | Related work is underway |
-| `BLOCKED` | Waiting on another requirement |
-| `RESOLVED` | Problem has been addressed |
-| `CLOSED` | Discussion or work is complete |
+| `PLANNED`           | Accepted for future work        |
+| `IN PROGRESS`       | Related work is underway        |
+| `BLOCKED`           | Waiting on another requirement  |
+| `RESOLVED`          | Problem has been addressed      |
+| `CLOSED`            | Discussion or work is complete  |
 
 Actual repository labels may differ.
 
@@ -1397,7 +1404,21 @@ The issue system is part of:
 Parent documentation:
 
 ```text
-../README.md
+../GITHUB-SYSTEM.md
+```
+
+Relationship:
+
+```text
+.github/
+│
+├── GITHUB-SYSTEM.md
+│
+└── ISSUE_TEMPLATE/
+    └── README.md
+         │
+         ├── ../GITHUB-SYSTEM.md
+         └── ../../README.md
 ```
 
 The wider GitHub repository system also includes:
@@ -1429,10 +1450,10 @@ Therefore:
 ../../assets/branding/logos/gaming-horizon-logo-source.png
 ```
 
-### GitHub README
+### GitHub System
 
 ```text
-../README.md
+../GITHUB-SYSTEM.md
 ```
 
 ### Repository README
@@ -1469,12 +1490,12 @@ Therefore:
 
 ## ✦ Path Matrix
 
-| Document | Official logo path |
-| --- | --- |
-| `/README.md` | `assets/branding/logos/gaming-horizon-logo-source.png` |
-| `/.github/README.md` | `../assets/branding/logos/gaming-horizon-logo-source.png` |
+| Document                            | Official logo path                                           |
+| ----------------------------------- | ------------------------------------------------------------ |
+| `/README.md`                        | `assets/branding/logos/gaming-horizon-logo-source.png`       |
+| `/.github/GITHUB-SYSTEM.md`         | `../assets/branding/logos/gaming-horizon-logo-source.png`    |
 | `/.github/ISSUE_TEMPLATE/README.md` | `../../assets/branding/logos/gaming-horizon-logo-source.png` |
-| `/assets/README.md` | `branding/logos/gaming-horizon-logo-source.png` |
+| `/assets/README.md`                 | `branding/logos/gaming-horizon-logo-source.png`              |
 
 ---
 
@@ -1488,18 +1509,18 @@ From:
 
 use:
 
-| Resource | Relative path |
-| --- | --- |
-| Repository README | `../../README.md` |
-| GitHub System | `../README.md` |
-| Contributing | `../../CONTRIBUTING.md` |
-| Code of Conduct | `../../CODE_OF_CONDUCT.md` |
-| Security | `../../SECURITY.md` |
-| Privacy | `../../PRIVACY.md` |
-| Terms | `../../TERMS.md` |
-| Copyright | `../../COPYRIGHT.md` |
+| Resource            | Relative path                  |
+| ------------------- | ------------------------------ |
+| Repository README   | `../../README.md`              |
+| GitHub System       | `../GITHUB-SYSTEM.md`          |
+| Contributing        | `../../CONTRIBUTING.md`        |
+| Code of Conduct     | `../../CODE_OF_CONDUCT.md`     |
+| Security            | `../../SECURITY.md`            |
+| Privacy             | `../../PRIVACY.md`             |
+| Terms               | `../../TERMS.md`               |
+| Copyright           | `../../COPYRIGHT.md`           |
 | Third-Party Notices | `../../THIRD-PARTY-NOTICES.md` |
-| License | `../../LICENSE` |
+| License             | `../../LICENSE`                |
 
 ---
 
@@ -1664,21 +1685,21 @@ Do not include information that should remain private.
 
 Before submitting an issue:
 
-- [ ] Existing issues have been searched
-- [ ] Appropriate template has been selected
-- [ ] Title clearly describes the issue
-- [ ] Description is understandable
-- [ ] Relevant context is included
-- [ ] Reproduction steps are included when applicable
-- [ ] Expected behavior is clear when applicable
-- [ ] Actual behavior is clear when applicable
-- [ ] Screenshots are useful and safe
-- [ ] Logs contain no secrets
-- [ ] Personal information has been removed
-- [ ] Security-sensitive details are not being publicly disclosed
-- [ ] Discussion follows the Code of Conduct
-- [ ] Report relates to Gaming Horizon
-- [ ] Submission has been reviewed before posting
+* [ ] Existing issues have been searched
+* [ ] Appropriate template has been selected
+* [ ] Title clearly describes the issue
+* [ ] Description is understandable
+* [ ] Relevant context is included
+* [ ] Reproduction steps are included when applicable
+* [ ] Expected behavior is clear when applicable
+* [ ] Actual behavior is clear when applicable
+* [ ] Screenshots are useful and safe
+* [ ] Logs contain no secrets
+* [ ] Personal information has been removed
+* [ ] Security-sensitive details are not being publicly disclosed
+* [ ] Discussion follows the Code of Conduct
+* [ ] Report relates to Gaming Horizon
+* [ ] Submission has been reviewed before posting
 
 ---
 
@@ -1730,18 +1751,18 @@ Resolved or declined issues should remain understandable later.
 
 A Gaming Horizon issue should ultimately be:
 
-| # | Standard | Meaning |
-|:---:|---|---|
-| `01` | **Clear** | Easy to understand |
-| `02` | **Specific** | Identifies the affected area |
-| `03` | **Actionable** | Provides useful investigation information |
-| `04` | **Relevant** | Belongs to Gaming Horizon |
-| `05` | **Searchable** | Uses meaningful titles and terminology |
-| `06` | **Safe** | Contains no sensitive information |
-| `07` | **Respectful** | Follows community standards |
-| `08` | **Traceable** | Can connect discussion to resolution |
-| `09` | **Truthful** | Distinguishes fact from assumption |
-| `10` | **Maintainable** | Supports long-term repository history |
+|   #  | Standard         | Meaning                                   |
+| :--: | ---------------- | ----------------------------------------- |
+| `01` | **Clear**        | Easy to understand                        |
+| `02` | **Specific**     | Identifies the affected area              |
+| `03` | **Actionable**   | Provides useful investigation information |
+| `04` | **Relevant**     | Belongs to Gaming Horizon                 |
+| `05` | **Searchable**   | Uses meaningful titles and terminology    |
+| `06` | **Safe**         | Contains no sensitive information         |
+| `07` | **Respectful**   | Follows community standards               |
+| `08` | **Traceable**    | Can connect discussion to resolution      |
+| `09` | **Truthful**     | Distinguishes fact from assumption        |
+| `10` | **Maintainable** | Supports long-term repository history     |
 
 ---
 
@@ -1786,9 +1807,9 @@ These documents remain authoritative for their respective policy areas.
 <br>
 
 <img
-  src="../../assets/branding/logos/gaming-horizon-logo-source.png"
-  width="340"
-  alt="Gaming Horizon Official Logo"
+src="../../assets/branding/logos/gaming-horizon-logo-source.png"
+width="340"
+alt="Gaming Horizon Official Logo"
 />
 
 <br><br>
