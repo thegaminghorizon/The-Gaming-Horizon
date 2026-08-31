@@ -25,22 +25,23 @@ coverage
 # nyc test coverage
 .nyc_output
 
-# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+# Grunt intermediate storage
 .grunt
-# Bower dependency directory (https://bower.io/)
+
+# Bower dependency directory
 bower_components
 
 # node-waf configuration
 .lock-wscript
 
-# Compiled binary addons (https://nodejs.org/api/addons.html)
+# Compiled binary addons
 build/Release
 
 # Dependency directories
 node_modules/
 jspm_packages/
 
-# Snowpack dependency directory (https://snowpack.dev/)
+# Snowpack dependency directory
 web_modules/
 
 # TypeScript cache
@@ -57,74 +58,93 @@ web_modules/
 
 # Optional REPL history
 .node_repl_history
+
 # Output of 'npm pack'
 *.tgz
 
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variable files
+
+# ==============================================================================
+# ENVIRONMENT FILES
+# ==============================================================================
+#
+# Real environment files must never be committed.
+#
+# Safe example/template files may remain version-controlled.
+#
+
 .env
 .env.*
-!.env.example
 
-# parcel-bundler cache (https://parceljs.org/)
+!.env.example
+!.env.*.example
+
+
+# ==============================================================================
+# FRAMEWORK / BUILD OUTPUT
+# ==============================================================================
+
+# Parcel
 .cache
 .parcel-cache
 
-# Next.js build output
+# Next.js
 .next
 out
 
-# Nuxt.js build / generate output
+# Nuxt.js
 .nuxt
 dist
 .output
 
-# Gatsby files
+# Gatsby
 .cache/
-# Comment in the public line in if your project uses Gatsby and not Next.js
-# https://nextjs.org/blog/next-9-1#public-directory-support
-# public
 
-# vuepress build output
+# VuePress
 .vuepress/dist
-# vuepress v2.x temp directory
+
+# VuePress v2 temporary directory
 .temp
 
-# Sveltekit cache directory
+# SvelteKit
 .svelte-kit/
 
-# vitepress build output
+# VitePress
 **/.vitepress/dist
-
-# vitepress cache directory
 **/.vitepress/cache
 
-# Docusaurus cache and generated files
+# Docusaurus
 .docusaurus
 
-# Serverless directories
+# Serverless
 .serverless/
 
-# FuseBox cache
+# FuseBox
 .fusebox/
 
-# DynamoDB Local files
+# DynamoDB Local
 .dynamodb/
 
-# Firebase cache directory
+# Firebase
 .firebase/
 
-# TernJS port file
+# TernJS
 .tern-port
 
-# Stores VSCode versions used for testing VSCode extensions
+# VS Code extension testing
 .vscode-test
+
+
+# ==============================================================================
+# PACKAGE MANAGER LOCAL STATE
+# ==============================================================================
 
 # pnpm
 .pnpm-store
-# yarn v3
+
+# Yarn v3+
 .pnp.*
 .yarn/*
 !.yarn/patches
@@ -133,7 +153,11 @@ dist
 !.yarn/sdks
 !.yarn/versions
 
-# Vite files
+
+# ==============================================================================
+# VITE
+# ==============================================================================
+
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
@@ -143,12 +167,16 @@ vite.config.ts.timestamp-*
 # THE GAMING HORIZON — PROJECT-SPECIFIC RULES
 # ==============================================================================
 
+
 # ------------------------------------------------------------------------------
 # Next.js generated files
 # ------------------------------------------------------------------------------
-
+#
 # Generated automatically by Next.js / TypeScript.
+#
 # Source TypeScript configuration remains tracked.
+#
+
 next-env.d.ts
 
 
@@ -161,10 +189,13 @@ next-env.d.ts
 
 # ------------------------------------------------------------------------------
 # Supabase local development state
+# ------------------------------------------------------------------------------
 #
 # IMPORTANT:
-# Supabase migrations are intentionally NOT ignored and remain version-controlled.
-# ------------------------------------------------------------------------------
+#
+# Supabase migrations are intentionally NOT ignored and remain
+# version-controlled.
+#
 
 .supabase/
 **/supabase/.branches/
@@ -214,9 +245,10 @@ Desktop.ini
 
 # ------------------------------------------------------------------------------
 # Private keys / certificates
-#
-# These files should not be committed to the public repository.
 # ------------------------------------------------------------------------------
+#
+# These files must not be committed to the public repository.
+#
 
 *.pem
 *.key
@@ -234,31 +266,48 @@ Desktop.ini
 
 
 # ==============================================================================
+# CURRENT GAMING HORIZON APPLICATION
+# ==============================================================================
+#
+# Main application:
+#
+# THE-GAMING-HORIZON/
+#
+# Important tracked application files include:
+#
+# THE-GAMING-HORIZON/package.json
+# THE-GAMING-HORIZON/package-lock.json
+# THE-GAMING-HORIZON/components.json
+# THE-GAMING-HORIZON/next.config.mjs
+# THE-GAMING-HORIZON/postcss.config.mjs
+# THE-GAMING-HORIZON/proxy.ts
+# THE-GAMING-HORIZON/tsconfig.json
+#
+# Application directories:
+#
+# THE-GAMING-HORIZON/app/
+# THE-GAMING-HORIZON/components/
+# THE-GAMING-HORIZON/lib/
+# THE-GAMING-HORIZON/public/
+# THE-GAMING-HORIZON/supabase/
+#
+# Supabase migrations remain tracked:
+#
+# THE-GAMING-HORIZON/supabase/migrations/
+#
+# ==============================================================================
 # IMPORTANT VERSION-CONTROL RULES
 # ==============================================================================
 #
 # KEEP TRACKED:
 #
-# package.json
-# package-lock.json
-# components.json
-#
-# next.config.mjs
-# tsconfig.json
-# eslint.config.mjs
-# postcss.config.mjs
-# proxy.ts
-# netlify.toml
-#
 # .github/
-# docs/
 # assets/
+# docs/
 # THE-GAMING-HORIZON/
 #
-# Supabase migrations:
-# **/supabase/migrations/
+# netlify.toml
 #
-# Root documentation and governance:
 # README.md
 # BRAND.md
 # CHANGELOG.md
@@ -273,18 +322,26 @@ Desktop.ini
 # TERMS.md
 # THIRD-PARTY-NOTICES.md
 #
+# Safe environment templates may be tracked:
+#
+# .env.example
+# .env.local.example
+# .env.production.example
+#
+#
 # NEVER COMMIT:
 #
 # passwords
 # API keys
 # access tokens
 # private keys
+# private certificates
 # service-role credentials
 # bot tokens
 # deployment credentials
 # database credentials
 # webhook secrets
 # session secrets
-# local environment files
+# real environment files
 #
 # ==============================================================================
