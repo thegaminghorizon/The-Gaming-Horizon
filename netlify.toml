@@ -1,1 +1,36 @@
+# =============================================================================
+# THE GAMING HORIZON
+# Netlify Deployment Configuration
+# =============================================================================
+#
+# Repository:
+# https://github.com/thegaminghorizon/The-Gaming-Horizon
+#
+# Application:
+# THE-GAMING-HORIZON/
+#
+# Platform:
+# Next.js / Browser-First
+#
+# =============================================================================
 
+[build]
+  base = "THE-GAMING-HORIZON"
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# =============================================================================
+# Deployment Contexts
+# =============================================================================
+
+[context.production]
+  command = "npm run build"
+
+[context.deploy-preview]
+  command = "npm run build"
+
+[context.branch-deploy]
+  command = "npm run build"
