@@ -95,9 +95,9 @@ Do not invent:
 <br>
 
 <img
-  src="assets/branding/logos/gaming-horizon-logo-source.png"
-  width="480"
-  alt="The Gaming Horizon Official Logo"
+src="assets/branding/logos/gaming-horizon-logo-source.png"
+width="480"
+alt="The Gaming Horizon Official Logo"
 />
 
 <br><br>
@@ -171,16 +171,11 @@ Do not invent:
 <br><br>
 
 <code>ADDED</code>
-&nbsp; • &nbsp;
-<code>CHANGED</code>
-&nbsp; • &nbsp;
-<code>FIXED</code>
-&nbsp; • &nbsp;
-<code>SECURITY</code>
-&nbsp; • &nbsp;
-<code>DEPRECATED</code>
-&nbsp; • &nbsp;
-<code>REMOVED</code>
+  •   <code>CHANGED</code>
+  •   <code>FIXED</code>
+  •   <code>SECURITY</code>
+  •   <code>DEPRECATED</code>
+  •   <code>REMOVED</code>
 
 <br><br>
 
@@ -1222,6 +1217,10 @@ Added repository operations documentation under:
 .github/GITHUB-SYSTEM.md
 ```
 
+The GitHub system documentation was later renamed from `.github/README.md`
+to prevent GitHub from selecting it instead of the root `README.md` for the
+repository homepage.
+
 ---
 
 ### Issue Templates
@@ -1382,6 +1381,31 @@ meaningful Gaming Horizon repository changes.
 Moved toward a structured documentation model in which individual system files
 own their primary area rather than forcing all project information into the
 root README.
+
+---
+
+### GitHub System Documentation
+
+Renamed:
+
+```text
+.github/README.md
+```
+
+to:
+
+```text
+.github/GITHUB-SYSTEM.md
+```
+
+so the root:
+
+```text
+README.md
+```
+
+remains the primary repository homepage while dedicated GitHub operations
+documentation continues to exist inside `.github/`.
 
 ---
 
@@ -2150,16 +2174,16 @@ NETWORK CHANGE
 
 Before adding an entry:
 
-- [ ] The change actually happened
-- [ ] The description is accurate
-- [ ] The correct category is used
-- [ ] Current and future states are not confused
-- [ ] No unsupported metric is included
-- [ ] No unconfirmed release is implied
-- [ ] No unconfirmed partnership is implied
-- [ ] Security-sensitive information remains protected
-- [ ] The entry is understandable without reading every commit
-- [ ] The wording describes user or project impact where appropriate
+* [ ] The change actually happened
+* [ ] The description is accurate
+* [ ] The correct category is used
+* [ ] Current and future states are not confused
+* [ ] No unsupported metric is included
+* [ ] No unconfirmed release is implied
+* [ ] No unconfirmed partnership is implied
+* [ ] Security-sensitive information remains protected
+* [ ] The entry is understandable without reading every commit
+* [ ] The wording describes user or project impact where appropriate
 
 ---
 
@@ -2167,19 +2191,19 @@ Before adding an entry:
 
 Before converting `[Unreleased]` into a versioned release:
 
-- [ ] Release version is formally selected
-- [ ] Release date is known
-- [ ] Git tag exists or is being created
-- [ ] Release contents are validated
-- [ ] Breaking changes are documented
-- [ ] Security notes are appropriate
-- [ ] Deprecated systems are identified
-- [ ] Removed systems are identified
-- [ ] Documentation is synchronized
-- [ ] Product state is correct
-- [ ] Official links are correct
-- [ ] Release notes are prepared where needed
-- [ ] Changelog links are updated
+* [ ] Release version is formally selected
+* [ ] Release date is known
+* [ ] Git tag exists or is being created
+* [ ] Release contents are validated
+* [ ] Breaking changes are documented
+* [ ] Security notes are appropriate
+* [ ] Deprecated systems are identified
+* [ ] Removed systems are identified
+* [ ] Documentation is synchronized
+* [ ] Product state is correct
+* [ ] Official links are correct
+* [ ] Release notes are prepared where needed
+* [ ] Changelog links are updated
 
 ---
 
@@ -2187,18 +2211,18 @@ Before converting `[Unreleased]` into a versioned release:
 
 A Gaming Horizon changelog entry should be:
 
-| # | Standard | Meaning |
-|:---:|---|---|
-| `01` | **Accurate** | The described change actually happened |
-| `02` | **Relevant** | The change matters to the project history |
-| `03` | **Concise** | It avoids unnecessary implementation detail |
-| `04` | **Understandable** | Readers can understand the impact |
-| `05` | **Categorized** | The correct change type is used |
-| `06` | **Chronological** | Releases remain ordered consistently |
-| `07` | **Truthful** | No release or feature state is invented |
-| `08` | **Secure** | Sensitive vulnerability details are protected |
-| `09` | **Traceable** | Release history can connect to Git history |
-| `10` | **Maintainable** | The file remains useful as the project grows |
+|   #  | Standard           | Meaning                                       |
+| :--: | ------------------ | --------------------------------------------- |
+| `01` | **Accurate**       | The described change actually happened        |
+| `02` | **Relevant**       | The change matters to the project history     |
+| `03` | **Concise**        | It avoids unnecessary implementation detail   |
+| `04` | **Understandable** | Readers can understand the impact             |
+| `05` | **Categorized**    | The correct change type is used               |
+| `06` | **Chronological**  | Releases remain ordered consistently          |
+| `07` | **Truthful**       | No release or feature state is invented       |
+| `08` | **Secure**         | Sensitive vulnerability details are protected |
+| `09` | **Traceable**      | Release history can connect to Git history    |
+| `10` | **Maintainable**   | The file remains useful as the project grows  |
 
 ---
 
@@ -2425,27 +2449,27 @@ CURATED PROJECT HISTORY
 
 ## ✦ Related Documentation
 
-| Destination | Path |
-| --- | --- |
-| Root README | `README.md` |
+| Destination         | Path                          |
+| ------------------- | ----------------------------- |
+| Root README         | `README.md`                   |
 | Project Information | `docs/PROJECT-INFORMATION.md` |
-| Vision | `docs/VISION.md` |
-| Direction | `docs/DIRECTION.md` |
-| Ecosystem | `docs/ECOSYSTEM.md` |
-| Platform | `docs/PLATFORM.md` |
-| Architecture | `docs/ARCHITECTURE.md` |
-| Development | `docs/DEVELOPMENT.md` |
-| Beta | `docs/BETA.md` |
-| Labs | `docs/LABS.md` |
-| Network | `docs/NETWORK.md` |
-| Beyond | `docs/BEYOND.md` |
-| Documentation Index | `docs/README.md` |
-| Brand | `BRAND.md` |
-| Roadmap | `ROADMAP.md` |
-| Contributing | `CONTRIBUTING.md` |
-| Security | `SECURITY.md` |
-| GitHub System | `.github/GITHUB-SYSTEM.md` |
-| Workflow System | `.github/workflows/README.md` |
+| Vision              | `docs/VISION.md`              |
+| Direction           | `docs/DIRECTION.md`           |
+| Ecosystem           | `docs/ECOSYSTEM.md`           |
+| Platform            | `docs/PLATFORM.md`            |
+| Architecture        | `docs/ARCHITECTURE.md`        |
+| Development         | `docs/DEVELOPMENT.md`         |
+| Beta                | `docs/BETA.md`                |
+| Labs                | `docs/LABS.md`                |
+| Network             | `docs/NETWORK.md`             |
+| Beyond              | `docs/BEYOND.md`              |
+| Documentation Index | `docs/README.md`              |
+| Brand               | `BRAND.md`                    |
+| Roadmap             | `ROADMAP.md`                  |
+| Contributing        | `CONTRIBUTING.md`             |
+| Security            | `SECURITY.md`                 |
+| GitHub System       | `.github/GITHUB-SYSTEM.md`    |
+| Workflow System     | `.github/workflows/README.md` |
 
 ---
 
@@ -2569,9 +2593,9 @@ OFFICIAL LAUNCH 1 JANUARY 2027
 <br>
 
 <img
-  src="assets/branding/logos/gaming-horizon-logo-source.png"
-  width="320"
-  alt="The Gaming Horizon Official Logo"
+src="assets/branding/logos/gaming-horizon-logo-source.png"
+width="320"
+alt="The Gaming Horizon Official Logo"
 />
 
 <br><br>
