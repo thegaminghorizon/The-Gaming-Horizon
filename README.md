@@ -420,9 +420,7 @@ has been published.
 
 Actual releases should be tracked through:
 
-```text
-CHANGELOG.md
-```
+[`CHANGELOG.md`](CHANGELOG.md)
 
 and GitHub Releases.
 
@@ -931,6 +929,17 @@ documentation, assets, GitHub automation, policies, and configuration.
 The-Gaming-Horizon/
 │
 ├── .github/
+│   ├── GITHUB-SYSTEM.md
+│   ├── CODEOWNERS
+│   ├── FUNDING.yml
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   ├── dependabot.yml
+│   │
+│   ├── ISSUE_TEMPLATE/
+│   │   └── README.md
+│   │
+│   └── workflows/
+│       └── README.md
 │
 ├── THE-GAMING-HORIZON/
 │   ├── app/
@@ -957,7 +966,9 @@ The-Gaming-Horizon/
 ├── LICENSE
 ├── PRIVACY.md
 ├── README.md
+├── ROADMAP.md
 ├── SECURITY.md
+├── SUPPORT.md
 ├── TERMS.md
 ├── THIRD-PARTY-NOTICES.md
 │
@@ -1795,7 +1806,7 @@ Repository operations are organized under:
 .github/
 ```
 
-Documentation:
+Dedicated GitHub-system documentation:
 
 [`.github/GITHUB-SYSTEM.md`](.github/GITHUB-SYSTEM.md)
 
@@ -1831,7 +1842,9 @@ Workflow documentation:
 
 Repository Actions:
 
-`https://github.com/thegaminghorizon/The-Gaming-Horizon/actions`
+```text
+https://github.com/thegaminghorizon/The-Gaming-Horizon/actions
+```
 
 ---
 
@@ -1839,7 +1852,13 @@ Repository Actions:
 
 Issue tracker:
 
-`https://github.com/thegaminghorizon/The-Gaming-Horizon/issues`
+```text
+https://github.com/thegaminghorizon/The-Gaming-Horizon/issues
+```
+
+Issue-template documentation:
+
+[`.github/ISSUE_TEMPLATE/README.md`](.github/ISSUE_TEMPLATE/README.md)
 
 Structured issue categories may include:
 
@@ -1861,7 +1880,9 @@ CUSTOM ISSUE
 
 Pull requests:
 
-`https://github.com/thegaminghorizon/The-Gaming-Horizon/pulls`
+```text
+https://github.com/thegaminghorizon/The-Gaming-Horizon/pulls
+```
 
 Meaningful changes should generally move through:
 
@@ -2159,10 +2180,12 @@ Gaming Horizon repository governance currently includes:
 | Conduct | [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) |
 | Security | [`SECURITY.md`](SECURITY.md) |
 | Privacy | [`PRIVACY.md`](PRIVACY.md) |
+| Support | [`SUPPORT.md`](SUPPORT.md) |
 | Terms | [`TERMS.md`](TERMS.md) |
 | Copyright | [`COPYRIGHT.md`](COPYRIGHT.md) |
 | Third-Party Notices | [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md) |
 | Brand | [`BRAND.md`](BRAND.md) |
+| Roadmap | [`ROADMAP.md`](ROADMAP.md) |
 | License | [`LICENSE`](LICENSE) |
 
 ---
@@ -2444,6 +2467,7 @@ docs/BEYOND.md
 
 - [`Network`](docs/NETWORK.md)
 - [`Beyond`](docs/BEYOND.md)
+- [`Roadmap`](ROADMAP.md)
 
 ### Repository
 
@@ -2453,6 +2477,7 @@ docs/BEYOND.md
 - [`Code of Conduct`](CODE_OF_CONDUCT.md)
 - [`Security`](SECURITY.md)
 - [`Privacy`](PRIVACY.md)
+- [`Support`](SUPPORT.md)
 - [`Copyright`](COPYRIGHT.md)
 - [`Third-Party Notices`](THIRD-PARTY-NOTICES.md)
 - [`License`](LICENSE)
@@ -2469,8 +2494,9 @@ docs/BEYOND.md
 
 ### Development Operations
 
-- [`GitHub System`](.github/README.md)
+- [`GitHub System`](.github/GITHUB-SYSTEM.md)
 - [`Workflow System`](.github/workflows/README.md)
+- [`Issue Template System`](.github/ISSUE_TEMPLATE/README.md)
 - [`Application Documentation`](THE-GAMING-HORIZON/README.md)
 
 ---
@@ -2738,7 +2764,7 @@ APPLICATION      THE-GAMING-HORIZON/
 
 ASSETS           assets/
 
-GITHUB SYSTEM    .github/
+GITHUB SYSTEM    .github/GITHUB-SYSTEM.md
 
 LICENSE          APACHE LICENSE 2.0
 
