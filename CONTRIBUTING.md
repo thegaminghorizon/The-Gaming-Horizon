@@ -3429,7 +3429,7 @@ SUPPORT.md
 | Privacy | [`PRIVACY.md`](PRIVACY.md) |
 | Support | [`SUPPORT.md`](SUPPORT.md) |
 | License | [`LICENSE`](LICENSE) |
-| GitHub system | [`.github/README.md`](.github/README.md) |
+| GitHub system | [`.github/GITHUB-SYSTEM.md`](.github/GITHUB-SYSTEM.md) |
 | Workflow system | [`.github/workflows/README.md`](.github/workflows/README.md) |
 | Application | [`THE-GAMING-HORIZON/README.md`](THE-GAMING-HORIZON/README.md) |
 
