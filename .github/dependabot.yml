@@ -21,8 +21,33 @@
 # - npm development dependencies;
 # - framework dependencies;
 # - TypeScript tooling;
-# - linting and build tooling;
+# - build tooling;
 # - GitHub Actions used by repository workflows.
+#
+#
+# CURRENT REPOSITORY
+# ------------------
+#
+# Owner:
+# thegaminghorizon
+#
+# Repository:
+# The-Gaming-Horizon
+#
+# Default branch:
+# main
+#
+# Application directory:
+# THE-GAMING-HORIZON/
+#
+# Package manager:
+# npm
+#
+# Application manifest:
+# THE-GAMING-HORIZON/package.json
+#
+# Application lockfile:
+# THE-GAMING-HORIZON/package-lock.json
 #
 #
 # DEPENDENCY FLOW
@@ -38,6 +63,9 @@
 #              NPM                GITHUB ACTIONS
 #               │                       │
 #               ▼                       ▼
+#     THE-GAMING-HORIZON/         .github/workflows/
+#               │                       │
+#               ▼                       ▼
 #          CHECK VERSIONS          CHECK ACTIONS
 #               │                       │
 #               └───────────┬───────────┘
@@ -48,7 +76,7 @@
 #                     CREATE PR
 #                           │
 #                           ▼
-#                     RUN CI
+#                       RUN CI
 #                           │
 #                           ▼
 #                    OWNER REVIEW
@@ -88,30 +116,9 @@
 # - Netlify tokens;
 # - private access tokens.
 #
-#
-# CURRENT REPOSITORY
-# ------------------
-#
-# Owner:
-# thegaminghorizon
-#
-# Repository:
-# THE-GAMING-HORIZON
-#
-# Default branch:
-# main
-#
-# Package manager:
-# npm
-#
-# Lockfile:
-# package-lock.json
-#
 # =============================================================================
 
-
 version: 2
-
 
 updates:
 
@@ -119,17 +126,21 @@ updates:
   # NPM / NODE.JS DEPENDENCIES
   # ===========================================================================
   #
-  # Monitors package.json and package-lock.json located at the repository root.
+  # Monitors:
   #
-  # This covers dependencies used by the current Gaming Horizon web project,
-  # including framework, application, TypeScript, linting, build, and other
-  # npm-managed packages.
+  # THE-GAMING-HORIZON/package.json
+  # THE-GAMING-HORIZON/package-lock.json
+  #
+  # The main Next.js application lives inside:
+  #
+  # /THE-GAMING-HORIZON
+  #
+  # Therefore Dependabot must monitor that directory rather than the
+  # repository root.
   #
 
   - package-ecosystem: "npm"
-
-    # package.json and package-lock.json currently live at repository root.
-    directory: "/"
+    directory: "/THE-GAMING-HORIZON"
 
     # -------------------------------------------------------------------------
     # SCHEDULE
@@ -145,13 +156,11 @@ updates:
       time: "09:00"
       timezone: "Asia/Kolkata"
 
-
     # -------------------------------------------------------------------------
     # TARGET BRANCH
     # -------------------------------------------------------------------------
 
     target-branch: "main"
-
 
     # -------------------------------------------------------------------------
     # PULL REQUEST LIMIT
@@ -162,28 +171,24 @@ updates:
 
     open-pull-requests-limit: 5
 
-
     # -------------------------------------------------------------------------
     # REBASE STRATEGY
     # -------------------------------------------------------------------------
-    #
-    # Dependabot may automatically rebase its pull requests when necessary.
-    #
 
     rebase-strategy: "auto"
-
 
     # -------------------------------------------------------------------------
     # COMMIT MESSAGE
     # -------------------------------------------------------------------------
     #
-    # Keeps automated dependency commits immediately recognizable.
+    # Example:
+    #
+    # deps(deps): bump next
     #
 
     commit-message:
       prefix: "deps"
       include: "scope"
-
 
     # -------------------------------------------------------------------------
     # PULL REQUEST GROUPS
@@ -193,9 +198,8 @@ updates:
     # pull-request volume.
     #
     # Major updates remain separate so potentially breaking changes receive
-    # individual review.
+    # focused review.
     #
-
 
     groups:
 
@@ -205,11 +209,9 @@ updates:
 
       production-dependencies:
         dependency-type: "production"
-
         update-types:
           - "minor"
           - "patch"
-
 
       # -----------------------------------------------------------------------
       # DEVELOPMENT DEPENDENCIES
@@ -217,59 +219,32 @@ updates:
 
       development-dependencies:
         dependency-type: "development"
-
         update-types:
           - "minor"
           - "patch"
-
-
-    # -------------------------------------------------------------------------
-    # VERSION UPDATE POLICY
-    # -------------------------------------------------------------------------
-    #
-    # Dependabot will continue to detect major versions, but major updates are
-    # intentionally NOT grouped above.
-    #
-    # This results in:
-    #
-    # PATCH
-    #   │
-    #   └── grouped
-    #
-    # MINOR
-    #   │
-    #   └── grouped
-    #
-    # MAJOR
-    #   │
-    #   └── dedicated pull request
-    #
-    # Major updates deserve focused review because they may include breaking
-    # framework, API, tooling, or runtime changes.
-    #
-
 
   # ===========================================================================
   # GITHUB ACTIONS
   # ===========================================================================
   #
-  # Monitors versions of GitHub Actions used throughout:
+  # Monitors GitHub Actions referenced throughout:
   #
   # .github/workflows/
   #
-  # Current examples include actions such as:
+  # The GitHub Actions ecosystem remains configured with:
   #
-  # actions/checkout
-  # actions/setup-node
-  # actions/stale
+  # directory: "/"
   #
-  # Additional GitHub Actions added later will automatically become part of
-  # this update system.
+  # because Dependabot discovers repository workflows from the root-level
+  # GitHub Actions configuration.
   #
 
   - package-ecosystem: "github-actions"
-
     directory: "/"
+
+    # -------------------------------------------------------------------------
+    # SCHEDULE
+    # -------------------------------------------------------------------------
 
     schedule:
       interval: "weekly"
@@ -277,13 +252,11 @@ updates:
       time: "09:15"
       timezone: "Asia/Kolkata"
 
-
     # -------------------------------------------------------------------------
     # TARGET BRANCH
     # -------------------------------------------------------------------------
 
     target-branch: "main"
-
 
     # -------------------------------------------------------------------------
     # PULL REQUEST LIMIT
@@ -291,13 +264,11 @@ updates:
 
     open-pull-requests-limit: 3
 
-
     # -------------------------------------------------------------------------
-    # REBASE
+    # REBASE STRATEGY
     # -------------------------------------------------------------------------
 
     rebase-strategy: "auto"
-
 
     # -------------------------------------------------------------------------
     # COMMIT MESSAGE
@@ -307,7 +278,6 @@ updates:
       prefix: "ci"
       include: "scope"
 
-
     # -------------------------------------------------------------------------
     # GROUP GITHUB ACTION UPDATES
     # -------------------------------------------------------------------------
@@ -316,11 +286,9 @@ updates:
     #
 
     groups:
-
       github-actions:
         patterns:
           - "*"
-
 
 # =============================================================================
 # DEPENDENCY MANAGEMENT STANDARD
@@ -348,7 +316,7 @@ updates:
 #                            │
 #              ┌─────────────┼─────────────┐
 #              ▼             ▼             ▼
-#            INSTALL        LINT          BUILD
+#            INSTALL        CHECK         BUILD
 #              │             │             │
 #              └─────────────┼─────────────┘
 #                            ▼
@@ -364,7 +332,6 @@ updates:
 #                    ▼
 #                  MERGE
 #
-#
 # =============================================================================
 # UPDATE CLASSIFICATION
 # =============================================================================
@@ -374,7 +341,7 @@ updates:
 #
 # Example:
 #
-# 1.0.0 → 1.0.1
+# 1.0.0 -> 1.0.1
 #
 # Normally bug fixes and small maintenance updates.
 #
@@ -384,7 +351,7 @@ updates:
 #
 # Example:
 #
-# 1.0.0 → 1.1.0
+# 1.0.0 -> 1.1.0
 #
 # Normally backward-compatible functionality or improvements.
 #
@@ -394,12 +361,11 @@ updates:
 #
 # Example:
 #
-# 1.0.0 → 2.0.0
+# 1.0.0 -> 2.0.0
 #
 # May contain breaking changes.
 #
 # Major dependency updates should receive individual review.
-#
 #
 # =============================================================================
 # REVIEW CHECKLIST
@@ -407,13 +373,12 @@ updates:
 #
 # Before merging a Dependabot pull request:
 #
-# [ ] Read the dependency release notes where relevant.
+# [ ] Read dependency release notes where relevant.
 # [ ] Check for breaking changes.
 # [ ] Review security implications.
 # [ ] Confirm package-lock.json remains valid.
 # [ ] Confirm npm ci succeeds.
-# [ ] Confirm lint succeeds.
-# [ ] Confirm type checks succeed when configured.
+# [ ] Confirm available quality checks succeed.
 # [ ] Confirm tests succeed when configured.
 # [ ] Confirm the production build succeeds.
 # [ ] Review UI behavior when framework packages change.
@@ -422,7 +387,6 @@ updates:
 # [ ] Confirm the update does not introduce unwanted dependencies.
 # [ ] Review CI before merging.
 #
-#
 # =============================================================================
 # HIGH-RISK DEPENDENCY CHANGES
 # =============================================================================
@@ -430,33 +394,32 @@ updates:
 # Pay additional attention when updates affect:
 #
 # FRAMEWORK
-#   │
-#   └── Next.js
+#   |
+#   +-- Next.js
 #
 # RUNTIME
-#   │
-#   └── Node.js-related tooling
+#   |
+#   +-- Node.js-related tooling
 #
 # LANGUAGE
-#   │
-#   └── TypeScript
+#   |
+#   +-- TypeScript
 #
 # DATABASE
-#   │
-#   └── Supabase-related packages
+#   |
+#   +-- Supabase-related packages
 #
 # BUILD
-#   │
-#   └── compilation / bundling tools
+#   |
+#   +-- compilation / bundling tools
 #
 # SECURITY
-#   │
-#   └── authentication / validation libraries
+#   |
+#   +-- authentication / validation libraries
 #
 # GITHUB
-#   │
-#   └── workflow actions
-#
+#   |
+#   +-- workflow actions
 #
 # =============================================================================
 # DO NOT AUTO-MERGE BLINDLY
@@ -477,22 +440,21 @@ updates:
 # SECURITY
 # DEPLOYMENT
 #
-# The preferred process is:
+# Preferred process:
 #
 # DETECT
-#   │
-#   ▼
+#   |
+#   v
 # REVIEW
-#   │
-#   ▼
+#   |
+#   v
 # VALIDATE
-#   │
-#   ▼
+#   |
+#   v
 # TEST
-#   │
-#   ▼
+#   |
+#   v
 # MERGE
-#
 #
 # =============================================================================
 # DEPENDENCY SECURITY
@@ -510,72 +472,112 @@ updates:
 #
 # Never weaken application compatibility merely to eliminate an update notice.
 #
-#
 # =============================================================================
 # LOCKFILE POLICY
 # =============================================================================
 #
-# The Gaming Horizon uses:
+# The Gaming Horizon application uses:
 #
-# package-lock.json
+# THE-GAMING-HORIZON/package.json
+# THE-GAMING-HORIZON/package-lock.json
 #
-# Dependency updates should keep the lockfile synchronized with package.json.
+# Dependency updates should keep both files synchronized.
 #
 #
 # EXPECTED
 # --------
 #
-# package.json
-#       │
-#       ▼
-# package-lock.json
-#       │
-#       ▼
-# npm ci
-#       │
-#       ▼
-# BUILD
+# THE-GAMING-HORIZON/package.json
+#                 |
+#                 v
+# THE-GAMING-HORIZON/package-lock.json
+#                 |
+#                 v
+#              npm ci
+#                 |
+#                 v
+#               BUILD
 #
 #
 # INVALID
 # -------
 #
 # package.json
-#       │
-#       X
+#      |
+#      X
 # package-lock.json
-#       │
-#       ▼
+#      |
+#      v
 # npm ci FAILURE
 #
-#
 # =============================================================================
-# FUTURE PACKAGE ECOSYSTEMS
+# CURRENT ECOSYSTEMS
 # =============================================================================
 #
 # Do not add ecosystem blocks simply for appearance.
 #
-# Add another Dependabot ecosystem only when the repository actually uses it.
+# Current Dependabot ecosystems:
 #
-# Possible examples might include:
+# - npm
+# - github-actions
 #
-# pip
-# docker
-# maven
-# gradle
-# github-actions
+# Additional ecosystems should only be added if the repository actually begins
+# using them.
 #
-# Current configuration intentionally enables only:
+# Possible future examples:
 #
-# npm
-# github-actions
+# - docker
+# - pip
+# - maven
+# - gradle
 #
+# =============================================================================
+# APPLICATION LOCATION
+# =============================================================================
+#
+# Repository:
+#
+# The-Gaming-Horizon/
+#
+# Main application:
+#
+# The-Gaming-Horizon/
+# |
+# +-- .github/
+# +-- assets/
+# +-- docs/
+# +-- THE-GAMING-HORIZON/
+# |   |
+# |   +-- app/
+# |   +-- components/
+# |   +-- lib/
+# |   +-- public/
+# |   +-- supabase/
+# |   +-- package.json
+# |   +-- package-lock.json
+# |   +-- next.config.mjs
+# |   +-- postcss.config.mjs
+# |   +-- proxy.ts
+# |   +-- tsconfig.json
+# |
+# +-- README.md
+# +-- ROADMAP.md
+# +-- SECURITY.md
+# +-- netlify.toml
+#
+# Dependabot npm monitoring therefore targets:
+#
+# /THE-GAMING-HORIZON
+#
+# GitHub Actions monitoring targets:
+#
+# /
 #
 # =============================================================================
 # MAINTAINER POLICY
 # =============================================================================
 #
-# Dependabot configuration changes should be reviewed when:
+# Dependabot configuration should be reviewed when:
 #
 # - package manager changes;
 # - repository structure changes;
@@ -585,7 +587,6 @@ updates:
 # - new workflow systems are introduced;
 # - dependency policies change;
 # - security requirements evolve.
-#
 #
 # =============================================================================
 #
