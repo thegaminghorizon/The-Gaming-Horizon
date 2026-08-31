@@ -1,1 +1,603 @@
+# =============================================================================
+#                              GAMING HORIZON
+#                         BEYOND THE HORIZON
+# =============================================================================
+#
+#                              DEPENDABOT
+#
+#                         .github/dependabot.yml
+#
+#                     DEPENDENCY SYSTEM v1.0.0
+#
+# =============================================================================
+#
+# PURPOSE
+# -------
+# Configures GitHub Dependabot for The Gaming Horizon repository.
+#
+# Dependabot helps identify and propose updates for:
+#
+# - npm production dependencies;
+# - npm development dependencies;
+# - framework dependencies;
+# - TypeScript tooling;
+# - linting and build tooling;
+# - GitHub Actions used by repository workflows.
+#
+#
+# DEPENDENCY FLOW
+# ---------------
+#
+#                       REPOSITORY
+#                           │
+#                           ▼
+#                      DEPENDABOT
+#                           │
+#               ┌───────────┴───────────┐
+#               ▼                       ▼
+#              NPM                GITHUB ACTIONS
+#               │                       │
+#               ▼                       ▼
+#          CHECK VERSIONS          CHECK ACTIONS
+#               │                       │
+#               └───────────┬───────────┘
+#                           ▼
+#                     UPDATE FOUND
+#                           │
+#                           ▼
+#                     CREATE PR
+#                           │
+#                           ▼
+#                     RUN CI
+#                           │
+#                           ▼
+#                    OWNER REVIEW
+#                           │
+#                    ┌──────┴──────┐
+#                    ▼             ▼
+#                  MERGE         DECLINE
+#
+#
+# IMPORTANT
+# ---------
+#
+# Dependabot does NOT automatically mean an update should be merged.
+#
+# Every dependency update should still be evaluated for:
+#
+# - compatibility;
+# - security;
+# - breaking changes;
+# - build success;
+# - runtime behavior;
+# - framework compatibility;
+# - project requirements;
+# - maintenance impact.
+#
+#
+# SECURITY
+# --------
+#
+# This file must never contain:
+#
+# - npm authentication tokens;
+# - API keys;
+# - private repository credentials;
+# - deployment secrets;
+# - Supabase secrets;
+# - Netlify tokens;
+# - private access tokens.
+#
+#
+# CURRENT REPOSITORY
+# ------------------
+#
+# Owner:
+# thegaminghorizon
+#
+# Repository:
+# THE-GAMING-HORIZON
+#
+# Default branch:
+# main
+#
+# Package manager:
+# npm
+#
+# Lockfile:
+# package-lock.json
+#
+# =============================================================================
 
+
+version: 2
+
+
+updates:
+
+  # ===========================================================================
+  # NPM / NODE.JS DEPENDENCIES
+  # ===========================================================================
+  #
+  # Monitors package.json and package-lock.json located at the repository root.
+  #
+  # This covers dependencies used by the current Gaming Horizon web project,
+  # including framework, application, TypeScript, linting, build, and other
+  # npm-managed packages.
+  #
+
+  - package-ecosystem: "npm"
+
+    # package.json and package-lock.json currently live at repository root.
+    directory: "/"
+
+    # -------------------------------------------------------------------------
+    # SCHEDULE
+    # -------------------------------------------------------------------------
+    #
+    # Weekly checks provide a reasonable balance between staying current and
+    # avoiding unnecessary dependency-update noise.
+    #
+
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Kolkata"
+
+
+    # -------------------------------------------------------------------------
+    # TARGET BRANCH
+    # -------------------------------------------------------------------------
+
+    target-branch: "main"
+
+
+    # -------------------------------------------------------------------------
+    # PULL REQUEST LIMIT
+    # -------------------------------------------------------------------------
+    #
+    # Prevent excessive numbers of simultaneous dependency pull requests.
+    #
+
+    open-pull-requests-limit: 5
+
+
+    # -------------------------------------------------------------------------
+    # REBASE STRATEGY
+    # -------------------------------------------------------------------------
+    #
+    # Dependabot may automatically rebase its pull requests when necessary.
+    #
+
+    rebase-strategy: "auto"
+
+
+    # -------------------------------------------------------------------------
+    # COMMIT MESSAGE
+    # -------------------------------------------------------------------------
+    #
+    # Keeps automated dependency commits immediately recognizable.
+    #
+
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+
+
+    # -------------------------------------------------------------------------
+    # PULL REQUEST GROUPS
+    # -------------------------------------------------------------------------
+    #
+    # Minor and patch dependency updates are grouped to reduce unnecessary
+    # pull-request volume.
+    #
+    # Major updates remain separate so potentially breaking changes receive
+    # individual review.
+    #
+
+
+    groups:
+
+      # -----------------------------------------------------------------------
+      # PRODUCTION DEPENDENCIES
+      # -----------------------------------------------------------------------
+
+      production-dependencies:
+        dependency-type: "production"
+
+        update-types:
+          - "minor"
+          - "patch"
+
+
+      # -----------------------------------------------------------------------
+      # DEVELOPMENT DEPENDENCIES
+      # -----------------------------------------------------------------------
+
+      development-dependencies:
+        dependency-type: "development"
+
+        update-types:
+          - "minor"
+          - "patch"
+
+
+    # -------------------------------------------------------------------------
+    # VERSION UPDATE POLICY
+    # -------------------------------------------------------------------------
+    #
+    # Dependabot will continue to detect major versions, but major updates are
+    # intentionally NOT grouped above.
+    #
+    # This results in:
+    #
+    # PATCH
+    #   │
+    #   └── grouped
+    #
+    # MINOR
+    #   │
+    #   └── grouped
+    #
+    # MAJOR
+    #   │
+    #   └── dedicated pull request
+    #
+    # Major updates deserve focused review because they may include breaking
+    # framework, API, tooling, or runtime changes.
+    #
+
+
+  # ===========================================================================
+  # GITHUB ACTIONS
+  # ===========================================================================
+  #
+  # Monitors versions of GitHub Actions used throughout:
+  #
+  # .github/workflows/
+  #
+  # Current examples include actions such as:
+  #
+  # actions/checkout
+  # actions/setup-node
+  # actions/stale
+  #
+  # Additional GitHub Actions added later will automatically become part of
+  # this update system.
+  #
+
+  - package-ecosystem: "github-actions"
+
+    directory: "/"
+
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:15"
+      timezone: "Asia/Kolkata"
+
+
+    # -------------------------------------------------------------------------
+    # TARGET BRANCH
+    # -------------------------------------------------------------------------
+
+    target-branch: "main"
+
+
+    # -------------------------------------------------------------------------
+    # PULL REQUEST LIMIT
+    # -------------------------------------------------------------------------
+
+    open-pull-requests-limit: 3
+
+
+    # -------------------------------------------------------------------------
+    # REBASE
+    # -------------------------------------------------------------------------
+
+    rebase-strategy: "auto"
+
+
+    # -------------------------------------------------------------------------
+    # COMMIT MESSAGE
+    # -------------------------------------------------------------------------
+
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+
+
+    # -------------------------------------------------------------------------
+    # GROUP GITHUB ACTION UPDATES
+    # -------------------------------------------------------------------------
+    #
+    # GitHub Action version updates can generally be reviewed together.
+    #
+
+    groups:
+
+      github-actions:
+        patterns:
+          - "*"
+
+
+# =============================================================================
+# DEPENDENCY MANAGEMENT STANDARD
+# =============================================================================
+#
+# Dependabot provides update proposals.
+#
+# It does NOT replace:
+#
+# - CI;
+# - testing;
+# - security review;
+# - CODEOWNERS review;
+# - compatibility checks;
+# - human judgment.
+#
+#
+#                     DEPENDENCY UPDATE
+#                            │
+#                            ▼
+#                       DEPENDABOT PR
+#                            │
+#                            ▼
+#                       CI VALIDATION
+#                            │
+#              ┌─────────────┼─────────────┐
+#              ▼             ▼             ▼
+#            INSTALL        LINT          BUILD
+#              │             │             │
+#              └─────────────┼─────────────┘
+#                            ▼
+#                       CODE REVIEW
+#                            │
+#                            ▼
+#                    @thegaminghorizon
+#                            │
+#                    ┌───────┴───────┐
+#                    ▼               ▼
+#                  ACCEPT          REJECT
+#                    │
+#                    ▼
+#                  MERGE
+#
+#
+# =============================================================================
+# UPDATE CLASSIFICATION
+# =============================================================================
+#
+# PATCH
+# -----
+#
+# Example:
+#
+# 1.0.0 → 1.0.1
+#
+# Normally bug fixes and small maintenance updates.
+#
+#
+# MINOR
+# -----
+#
+# Example:
+#
+# 1.0.0 → 1.1.0
+#
+# Normally backward-compatible functionality or improvements.
+#
+#
+# MAJOR
+# -----
+#
+# Example:
+#
+# 1.0.0 → 2.0.0
+#
+# May contain breaking changes.
+#
+# Major dependency updates should receive individual review.
+#
+#
+# =============================================================================
+# REVIEW CHECKLIST
+# =============================================================================
+#
+# Before merging a Dependabot pull request:
+#
+# [ ] Read the dependency release notes where relevant.
+# [ ] Check for breaking changes.
+# [ ] Review security implications.
+# [ ] Confirm package-lock.json remains valid.
+# [ ] Confirm npm ci succeeds.
+# [ ] Confirm lint succeeds.
+# [ ] Confirm type checks succeed when configured.
+# [ ] Confirm tests succeed when configured.
+# [ ] Confirm the production build succeeds.
+# [ ] Review UI behavior when framework packages change.
+# [ ] Review browser behavior where relevant.
+# [ ] Review deployment compatibility where relevant.
+# [ ] Confirm the update does not introduce unwanted dependencies.
+# [ ] Review CI before merging.
+#
+#
+# =============================================================================
+# HIGH-RISK DEPENDENCY CHANGES
+# =============================================================================
+#
+# Pay additional attention when updates affect:
+#
+# FRAMEWORK
+#   │
+#   └── Next.js
+#
+# RUNTIME
+#   │
+#   └── Node.js-related tooling
+#
+# LANGUAGE
+#   │
+#   └── TypeScript
+#
+# DATABASE
+#   │
+#   └── Supabase-related packages
+#
+# BUILD
+#   │
+#   └── compilation / bundling tools
+#
+# SECURITY
+#   │
+#   └── authentication / validation libraries
+#
+# GITHUB
+#   │
+#   └── workflow actions
+#
+#
+# =============================================================================
+# DO NOT AUTO-MERGE BLINDLY
+# =============================================================================
+#
+# A newer version is not automatically a safer or better version for the
+# current application.
+#
+# Dependency updates may change:
+#
+# API behavior
+# BUILD OUTPUT
+# BROWSER SUPPORT
+# TYPES
+# CONFIGURATION
+# PERFORMANCE
+# ACCESSIBILITY
+# SECURITY
+# DEPLOYMENT
+#
+# The preferred process is:
+#
+# DETECT
+#   │
+#   ▼
+# REVIEW
+#   │
+#   ▼
+# VALIDATE
+#   │
+#   ▼
+# TEST
+#   │
+#   ▼
+# MERGE
+#
+#
+# =============================================================================
+# DEPENDENCY SECURITY
+# =============================================================================
+#
+# Dependency maintenance is one part of repository security.
+#
+# It should work alongside:
+#
+# SECURITY.md
+# CODEOWNERS
+# CI
+# package-lock.json
+# GitHub security features
+#
+# Never weaken application compatibility merely to eliminate an update notice.
+#
+#
+# =============================================================================
+# LOCKFILE POLICY
+# =============================================================================
+#
+# The Gaming Horizon uses:
+#
+# package-lock.json
+#
+# Dependency updates should keep the lockfile synchronized with package.json.
+#
+#
+# EXPECTED
+# --------
+#
+# package.json
+#       │
+#       ▼
+# package-lock.json
+#       │
+#       ▼
+# npm ci
+#       │
+#       ▼
+# BUILD
+#
+#
+# INVALID
+# -------
+#
+# package.json
+#       │
+#       X
+# package-lock.json
+#       │
+#       ▼
+# npm ci FAILURE
+#
+#
+# =============================================================================
+# FUTURE PACKAGE ECOSYSTEMS
+# =============================================================================
+#
+# Do not add ecosystem blocks simply for appearance.
+#
+# Add another Dependabot ecosystem only when the repository actually uses it.
+#
+# Possible examples might include:
+#
+# pip
+# docker
+# maven
+# gradle
+# github-actions
+#
+# Current configuration intentionally enables only:
+#
+# npm
+# github-actions
+#
+#
+# =============================================================================
+# MAINTAINER POLICY
+# =============================================================================
+#
+# Dependabot configuration changes should be reviewed when:
+#
+# - package manager changes;
+# - repository structure changes;
+# - manifests move;
+# - dependency volume increases;
+# - update frequency becomes excessive;
+# - new workflow systems are introduced;
+# - dependency policies change;
+# - security requirements evolve.
+#
+#
+# =============================================================================
+#
+# THE GAMING HORIZON
+#
+# DEPENDENCY MANAGEMENT SYSTEM
+# VERSION 1.0.0
+#
+# KEEP WHAT MATTERS CURRENT.
+# REVIEW WHAT CHANGES.
+# PROTECT WHAT YOU BUILD.
+#
+#                         BEYOND THE HORIZON
+#
+# =============================================================================
