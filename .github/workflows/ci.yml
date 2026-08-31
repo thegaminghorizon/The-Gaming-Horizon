@@ -1,341 +1,202 @@
 # =============================================================================
-#                              GAMING HORIZON
-#                         BEYOND THE HORIZON
+# THE GAMING HORIZON
+# Continuous Integration Workflow
 # =============================================================================
 #
-#                      CONTINUOUS INTEGRATION
+# Application directory:
+# THE-GAMING-HORIZON/
 #
-#                       .github/workflows/ci.yml
+# Platform:
+# Next.js / TypeScript / npm
 #
-#                         CI SYSTEM v1.0.0
-#
-# =============================================================================
-#
-# PURPOSE
-# -------
-# Validates The Gaming Horizon repository whenever code is pushed to the
-# main branch or proposed through a pull request.
-#
-# CI PIPELINE
-# -----------
-#
-#   PUSH / PULL REQUEST
-#           │
-#           ▼
-#       CHECKOUT
-#           │
-#           ▼
-#       SETUP NODE
-#           │
-#           ▼
-#    INSTALL DEPENDENCIES
-#           │
-#           ▼
-#         LINT
-#           │
-#           ▼
-#      TYPE CHECK
-#           │
-#           ▼
-#         TEST
-#           │
-#           ▼
-#         BUILD
-#           │
-#           ▼
-#       CI COMPLETE
-#
-# SECURITY
-# --------
-# - Uses read-only repository permissions.
-# - Does not hard-code credentials.
-# - Does not expose deployment secrets.
-# - Cancels obsolete runs for the same branch / pull request.
+# Purpose:
+# Validate dependencies, run available quality checks, and verify that the
+# Gaming Horizon application can build successfully.
 #
 # =============================================================================
 
-
-name: "The Gaming Horizon CI"
-
-
-# =============================================================================
-# TRIGGERS
-# =============================================================================
+name: The Gaming Horizon CI
 
 on:
-
-  # Run whenever changes are pushed directly to the main branch.
   push:
     branches:
       - main
 
-  # Run for pull requests targeting the main branch.
   pull_request:
     branches:
       - main
 
-  # Allow maintainers to run CI manually from the GitHub Actions interface.
-  workflow_dispatch:
+# Prevent multiple outdated runs for the same branch or pull request.
+concurrency:
+  group: gaming-horizon-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
-
-# =============================================================================
-# PERMISSIONS
-# =============================================================================
-#
-# CI only needs to read repository contents.
-#
-# Additional permissions should be added only if a future workflow step
-# genuinely requires them.
-#
-
+# Read-only repository access is sufficient for this validation workflow.
 permissions:
   contents: read
 
-
-# =============================================================================
-# CONCURRENCY
-# =============================================================================
-#
-# If several commits are pushed rapidly to the same branch or pull request,
-# cancel the older CI run and validate the newest version instead.
-#
-
-concurrency:
-  group: "gaming-horizon-ci-${{ github.workflow }}-${{ github.ref }}"
-  cancel-in-progress: true
-
-
-# =============================================================================
-# ENVIRONMENT
-# =============================================================================
+# All npm and application commands run from the actual Next.js application.
+defaults:
+  run:
+    working-directory: THE-GAMING-HORIZON
+    shell: bash
 
 env:
-
-  # Disable Next.js telemetry during automated CI execution.
-  NEXT_TELEMETRY_DISABLED: "1"
-
-  # Standard CI environment flag used by many Node.js tools.
-  CI: "true"
-
-
-# =============================================================================
-# JOBS
-# =============================================================================
+  CI: true
 
 jobs:
-
-  # ---------------------------------------------------------------------------
-  # QUALITY & BUILD
-  # ---------------------------------------------------------------------------
-
   validate:
-
-    name: "Validate & Build"
-
+    name: Validate & Build
     runs-on: ubuntu-latest
 
     timeout-minutes: 20
 
-
-    # -------------------------------------------------------------------------
-    # STEPS
-    # -------------------------------------------------------------------------
-
     steps:
+      # -----------------------------------------------------------------------
+      # Repository
+      # -----------------------------------------------------------------------
 
-
-      # =======================================================================
-      # CHECKOUT
-      # =======================================================================
-
-      - name: "Checkout repository"
+      - name: Checkout repository
         uses: actions/checkout@v4
 
+      # -----------------------------------------------------------------------
+      # Node.js
+      # -----------------------------------------------------------------------
 
-      # =======================================================================
-      # NODE.JS
-      # =======================================================================
-
-      - name: "Setup Node.js"
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-
-          # Stable Node.js runtime for the Gaming Horizon CI environment.
           node-version: "22"
+          cache: npm
+          cache-dependency-path: THE-GAMING-HORIZON/package-lock.json
 
-          # Reuse npm's package cache between CI runs.
-          cache: "npm"
-
-          # Ensures the cache changes whenever dependencies change.
-          cache-dependency-path: "package-lock.json"
-
-
-      # =======================================================================
-      # ENVIRONMENT INFORMATION
-      # =======================================================================
-
-      - name: "Display runtime information"
+      - name: Display runtime information
         run: |
-          echo "=========================================="
-          echo "THE GAMING HORIZON"
-          echo "Continuous Integration"
-          echo "=========================================="
-          echo
-          echo "Node:"
+          echo "Node.js:"
           node --version
-          echo
+
+          echo ""
           echo "npm:"
           npm --version
-          echo
-          echo "Runner:"
-          uname -a
 
+          echo ""
+          echo "Working directory:"
+          pwd
 
-      # =======================================================================
-      # PACKAGE VALIDATION
-      # =======================================================================
+      # -----------------------------------------------------------------------
+      # Package validation
+      # -----------------------------------------------------------------------
 
-      - name: "Validate package files"
-        shell: bash
+      - name: Validate package files
         run: |
-          set -euo pipefail
+          echo "Validating package.json and package-lock.json..."
 
-          if [ ! -f "package.json" ]; then
-            echo "::error::package.json was not found in the repository root."
+          test -f package.json || {
+            echo "::error::THE-GAMING-HORIZON/package.json was not found."
             exit 1
-          fi
+          }
 
-          if [ ! -f "package-lock.json" ]; then
-            echo "::error::package-lock.json was not found in the repository root."
+          test -f package-lock.json || {
+            echo "::error::THE-GAMING-HORIZON/package-lock.json was not found."
             exit 1
-          fi
+          }
 
-          echo "package.json found."
-          echo "package-lock.json found."
-          echo "Package metadata validation completed."
+          node <<'NODE'
+          const fs = require("fs");
 
+          function readJson(file) {
+            try {
+              return JSON.parse(fs.readFileSync(file, "utf8"));
+            } catch (error) {
+              console.error(`::error::${file} is not valid JSON.`);
+              console.error(error.message);
+              process.exit(1);
+            }
+          }
 
-      # =======================================================================
-      # DEPENDENCIES
-      # =======================================================================
+          const packageJson = readJson("package.json");
+          const packageLock = readJson("package-lock.json");
 
-      - name: "Install dependencies"
+          if (!packageJson.scripts) {
+            console.error("::error::package.json does not contain a scripts section.");
+            process.exit(1);
+          }
+
+          if (!packageJson.scripts.build) {
+            console.error('::error::package.json does not contain a "build" script.');
+            process.exit(1);
+          }
+
+          if (
+            typeof packageLock.lockfileVersion !== "number" ||
+            packageLock.lockfileVersion < 1
+          ) {
+            console.error(
+              "::error::package-lock.json does not contain a valid lockfileVersion."
+            );
+            console.error(
+              "Regenerate package-lock.json with npm install before running CI."
+            );
+            process.exit(1);
+          }
+
+          console.log("package.json: valid");
+          console.log("package-lock.json: valid");
+          console.log(`lockfileVersion: ${packageLock.lockfileVersion}`);
+          console.log(`build script: ${packageJson.scripts.build}`);
+          NODE
+
+      # -----------------------------------------------------------------------
+      # Dependencies
+      # -----------------------------------------------------------------------
+
+      - name: Install dependencies
         run: npm ci
 
+      # -----------------------------------------------------------------------
+      # Quality checks
+      # -----------------------------------------------------------------------
 
-      # =======================================================================
-      # LINT
-      # =======================================================================
-      #
-      # Runs the lint script when it exists.
-      #
-      # Example package.json:
-      #
-      # "scripts": {
-      #   "lint": "eslint ."
-      # }
-      #
-
-      - name: "Run lint"
+      - name: Run lint
         run: npm run lint --if-present
 
-
-      # =======================================================================
-      # TYPE CHECK
-      # =======================================================================
-      #
-      # Runs an explicit typecheck script if one exists.
-      #
-      # This makes CI ready for a future package.json script such as:
-      #
-      # "typecheck": "tsc --noEmit"
-      #
-
-      - name: "Run type checking"
+      - name: Run type checking
         run: npm run typecheck --if-present
 
-
-      # =======================================================================
-      # TESTS
-      # =======================================================================
-      #
-      # Tests run automatically once a test script exists.
-      #
-      # This prevents CI from failing solely because the project does not yet
-      # define an automated test command.
-      #
-
-      - name: "Run tests"
+      - name: Run tests
         run: npm test --if-present
 
+      # -----------------------------------------------------------------------
+      # Production build
+      # -----------------------------------------------------------------------
 
-      # =======================================================================
-      # PRODUCTION BUILD
-      # =======================================================================
-      #
-      # The production build is the strongest general validation that the
-      # application can compile successfully.
-      #
-
-      - name: "Build The Gaming Horizon"
+      - name: Build The Gaming Horizon
         run: npm run build
 
+      # -----------------------------------------------------------------------
+      # Summary
+      # -----------------------------------------------------------------------
 
-      # =======================================================================
-      # CI SUMMARY
-      # =======================================================================
-
-      - name: "Create CI summary"
+      - name: Create CI summary
         if: success()
-        shell: bash
         run: |
           {
-            echo "# ✅ The Gaming Horizon CI"
-            echo
-            echo "**Status:** Passed"
-            echo
-            echo "| Check | Result |"
-            echo "|---|---|"
-            echo "| Repository checkout | ✅ |"
-            echo "| Node.js environment | ✅ |"
-            echo "| Dependency installation | ✅ |"
-            echo "| Lint | ✅ / script optional |"
-            echo "| Type checking | ✅ / script optional |"
-            echo "| Tests | ✅ / script optional |"
-            echo "| Production build | ✅ |"
-            echo
-            echo "**Commit:** \`${GITHUB_SHA}\`"
-            echo
-            echo "**Branch / Ref:** \`${GITHUB_REF_NAME}\`"
-            echo
-            echo "---"
-            echo
-            echo "*Gaming Horizon · Beyond the Horizon*"
-          } >> "$GITHUB_STEP_SUMMARY"
-
-
-      # =======================================================================
-      # FAILURE SUMMARY
-      # =======================================================================
-
-      - name: "Create failure summary"
-        if: failure()
-        shell: bash
-        run: |
-          {
-            echo "# ❌ The Gaming Horizon CI"
-            echo
-            echo "**Status:** Failed"
-            echo
-            echo "One or more repository validation steps did not complete successfully."
-            echo
-            echo "Review the failed workflow step above for the exact error."
-            echo
-            echo "**Commit:** \`${GITHUB_SHA}\`"
-            echo
-            echo "**Branch / Ref:** \`${GITHUB_REF_NAME}\`"
-            echo
-            echo "---"
-            echo
-            echo "*Build what matters. Fix what breaks. Improve what remains.*"
+            echo "# The Gaming Horizon CI"
+            echo ""
+            echo "✅ Repository validation completed successfully."
+            echo ""
+            echo "### Environment"
+            echo ""
+            echo "- Application: \`THE-GAMING-HORIZON/\`"
+            echo "- Node.js: \`$(node --version)\`"
+            echo "- npm: \`$(npm --version)\`"
+            echo ""
+            echo "### Checks"
+            echo ""
+            echo "- ✅ Package files validated"
+            echo "- ✅ Dependencies installed with \`npm ci\`"
+            echo "- ✅ Available lint checks completed"
+            echo "- ✅ Available type checks completed"
+            echo "- ✅ Available tests completed"
+            echo "- ✅ Production build completed"
           } >> "$GITHUB_STEP_SUMMARY"
