@@ -1,6 +1,6 @@
 ---
-name: Bug Report
-about: Report a reproducible problem or unexpected behavior in Gaming Horizon
+name: The Gaming Horizon Bug Report
+about: Report a reproducible problem, broken feature, or unexpected behavior in The Gaming Horizon
 title: "[BUG] "
 labels: ""
 assignees: ""
@@ -12,88 +12,179 @@ assignees: ""
                          BEYOND THE HORIZON
 ===============================================================================
 
-                              BUG REPORT
-                  .github/ISSUE_TEMPLATE/bug_report.md
+                    THE GAMING HORIZON BUG REPORT
+
+                  .github/ISSUE_TEMPLATE/bugreport.md
+
+                       ISSUE SYSTEM v1.0.0
 
 ===============================================================================
 
-Thank you for helping improve Gaming Horizon.
+Thank you for helping improve The Gaming Horizon.
 
-Before submitting:
-- Search existing open and closed issues.
-- Confirm the problem is reproducible where possible.
-- Remove passwords, API keys, tokens, personal information, and other secrets.
-- Use the Security Policy for vulnerabilities that should not be disclosed
-  publicly.
+BEFORE SUBMITTING
+-----------------
+• Search existing open and closed issues.
+• Confirm the problem can be reproduced where possible.
+• Provide clear reproduction steps.
+• Remove passwords, API keys, tokens, credentials, and personal information.
+• Do not publicly disclose security vulnerabilities.
 
 Security Policy:
 https://github.com/thegaminghorizon/The-Gaming-Horizon/security/policy
 
-Please complete the relevant sections below.
+Repository:
+https://github.com/thegaminghorizon/The-Gaming-Horizon
 
 ===============================================================================
 -->
 
-# 🐞 Bug Report
+<div align="center">
 
-Thank you for taking the time to report a problem with **Gaming Horizon**.
+<br>
 
-A clear and reproducible report helps us understand the issue, investigate its
-cause, and determine the appropriate next step.
+<img
+  src="https://raw.githubusercontent.com/thegaminghorizon/The-Gaming-Horizon/main/assets/branding/logos/gaming-horizon-logo-source.png"
+  width="420"
+  alt="The Gaming Horizon Official Logo"
+/>
+
+<br><br>
+
+<h1>🐞 The Gaming Horizon Bug Report</h1>
+
+<p>
+  <strong>
+    Report reproducible problems, broken functionality,
+    interface issues, regressions, or unexpected behavior.
+  </strong>
+</p>
+
+<br>
+
+<img
+  src="https://img.shields.io/badge/ISSUE_TYPE-BUG_REPORT-DC2626?style=flat-square"
+  alt="Bug Report"
+/>
+<img
+  src="https://img.shields.io/badge/PROJECT-THE_GAMING_HORIZON-7C3AED?style=flat-square"
+  alt="The Gaming Horizon"
+/>
+<img
+  src="https://img.shields.io/badge/STATUS-NEEDS_TRIAGE-2563EB?style=flat-square"
+  alt="Needs Triage"
+/>
+<img
+  src="https://img.shields.io/badge/VERSION-1.0.0-6366F1?style=flat-square"
+  alt="Issue System Version 1.0.0"
+/>
+
+<br><br>
+
+<code>REPORT</code>
+&nbsp; • &nbsp;
+<code>REPRODUCE</code>
+&nbsp; • &nbsp;
+<code>INVESTIGATE</code>
+&nbsp; • &nbsp;
+<code>RESOLVE</code>
+
+<br><br>
+
+</div>
+
+---
+
+## ✦ Before You Submit
+
+Thank you for taking the time to report a problem with **The Gaming Horizon**.
+
+A clear report helps us understand the affected system, reproduce the problem,
+identify its cause, and determine the appropriate next step.
+
+Please confirm:
+
+- [ ] I searched existing open issues.
+- [ ] I searched relevant closed issues.
+- [ ] I confirmed that this issue relates to The Gaming Horizon.
+- [ ] I removed private or sensitive information.
+- [ ] This report is appropriate for a public GitHub issue.
 
 > [!IMPORTANT]
-> Please search existing issues before submitting a new report to avoid
-> duplicates.
+> If this report describes a security vulnerability that should not be
+> publicly disclosed, do **not** continue with this public issue.
+> Follow the repository Security Policy instead.
 
 ---
 
 ## ✦ Bug Summary
 
 <!--
-Provide a short and clear summary of the problem.
+Provide a short and clear explanation of the problem.
 
-Example:
-The search command palette remains open after navigating to another section.
+Good example:
+The search command palette remains open after navigating to another page.
+
+Avoid:
+Search broken.
 -->
 
-Describe the bug here.
+Describe the problem here.
 
 ---
 
 ## ✦ Affected Area
 
-<!--
-Select every area that applies by replacing [ ] with [x].
--->
+Select every area that applies.
 
-- [ ] Homepage
+### Platform
+
 - [ ] Gateway
+- [ ] Homepage
 - [ ] Navigation
+- [ ] Search / Command Palette
 - [ ] Game Discovery
 - [ ] Game Cards
-- [ ] Search / Command Palette
+- [ ] Footer
+- [ ] 404 / Error Experience
+
+### Experience
+
 - [ ] AI Companion
 - [ ] AI Suggestions
-- [ ] Community
-- [ ] Creators
-- [ ] Competition
+- [ ] Music Player
+- [ ] Localization / Language / Currency
+- [ ] Customization
+- [ ] Waitlist
+- [ ] Roadmap / Development Status
+
+### Account & Support
+
+- [ ] Sign In / Authentication
+- [ ] Account Experience
+- [ ] Support
+- [ ] Support Ticket
+
+### Developer Experience
+
 - [ ] Developer Experience
 - [ ] Developer API
 - [ ] API Reference
 - [ ] Webhooks
-- [ ] Authentication / Sign In
-- [ ] Waitlist
-- [ ] Localization / Language / Currency
-- [ ] Music Player
-- [ ] Customization
-- [ ] Support
-- [ ] Roadmap / Development Status
-- [ ] 404 / Error Page
-- [ ] Footer
+- [ ] Developer Keys / App Configuration
+
+### Repository
+
 - [ ] Documentation
-- [ ] Repository / GitHub Configuration
+- [ ] GitHub Configuration
+- [ ] GitHub Actions / Workflow
+- [ ] Dependency / Build System
+- [ ] Repository Structure
 - [ ] Accessibility
 - [ ] Responsive / Mobile Layout
+
+### Other
+
 - [ ] Other
 
 If **Other**, specify:
@@ -107,63 +198,65 @@ Affected area:
 ## ✦ Expected Behavior
 
 <!--
-What did you expect Gaming Horizon to do?
-
-Be specific where possible.
+Explain what you expected to happen.
 -->
 
-Describe the expected behavior.
+Describe the expected result.
 
 ---
 
 ## ✦ Actual Behavior
 
 <!--
-What happened instead?
-
-Include visible errors, unexpected interface states, broken interactions,
-or other relevant observations.
+Explain what happened instead.
 -->
 
-Describe the actual behavior.
+Describe the actual result.
 
 ---
 
-## ✦ Steps to Reproduce
+## ✦ Reproduction Flow
 
-<!--
-Provide the smallest reliable set of steps needed to reproduce the problem.
+Provide the smallest reliable sequence of actions that reproduces the problem.
 
-Example:
-1. Open Gaming Horizon.
-2. Open the search command palette.
-3. Select a navigation result.
-4. Observe that the palette remains visible.
--->
+```text
+START
+  ↓
+OPEN AFFECTED EXPERIENCE
+  ↓
+PERFORM ACTION
+  ↓
+BUG OCCURS
+  ↓
+OBSERVE RESULT
+```
+
+### Steps
 
 1.
 2.
 3.
 4.
+5.
 
 ---
 
 ## ✦ Reproduction Frequency
 
-How often does the problem occur?
+How consistently does the problem occur?
 
 - [ ] Every time
 - [ ] Frequently
 - [ ] Sometimes
 - [ ] Rarely
-- [ ] Only once
+- [ ] Happened once
 - [ ] Unable to reproduce consistently
 
 ---
 
 ## ✦ Environment
 
-Complete only the details that are relevant.
+Complete the fields that are relevant.
 
 ### Device
 
@@ -218,10 +311,10 @@ Brave
 Browser Version:
 ```
 
-### Screen / Viewport
+### Screen / Viewport Size
 
 ```text
-Screen or viewport size:
+Screen or viewport:
 ```
 
 ### Gaming Horizon Version
@@ -234,16 +327,16 @@ Version:
 
 ---
 
-## ✦ Browser-Specific Behavior
+## ✦ Browser Comparison
 
-Does the issue occur in another browser?
+Does the problem occur in other browsers?
 
 - [ ] Yes
 - [ ] No
 - [ ] Not tested
 - [ ] Not applicable
 
-Additional details:
+Details:
 
 ```text
 Browser comparison:
@@ -253,7 +346,7 @@ Browser comparison:
 
 ## ✦ Responsive Behavior
 
-Does the issue depend on screen size or device type?
+Does the problem depend on screen size?
 
 - [ ] Desktop only
 - [ ] Tablet only
@@ -271,74 +364,65 @@ Responsive behavior:
 
 ---
 
-## ✦ Error Messages
+## ✦ Error Message
 
-<!--
-Paste only relevant error messages.
-
-Remove secrets, tokens, personal information, private URLs, credentials,
-or confidential values before posting.
--->
+Paste only relevant error information.
 
 ```text
 Paste relevant error output here.
 ```
 
-If there is no visible error message, write:
+If no error is shown:
 
 ```text
 No visible error message.
 ```
 
+> [!WARNING]
+> Remove passwords, tokens, secrets, private URLs, API credentials,
+> session values, or personal information before posting logs.
+
 ---
 
 ## ✦ Console Output
 
-<!--
 Optional.
 
-Include only relevant browser-console output if it helps reproduce or diagnose
-the problem.
-
-NEVER include:
-- API keys
-- tokens
-- passwords
-- private credentials
-- session values
-- private user data
--->
-
 ```text
-Paste relevant console output here.
+Paste relevant browser-console output here.
 ```
+
+Include only information that helps investigate the problem.
+
+Do not paste enormous unrelated logs.
 
 ---
 
 ## ✦ Screenshots / Recordings
 
-<!--
-Optional.
+Attach screenshots or recordings when they help demonstrate the problem.
 
-Add screenshots or recordings when they help explain the problem.
+Before uploading, verify that the media does **not** expose:
 
-Before uploading, verify that they do not expose:
-- passwords
-- email addresses
-- phone numbers
-- access tokens
-- API keys
-- session data
-- personal information
-- private messages
-- developer secrets
--->
+```text
+PASSWORDS
+API KEYS
+ACCESS TOKENS
+PRIVATE EMAILS
+PHONE NUMBERS
+PRIVATE MESSAGES
+ACCOUNT IDENTIFIERS
+SESSION INFORMATION
+RECOVERY CODES
+DEVELOPER SECRETS
+PRIVATE USER DATA
+```
 
-Attach visual evidence here if useful.
+Attach evidence here.
 
 ---
 
-## ✦ Regression
+## ✦ Regression Check
 
 Did this feature work correctly before?
 
@@ -347,28 +431,29 @@ Did this feature work correctly before?
 - [ ] Not sure
 - [ ] Not applicable
 
-If **Yes**, describe when you last remember it working:
+If **Yes**:
 
 ```text
-Previously working state:
+Last known working state:
 ```
 
 ---
 
-## ✦ Recent Changes
+## ✦ Recent Change
 
-Did the issue begin after a particular action or change?
+Did the problem begin after something changed?
 
 Examples:
 
 ```text
 Browser update
+Gaming Horizon update
 Navigation change
 Account sign-in
 Preference change
-Repository update
+Deployment
 Feature update
-New deployment
+Repository change
 ```
 
 Details:
@@ -396,40 +481,42 @@ Workaround:
 
 ## ✦ Impact
 
-How does this problem affect your use of Gaming Horizon?
+How does this bug affect the experience?
 
 - [ ] Blocks the affected experience completely
 - [ ] Major functionality is unavailable
-- [ ] Feature works partially
-- [ ] Visual / layout issue
-- [ ] Minor inconvenience
+- [ ] Feature works only partially
+- [ ] Causes incorrect behavior
+- [ ] Visual / layout problem
+- [ ] Performance problem
 - [ ] Accessibility problem
 - [ ] Documentation problem
 - [ ] Developer-experience problem
+- [ ] Minor inconvenience
 - [ ] Other
 
-Additional impact details:
+Additional details:
 
 ```text
 Impact:
 ```
 
 > [!NOTE]
-> Impact information helps with understanding the report. It does not
-> automatically determine repository priority.
+> Impact information helps us understand the report.
+> It does not automatically determine repository priority.
 
 ---
 
 ## ✦ Accessibility Impact
 
-Does this issue affect accessibility or the ability to use Gaming Horizon?
+Does this bug affect accessibility?
 
 - [ ] Yes
 - [ ] No
 - [ ] Not sure
 - [ ] Not applicable
 
-If yes, describe the impact:
+If yes:
 
 ```text
 Accessibility impact:
@@ -437,47 +524,48 @@ Accessibility impact:
 
 ---
 
-## ✦ Additional Context
+## ✦ Developer Impact
 
-<!--
-Add anything else that may help investigation.
+If this affects developer functionality, select what applies.
 
-Useful examples:
-- related issue numbers;
-- affected page or route;
-- specific interaction;
-- configuration details;
-- observations from another browser;
-- relevant documentation.
--->
+- [ ] API
+- [ ] API Reference
+- [ ] Webhooks
+- [ ] Developer Keys
+- [ ] Authentication
+- [ ] Build / Development Environment
+- [ ] GitHub Workflow
+- [ ] Not applicable
 
-Add additional context here.
+Details:
+
+```text
+Developer impact:
+```
 
 ---
 
 ## ✦ Related Issues
 
-<!--
 Optional.
-
-Example:
-#123
--->
 
 ```text
 Related issue(s):
+```
+
+Example:
+
+```text
+#123
 ```
 
 ---
 
 ## ✦ Possible Cause
 
-<!--
 Optional.
 
-Only include this if you have relevant technical context.
-It is completely fine to leave this blank.
--->
+You do not need to diagnose the problem to report it.
 
 ```text
 Possible cause:
@@ -487,11 +575,7 @@ Possible cause:
 
 ## ✦ Possible Solution
 
-<!--
 Optional.
-
-You do not need to know how to fix the problem in order to report it.
--->
 
 ```text
 Possible solution:
@@ -499,48 +583,134 @@ Possible solution:
 
 ---
 
-## ✦ Security Check
+## ✦ Additional Context
 
-Please confirm:
+Add anything else that may help investigation.
 
-- [ ] This report does **not** contain passwords.
-- [ ] This report does **not** contain API keys or access tokens.
-- [ ] This report does **not** contain private credentials.
-- [ ] This report does **not** expose private user information.
-- [ ] This report is appropriate for a public GitHub issue.
+Useful information can include:
 
-> [!WARNING]
-> If this report describes a security vulnerability that should not be
-> disclosed publicly, stop here and follow the repository's Security Policy
-> instead.
+```text
+Affected route
+Related feature
+Specific configuration
+Relevant documentation
+Browser differences
+Related pull request
+Additional reproduction details
+```
+
+Add additional context here.
+
+---
+
+## ✦ Security Validation
+
+Confirm before submitting:
+
+- [ ] No passwords are included.
+- [ ] No API keys are included.
+- [ ] No access tokens are included.
+- [ ] No private credentials are included.
+- [ ] No session secrets are included.
+- [ ] No private keys are included.
+- [ ] No private user information is included.
+- [ ] No sensitive webhook information is included.
+- [ ] This issue can safely be discussed publicly.
+
+> [!CAUTION]
+> Security vulnerabilities that require confidential disclosure should be
+> reported through the repository Security Policy instead of this template.
+
+---
+
+## ✦ Submission Quality
+
+A strong Gaming Horizon bug report should be:
+
+| Standard | Meaning |
+| --- | --- |
+| **Clear** | The problem is understandable |
+| **Specific** | The affected area is identified |
+| **Reproducible** | Steps are provided where possible |
+| **Relevant** | The problem relates to Gaming Horizon |
+| **Safe** | No sensitive information is exposed |
+| **Actionable** | Enough context exists for investigation |
+| **Respectful** | Discussion follows repository standards |
+| **Truthful** | Observation is separated from assumption |
 
 ---
 
 ## ✦ Final Checklist
 
-Before submitting, confirm:
+Before submitting:
 
-- [ ] I searched existing open and closed issues.
-- [ ] I used a clear and descriptive issue title.
-- [ ] I explained the expected behavior.
-- [ ] I explained the actual behavior.
-- [ ] I included reproduction steps where possible.
-- [ ] I included relevant environment information.
-- [ ] I removed sensitive or personal information.
-- [ ] I included screenshots or logs only when useful and safe.
-- [ ] I understand that additional information may be requested during triage.
-- [ ] I have reviewed this report before submitting it.
+- [ ] I searched for duplicate issues.
+- [ ] The title clearly describes the problem.
+- [ ] The affected area is identified.
+- [ ] Expected behavior is explained.
+- [ ] Actual behavior is explained.
+- [ ] Reproduction steps are included where possible.
+- [ ] Relevant environment information is included.
+- [ ] Screenshots or logs are useful and safe.
+- [ ] Sensitive information has been removed.
+- [ ] I reviewed the security validation section.
+- [ ] I understand that maintainers may request additional information.
+- [ ] I reviewed this report before submitting it.
+
+---
+
+## ✦ Issue Lifecycle
+
+```text
+REPORT
+  │
+  ▼
+TRIAGE
+  │
+  ├───────────────┐
+  │               │
+  ▼               ▼
+VALID        NEEDS INFORMATION
+  │               │
+  └───────┬───────┘
+          ▼
+      INVESTIGATE
+          │
+          ▼
+       RESOLVE
+          │
+          ▼
+        VERIFY
+          │
+          ▼
+         CLOSE
+```
+
+Possible outcomes may include:
+
+```text
+FIXED
+DUPLICATE
+NEEDS INFORMATION
+NOT REPRODUCIBLE
+OUT OF SCOPE
+DEFERRED
+RESOLVED
+```
+
+Actual repository labels determine formal GitHub classification.
 
 ---
 
 ## ✦ Contributor Conduct
 
-By participating in this issue, contributors are expected to follow the
-Gaming Horizon:
+Participation in Gaming Horizon issues is expected to follow:
 
-- `CODE_OF_CONDUCT.md`
-- `CONTRIBUTING.md`
-- `SECURITY.md`
+```text
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+SECURITY.md
+```
 
 Keep discussion:
 
@@ -556,11 +726,36 @@ CONSTRUCTIVE
 
 <div align="center">
 
-<strong>GAMING HORIZON</strong>
+<br>
+
+<img
+  src="https://raw.githubusercontent.com/thegaminghorizon/The-Gaming-Horizon/main/assets/branding/logos/gaming-horizon-logo-source.png"
+  width="280"
+  alt="The Gaming Horizon Official Logo"
+/>
+
+<br><br>
+
+<strong>THE GAMING HORIZON</strong>
 
 <br>
 
-<sub>Bug Reporting · Issue System v1.0.0</sub>
+<sub>Bug Report System · Version 1.0.0</sub>
+
+<br><br>
+
+<img
+  src="https://img.shields.io/badge/REPORT-CLEARLY-7C3AED?style=flat-square"
+  alt="Report Clearly"
+/>
+<img
+  src="https://img.shields.io/badge/REPRODUCE-ACCURATELY-2563EB?style=flat-square"
+  alt="Reproduce Accurately"
+/>
+<img
+  src="https://img.shields.io/badge/SECURITY-PROTECTED-0EA5E9?style=flat-square"
+  alt="Security Protected"
+/>
 
 <br><br>
 
@@ -571,5 +766,13 @@ CONSTRUCTIVE
 <strong>
 Help us understand the problem so we can improve what comes next.
 </strong>
+
+<br><br>
+
+<sub>
+Beyond the Horizon
+</sub>
+
+<br><br>
 
 </div>
