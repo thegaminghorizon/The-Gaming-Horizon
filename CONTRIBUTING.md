@@ -127,9 +127,9 @@ Never commit:
 <br>
 
 <img
-  src="assets/branding/logos/gaming-horizon-logo-source.png"
-  width="480"
-  alt="The Gaming Horizon Official Logo"
+src="assets/branding/logos/gaming-horizon-logo-source.png"
+width="480"
+alt="The Gaming Horizon Official Logo"
 />
 
 <br><br>
@@ -203,14 +203,10 @@ Never commit:
 <br><br>
 
 <code>UNDERSTAND</code>
-&nbsp; • &nbsp;
-<code>BUILD</code>
-&nbsp; • &nbsp;
-<code>VALIDATE</code>
-&nbsp; • &nbsp;
-<code>REVIEW</code>
-&nbsp; • &nbsp;
-<code>IMPROVE</code>
+  •   <code>BUILD</code>
+  •   <code>VALIDATE</code>
+  •   <code>REVIEW</code>
+  •   <code>IMPROVE</code>
 
 <br><br>
 
@@ -1174,7 +1170,7 @@ YES             NO
 EXTEND       NEW BOUNDARY
 CURRENT          │
                  ▼
-          JUSTIFIED?
+           JUSTIFIED?
 ```
 
 ---
@@ -1352,16 +1348,16 @@ ERROR FEEDBACK
 
 For interface changes:
 
-- [ ] Native semantic elements were preferred where appropriate
-- [ ] Controls are keyboard accessible
-- [ ] Focus is visible
-- [ ] Inputs have meaningful labels
-- [ ] Errors are understandable
-- [ ] Color is not the only state indicator
-- [ ] Contrast remains readable
-- [ ] Reduced-motion needs were considered
-- [ ] Mobile interaction remains usable
-- [ ] Images have useful alternative text where necessary
+* [ ] Native semantic elements were preferred where appropriate
+* [ ] Controls are keyboard accessible
+* [ ] Focus is visible
+* [ ] Inputs have meaningful labels
+* [ ] Errors are understandable
+* [ ] Color is not the only state indicator
+* [ ] Contrast remains readable
+* [ ] Reduced-motion needs were considered
+* [ ] Mobile interaction remains usable
+* [ ] Images have useful alternative text where necessary
 
 ---
 
@@ -2509,30 +2505,30 @@ when supported by the workflow.
 
 Before requesting review:
 
-- [ ] The change solves a clear problem
-- [ ] The scope is focused
-- [ ] The change fits Gaming Horizon direction
-- [ ] Browser-first principles are preserved
-- [ ] Existing architecture was considered
-- [ ] Unnecessary dependencies were avoided
-- [ ] TypeScript types remain meaningful
-- [ ] Runtime input is validated where needed
-- [ ] Accessibility was reviewed
-- [ ] Responsive behavior was reviewed
-- [ ] Performance impact was considered
-- [ ] Security impact was reviewed
-- [ ] Privacy impact was reviewed
-- [ ] Failure states were considered
-- [ ] Database changes use migrations
-- [ ] No secrets are included
-- [ ] No invented metrics are included
-- [ ] No unsupported partnership is implied
-- [ ] No future concept is presented as available
-- [ ] Relevant tests were performed
-- [ ] Applicable scripts pass
-- [ ] Documentation is updated
-- [ ] `CHANGELOG.md` was considered
-- [ ] Screenshots are safe if included
+* [ ] The change solves a clear problem
+* [ ] The scope is focused
+* [ ] The change fits Gaming Horizon direction
+* [ ] Browser-first principles are preserved
+* [ ] Existing architecture was considered
+* [ ] Unnecessary dependencies were avoided
+* [ ] TypeScript types remain meaningful
+* [ ] Runtime input is validated where needed
+* [ ] Accessibility was reviewed
+* [ ] Responsive behavior was reviewed
+* [ ] Performance impact was considered
+* [ ] Security impact was reviewed
+* [ ] Privacy impact was reviewed
+* [ ] Failure states were considered
+* [ ] Database changes use migrations
+* [ ] No secrets are included
+* [ ] No invented metrics are included
+* [ ] No unsupported partnership is implied
+* [ ] No future concept is presented as available
+* [ ] Relevant tests were performed
+* [ ] Applicable scripts pass
+* [ ] Documentation is updated
+* [ ] `CHANGELOG.md` was considered
+* [ ] Screenshots are safe if included
 
 ---
 
@@ -3052,20 +3048,20 @@ BUILD      REVIEW
 
 A Gaming Horizon contribution should aim to be:
 
-| # | Standard | Meaning |
-|:---:|---|---|
-| `01` | **Purposeful** | Solves a real problem |
-| `02` | **Focused** | Scope remains reviewable |
-| `03` | **Browser-First** | Supports the primary platform model |
-| `04` | **Accessible** | Supports broad participation |
-| `05` | **Secure** | Protects trust boundaries |
-| `06` | **Private** | Processes only necessary data |
-| `07` | **Performant** | Avoids unjustified runtime cost |
-| `08` | **Reliable** | Failure behavior is considered |
-| `09` | **Maintainable** | Future contributors can understand it |
-| `10` | **Tested** | Relevant validation has occurred |
-| `11` | **Documented** | Important behavior is explained |
-| `12` | **Truthful** | Does not invent project reality |
+|   #  | Standard          | Meaning                               |
+| :--: | ----------------- | ------------------------------------- |
+| `01` | **Purposeful**    | Solves a real problem                 |
+| `02` | **Focused**       | Scope remains reviewable              |
+| `03` | **Browser-First** | Supports the primary platform model   |
+| `04` | **Accessible**    | Supports broad participation          |
+| `05` | **Secure**        | Protects trust boundaries             |
+| `06` | **Private**       | Processes only necessary data         |
+| `07` | **Performant**    | Avoids unjustified runtime cost       |
+| `08` | **Reliable**      | Failure behavior is considered        |
+| `09` | **Maintainable**  | Future contributors can understand it |
+| `10` | **Tested**        | Relevant validation has occurred      |
+| `11` | **Documented**    | Important behavior is explained       |
+| `12` | **Truthful**      | Does not invent project reality       |
 
 ---
 
@@ -3073,17 +3069,17 @@ A Gaming Horizon contribution should aim to be:
 
 ```text
                          HIGH USER IMPACT
-                                │
-                                │
+                               │
+                               │
                      STRONG     │     HIGHEST
                      REVIEW     │      REVIEW
-                                │
+                               │
 LOW SYSTEM ACCESS ──────────────┼────────────── HIGH SYSTEM ACCESS
-                                │
-                                │
+                               │
+                               │
                      NORMAL     │      SECURITY /
                      REVIEW     │      ARCHITECTURE
-                                │
+                               │
                            LOW USER IMPACT
 ```
 
@@ -3408,30 +3404,30 @@ SUPPORT.md
 
 ## ✦ Related Documentation
 
-| Area | Document |
-| --- | --- |
-| Project overview | [`README.md`](README.md) |
-| Documentation index | [`docs/README.md`](docs/README.md) |
-| Project facts | [`docs/PROJECT-INFORMATION.md`](docs/PROJECT-INFORMATION.md) |
-| Vision | [`docs/VISION.md`](docs/VISION.md) |
-| Direction | [`docs/DIRECTION.md`](docs/DIRECTION.md) |
-| Ecosystem | [`docs/ECOSYSTEM.md`](docs/ECOSYSTEM.md) |
-| Platform | [`docs/PLATFORM.md`](docs/PLATFORM.md) |
-| Architecture | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) |
-| Development | [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md) |
-| Developers | [`docs/DEVELOPERS.md`](docs/DEVELOPERS.md) |
-| Beta | [`docs/BETA.md`](docs/BETA.md) |
-| Labs | [`docs/LABS.md`](docs/LABS.md) |
-| Brand | [`BRAND.md`](BRAND.md) |
-| Changelog | [`CHANGELOG.md`](CHANGELOG.md) |
-| Conduct | [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) |
-| Security | [`SECURITY.md`](SECURITY.md) |
-| Privacy | [`PRIVACY.md`](PRIVACY.md) |
-| Support | [`SUPPORT.md`](SUPPORT.md) |
-| License | [`LICENSE`](LICENSE) |
-| GitHub system | [`.github/GITHUB-SYSTEM.md`](.github/GITHUB-SYSTEM.md) |
-| Workflow system | [`.github/workflows/README.md`](.github/workflows/README.md) |
-| Application | [`THE-GAMING-HORIZON/README.md`](THE-GAMING-HORIZON/README.md) |
+| Area                | Document                                                       |
+| ------------------- | -------------------------------------------------------------- |
+| Project overview    | [`README.md`](README.md)                                       |
+| Documentation index | [`docs/README.md`](docs/README.md)                             |
+| Project facts       | [`docs/PROJECT-INFORMATION.md`](docs/PROJECT-INFORMATION.md)   |
+| Vision              | [`docs/VISION.md`](docs/VISION.md)                             |
+| Direction           | [`docs/DIRECTION.md`](docs/DIRECTION.md)                       |
+| Ecosystem           | [`docs/ECOSYSTEM.md`](docs/ECOSYSTEM.md)                       |
+| Platform            | [`docs/PLATFORM.md`](docs/PLATFORM.md)                         |
+| Architecture        | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)                 |
+| Development         | [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md)                   |
+| Developers          | [`docs/DEVELOPERS.md`](docs/DEVELOPERS.md)                     |
+| Beta                | [`docs/BETA.md`](docs/BETA.md)                                 |
+| Labs                | [`docs/LABS.md`](docs/LABS.md)                                 |
+| Brand               | [`BRAND.md`](BRAND.md)                                         |
+| Changelog           | [`CHANGELOG.md`](CHANGELOG.md)                                 |
+| Conduct             | [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)                     |
+| Security            | [`SECURITY.md`](SECURITY.md)                                   |
+| Privacy             | [`PRIVACY.md`](PRIVACY.md)                                     |
+| Support             | [`SUPPORT.md`](SUPPORT.md)                                     |
+| License             | [`LICENSE`](LICENSE)                                           |
+| GitHub system       | [`.github/GITHUB-SYSTEM.md`](.github/GITHUB-SYSTEM.md)         |
+| Workflow system     | [`.github/workflows/README.md`](.github/workflows/README.md)   |
+| Application         | [`THE-GAMING-HORIZON/README.md`](THE-GAMING-HORIZON/README.md) |
 
 ---
 
@@ -3552,9 +3548,9 @@ DOCUMENT        CONTRIBUTING.md
 <br>
 
 <img
-  src="assets/branding/logos/gaming-horizon-logo-source.png"
-  width="320"
-  alt="The Gaming Horizon Official Logo"
+src="assets/branding/logos/gaming-horizon-logo-source.png"
+width="320"
+alt="The Gaming Horizon Official Logo"
 />
 
 <br><br>
