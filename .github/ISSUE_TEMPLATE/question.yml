@@ -1,1 +1,925 @@
+# =============================================================================
+#                              GAMING HORIZON
+#                         BEYOND THE HORIZON
+# =============================================================================
+#
+#                     THE GAMING HORIZON QUESTION
+#
+#                   .github/ISSUE_TEMPLATE/question.yml
+#
+#                        ISSUE SYSTEM v1.0.0
+#
+# =============================================================================
+#
+# PURPOSE
+# -------
+# Provides a structured GitHub Issue Form for questions about:
+#
+# - The Gaming Horizon project;
+# - browser-first platform experience;
+# - features and interfaces;
+# - discovery;
+# - community;
+# - creators;
+# - competition;
+# - AI;
+# - developer experience;
+# - documentation;
+# - repository structure;
+# - contribution;
+# - development;
+# - assets and branding;
+# - project direction.
+#
+# IMPORTANT
+# ---------
+# This form is intended for questions suitable for public GitHub discussion.
+#
+# Do not use this form for:
+#
+# - confidential security vulnerabilities;
+# - passwords or credentials;
+# - private account information;
+# - personal support conversations;
+# - unrelated general discussions.
+#
+# =============================================================================
 
+
+name: "The Gaming Horizon Question"
+
+description: "Ask a structured question about The Gaming Horizon project, platform, repository, documentation, development, or ecosystem."
+
+title: "[QUESTION] "
+
+labels: []
+
+assignees: []
+
+
+body:
+
+  # ---------------------------------------------------------------------------
+  # INTRODUCTION
+  # ---------------------------------------------------------------------------
+
+  - type: markdown
+    attributes:
+      value: |
+        <div align="center">
+
+        ![The Gaming Horizon](https://raw.githubusercontent.com/thegaminghorizon/The-Gaming-Horizon/main/assets/branding/logos/gaming-horizon-logo-source.png)
+
+        # ❓ The Gaming Horizon Question
+
+        **Ask a clear, focused question about The Gaming Horizon.**
+
+        `ASK` • `CONTEXT` • `UNDERSTAND` • `DISCUSS` • `RESOLVE`
+
+        </div>
+
+        ---
+
+        Thank you for your interest in **The Gaming Horizon**.
+
+        Use this form for questions related to the project, repository,
+        browser-first experience, documentation, development systems,
+        ecosystem direction, or supported features.
+
+        > **Before continuing**
+        >
+        > - Use the **Bug Report** form for reproducible broken behavior.
+        > - Use the **Feedback** form for experience feedback or improvement observations.
+        > - Use an appropriate dedicated feature-request form when requesting new functionality.
+        > - Use the repository **Security Policy** for confidential vulnerability reports.
+
+
+  # ---------------------------------------------------------------------------
+  # BEFORE SUBMITTING
+  # ---------------------------------------------------------------------------
+
+  - type: checkboxes
+    id: preliminary-checks
+    attributes:
+      label: "Before You Ask"
+      description: "Please complete these checks before submitting your question."
+      options:
+
+        - label: "I searched existing open and closed issues for the same or a closely related question."
+          required: true
+
+        - label: "I checked relevant Gaming Horizon documentation where applicable."
+          required: true
+
+        - label: "My question relates directly to The Gaming Horizon or this repository."
+          required: true
+
+        - label: "This question is suitable for public GitHub discussion."
+          required: true
+
+        - label: "I have removed private, confidential, or sensitive information."
+          required: true
+
+
+  # ---------------------------------------------------------------------------
+  # QUESTION CATEGORY
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Question Category"
+      description: "Select the category that best matches your question."
+      multiple: false
+      options:
+        - "Project Overview"
+        - "Platform"
+        - "Website"
+        - "Game Discovery"
+        - "Community"
+        - "Creators"
+        - "Competition"
+        - "AI Companion"
+        - "Developer Experience"
+        - "API / Integrations"
+        - "Authentication / Account Experience"
+        - "Customization"
+        - "Accessibility"
+        - "Localization"
+        - "Support"
+        - "Development"
+        - "Roadmap"
+        - "Architecture"
+        - "Repository Structure"
+        - "Documentation"
+        - "Contribution"
+        - "GitHub Configuration"
+        - "GitHub Actions / Automation"
+        - "Assets"
+        - "Branding"
+        - "Screenshots"
+        - "Showcase Media"
+        - "Security Policy"
+        - "Licensing / Repository Policy"
+        - "Future Direction"
+        - "Other"
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # QUESTION TYPE
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: question-type
+    attributes:
+      label: "Question Type"
+      description: "What are you primarily trying to understand?"
+      multiple: false
+      options:
+        - "How does something work?"
+        - "Where can I find something?"
+        - "Why is something designed this way?"
+        - "What is currently supported?"
+        - "What is currently in development?"
+        - "How do I contribute?"
+        - "How is the repository organized?"
+        - "How should a feature or system be used?"
+        - "What documentation should I follow?"
+        - "What is the project direction?"
+        - "Is something planned?"
+        - "Technical implementation question"
+        - "Repository maintenance question"
+        - "Policy / governance question"
+        - "Other"
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # PRIMARY QUESTION
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: question
+    attributes:
+      label: "Your Question"
+      description: "Ask your main question clearly and directly."
+      placeholder: |
+        Example:
+
+        How is the Gaming Horizon discovery system intended to distinguish
+        broad website discovery experiences from focused game-card interactions?
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # SHORT SUMMARY
+  # ---------------------------------------------------------------------------
+
+  - type: input
+    id: short-summary
+    attributes:
+      label: "Short Summary"
+      description: "Summarize your question in one short sentence."
+      placeholder: "Example: Clarification about the discovery architecture."
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # AFFECTED / RELATED AREA
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: related-area
+    attributes:
+      label: "Related Gaming Horizon Area"
+      description: "Select all areas connected to your question."
+      multiple: true
+      options:
+        - "Gateway"
+        - "Homepage"
+        - "Navigation"
+        - "Search / Command Palette"
+        - "Game Discovery"
+        - "Game Cards"
+        - "Community"
+        - "Creators"
+        - "Competition"
+        - "AI Companion"
+        - "AI Suggestions"
+        - "Developer Experience"
+        - "Developer API"
+        - "API Reference"
+        - "Webhooks"
+        - "Developer Keys"
+        - "Authentication / Sign In"
+        - "Waitlist"
+        - "Localization"
+        - "Music Player"
+        - "Customization"
+        - "Support"
+        - "Roadmap"
+        - "Development"
+        - "Documentation"
+        - "Repository"
+        - "GitHub Infrastructure"
+        - "Branding"
+        - "Assets"
+        - "Screenshots"
+        - "Showcase"
+        - "Future Direction"
+        - "Not sure"
+        - "Other"
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # CONTEXT
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Context"
+      description: "Explain what led to your question and why you need clarification."
+      placeholder: |
+        Include useful background such as:
+
+        - what you were trying to do;
+        - what documentation you were reading;
+        - which feature or file you were reviewing;
+        - what part became unclear;
+        - what you already understand.
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # CURRENT UNDERSTANDING
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: current-understanding
+    attributes:
+      label: "Current Understanding"
+      description: "Explain what you currently believe the answer or behavior may be."
+      placeholder: |
+        Example:
+
+        My current understanding is that website screenshots document full
+        experiences while feature screenshots document focused interactions.
+
+        I am unsure how this distinction should apply to...
+    validations:
+      required: false
+
+
+  # ---------------------------------------------------------------------------
+  # WHAT IS UNCLEAR
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: unclear
+    attributes:
+      label: "What Is Unclear?"
+      description: "Identify the specific part that needs clarification."
+      placeholder: |
+        Be specific about the uncertainty.
+
+        Example:
+        I understand where developer screenshots are stored, but I am unsure
+        whether a full developer dashboard belongs under website or features.
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # QUESTION FLOW
+  # ---------------------------------------------------------------------------
+
+  - type: markdown
+    attributes:
+      value: |
+        ## ✦ Question Flow
+
+        A useful question usually follows a simple path:
+
+        ```text
+                           QUESTION
+                              │
+                              ▼
+                           CONTEXT
+                              │
+                              ▼
+                     CURRENT UNDERSTANDING
+                              │
+                              ▼
+                          UNCERTAINTY
+                              │
+                              ▼
+                         CLARIFICATION
+                              │
+                              ▼
+                         NEXT ACTION
+        ```
+
+        Providing context helps prevent answers based on assumptions.
+
+
+  # ---------------------------------------------------------------------------
+  # RELEVANT DOCUMENTATION
+  # ---------------------------------------------------------------------------
+
+  - type: input
+    id: documentation
+    attributes:
+      label: "Relevant Documentation"
+      description: "Optional — provide the path to any related Gaming Horizon documentation."
+      placeholder: "Example: assets/screenshots/README.md"
+    validations:
+      required: false
+
+
+  # ---------------------------------------------------------------------------
+  # RELEVANT FILE OR DIRECTORY
+  # ---------------------------------------------------------------------------
+
+  - type: input
+    id: repository-location
+    attributes:
+      label: "Relevant File / Directory"
+      description: "Optional — identify a repository path connected to your question."
+      placeholder: "Example: .github/ISSUE_TEMPLATE/"
+    validations:
+      required: false
+
+
+  # ---------------------------------------------------------------------------
+  # RELEVANT PAGE OR FEATURE
+  # ---------------------------------------------------------------------------
+
+  - type: input
+    id: page-feature
+    attributes:
+      label: "Relevant Page / Feature"
+      description: "Optional — identify the product page or feature involved."
+      placeholder: "Example: AI Companion"
+    validations:
+      required: false
+
+
+  # ---------------------------------------------------------------------------
+  # DOCUMENTATION CHECK
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: docs-check
+    attributes:
+      label: "Did You Check Existing Documentation?"
+      options:
+        - "Yes — but I still need clarification"
+        - "Yes — I could not find the answer"
+        - "Partially"
+        - "No relevant documentation was found"
+        - "Not applicable"
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # WHERE THEY LOOKED
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: searched-locations
+    attributes:
+      label: "Where Did You Look?"
+      description: "Optional — list documentation, issues, or repository areas you already checked."
+      placeholder: |
+        Example:
+
+        - README.md
+        - assets/README.md
+        - docs/
+        - Existing issues
+    validations:
+      required: false
+
+
+  # ---------------------------------------------------------------------------
+  # EXPECTED ANSWER TYPE
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: answer-type
+    attributes:
+      label: "What Kind of Answer Would Help?"
+      description: "Select the type of clarification you are looking for."
+      multiple: true
+      options:
+        - "Short explanation"
+        - "Detailed explanation"
+        - "Step-by-step guidance"
+        - "Documentation reference"
+        - "Repository path"
+        - "Architecture explanation"
+        - "Implementation explanation"
+        - "Policy clarification"
+        - "Project-scope clarification"
+        - "Current-status clarification"
+        - "Example"
+        - "Other"
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # PROJECT STATUS QUESTION
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: status-related
+    attributes:
+      label: "Does This Question Concern Project Status or Availability?"
+      options:
+        - "Yes"
+        - "No"
+        - "Not sure"
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # STATUS DETAILS
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: status-details
+    attributes:
+      label: "Status / Availability Details"
+      description: "Optional — if your question concerns what is live, in development, experimental, or planned, explain it here."
+      placeholder: |
+        Example:
+
+        I am trying to determine whether this interface represents a current
+        feature, an in-development preview, or a future concept.
+    validations:
+      required: false
+
+
+  # ---------------------------------------------------------------------------
+  # TECHNICAL QUESTION
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: technical
+    attributes:
+      label: "Is This a Technical Question?"
+      options:
+        - "Yes"
+        - "No"
+        - "Partially"
+        - "Not sure"
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # TECHNICAL CONTEXT
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: technical-context
+    attributes:
+      label: "Technical Context"
+      description: "Optional — provide technical details if they are relevant."
+      placeholder: |
+        Examples:
+
+        - component or route;
+        - configuration file;
+        - development environment;
+        - API area;
+        - GitHub workflow;
+        - dependency;
+        - build behavior.
+    validations:
+      required: false
+
+
+  # ---------------------------------------------------------------------------
+  # ENVIRONMENT
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: "Device"
+      description: "Optional — only needed when the question depends on the environment."
+      options:
+        - "Desktop"
+        - "Laptop"
+        - "Tablet"
+        - "Phone"
+        - "Other"
+        - "Not applicable"
+    validations:
+      required: false
+
+
+  - type: input
+    id: operating-system
+    attributes:
+      label: "Operating System"
+      description: "Optional."
+      placeholder: "Example: Windows 11"
+    validations:
+      required: false
+
+
+  - type: input
+    id: browser
+    attributes:
+      label: "Browser"
+      description: "Optional."
+      placeholder: "Example: Chrome"
+    validations:
+      required: false
+
+
+  - type: input
+    id: browser-version
+    attributes:
+      label: "Browser Version"
+      description: "Optional."
+      placeholder: "Example: 152"
+    validations:
+      required: false
+
+
+  # ---------------------------------------------------------------------------
+  # RELATED ISSUES
+  # ---------------------------------------------------------------------------
+
+  - type: input
+    id: related-issues
+    attributes:
+      label: "Related Issues"
+      description: "Optional — reference any related GitHub issues."
+      placeholder: "#123"
+    validations:
+      required: false
+
+
+  # ---------------------------------------------------------------------------
+  # RELATED PULL REQUESTS
+  # ---------------------------------------------------------------------------
+
+  - type: input
+    id: related-prs
+    attributes:
+      label: "Related Pull Requests"
+      description: "Optional — reference related pull requests."
+      placeholder: "#456"
+    validations:
+      required: false
+
+
+  # ---------------------------------------------------------------------------
+  # SUPPORTING MATERIAL
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: supporting-material
+    attributes:
+      label: "Screenshots or Supporting Material"
+      description: "Optional — attach safe supporting material when it helps explain the question."
+      placeholder: |
+        Drag screenshots here or provide additional information.
+
+        Do not include:
+        - passwords;
+        - API keys;
+        - access tokens;
+        - private messages;
+        - account credentials;
+        - personal information;
+        - private user data.
+    validations:
+      required: false
+
+
+  # ---------------------------------------------------------------------------
+  # PROJECT SCOPE
+  # ---------------------------------------------------------------------------
+
+  - type: markdown
+    attributes:
+      value: |
+        ## ✦ Project Scope
+
+        The Gaming Horizon is a **browser-first gaming ecosystem**.
+
+        Current project questions should not assume that Gaming Horizon is:
+
+        ```text
+        CLOUD GAMING
+        GAME STREAMING SERVER
+        DESKTOP GAME LAUNCHER
+        DOWNLOAD CLIENT
+        QUEUE-BASED STREAMING SERVICE
+        ```
+
+        unless maintained project documentation explicitly establishes such functionality.
+
+        Questions about possible future ideas are welcome when they are clearly
+        distinguished from current project capabilities.
+
+
+  - type: checkboxes
+    id: project-scope
+    attributes:
+      label: "Project Scope Confirmation"
+      options:
+
+        - label: "I understand that current functionality and future ideas should be treated separately."
+          required: true
+
+        - label: "My question does not present an unsupported capability as an existing Gaming Horizon feature."
+          required: true
+
+
+  # ---------------------------------------------------------------------------
+  # QUESTION VS OTHER ISSUE TYPES
+  # ---------------------------------------------------------------------------
+
+  - type: markdown
+    attributes:
+      value: |
+        ## ✦ Question vs Other Issue Types
+
+        Use **Question** when:
+
+        ```text
+        I NEED CLARIFICATION
+               │
+               ▼
+        I WANT TO UNDERSTAND
+               │
+               ▼
+        I NEED GUIDANCE
+        ```
+
+        Use **Bug Report** when:
+
+        ```text
+        EXPECTED BEHAVIOR
+                ≠
+        ACTUAL BEHAVIOR
+        ```
+
+        Use **Feedback** when:
+
+        ```text
+        CURRENT EXPERIENCE
+               │
+               ▼
+        OBSERVATION
+               │
+               ▼
+        POSSIBLE IMPROVEMENT
+        ```
+
+        Use a **Feature Request** when the primary purpose is proposing a new capability.
+
+
+  # ---------------------------------------------------------------------------
+  # SECURITY WARNING
+  # ---------------------------------------------------------------------------
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔐 Security
+
+        GitHub issues in this repository are public.
+
+        Never include:
+
+        ```text
+        PASSWORDS
+        API KEYS
+        ACCESS TOKENS
+        PRIVATE KEYS
+        SESSION SECRETS
+        DATABASE CREDENTIALS
+        RECOVERY CODES
+        WEBHOOK SECRETS
+        PRIVATE USER INFORMATION
+        ```
+
+        Confidential vulnerability reports should follow the repository
+        **Security Policy** instead.
+
+
+  # ---------------------------------------------------------------------------
+  # SECURITY VALIDATION
+  # ---------------------------------------------------------------------------
+
+  - type: checkboxes
+    id: security-validation
+    attributes:
+      label: "Security Validation"
+      options:
+
+        - label: "This question contains no passwords, credentials, API keys, access tokens, or private keys."
+          required: true
+
+        - label: "This question contains no confidential user information or private data."
+          required: true
+
+        - label: "This question can safely be discussed publicly."
+          required: true
+
+
+  # ---------------------------------------------------------------------------
+  # ACCURACY
+  # ---------------------------------------------------------------------------
+
+  - type: checkboxes
+    id: accuracy
+    attributes:
+      label: "Accuracy & Context"
+      options:
+
+        - label: "I have separated what I know from what I am assuming."
+          required: true
+
+        - label: "I am not presenting a possible future feature as an existing capability."
+          required: true
+
+        - label: "I am not claiming an unverified partnership, sponsorship, or endorsement."
+          required: true
+
+
+  # ---------------------------------------------------------------------------
+  # ADDITIONAL CONTEXT
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context"
+      description: "Optional — add anything else that could help someone answer your question accurately."
+      placeholder: |
+        Additional context...
+    validations:
+      required: false
+
+
+  # ---------------------------------------------------------------------------
+  # QUESTION LIFECYCLE
+  # ---------------------------------------------------------------------------
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        ## ✦ Question Lifecycle
+
+        ```text
+                              QUESTION
+                                 │
+                                 ▼
+                               TRIAGE
+                                 │
+                    ┌────────────┼────────────┐
+                    │            │            │
+                    ▼            ▼            ▼
+                 ANSWERABLE   NEEDS INFO   DUPLICATE
+                    │            │            │
+                    │            ▼            │
+                    │         CLARIFY         │
+                    │            │            │
+                    └────────────┼────────────┘
+                                 ▼
+                              DISCUSS
+                                 │
+                                 ▼
+                               ANSWER
+                                 │
+                                 ▼
+                            DOCUMENT / LINK
+                                 │
+                                 ▼
+                               CLOSE
+        ```
+
+        A question may also lead to:
+
+        - documentation improvements;
+        - a new dedicated issue;
+        - a feature discussion;
+        - clarification of current project scope;
+        - repository guidance;
+        - no further action when existing documentation already answers it.
+
+
+  # ---------------------------------------------------------------------------
+  # FINAL CHECKLIST
+  # ---------------------------------------------------------------------------
+
+  - type: checkboxes
+    id: final-checklist
+    attributes:
+      label: "Final Checklist"
+      description: "Review your question before submitting."
+      options:
+
+        - label: "My issue title clearly represents the question."
+          required: true
+
+        - label: "I asked one clear primary question."
+          required: true
+
+        - label: "I provided enough context to understand why I am asking."
+          required: true
+
+        - label: "I explained what is currently unclear."
+          required: true
+
+        - label: "Any screenshots or supporting material are safe to publish."
+          required: true
+
+        - label: "I reviewed this submission before sending it."
+          required: true
+
+
+  # ---------------------------------------------------------------------------
+  # FOOTER
+  # ---------------------------------------------------------------------------
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        <div align="center">
+
+        ### THE GAMING HORIZON
+
+        **Question System · Version 1.0.0**
+
+        `ASK` • `CONTEXT` • `UNDERSTAND` • `DISCUSS` • `RESOLVE`
+
+        **Ask clearly. Understand deeply. Build what comes next.**
+
+        *Beyond the Horizon*
+
+        </div>
