@@ -193,6 +193,18 @@ Contributing:
 Code of Conduct:
 ../CODE_OF_CONDUCT.md
 
+Brand:
+../BRAND.md
+
+Changelog:
+../CHANGELOG.md
+
+Roadmap:
+../ROADMAP.md
+
+Support:
+../SUPPORT.md
+
 License:
 ../LICENSE
 
@@ -201,6 +213,9 @@ Application:
 
 GitHub System:
 ../.github/GITHUB-SYSTEM.md
+
+Issue Template System:
+../.github/ISSUE_TEMPLATE/README.md
 
 Workflow System:
 ../.github/workflows/README.md
@@ -213,9 +228,9 @@ Workflow System:
 <br>
 
 <img
-  src="../assets/branding/logos/gaming-horizon-logo-source.png"
-  width="500"
-  alt="The Gaming Horizon Official Logo"
+src="../assets/branding/logos/gaming-horizon-logo-source.png"
+width="500"
+alt="The Gaming Horizon Official Logo"
 />
 
 <br><br>
@@ -261,7 +276,7 @@ Workflow System:
 </a>
 <a href="#project-truth">
   <img
-    src="https://img.shields.io/badge/TRUTH-CURRENT_≠_CONCEPT-0891B2?style=flat-square"
+    src="https://img.shields.io/badge/TRUTH-CURRENT_NOT_CONCEPT-0891B2?style=flat-square"
     alt="Current Is Not Concept"
   />
 </a>
@@ -307,7 +322,7 @@ Workflow System:
     alt="Enter Gaming Horizon"
   />
 </a>
-<a href="https://github.com/thegaminghorizon/THE-GAMING-HORIZON">
+<a href="https://github.com/thegaminghorizon/The-Gaming-Horizon">
   <img
     src="https://img.shields.io/badge/GITHUB-REPOSITORY-181717?style=for-the-badge&logo=github&logoColor=white"
     alt="Gaming Horizon Repository"
@@ -323,16 +338,11 @@ Workflow System:
 <br><br>
 
 <code>UNDERSTAND</code>
-&nbsp; • &nbsp;
-<code>EXPLORE</code>
-&nbsp; • &nbsp;
-<code>BUILD</code>
-&nbsp; • &nbsp;
-<code>VALIDATE</code>
-&nbsp; • &nbsp;
-<code>CONTRIBUTE</code>
-&nbsp; • &nbsp;
-<code>EVOLVE</code>
+  •   <code>EXPLORE</code>
+  •   <code>BUILD</code>
+  •   <code>VALIDATE</code>
+  •   <code>CONTRIBUTE</code>
+  •   <code>EVOLVE</code>
 
 <br><br>
 
@@ -690,25 +700,25 @@ This is a recommended reading sequence, not an implementation dependency.
 
 ## ✦ Documentation by Question
 
-| Question | Read |
-| --- | --- |
-| What is Gaming Horizon? | [`PROJECT-INFORMATION.md`](PROJECT-INFORMATION.md) |
-| Why should Gaming Horizon exist? | [`VISION.md`](VISION.md) |
-| Where is Gaming Horizon going? | [`DIRECTION.md`](DIRECTION.md) |
-| How do all major systems connect? | [`ECOSYSTEM.md`](ECOSYSTEM.md) |
-| What is the shared browser-first platform? | [`PLATFORM.md`](PLATFORM.md) |
-| How are technical systems structured? | [`ARCHITECTURE.md`](ARCHITECTURE.md) |
-| How should discovery work? | [`DISCOVERY.md`](DISCOVERY.md) |
-| How does community participation work? | [`COMMUNITY.md`](COMMUNITY.md) |
-| How do creators fit into the ecosystem? | [`CREATORS.md`](CREATORS.md) |
-| How should developer experiences work? | [`DEVELOPERS.md`](DEVELOPERS.md) |
-| How should competition work? | [`COMPETE.md`](COMPETE.md) |
-| How should AI be used? | [`AI.md`](AI.md) |
-| How is the project built and evolved? | [`DEVELOPMENT.md`](DEVELOPMENT.md) |
-| What does Beta mean? | [`BETA.md`](BETA.md) |
-| How are experiments handled? | [`LABS.md`](LABS.md) |
-| What are the official Gaming Horizon destinations? | [`NETWORK.md`](NETWORK.md) |
-| What future possibilities can be explored? | [`BEYOND.md`](BEYOND.md) |
+| Question                                           | Read                                               |
+| -------------------------------------------------- | -------------------------------------------------- |
+| What is Gaming Horizon?                            | [`PROJECT-INFORMATION.md`](PROJECT-INFORMATION.md) |
+| Why should Gaming Horizon exist?                   | [`VISION.md`](VISION.md)                           |
+| Where is Gaming Horizon going?                     | [`DIRECTION.md`](DIRECTION.md)                     |
+| How do all major systems connect?                  | [`ECOSYSTEM.md`](ECOSYSTEM.md)                     |
+| What is the shared browser-first platform?         | [`PLATFORM.md`](PLATFORM.md)                       |
+| How are technical systems structured?              | [`ARCHITECTURE.md`](ARCHITECTURE.md)               |
+| How should discovery work?                         | [`DISCOVERY.md`](DISCOVERY.md)                     |
+| How does community participation work?             | [`COMMUNITY.md`](COMMUNITY.md)                     |
+| How do creators fit into the ecosystem?            | [`CREATORS.md`](CREATORS.md)                       |
+| How should developer experiences work?             | [`DEVELOPERS.md`](DEVELOPERS.md)                   |
+| How should competition work?                       | [`COMPETE.md`](COMPETE.md)                         |
+| How should AI be used?                             | [`AI.md`](AI.md)                                   |
+| How is the project built and evolved?              | [`DEVELOPMENT.md`](DEVELOPMENT.md)                 |
+| What does Beta mean?                               | [`BETA.md`](BETA.md)                               |
+| How are experiments handled?                       | [`LABS.md`](LABS.md)                               |
+| What are the official Gaming Horizon destinations? | [`NETWORK.md`](NETWORK.md)                         |
+| What future possibilities can be explored?         | [`BEYOND.md`](BEYOND.md)                           |
 
 ---
 
@@ -1772,7 +1782,7 @@ https://github.com/thegaminghorizon
 Repository:
 
 ```text
-https://github.com/thegaminghorizon/THE-GAMING-HORIZON
+https://github.com/thegaminghorizon/The-Gaming-Horizon
 ```
 
 Discord:
@@ -2416,6 +2426,14 @@ Root documentation includes:
 ```text
 README.md
 
+BRAND.md
+
+CHANGELOG.md
+
+ROADMAP.md
+
+SUPPORT.md
+
 CONTRIBUTING.md
 
 CODE_OF_CONDUCT.md
@@ -2448,6 +2466,65 @@ PRIMARY REPOSITORY ENTRY POINT
 ```
 
 The root README should provide the broadest project overview and navigation.
+
+---
+
+## ✦ Brand
+
+```text
+../BRAND.md
+```
+
+Purpose:
+
+```text
+BRAND IDENTITY
+AND USAGE GUIDANCE
+```
+
+---
+
+## ✦ Changelog
+
+```text
+../CHANGELOG.md
+```
+
+Purpose:
+
+```text
+PROJECT CHANGE HISTORY
+```
+
+---
+
+## ✦ Roadmap
+
+```text
+../ROADMAP.md
+```
+
+Purpose:
+
+```text
+MAINTAINED PROJECT ROADMAP
+```
+
+Roadmap entries should remain distinct from completed or currently available features.
+
+---
+
+## ✦ Support
+
+```text
+../SUPPORT.md
+```
+
+Purpose:
+
+```text
+PROJECT SUPPORT GUIDANCE
+```
 
 ---
 
@@ -2636,6 +2713,21 @@ AND GITHUB SYSTEMS
 
 ---
 
+## ✦ Issue Template Documentation
+
+```text
+../.github/ISSUE_TEMPLATE/README.md
+```
+
+Purpose:
+
+```text
+ISSUE TEMPLATE SYSTEM
+AND ISSUE SUBMISSION GUIDANCE
+```
+
+---
+
 ## ✦ Workflow Documentation
 
 ```text
@@ -2707,22 +2799,22 @@ REVIEW
 
 For meaningful documentation changes:
 
-- [ ] Project facts are verified
-- [ ] Official launch date remains correct
-- [ ] Browser-first platform identity is preserved
-- [ ] Current and future states remain separated
-- [ ] Relative links are correct
-- [ ] Repository URLs use the correct repository
-- [ ] Official network destinations are correct
-- [ ] No invented metric is introduced
-- [ ] No unsupported partnership is implied
-- [ ] No unsupported technology is claimed
-- [ ] No generated showcase is presented as a real screenshot
-- [ ] No secrets are included
-- [ ] Accessibility of diagrams and tables was considered
-- [ ] Related documentation was updated where required
-- [ ] GitHub rendering remains readable
-- [ ] New diagrams answer a real question
+* [ ] Project facts are verified
+* [ ] Official launch date remains correct
+* [ ] Browser-first platform identity is preserved
+* [ ] Current and future states remain separated
+* [ ] Relative links are correct
+* [ ] Repository URLs use the correct repository
+* [ ] Official network destinations are correct
+* [ ] No invented metric is introduced
+* [ ] No unsupported partnership is implied
+* [ ] No unsupported technology is claimed
+* [ ] No generated showcase is presented as a real screenshot
+* [ ] No secrets are included
+* [ ] Accessibility of diagrams and tables was considered
+* [ ] Related documentation was updated where required
+* [ ] GitHub rendering remains readable
+* [ ] New diagrams answer a real question
 
 ---
 
@@ -2941,6 +3033,14 @@ From `docs/`:
 
 ```text
 ../README.md
+
+../BRAND.md
+
+../CHANGELOG.md
+
+../ROADMAP.md
+
+../SUPPORT.md
 
 ../SECURITY.md
 
@@ -3498,20 +3598,20 @@ Actual risk depends on context.
 
 ## ✦ Documentation Review Matrix
 
-| Area | Review Question |
-| --- | --- |
-| **Purpose** | Does this document have a clear responsibility? |
-| **Accuracy** | Are factual claims supported? |
-| **State** | Are current and future systems clearly separated? |
-| **Navigation** | Can readers find related documents? |
-| **Structure** | Is information organized logically? |
-| **Consistency** | Do core facts match other authoritative docs? |
-| **Security** | Is sensitive information protected? |
-| **Privacy** | Is private information excluded? |
-| **Accessibility** | Is content readable and navigable? |
-| **GitHub Rendering** | Does Markdown render safely? |
-| **Maintainability** | Can the document evolve cleanly? |
-| **Truthfulness** | Are concepts and implementation clearly distinguished? |
+| Area                 | Review Question                                        |
+| -------------------- | ------------------------------------------------------ |
+| **Purpose**          | Does this document have a clear responsibility?        |
+| **Accuracy**         | Are factual claims supported?                          |
+| **State**            | Are current and future systems clearly separated?      |
+| **Navigation**       | Can readers find related documents?                    |
+| **Structure**        | Is information organized logically?                    |
+| **Consistency**      | Do core facts match other authoritative docs?          |
+| **Security**         | Is sensitive information protected?                    |
+| **Privacy**          | Is private information excluded?                       |
+| **Accessibility**    | Is content readable and navigable?                     |
+| **GitHub Rendering** | Does Markdown render safely?                           |
+| **Maintainability**  | Can the document evolve cleanly?                       |
+| **Truthfulness**     | Are concepts and implementation clearly distinguished? |
 
 ---
 
@@ -3519,20 +3619,20 @@ Actual risk depends on context.
 
 A Gaming Horizon document should aim to be:
 
-| # | Standard | Meaning |
-|:---:|---|---|
-| `01` | **Accurate** | Claims are supported |
-| `02` | **Purposeful** | The document owns a clear responsibility |
-| `03` | **Structured** | Information has a logical hierarchy |
-| `04` | **Connected** | Related documentation is easy to find |
-| `05` | **Truthful** | Current, experimental, and future states remain distinct |
-| `06` | **Accessible** | Content is readable and navigable |
-| `07` | **Secure** | Sensitive information is excluded |
-| `08` | **Consistent** | Core project facts remain aligned |
-| `09` | **GitHub-Safe** | Rendering does not depend on fragile features |
-| `10` | **Maintainable** | Future updates remain manageable |
-| `11` | **Useful** | Documentation helps real project decisions |
-| `12` | **Evolvable** | Documentation can grow with Gaming Horizon |
+|   #  | Standard         | Meaning                                                  |
+| :--: | ---------------- | -------------------------------------------------------- |
+| `01` | **Accurate**     | Claims are supported                                     |
+| `02` | **Purposeful**   | The document owns a clear responsibility                 |
+| `03` | **Structured**   | Information has a logical hierarchy                      |
+| `04` | **Connected**    | Related documentation is easy to find                    |
+| `05` | **Truthful**     | Current, experimental, and future states remain distinct |
+| `06` | **Accessible**   | Content is readable and navigable                        |
+| `07` | **Secure**       | Sensitive information is excluded                        |
+| `08` | **Consistent**   | Core project facts remain aligned                        |
+| `09` | **GitHub-Safe**  | Rendering does not depend on fragile features            |
+| `10` | **Maintainable** | Future updates remain manageable                         |
+| `11` | **Useful**       | Documentation helps real project decisions               |
+| `12` | **Evolvable**    | Documentation can grow with Gaming Horizon               |
 
 ---
 
@@ -3633,8 +3733,12 @@ NETWORK.md
     │
     └── Connects official Website, GitHub, Discord, X, and Instagram
 
-ROOT GOVERNANCE
+ROOT DOCUMENTATION
     │
+    ├── BRAND.md
+    ├── CHANGELOG.md
+    ├── ROADMAP.md
+    ├── SUPPORT.md
     ├── CONTRIBUTING.md
     ├── CODE_OF_CONDUCT.md
     ├── SECURITY.md
@@ -3650,73 +3754,82 @@ APPLICATION
 
 GITHUB SYSTEM
     │
-    ├── .github/README.md
-    └── .github/workflows/README.md
+    └── .github/
+        ├── GITHUB-SYSTEM.md
+        ├── ISSUE_TEMPLATE/
+        │   └── README.md
+        └── workflows/
+            └── README.md
 ```
 
 ---
 
 ## ✦ Documentation Navigation Table
 
-| Document | Purpose | Open |
-| --- | --- | :---: |
-| **Project Information** | Central factual reference | [`PROJECT-INFORMATION.md`](PROJECT-INFORMATION.md) |
-| **Vision** | Why Gaming Horizon exists | [`VISION.md`](VISION.md) |
-| **Direction** | Where Gaming Horizon is going | [`DIRECTION.md`](DIRECTION.md) |
-| **Ecosystem** | How major systems connect | [`ECOSYSTEM.md`](ECOSYSTEM.md) |
-| **Platform** | Browser-first platform foundation | [`PLATFORM.md`](PLATFORM.md) |
-| **Architecture** | Technical architecture and boundaries | [`ARCHITECTURE.md`](ARCHITECTURE.md) |
-| **Discovery** | Search, exploration, and discovery | [`DISCOVERY.md`](DISCOVERY.md) |
-| **Community** | Community, support, trust, and participation | [`COMMUNITY.md`](COMMUNITY.md) |
-| **Creators** | Creator ecosystem and creative experiences | [`CREATORS.md`](CREATORS.md) |
-| **Developers** | Developer experience and contribution | [`DEVELOPERS.md`](DEVELOPERS.md) |
-| **Compete** | Competition, fairness, and progression | [`COMPETE.md`](COMPETE.md) |
-| **AI** | AI principles and intelligent experiences | [`AI.md`](AI.md) |
-| **Development** | Development lifecycle and engineering practices | [`DEVELOPMENT.md`](DEVELOPMENT.md) |
-| **Beta** | Pre-release validation | [`BETA.md`](BETA.md) |
-| **Labs** | Experimentation and prototypes | [`LABS.md`](LABS.md) |
-| **Network** | Official connected project presence | [`NETWORK.md`](NETWORK.md) |
-| **Beyond** | Future exploration | [`BEYOND.md`](BEYOND.md) |
+| Document                | Purpose                                         |                        Open                        |
+| ----------------------- | ----------------------------------------------- | :------------------------------------------------: |
+| **Project Information** | Central factual reference                       | [`PROJECT-INFORMATION.md`](PROJECT-INFORMATION.md) |
+| **Vision**              | Why Gaming Horizon exists                       |              [`VISION.md`](VISION.md)              |
+| **Direction**           | Where Gaming Horizon is going                   |           [`DIRECTION.md`](DIRECTION.md)           |
+| **Ecosystem**           | How major systems connect                       |           [`ECOSYSTEM.md`](ECOSYSTEM.md)           |
+| **Platform**            | Browser-first platform foundation               |            [`PLATFORM.md`](PLATFORM.md)            |
+| **Architecture**        | Technical architecture and boundaries           |        [`ARCHITECTURE.md`](ARCHITECTURE.md)        |
+| **Discovery**           | Search, exploration, and discovery              |           [`DISCOVERY.md`](DISCOVERY.md)           |
+| **Community**           | Community, support, trust, and participation    |           [`COMMUNITY.md`](COMMUNITY.md)           |
+| **Creators**            | Creator ecosystem and creative experiences      |            [`CREATORS.md`](CREATORS.md)            |
+| **Developers**          | Developer experience and contribution           |          [`DEVELOPERS.md`](DEVELOPERS.md)          |
+| **Compete**             | Competition, fairness, and progression          |             [`COMPETE.md`](COMPETE.md)             |
+| **AI**                  | AI principles and intelligent experiences       |                  [`AI.md`](AI.md)                  |
+| **Development**         | Development lifecycle and engineering practices |         [`DEVELOPMENT.md`](DEVELOPMENT.md)         |
+| **Beta**                | Pre-release validation                          |                [`BETA.md`](BETA.md)                |
+| **Labs**                | Experimentation and prototypes                  |                [`LABS.md`](LABS.md)                |
+| **Network**             | Official connected project presence             |             [`NETWORK.md`](NETWORK.md)             |
+| **Beyond**              | Future exploration                              |              [`BEYOND.md`](BEYOND.md)              |
 
 ---
 
 ## ✦ Repository Navigation
 
-| Destination | Path |
-| --- | --- |
-| Root README | [`../README.md`](../README.md) |
-| Application README | [`../THE-GAMING-HORIZON/README.md`](../THE-GAMING-HORIZON/README.md) |
-| Assets | [`../assets/README.md`](../assets/README.md) |
-| Branding | [`../assets/branding/README.md`](../assets/branding/README.md) |
-| Screenshots | [`../assets/screenshots/README.md`](../assets/screenshots/README.md) |
-| Showcase | [`../assets/showcase/README.md`](../assets/showcase/README.md) |
-| GitHub System | [`../.github/GITHUB-SYSTEM.md`](../.github/GITHUB-SYSTEM.md) |
-| Workflow System | [`../.github/workflows/README.md`](../.github/workflows/README.md) |
-| Contributing | [`../CONTRIBUTING.md`](../CONTRIBUTING.md) |
-| Code of Conduct | [`../CODE_OF_CONDUCT.md`](../CODE_OF_CONDUCT.md) |
-| Security | [`../SECURITY.md`](../SECURITY.md) |
-| Privacy | [`../PRIVACY.md`](../PRIVACY.md) |
-| Terms | [`../TERMS.md`](../TERMS.md) |
-| Copyright | [`../COPYRIGHT.md`](../COPYRIGHT.md) |
-| Third-Party Notices | [`../THIRD-PARTY-NOTICES.md`](../THIRD-PARTY-NOTICES.md) |
-| License | [`../LICENSE`](../LICENSE) |
+| Destination           | Path                                                                         |
+| --------------------- | ---------------------------------------------------------------------------- |
+| Root README           | [`../README.md`](../README.md)                                               |
+| Brand                 | [`../BRAND.md`](../BRAND.md)                                                 |
+| Changelog             | [`../CHANGELOG.md`](../CHANGELOG.md)                                         |
+| Roadmap               | [`../ROADMAP.md`](../ROADMAP.md)                                             |
+| Support               | [`../SUPPORT.md`](../SUPPORT.md)                                             |
+| Application README    | [`../THE-GAMING-HORIZON/README.md`](../THE-GAMING-HORIZON/README.md)         |
+| Assets                | [`../assets/README.md`](../assets/README.md)                                 |
+| Branding              | [`../assets/branding/README.md`](../assets/branding/README.md)               |
+| Screenshots           | [`../assets/screenshots/README.md`](../assets/screenshots/README.md)         |
+| Showcase              | [`../assets/showcase/README.md`](../assets/showcase/README.md)               |
+| GitHub System         | [`../.github/GITHUB-SYSTEM.md`](../.github/GITHUB-SYSTEM.md)                 |
+| Issue Template System | [`../.github/ISSUE_TEMPLATE/README.md`](../.github/ISSUE_TEMPLATE/README.md) |
+| Workflow System       | [`../.github/workflows/README.md`](../.github/workflows/README.md)           |
+| Contributing          | [`../CONTRIBUTING.md`](../CONTRIBUTING.md)                                   |
+| Code of Conduct       | [`../CODE_OF_CONDUCT.md`](../CODE_OF_CONDUCT.md)                             |
+| Security              | [`../SECURITY.md`](../SECURITY.md)                                           |
+| Privacy               | [`../PRIVACY.md`](../PRIVACY.md)                                             |
+| Terms                 | [`../TERMS.md`](../TERMS.md)                                                 |
+| Copyright             | [`../COPYRIGHT.md`](../COPYRIGHT.md)                                         |
+| Third-Party Notices   | [`../THIRD-PARTY-NOTICES.md`](../THIRD-PARTY-NOTICES.md)                     |
+| License               | [`../LICENSE`](../LICENSE)                                                   |
 
 ---
 
 ## ✦ Official Network
 
-| Destination | Official Link |
-| --- | --- |
-| Website | `https://thegaminghorizon.netlify.app/` |
-| Support Us | `https://thegaminghorizon.netlify.app/support-us` |
-| GitHub Organization | `https://github.com/thegaminghorizon` |
-| Repository | `https://github.com/thegaminghorizon/THE-GAMING-HORIZON` |
-| Issues | `https://github.com/thegaminghorizon/THE-GAMING-HORIZON/issues` |
-| Pull Requests | `https://github.com/thegaminghorizon/THE-GAMING-HORIZON/pulls` |
-| Actions | `https://github.com/thegaminghorizon/THE-GAMING-HORIZON/actions` |
-| Discord | `https://discord.gg/M5PeNThBwF` |
-| X | `https://x.com/gamingshorizon` |
-| Instagram | `https://www.instagram.com/thegaminghorizon/` |
+| Destination         | Official Link                                                    |
+| ------------------- | ---------------------------------------------------------------- |
+| Website             | `https://thegaminghorizon.netlify.app/`                          |
+| Support Us          | `https://thegaminghorizon.netlify.app/support-us`                |
+| GitHub Organization | `https://github.com/thegaminghorizon`                            |
+| Repository          | `https://github.com/thegaminghorizon/The-Gaming-Horizon`         |
+| Issues              | `https://github.com/thegaminghorizon/The-Gaming-Horizon/issues`  |
+| Pull Requests       | `https://github.com/thegaminghorizon/The-Gaming-Horizon/pulls`   |
+| Actions             | `https://github.com/thegaminghorizon/The-Gaming-Horizon/actions` |
+| Discord             | `https://discord.gg/M5PeNThBwF`                                  |
+| X                   | `https://x.com/gamingshorizon`                                   |
+| Instagram           | `https://www.instagram.com/thegaminghorizon/`                    |
 
 ---
 
@@ -3849,9 +3962,9 @@ DOCUMENT        docs/README.md
 <br>
 
 <img
-  src="../assets/branding/logos/gaming-horizon-logo-source.png"
-  width="340"
-  alt="The Gaming Horizon Official Logo"
+src="../assets/branding/logos/gaming-horizon-logo-source.png"
+width="340"
+alt="The Gaming Horizon Official Logo"
 />
 
 <br><br>
