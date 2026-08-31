@@ -200,7 +200,7 @@ Application:
 ../THE-GAMING-HORIZON/README.md
 
 GitHub System:
-../.github/README.md
+../.github/GITHUB-SYSTEM.md
 
 Workflow System:
 ../.github/workflows/README.md
@@ -775,7 +775,7 @@ Also read:
 ```text
 ../CONTRIBUTING.md
 ../SECURITY.md
-../.github/README.md
+../.github/GITHUB-SYSTEM.md
 ../.github/workflows/README.md
 ```
 
@@ -2624,7 +2624,7 @@ APPLICATION DOCUMENTATION
 ## ✦ GitHub System Documentation
 
 ```text
-../.github/README.md
+../.github/GITHUB-SYSTEM.md
 ```
 
 Purpose:
@@ -3690,7 +3690,7 @@ GITHUB SYSTEM
 | Branding | [`../assets/branding/README.md`](../assets/branding/README.md) |
 | Screenshots | [`../assets/screenshots/README.md`](../assets/screenshots/README.md) |
 | Showcase | [`../assets/showcase/README.md`](../assets/showcase/README.md) |
-| GitHub System | [`../.github/README.md`](../.github/README.md) |
+| GitHub System | [`../.github/GITHUB-SYSTEM.md`](../.github/GITHUB-SYSTEM.md) |
 | Workflow System | [`../.github/workflows/README.md`](../.github/workflows/README.md) |
 | Contributing | [`../CONTRIBUTING.md`](../CONTRIBUTING.md) |
 | Code of Conduct | [`../CODE_OF_CONDUCT.md`](../CODE_OF_CONDUCT.md) |
