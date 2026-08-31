@@ -5,7 +5,7 @@
 ===============================================================================
 
                         GITHUB REPOSITORY SYSTEM
-                           .github/README.md
+                       .github/GITHUB-SYSTEM.md
 
                          GITHUB SYSTEM v1.0.0
 
@@ -13,13 +13,27 @@
 
 DOCUMENT LOCATION
 -----------------
-.github/README.md
+.github/GITHUB-SYSTEM.md
 
 PURPOSE
 -------
 Documents the GitHub-native infrastructure used to support contribution,
 automation, issue management, pull requests, ownership, dependency updates,
 and repository maintenance for Gaming Horizon.
+
+IMPORTANT README RULE
+---------------------
+
+The GitHub system documentation intentionally uses:
+
+.github/GITHUB-SYSTEM.md
+
+instead of:
+
+.github/README.md
+
+This preserves the repository-root README.md as the primary README displayed
+on the GitHub repository homepage.
 
 RELATIVE PATH RULE
 ------------------
@@ -74,10 +88,6 @@ License:
 
 <br>
 
-<!-- ========================================================= -->
-<!--                       SYSTEM STATUS                       -->
-<!-- ========================================================= -->
-
 <a href="#status">
   <img
     src="https://img.shields.io/badge/STATUS-ACTIVE_DEVELOPMENT-7C3AED?style=flat-square"
@@ -110,10 +120,6 @@ License:
 </a>
 
 <br><br>
-
-<!-- ========================================================= -->
-<!--                    GITHUB COMPONENTS                     -->
-<!-- ========================================================= -->
 
 <a href="#issue-templates">
   <img
@@ -154,10 +160,6 @@ License:
 
 <br><br>
 
-<!-- ========================================================= -->
-<!--                  REPOSITORY GOVERNANCE                   -->
-<!-- ========================================================= -->
-
 <a href="#contributing">
   <img
     src="https://img.shields.io/badge/CONTRIBUTING-GUIDELINES-7C3AED?style=flat-square"
@@ -184,10 +186,6 @@ License:
 </a>
 
 <br><br>
-
-<!-- ========================================================= -->
-<!--                       QUICK LINKS                         -->
-<!-- ========================================================= -->
 
 <a href="https://thegaminghorizon.netlify.app/">
   <img
@@ -302,7 +300,7 @@ Current repository infrastructure includes:
 | CODEOWNERS | Configured |
 | Dependabot | Configured |
 | Funding configuration | Present |
-| GitHub documentation | Active |
+| GitHub system documentation | Active |
 | Contribution guidelines | Established |
 | Code of Conduct | Established |
 | Security policy | Established |
@@ -339,15 +337,6 @@ Example:
 1.0.0 → 2.0.0
 ```
 
-Possible reasons:
-
-```text
-Major workflow architecture redesign
-New contribution model
-Major repository governance change
-Complete automation-system restructuring
-```
-
 ### Minor
 
 Used when meaningful new GitHub infrastructure is introduced.
@@ -358,16 +347,6 @@ Example:
 1.0.0 → 1.1.0
 ```
 
-Possible reasons:
-
-```text
-New automated workflow
-New issue-template category
-New release automation
-New security automation
-New repository-management system
-```
-
 ### Patch
 
 Used for smaller improvements.
@@ -376,16 +355,6 @@ Example:
 
 ```text
 1.0.0 → 1.0.1
-```
-
-Possible reasons:
-
-```text
-README refinements
-Template wording changes
-Path corrections
-Configuration cleanup
-Minor workflow maintenance
 ```
 
 ---
@@ -399,19 +368,27 @@ Current `.github/` structure:
 ```text
 .github/
 │
-├── README.md
-│
 ├── ISSUE_TEMPLATE/
 │
 ├── workflows/
 │
 ├── CODEOWNERS
 ├── FUNDING.yml
+├── GITHUB-SYSTEM.md
 ├── PULL_REQUEST_TEMPLATE.md
 └── dependabot.yml
 ```
 
 Each component has a separate repository responsibility.
+
+The repository intentionally does **not** contain:
+
+```text
+.github/README.md
+```
+
+because GitHub may prioritize that file over the repository-root `README.md`
+when selecting the README displayed on the repository homepage.
 
 ---
 
@@ -419,11 +396,11 @@ Each component has a separate repository responsibility.
 
 | Resource | Responsibility |
 | --- | --- |
-| `README.md` | Documents GitHub repository infrastructure |
+| `GITHUB-SYSTEM.md` | Documents GitHub repository infrastructure |
 | `ISSUE_TEMPLATE/` | Structures issue creation |
 | `workflows/` | Contains GitHub Actions automation |
-| `CODEOWNERS` | Defines ownership/review responsibility |
-| `FUNDING.yml` | GitHub funding configuration |
+| `CODEOWNERS` | Defines ownership and review responsibility |
+| `FUNDING.yml` | Configures GitHub funding links |
 | `PULL_REQUEST_TEMPLATE.md` | Standardizes pull request submissions |
 | `dependabot.yml` | Configures automated dependency update checks |
 
@@ -466,21 +443,29 @@ Directory:
 ISSUE_TEMPLATE/
 ```
 
-Issue templates help contributors submit reports in a consistent and useful
-format.
+Current issue-template system:
 
-They can support areas such as:
+```text
+ISSUE_TEMPLATE/
+│
+├── README.md
+├── bug_report.md
+├── config.yml
+├── custom.md
+├── feature_request.md
+├── feedback.yml
+└── question.yml
+```
+
+The available templates support:
 
 ```text
 BUG REPORTS
 FEATURE REQUESTS
-DOCUMENTATION ISSUES
-IMPROVEMENT REQUESTS
-OTHER STRUCTURED REPORTS
+FEEDBACK
+QUESTIONS
+CUSTOM REPORTING
 ```
-
-The exact available templates are defined by the files inside
-`ISSUE_TEMPLATE/`.
 
 ---
 
@@ -515,58 +500,15 @@ ACTIONABLE
 RELEVANT
 ```
 
-Avoid issues that contain only:
+Avoid reports that contain only statements such as:
 
 ```text
 "broken"
 "not working"
 "fix this"
-"bad"
 ```
 
-without enough context to understand the problem.
-
----
-
-## ✦ Bug Reports
-
-A strong bug report should provide enough information to investigate the
-problem.
-
-Where applicable, include:
-
-```text
-SUMMARY
-EXPECTED BEHAVIOR
-ACTUAL BEHAVIOR
-REPRODUCTION STEPS
-ENVIRONMENT
-SCREENSHOTS
-ADDITIONAL CONTEXT
-```
-
-Do not include confidential information.
-
----
-
-## ✦ Feature Requests
-
-Feature requests should explain the problem or opportunity before proposing
-implementation details.
-
-Useful structure:
-
-```text
-PROBLEM
-WHY IT MATTERS
-PROPOSED DIRECTION
-ALTERNATIVES
-ADDITIONAL CONTEXT
-```
-
-A feature request is a proposal.
-
-It does not guarantee implementation.
+without enough context to investigate the problem.
 
 ---
 
@@ -615,8 +557,6 @@ WHETHER THERE ARE BREAKING CHANGES
 A pull request should be understandable without requiring the reviewer to
 reverse-engineer its purpose from the diff.
 
-A strong pull request communicates:
-
 ```text
 CONTEXT
        +
@@ -626,28 +566,6 @@ VALIDATION
        =
 REVIEWABLE CONTRIBUTION
 ```
-
----
-
-## ✦ Pull Request Scope
-
-Prefer pull requests that have one understandable purpose.
-
-Avoid combining unrelated changes such as:
-
-```text
-FEATURE IMPLEMENTATION
-+
-UNRELATED REFACTOR
-+
-DOCUMENTATION REWRITE
-+
-DEPENDENCY CHANGES
-```
-
-unless there is a clear technical reason they belong together.
-
-Smaller coherent changes are generally easier to review and maintain.
 
 ---
 
@@ -664,28 +582,7 @@ Before submitting a pull request, verify where applicable:
 - [ ] Dependencies are justified
 - [ ] Relevant checks pass
 - [ ] Screenshots are included for meaningful visual changes
-- [ ] The pull request description explains the change
-
----
-
-## ✦ Review Conversations
-
-Review conversations should remain focused on improving the contribution.
-
-Feedback should be:
-
-```text
-SPECIFIC
-TECHNICAL
-RESPECTFUL
-ACTIONABLE
-```
-
-Repository discussions remain subject to:
-
-```text
-../CODE_OF_CONDUCT.md
-```
+- [ ] Pull request description explains the change
 
 ---
 
@@ -699,23 +596,42 @@ Directory:
 workflows/
 ```
 
-GitHub Actions workflows automate repeatable repository operations.
-
-Possible responsibilities include:
+Current workflow structure:
 
 ```text
-BUILD VALIDATION
-LINTING
-TYPE CHECKING
-TESTING
-SECURITY CHECKS
-DEPENDENCY VALIDATION
-RELEASE AUTOMATION
-DEPLOYMENT SUPPORT
+workflows/
+│
+├── README.md
+├── ci.yml
+└── stale.yml
 ```
 
-Only workflows that actually exist should be treated as active repository
-automation.
+### `ci.yml`
+
+Provides the primary Gaming Horizon continuous-integration workflow.
+
+Current responsibilities include:
+
+```text
+PACKAGE VALIDATION
+DEPENDENCY INSTALLATION
+AVAILABLE QUALITY CHECKS
+PRODUCTION BUILD VALIDATION
+```
+
+The application commands run from:
+
+```text
+THE-GAMING-HORIZON/
+```
+
+### `stale.yml`
+
+Provides repository maintenance support for stale issues and pull requests.
+
+### `README.md`
+
+Documents the workflow system itself.
 
 ---
 
@@ -729,32 +645,13 @@ A useful automation should answer at least one question:
 
 ```text
 DOES THE PROJECT BUILD?
-IS THE CODE VALID?
+IS THE CONFIGURATION VALID?
 ARE DEPENDENCIES HEALTHY?
-IS THE CHANGE SAFE TO MERGE?
+IS THE CHANGE SAFE TO REVIEW?
 DOES A REPEATABLE TASK NEED AUTOMATION?
 ```
 
 Automation should not be added merely because GitHub Actions supports it.
-
----
-
-## ✦ Workflow Design
-
-A maintainable workflow should generally be:
-
-```text
-CLEAR
-PURPOSEFUL
-REPEATABLE
-SECURE
-FAST ENOUGH
-UNDERSTANDABLE
-MAINTAINABLE
-```
-
-Avoid workflows that are unnecessarily complicated or depend on undocumented
-behavior.
 
 ---
 
@@ -785,33 +682,7 @@ Prefer:
 MINIMUM REQUIRED ACCESS
 ```
 
-over:
-
-```text
-UNNECESSARY WRITE ACCESS
-```
-
-This reduces the impact of mistakes or compromised automation.
-
----
-
-## ✦ Workflow Changes
-
-Changes to GitHub Actions deserve the same review discipline as application
-code.
-
-Workflow updates can affect:
-
-```text
-BUILD SYSTEMS
-REPOSITORY PERMISSIONS
-SECRETS
-RELEASES
-AUTOMATION
-DEPENDENCY SECURITY
-```
-
-Review them carefully.
+over unnecessary write permissions.
 
 ---
 
@@ -825,65 +696,29 @@ File:
 CODEOWNERS
 ```
 
-`CODEOWNERS` identifies repository ownership or review responsibility for
-selected paths.
+`CODEOWNERS` identifies repository ownership and review responsibility.
 
-It can help GitHub determine who should be associated with review of changes
-to important areas.
-
-Typical responsibilities may include:
+The current ownership model uses:
 
 ```text
-SOURCE CODE
-DOCUMENTATION
-GITHUB CONFIGURATION
-SECURITY-SENSITIVE FILES
-BRANDING
-REPOSITORY POLICIES
+@thegaminghorizon
 ```
 
-The actual ownership rules are defined by the current contents of
-`CODEOWNERS`.
+as the repository owner.
 
----
-
-## ✦ Ownership Principle
-
-Ownership does not mean contributors cannot work on a file.
-
-It establishes responsibility for maintaining consistency and reviewing
-important changes.
+Important explicitly owned areas include:
 
 ```text
-CONTRIBUTOR
-     │
-     ▼
-PROPOSES CHANGE
-     │
-     ▼
-REVIEW
-     │
-     ▼
-OWNERSHIP / MAINTENANCE
-     │
-     ▼
-MERGE
+.github/
+THE-GAMING-HORIZON/
+assets/
+docs/
+repository policies
+deployment configuration
+database migrations
 ```
 
----
-
-## ✦ CODEOWNERS Maintenance
-
-Update `CODEOWNERS` when:
-
-```text
-REPOSITORY STRUCTURE CHANGES
-OWNERSHIP RESPONSIBILITIES CHANGE
-NEW CRITICAL DIRECTORIES ARE INTRODUCED
-OLD PATHS ARE REMOVED
-```
-
-Avoid stale paths that no longer correspond to repository content.
+Ownership rules should be updated whenever repository paths change.
 
 ---
 
@@ -897,31 +732,38 @@ Configuration:
 dependabot.yml
 ```
 
-Dependabot helps automate dependency-update discovery for configured package
-ecosystems.
+Dependabot currently monitors two dependency ecosystems.
 
-Its role is to reduce the manual effort required to identify outdated
-dependencies.
+### npm
 
----
-
-## ✦ Dependency Maintenance
-
-Dependency updates should still be reviewed.
-
-An automated pull request does not automatically mean an update is safe to
-merge.
-
-Review:
+Application directory:
 
 ```text
-CHANGELOG
-BREAKING CHANGES
-SECURITY IMPACT
-BUILD RESULTS
-LOCKFILE CHANGES
-PROJECT COMPATIBILITY
+/THE-GAMING-HORIZON
 ```
+
+This covers:
+
+```text
+THE-GAMING-HORIZON/package.json
+THE-GAMING-HORIZON/package-lock.json
+```
+
+### GitHub Actions
+
+Repository directory:
+
+```text
+/
+```
+
+This monitors actions referenced from:
+
+```text
+.github/workflows/
+```
+
+Automated dependency updates should still be reviewed before merging.
 
 ---
 
@@ -936,22 +778,7 @@ WHAT PROBLEM DOES IT SOLVE?
 IS IT ACTIVELY MAINTAINED?
 CAN THE PROJECT SOLVE THIS WITHOUT IT?
 WHAT IS THE SECURITY IMPACT?
-WHAT IS THE BUNDLE OR PERFORMANCE COST?
-```
-
----
-
-## ✦ Automated Updates
-
-Dependabot configuration may evolve as repository structure changes.
-
-Update it when:
-
-```text
-PACKAGE ECOSYSTEMS CHANGE
-DIRECTORY STRUCTURE CHANGES
-UPDATE FREQUENCY NEEDS CHANGE
-NEW DEPENDENCY SYSTEMS ARE INTRODUCED
+WHAT IS THE PERFORMANCE COST?
 ```
 
 ---
@@ -968,9 +795,17 @@ FUNDING.yml
 
 This file provides GitHub's repository funding configuration.
 
-Its presence should be treated as configuration only.
+Funding configuration remains separate from the user-facing Gaming Horizon
+Support Us experience.
 
-It should not be used to invent or imply unsupported claims regarding:
+User-facing Support Us page:
+
+```text
+https://thegaminghorizon.netlify.app/support-us
+```
+
+Its presence should not be used to invent or imply unsupported claims
+regarding:
 
 ```text
 REVENUE
@@ -979,24 +814,6 @@ PARTNERSHIPS
 FUNDING TOTALS
 FINANCIAL BACKERS
 ```
-
-The actual configuration in `FUNDING.yml` defines any enabled funding
-destinations.
-
----
-
-## ✦ Funding Integrity
-
-Funding information should remain:
-
-```text
-ACCURATE
-CURRENT
-TRANSPARENT
-AUTHORIZED
-```
-
-Do not add third-party funding destinations without appropriate authorization.
 
 ---
 
@@ -1010,24 +827,20 @@ Primary contribution guide:
 ../CONTRIBUTING.md
 ```
 
-The `.github/` infrastructure supports that document through:
+The `.github/` infrastructure supports the contribution process through:
 
 ```text
 ISSUE TEMPLATES
 PULL REQUEST TEMPLATE
 WORKFLOWS
 CODEOWNERS
+DEPENDABOT
 AUTOMATED MAINTENANCE
 ```
-
-Contributors should read the repository contribution guidance before making
-substantial changes.
 
 ---
 
 ## ✦ Contribution Flow
-
-A typical contribution may follow:
 
 ```text
 IDENTIFY
@@ -1049,9 +862,6 @@ REVIEW
 MERGE
 ```
 
-Not every change requires every stage, but the process should remain
-understandable.
-
 ---
 
 <a id="code-of-conduct"></a>
@@ -1062,17 +872,6 @@ Repository participation is governed by:
 
 ```text
 ../CODE_OF_CONDUCT.md
-```
-
-The goal is to maintain a productive environment for:
-
-```text
-PLAYERS
-CONTRIBUTORS
-CREATORS
-DEVELOPERS
-MAINTAINERS
-COMMUNITY MEMBERS
 ```
 
 Technical disagreement is acceptable.
@@ -1119,25 +918,6 @@ SUPABASE SERVICE ROLE KEYS
 
 ---
 
-## ✦ Sensitive Workflow Data
-
-GitHub automation may interact with privileged repository systems.
-
-Therefore:
-
-```text
-WORKFLOW SECURITY
-       │
-       ├── MINIMUM PERMISSIONS
-       ├── SAFE SECRET HANDLING
-       ├── TRUSTED ACTIONS
-       └── REVIEWED CHANGES
-```
-
-should remain part of workflow maintenance.
-
----
-
 ## ✦ Third-Party Actions
 
 Before introducing a third-party GitHub Action, consider:
@@ -1170,8 +950,8 @@ RESOLVE REVIEW CONVERSATIONS
 MAINTAIN CLEAN HISTORY
 ```
 
-Repository settings themselves are configured through GitHub and may not be
-represented directly by files in `.github/`.
+Repository rules are configured through GitHub and may not be represented
+directly by files inside `.github/`.
 
 ---
 
@@ -1229,21 +1009,30 @@ EASY MAINTENANCE
 
 ## ✦ File Naming
 
-GitHub-reserved filenames should use the names expected by GitHub.
+GitHub-recognized files and directories should use the names expected by
+GitHub.
 
-Current examples:
+Examples include:
 
 ```text
 CODEOWNERS
 FUNDING.yml
 PULL_REQUEST_TEMPLATE.md
 dependabot.yml
-README.md
+ISSUE_TEMPLATE/
+workflows/
 ```
 
-Do not rename GitHub-recognized files merely for visual consistency.
+The file:
 
-Function takes priority over naming aesthetics.
+```text
+GITHUB-SYSTEM.md
+```
+
+is project documentation rather than a GitHub-reserved configuration filename.
+
+It intentionally replaces the previous `.github/README.md` documentation file
+to preserve the root repository README as the homepage README.
 
 ---
 
@@ -1266,8 +1055,6 @@ MINIMAL DUPLICATION
 COMMENTS WHERE USEFUL
 ```
 
-YAML indentation errors can break automation.
-
 ---
 
 ## ✦ Markdown Standards
@@ -1282,17 +1069,14 @@ CONCISE WHERE POSSIBLE
 ACTIONABLE
 ```
 
-Markdown should help contributors complete a task rather than decorate the
-repository unnecessarily.
-
 ---
 
 ## ✦ Relative Paths
 
-This README lives at:
+This document lives at:
 
 ```text
-.github/README.md
+.github/GITHUB-SYSTEM.md
 ```
 
 Therefore repository-root resources require:
@@ -1344,15 +1128,16 @@ Therefore repository-root resources require:
 | Document | Official logo path |
 | --- | --- |
 | `/README.md` | `assets/branding/logos/gaming-horizon-logo-source.png` |
-| `/.github/README.md` | `../assets/branding/logos/gaming-horizon-logo-source.png` |
+| `/.github/GITHUB-SYSTEM.md` | `../assets/branding/logos/gaming-horizon-logo-source.png` |
 | `/assets/README.md` | `branding/logos/gaming-horizon-logo-source.png` |
 | `/docs/README.md` | `../assets/branding/logos/gaming-horizon-logo-source.png` |
+| `/THE-GAMING-HORIZON/README.md` | `../assets/branding/logos/gaming-horizon-logo-source.png` |
 
 ---
 
 ## ✦ Repository Policy Matrix
 
-From `.github/README.md`:
+From `.github/GITHUB-SYSTEM.md`:
 
 | Policy | Relative path |
 | --- | --- |
@@ -1378,14 +1163,14 @@ If GitHub does not recognize a configuration:
 
 1. Confirm the filename.
 2. Confirm capitalization.
-3. Confirm the file is inside `.github/` when required.
+3. Confirm the file is in the correct directory.
 4. Confirm YAML syntax where applicable.
 5. Confirm Markdown template syntax.
 6. Confirm GitHub supports the intended location.
 7. Confirm the configuration exists on the default branch.
 8. Check repository settings for related requirements.
 9. Review workflow logs when automation fails.
-10. Verify that required permissions are available.
+10. Verify required permissions are available.
 
 Common examples:
 
@@ -1395,6 +1180,7 @@ Common examples:
 .github/dependabot.yml
 .github/ISSUE_TEMPLATE/
 .github/workflows/
+.github/GITHUB-SYSTEM.md
 ```
 
 </details>
@@ -1438,41 +1224,9 @@ MONITOR
 | `ACTIVE` | Currently used |
 | `EXPERIMENTAL` | Under evaluation |
 | `PLANNED` | Intended but not implemented |
-| `REPLACED` | Superseded by a newer configuration |
+| `REPLACED` | Superseded by newer configuration |
 | `DISABLED` | Intentionally inactive |
 | `DEPRECATED` | Should no longer be used |
-
----
-
-## ✦ Adding GitHub Infrastructure
-
-Before adding a new configuration or automation:
-
-1. Define the repository problem it solves.
-2. Confirm GitHub supports the intended mechanism.
-3. Check whether existing configuration already solves the problem.
-4. Use minimum required permissions.
-5. Avoid embedding secrets.
-6. Keep configuration understandable.
-7. Test the behavior.
-8. Update this documentation where appropriate.
-9. Review interaction with branch protections.
-10. Commit with a meaningful message.
-
----
-
-## ✦ Updating GitHub Infrastructure
-
-When changing existing configuration:
-
-1. Understand current behavior.
-2. Review dependent workflows or templates.
-3. Make the smallest effective change.
-4. Validate syntax.
-5. Check security implications.
-6. Test when possible.
-7. Review GitHub output after merging.
-8. Update documentation if behavior changes.
 
 ---
 
@@ -1550,10 +1304,47 @@ GitHub infrastructure should grow alongside real repository requirements.
 │
 ├── CODEOWNERS
 ├── FUNDING.yml
+├── GITHUB-SYSTEM.md
 ├── PULL_REQUEST_TEMPLATE.md
-├── README.md
 └── dependabot.yml
 ```
+
+---
+
+## ✦ Application Relationship
+
+The main application is located outside `.github/`:
+
+```text
+The-Gaming-Horizon/
+│
+├── .github/
+│
+├── assets/
+├── docs/
+│
+├── THE-GAMING-HORIZON/
+│   ├── app/
+│   ├── components/
+│   ├── lib/
+│   ├── public/
+│   ├── supabase/
+│   ├── components.json
+│   ├── next.config.mjs
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── postcss.config.mjs
+│   ├── proxy.ts
+│   └── tsconfig.json
+│
+├── README.md
+├── ROADMAP.md
+├── SECURITY.md
+└── netlify.toml
+```
+
+GitHub infrastructure supports the application but remains structurally
+separate from it.
 
 ---
 
@@ -1584,8 +1375,9 @@ VERSION         1.0.0
 STATUS          Active Development
 TYPE            Repository Infrastructure
 PROJECT         Gaming Horizon
-LOCATION        .github/
+LOCATION        .github/GITHUB-SYSTEM.md
 REPOSITORY      The-Gaming-Horizon
+APPLICATION     THE-GAMING-HORIZON/
 ```
 
 ---
@@ -1594,7 +1386,7 @@ REPOSITORY      The-Gaming-Horizon
 
 ## ✦ License & Repository Policies
 
-Repository-level policies are located one directory above this README.
+Repository-level policies are located one directory above this document.
 
 ```text
 ../LICENSE
