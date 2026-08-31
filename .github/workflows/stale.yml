@@ -1,0 +1,308 @@
+# =============================================================================
+#                              GAMING HORIZON
+#                         BEYOND THE HORIZON
+# =============================================================================
+#
+#                         STALE MANAGEMENT
+#
+#                    .github/workflows/stale.yml
+#
+#                       WORKFLOW SYSTEM v1.0.0
+#
+# =============================================================================
+#
+# PURPOSE
+# -------
+# Automatically manages inactive GitHub issues and pull requests while
+# protecting work that is assigned, intentionally kept open, or still under
+# active development.
+#
+# POLICY
+# ------
+#
+# ISSUE / PULL REQUEST
+#          │
+#          ▼
+#     90 DAYS INACTIVE
+#          │
+#          ▼
+#      MARK AS STALE
+#          │
+#          ▼
+#     30 MORE DAYS
+#          │
+#      ┌───┴───┐
+#      ▼       ▼
+#   ACTIVITY   NONE
+#      │        │
+#      ▼        ▼
+#   UNSTALE   CLOSE
+#
+# =============================================================================
+
+
+name: "The Gaming Horizon Stale Management"
+
+
+# =============================================================================
+# TRIGGERS
+# =============================================================================
+
+on:
+
+  # Run once every day.
+  #
+  # GitHub Actions cron schedules use UTC.
+  schedule:
+    - cron: "30 1 * * *"
+
+  # Allow maintainers to run the workflow manually.
+  workflow_dispatch:
+
+
+# =============================================================================
+# PERMISSIONS
+# =============================================================================
+#
+# Stale management must be able to:
+#
+# - apply/remove issue labels;
+# - post issue comments;
+# - close inactive issues;
+# - apply/remove pull-request labels;
+# - post pull-request comments;
+# - close inactive pull requests.
+#
+
+permissions:
+  issues: write
+  pull-requests: write
+
+
+# =============================================================================
+# CONCURRENCY
+# =============================================================================
+#
+# Prevent multiple stale-management runs from operating simultaneously.
+#
+
+concurrency:
+  group: "gaming-horizon-stale-management"
+  cancel-in-progress: false
+
+
+# =============================================================================
+# JOBS
+# =============================================================================
+
+jobs:
+
+  stale:
+
+    name: "Manage Inactive Issues & Pull Requests"
+
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 15
+
+    # Prevent this workflow from operating if the repository is forked.
+    if: github.repository == 'thegaminghorizon/The-Gaming-Horizon'
+
+
+    steps:
+
+      # =========================================================================
+      # STALE MANAGEMENT
+      # =========================================================================
+
+      - name: "Process inactive issues and pull requests"
+
+        uses: actions/stale@v11
+
+        with:
+
+          # ---------------------------------------------------------------------
+          # AUTHENTICATION
+          # ---------------------------------------------------------------------
+
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+
+          # ---------------------------------------------------------------------
+          # OPERATIONS
+          # ---------------------------------------------------------------------
+          #
+          # Maximum number of API-changing operations performed during one run.
+          #
+
+          operations-per-run: 100
+
+
+          # ---------------------------------------------------------------------
+          # GENERAL BEHAVIOR
+          # ---------------------------------------------------------------------
+
+          # Remove the stale label automatically when new activity occurs.
+          remove-stale-when-updated: true
+
+          # Protect anything currently assigned to someone.
+          exempt-all-assignees: true
+
+          # Protect issues and pull requests connected to milestones.
+          exempt-all-milestones: true
+
+
+          # =====================================================================
+          # ISSUES
+          # =====================================================================
+
+          # Mark an issue stale after 90 days without activity.
+          days-before-issue-stale: 90
+
+          # Close it after another 30 days without activity.
+          days-before-issue-close: 30
+
+          stale-issue-label: "stale"
+
+
+          # ---------------------------------------------------------------------
+          # ISSUE EXEMPTIONS
+          # ---------------------------------------------------------------------
+          #
+          # Issues carrying any of these labels will not be automatically
+          # considered stale.
+          #
+          # Labels that do not yet exist simply become useful once created.
+          #
+
+          exempt-issue-labels: "no-stale,keep-open,pinned,security"
+
+
+          # ---------------------------------------------------------------------
+          # ISSUE STALE MESSAGE
+          # ---------------------------------------------------------------------
+
+          stale-issue-message: |
+            ## ⏳ This issue has become inactive
+
+            This issue has been automatically marked as **stale** because it has not received activity for **90 days**.
+
+            If this issue is still relevant to **The Gaming Horizon**, please add an update, clarification, new reproduction information, or other useful context.
+
+            Any meaningful activity will automatically remove the stale status.
+
+            If no further activity occurs within **30 days**, this issue may be automatically closed.
+
+            Thank you for helping keep The Gaming Horizon issue tracker focused, useful, and maintainable.
+
+            — **The Gaming Horizon Automation**
+
+
+          # ---------------------------------------------------------------------
+          # ISSUE CLOSE MESSAGE
+          # ---------------------------------------------------------------------
+
+          close-issue-message: |
+            ## 🔒 Closed due to inactivity
+
+            This issue has been automatically closed after remaining inactive for **30 days** following its stale notice.
+
+            Closing an inactive issue does not necessarily mean that the original idea, report, or discussion was invalid.
+
+            If the matter becomes relevant again, updated information can be provided through an appropriate new issue or, where repository permissions allow, the discussion may be continued appropriately.
+
+            Thank you for contributing to **The Gaming Horizon**.
+
+            — **The Gaming Horizon Automation**
+
+
+          # =====================================================================
+          # PULL REQUESTS
+          # =====================================================================
+
+          # Mark pull requests stale after 90 days without activity.
+          days-before-pr-stale: 90
+
+          # Close stale pull requests after another 30 days.
+          days-before-pr-close: 30
+
+          stale-pr-label: "stale"
+
+
+          # ---------------------------------------------------------------------
+          # PULL REQUEST EXEMPTIONS
+          # ---------------------------------------------------------------------
+
+          exempt-pr-labels: "no-stale,keep-open,pinned"
+
+          # Draft pull requests often represent intentionally unfinished work.
+          exempt-draft-pr: true
+
+
+          # ---------------------------------------------------------------------
+          # PULL REQUEST STALE MESSAGE
+          # ---------------------------------------------------------------------
+
+          stale-pr-message: |
+            ## ⏳ This pull request has become inactive
+
+            This pull request has been automatically marked as **stale** because it has not received activity for **90 days**.
+
+            If development is continuing, please add an update, push new changes, or leave useful context about the current state of the work.
+
+            New activity will automatically remove the stale status.
+
+            If no further activity occurs within **30 days**, this pull request may be automatically closed.
+
+            Thank you for contributing to **The Gaming Horizon**.
+
+            — **The Gaming Horizon Automation**
+
+
+          # ---------------------------------------------------------------------
+          # PULL REQUEST CLOSE MESSAGE
+          # ---------------------------------------------------------------------
+
+          close-pr-message: |
+            ## 🔒 Pull request closed due to inactivity
+
+            This pull request has been automatically closed after remaining inactive for **30 days** following its stale notice.
+
+            The work may still be reconsidered in the future if development resumes and it remains aligned with the current direction of The Gaming Horizon.
+
+            Thank you for the time and effort contributed to the project.
+
+            — **The Gaming Horizon Automation**
+
+
+      # =========================================================================
+      # WORKFLOW SUMMARY
+      # =========================================================================
+
+      - name: "Create stale-management summary"
+
+        if: always()
+
+        shell: bash
+
+        run: |
+          {
+            echo "# 🕒 The Gaming Horizon Stale Management"
+            echo
+            echo "| Setting | Policy |"
+            echo "|---|---|"
+            echo "| Issue stale threshold | 90 days |"
+            echo "| Issue close threshold | +30 days |"
+            echo "| Pull request stale threshold | 90 days |"
+            echo "| Pull request close threshold | +30 days |"
+            echo "| Assigned work | Exempt |"
+            echo "| Milestones | Exempt |"
+            echo "| Draft pull requests | Exempt |"
+            echo "| Activity removes stale status | Yes |"
+            echo
+            echo "---"
+            echo
+            echo "**The Gaming Horizon · Workflow System v1.0.0**"
+            echo
+            echo "*Maintain what matters. Preserve active work. Keep the Horizon moving.*"
+          } >> "$GITHUB_STEP_SUMMARY"
