@@ -13,18 +13,28 @@
 #
 # OWNER
 # -----
-# GitHub Username:
+#
+# GitHub username:
 # @thegaminghorizon
 #
 # Repository:
-# THE-GAMING-HORIZON
+# The-Gaming-Horizon
+#
+# Default branch:
+# main
+#
+# Main application:
+# THE-GAMING-HORIZON/
 #
 # PURPOSE
 # -------
-# Defines review ownership across The Gaming Horizon repository.
 #
-# The CODEOWNERS system allows GitHub to automatically identify the
-# responsible owner when files are changed through pull requests.
+# Defines ownership and review responsibility across The Gaming Horizon
+# repository.
+#
+# Every file is owned by @thegaminghorizon by default. More specific entries
+# below document important repository systems and ensure ownership remains
+# explicit as the project evolves.
 #
 # =============================================================================
 
@@ -32,61 +42,35 @@
 # =============================================================================
 # DEFAULT REPOSITORY OWNERSHIP
 # =============================================================================
-#
-# Every repository file is owned by @thegaminghorizon unless a more
-# specific rule below applies.
-#
 
 * @thegaminghorizon
 
 
 # =============================================================================
-# GITHUB INFRASTRUCTURE
+# GITHUB SYSTEM
 # =============================================================================
 
 /.github/ @thegaminghorizon
 
-
-# =============================================================================
-# CODEOWNERS
-# =============================================================================
-
 /.github/CODEOWNERS @thegaminghorizon
+/.github/FUNDING.yml @thegaminghorizon
+/.github/GITHUB-SYSTEM.md @thegaminghorizon
+/.github/PULL_REQUEST_TEMPLATE.md @thegaminghorizon
+/.github/dependabot.yml @thegaminghorizon
 
 
 # =============================================================================
 # GITHUB WORKFLOWS
 # =============================================================================
 #
-# GitHub Actions are executable repository infrastructure and require
-# deliberate review.
+# Workflow changes affect repository automation and should always remain
+# explicitly owner-reviewed.
 #
 
 /.github/workflows/ @thegaminghorizon
-
-/.github/workflows/*.yml @thegaminghorizon
-/.github/workflows/*.yaml @thegaminghorizon
-
-
-# -----------------------------------------------------------------------------
-# Continuous Integration
-# -----------------------------------------------------------------------------
-
-/.github/workflows/ci.yml @thegaminghorizon
-
-
-# -----------------------------------------------------------------------------
-# Stale Management
-# -----------------------------------------------------------------------------
-
-/.github/workflows/stale.yml @thegaminghorizon
-
-
-# -----------------------------------------------------------------------------
-# Workflow Documentation
-# -----------------------------------------------------------------------------
-
 /.github/workflows/README.md @thegaminghorizon
+/.github/workflows/ci.yml @thegaminghorizon
+/.github/workflows/stale.yml @thegaminghorizon
 
 
 # =============================================================================
@@ -95,201 +79,98 @@
 
 /.github/ISSUE_TEMPLATE/ @thegaminghorizon
 
-
-# -----------------------------------------------------------------------------
-# Issue Template Documentation
-# -----------------------------------------------------------------------------
-
 /.github/ISSUE_TEMPLATE/README.md @thegaminghorizon
-
-
-# -----------------------------------------------------------------------------
-# Issue Chooser Configuration
-# -----------------------------------------------------------------------------
-
+/.github/ISSUE_TEMPLATE/bug_report.md @thegaminghorizon
 /.github/ISSUE_TEMPLATE/config.yml @thegaminghorizon
-
-
-# -----------------------------------------------------------------------------
-# Bug Reports
-# -----------------------------------------------------------------------------
-
-/.github/ISSUE_TEMPLATE/bugreport.md @thegaminghorizon
-
-
-# -----------------------------------------------------------------------------
-# Feature Requests
-# -----------------------------------------------------------------------------
-
+/.github/ISSUE_TEMPLATE/custom.md @thegaminghorizon
 /.github/ISSUE_TEMPLATE/feature_request.md @thegaminghorizon
-
-
-# -----------------------------------------------------------------------------
-# Feedback
-# -----------------------------------------------------------------------------
-
-/.github/ISSUE_TEMPLATE/feedback_request.md @thegaminghorizon
 /.github/ISSUE_TEMPLATE/feedback.yml @thegaminghorizon
-
-
-# -----------------------------------------------------------------------------
-# Questions
-# -----------------------------------------------------------------------------
-
 /.github/ISSUE_TEMPLATE/question.yml @thegaminghorizon
 
 
-# -----------------------------------------------------------------------------
-# Custom Issues
-# -----------------------------------------------------------------------------
-
-/.github/ISSUE_TEMPLATE/custom.md @thegaminghorizon
-
-
 # =============================================================================
-# PULL REQUEST SYSTEM
-# =============================================================================
-
-/.github/PULL_REQUEST_TEMPLATE.md @thegaminghorizon
-
-
-# =============================================================================
-# DEPENDENCY AUTOMATION
-# =============================================================================
-
-/.github/dependabot.yml @thegaminghorizon
-
-
-# =============================================================================
-# FUNDING CONFIGURATION
+# MAIN APPLICATION
 # =============================================================================
 #
-# GitHub funding configuration is separate from the Gaming Horizon website
-# Support Us page.
+# The primary Gaming Horizon browser application lives inside:
 #
-
-/.github/FUNDING.yml @thegaminghorizon
-
-
-# =============================================================================
-# GITHUB SYSTEM DOCUMENTATION
-# =============================================================================
-
-/.github/README.md @thegaminghorizon
-
-
-# =============================================================================
-# APPLICATION SOURCE
-# =============================================================================
-#
-# Main Gaming Horizon application source.
+# THE-GAMING-HORIZON/
 #
 
 /THE-GAMING-HORIZON/ @thegaminghorizon
 
 
-# =============================================================================
-# APPLICATION ROUTES
-# =============================================================================
+# -----------------------------------------------------------------------------
+# Application Routes
+# -----------------------------------------------------------------------------
 
 /THE-GAMING-HORIZON/app/ @thegaminghorizon
 
 
-# =============================================================================
-# COMPONENT SYSTEM
-# =============================================================================
+# -----------------------------------------------------------------------------
+# Component System
+# -----------------------------------------------------------------------------
 
 /THE-GAMING-HORIZON/components/ @thegaminghorizon
 
 
-# =============================================================================
-# SHARED APPLICATION LOGIC
-# =============================================================================
+# -----------------------------------------------------------------------------
+# Shared Application Logic
+# -----------------------------------------------------------------------------
 
 /THE-GAMING-HORIZON/lib/ @thegaminghorizon
 
 
-# =============================================================================
-# PUBLIC APPLICATION FILES
-# =============================================================================
+# -----------------------------------------------------------------------------
+# Public Application Assets
+# -----------------------------------------------------------------------------
 
 /THE-GAMING-HORIZON/public/ @thegaminghorizon
 
 
-# =============================================================================
-# DATABASE / SUPABASE
-# =============================================================================
+# -----------------------------------------------------------------------------
+# Supabase / Database
+# -----------------------------------------------------------------------------
 #
-# Database and migration changes should receive deliberate review.
+# Database schema and migration changes should receive deliberate review.
 #
 
 /THE-GAMING-HORIZON/supabase/ @thegaminghorizon
 /THE-GAMING-HORIZON/supabase/migrations/ @thegaminghorizon
 
 
-# =============================================================================
-# APPLICATION DOCUMENTATION
-# =============================================================================
+# -----------------------------------------------------------------------------
+# Application Documentation
+# -----------------------------------------------------------------------------
 
 /THE-GAMING-HORIZON/README.md @thegaminghorizon
 
 
 # =============================================================================
-# ROOT PACKAGE CONFIGURATION
+# APPLICATION PACKAGE SYSTEM
 # =============================================================================
 
-/package.json @thegaminghorizon
-/package-lock.json @thegaminghorizon
-
-
-# =============================================================================
-# NEXT.JS CONFIGURATION
-# =============================================================================
-
-/next.config.mjs @thegaminghorizon
+/THE-GAMING-HORIZON/package.json @thegaminghorizon
+/THE-GAMING-HORIZON/package-lock.json @thegaminghorizon
 
 
 # =============================================================================
-# TYPESCRIPT CONFIGURATION
+# APPLICATION CONFIGURATION
 # =============================================================================
 
-/tsconfig.json @thegaminghorizon
-
-
-# =============================================================================
-# POSTCSS CONFIGURATION
-# =============================================================================
-
-/postcss.config.mjs @thegaminghorizon
+/THE-GAMING-HORIZON/components.json @thegaminghorizon
+/THE-GAMING-HORIZON/next.config.mjs @thegaminghorizon
+/THE-GAMING-HORIZON/postcss.config.mjs @thegaminghorizon
+/THE-GAMING-HORIZON/proxy.ts @thegaminghorizon
+/THE-GAMING-HORIZON/tsconfig.json @thegaminghorizon
 
 
 # =============================================================================
-# ESLINT CONFIGURATION
-# =============================================================================
-
-/eslint.config.mjs @thegaminghorizon
-/eslint.config.js @thegaminghorizon
-
-
-# =============================================================================
-# COMPONENT CONFIGURATION
-# =============================================================================
-
-/components.json @thegaminghorizon
-
-
-# =============================================================================
-# PROXY CONFIGURATION
-# =============================================================================
-
-/proxy.ts @thegaminghorizon
-
-
-# =============================================================================
-# NETLIFY CONFIGURATION
+# DEPLOYMENT CONFIGURATION
 # =============================================================================
 #
-# Hosting configuration can affect the deployed Gaming Horizon website.
+# Netlify configuration intentionally remains at repository root because it
+# defines how Netlify locates and builds the nested application.
 #
 
 /netlify.toml @thegaminghorizon
@@ -302,58 +183,28 @@
 /assets/ @thegaminghorizon
 
 
-# =============================================================================
-# BRANDING SYSTEM
-# =============================================================================
+# -----------------------------------------------------------------------------
+# Branding
+# -----------------------------------------------------------------------------
 
 /assets/branding/ @thegaminghorizon
-
-
-# -----------------------------------------------------------------------------
-# Official Logos
-# -----------------------------------------------------------------------------
-
 /assets/branding/logos/ @thegaminghorizon
-
-
-# -----------------------------------------------------------------------------
-# Official Banners
-# -----------------------------------------------------------------------------
-
 /assets/branding/banners/ @thegaminghorizon
-
-
-# -----------------------------------------------------------------------------
-# Official Icons
-# -----------------------------------------------------------------------------
-
 /assets/branding/icons/ @thegaminghorizon
 
 
-# =============================================================================
-# SCREENSHOT SYSTEM
-# =============================================================================
+# -----------------------------------------------------------------------------
+# Screenshots
+# -----------------------------------------------------------------------------
 
 /assets/screenshots/ @thegaminghorizon
-
-
-# -----------------------------------------------------------------------------
-# Website Screenshots
-# -----------------------------------------------------------------------------
-
 /assets/screenshots/website/ @thegaminghorizon
-
-
-# -----------------------------------------------------------------------------
-# Feature Screenshots
-# -----------------------------------------------------------------------------
-
 /assets/screenshots/features/ @thegaminghorizon
 
 
-# =============================================================================
-# SHOWCASE SYSTEM
-# =============================================================================
+# -----------------------------------------------------------------------------
+# Showcase
+# -----------------------------------------------------------------------------
 
 /assets/showcase/ @thegaminghorizon
 
@@ -366,61 +217,20 @@
 
 
 # =============================================================================
-# ROOT README
+# ROOT PROJECT DOCUMENTATION
 # =============================================================================
 
 /README.md @thegaminghorizon
-
-
-# =============================================================================
-# CONTRIBUTING
-# =============================================================================
-
-/CONTRIBUTING.md @thegaminghorizon
-
-
-# =============================================================================
-# CODE OF CONDUCT
-# =============================================================================
-
+/BRAND.md @thegaminghorizon
+/CHANGELOG.md @thegaminghorizon
 /CODE_OF_CONDUCT.md @thegaminghorizon
-
-
-# =============================================================================
-# SECURITY
-# =============================================================================
-#
-# Security-policy changes should always receive explicit owner review.
-#
-
-/SECURITY.md @thegaminghorizon
-
-
-# =============================================================================
-# PRIVACY
-# =============================================================================
-
-/PRIVACY.md @thegaminghorizon
-
-
-# =============================================================================
-# TERMS
-# =============================================================================
-
-/TERMS.md @thegaminghorizon
-
-
-# =============================================================================
-# COPYRIGHT
-# =============================================================================
-
+/CONTRIBUTING.md @thegaminghorizon
 /COPYRIGHT.md @thegaminghorizon
-
-
-# =============================================================================
-# THIRD-PARTY NOTICES
-# =============================================================================
-
+/PRIVACY.md @thegaminghorizon
+/ROADMAP.md @thegaminghorizon
+/SECURITY.md @thegaminghorizon
+/SUPPORT.md @thegaminghorizon
+/TERMS.md @thegaminghorizon
 /THIRD-PARTY-NOTICES.md @thegaminghorizon
 
 
@@ -435,139 +245,156 @@
 
 
 # =============================================================================
-# FUTURE ROOT GOVERNANCE DOCUMENTS
+# REPOSITORY IGNORE POLICY
 # =============================================================================
-#
-# These ownership rules become active automatically if these files are
-# introduced later.
-#
 
-/BRAND.md @thegaminghorizon
-/ROADMAP.md @thegaminghorizon
-/CHANGELOG.md @thegaminghorizon
-/SUPPORT.md @thegaminghorizon
+/.gitignore @thegaminghorizon
 
 
 # =============================================================================
 # ENVIRONMENT TEMPLATE FILES
 # =============================================================================
 #
-# Real secrets and private environment files should never be committed.
+# Real environment files and secrets must never be committed.
 #
-# Safe example/template files still remain owner-reviewed.
+# If safe example environment files are introduced later, ownership remains
+# explicit through the entries below.
 #
 
 /.env.example @thegaminghorizon
 /.env.local.example @thegaminghorizon
 
-
-# =============================================================================
-# SOURCE FILE FALLBACK OWNERSHIP
-# =============================================================================
-#
-# These patterns provide ownership for source files created outside currently
-# documented directories.
-#
-
-*.ts @thegaminghorizon
-*.tsx @thegaminghorizon
-
-*.js @thegaminghorizon
-*.jsx @thegaminghorizon
-*.mjs @thegaminghorizon
-
-*.json @thegaminghorizon
-
-*.css @thegaminghorizon
-
-*.md @thegaminghorizon
-
-*.yml @thegaminghorizon
-*.yaml @thegaminghorizon
+/THE-GAMING-HORIZON/.env.example @thegaminghorizon
+/THE-GAMING-HORIZON/.env.local.example @thegaminghorizon
 
 
 # =============================================================================
 # OWNERSHIP ARCHITECTURE
 # =============================================================================
 #
-#                         THE-GAMING-HORIZON
-#                                  │
-#                                  ▼
+#                         The-Gaming-Horizon
+#                                  |
+#                                  v
 #                         @thegaminghorizon
-#                                  │
-#          ┌───────────────────────┼───────────────────────┐
-#          │                       │                       │
-#          ▼                       ▼                       ▼
+#                                  |
+#          +-----------------------+-----------------------+
+#          |                       |                       |
+#          v                       v                       v
 #      APPLICATION              GITHUB                  ASSETS
-#          │                       │                       │
-#          ├── App                 ├── Workflows           ├── Branding
-#          ├── Components          ├── Issues              ├── Logos
-#          ├── Lib                 ├── Pull Requests       ├── Banners
-#          ├── Public              ├── CODEOWNERS          ├── Icons
-#          └── Supabase            └── Automation          ├── Screenshots
-#                                                          └── Showcase
-#
-#                                  │
-#                                  ▼
+#          |                       |                       |
+#          +-- app                 +-- workflows           +-- branding
+#          +-- components          +-- issues              +-- logos
+#          +-- lib                 +-- pull requests       +-- banners
+#          +-- public              +-- CODEOWNERS          +-- icons
+#          +-- Supabase            +-- Dependabot          +-- screenshots
+#          +-- configuration       +-- automation          +-- showcase
+#          |
+#          +-----------------------+
+#                                  |
+#                                  v
 #                           DOCUMENTATION
-#                                  │
-#                                  ▼
+#                                  |
+#                                  v
 #                           OWNER REVIEW
 #
-# =============================================================================
 #
+# =============================================================================
 # REVIEW FLOW
-# -----------
+# =============================================================================
 #
 #                         PULL REQUEST
-#                              │
-#                              ▼
-#                      CHANGED FILES
-#                              │
-#                              ▼
-#                       CODEOWNERS
-#                              │
-#                              ▼
+#                              |
+#                              v
+#                       CHANGED FILES
+#                              |
+#                              v
+#                        CODEOWNERS
+#                              |
+#                              v
 #                    @thegaminghorizon
-#                              │
-#                       ┌──────┴──────┐
-#                       ▼             ▼
+#                              |
+#                       +------+------+
+#                       |             |
+#                       v             v
 #                    APPROVE       REQUEST
 #                                  CHANGES
-#                       │             │
-#                       └──────┬──────┘
-#                              ▼
+#                       |             |
+#                       +------+------+
+#                              |
+#                              v
 #                        FINAL REVIEW
-#                              │
-#                              ▼
+#                              |
+#                              v
 #                            MERGE
 #
+#
+# =============================================================================
+# HIGH-IMPORTANCE AREAS
 # =============================================================================
 #
-# FUTURE TEAM OWNERSHIP
+# The following areas deserve particularly careful review:
+#
+# GITHUB AUTOMATION
+# -----------------
+#
+# .github/workflows/
+# .github/dependabot.yml
+# .github/CODEOWNERS
+#
+#
+# APPLICATION CONFIGURATION
+# -------------------------
+#
+# THE-GAMING-HORIZON/package.json
+# THE-GAMING-HORIZON/package-lock.json
+# THE-GAMING-HORIZON/next.config.mjs
+# THE-GAMING-HORIZON/tsconfig.json
+# THE-GAMING-HORIZON/postcss.config.mjs
+# THE-GAMING-HORIZON/proxy.ts
+#
+#
+# DATABASE
+# --------
+#
+# THE-GAMING-HORIZON/supabase/
+# THE-GAMING-HORIZON/supabase/migrations/
+#
+#
+# DEPLOYMENT
+# ----------
+#
+# netlify.toml
+#
+#
+# SECURITY / GOVERNANCE
 # ---------------------
 #
-# If The Gaming Horizon later introduces additional maintainers and GitHub
-# teams, this ownership model can evolve from:
-#
-#                         SINGLE OWNER
-#
-#                      @thegaminghorizon
-#
-#                              │
-#                              ▼
-#
-#                         TEAM MODEL
-#
-#                 ┌────────────┼────────────┐
-#                 ▼            ▼            ▼
-#             MAINTAINERS   DEVELOPERS    BRAND
-#                 │            │            │
-#                 ▼            ▼            ▼
-#              GitHub       Application    Assets
+# SECURITY.md
+# PRIVACY.md
+# TERMS.md
+# LICENSE
+# THIRD-PARTY-NOTICES.md
 #
 #
-# Possible future team syntax:
+# BRAND
+# -----
+#
+# BRAND.md
+# assets/branding/
+#
+#
+# =============================================================================
+# FUTURE TEAM OWNERSHIP
+# =============================================================================
+#
+# The current repository uses a single-owner model:
+#
+#                         @thegaminghorizon
+#
+# If real maintainers or GitHub teams are introduced later, this file may
+# evolve toward area-specific ownership.
+#
+# Example future structure:
 #
 # /.github/                     @thegaminghorizon/maintainers
 # /.github/workflows/           @thegaminghorizon/maintainers
@@ -580,33 +407,34 @@
 #
 # /SECURITY.md                  @thegaminghorizon/security
 #
-# Do not activate team entries until those teams actually exist and have
-# appropriate repository permissions.
+# Do not activate team ownership entries until those teams actually exist and
+# have appropriate repository access.
+#
 #
 # =============================================================================
-#
 # CODEOWNERS STANDARD
-# -------------------
+# =============================================================================
 #
-# 01 — Every repository area has an owner.
+# 01 — Every repository file inherits explicit ownership.
 #
-# 02 — Infrastructure changes require review.
+# 02 — GitHub infrastructure remains owner-reviewed.
 #
-# 03 — Security-sensitive files remain explicitly owned.
+# 03 — Workflow changes remain owner-reviewed.
 #
-# 04 — Branding sources remain protected.
+# 04 — Dependency automation remains owner-reviewed.
 #
-# 05 — Database migrations remain reviewed.
+# 05 — Application configuration remains owner-reviewed.
 #
-# 06 — Workflow changes remain reviewed.
+# 06 — Database migrations remain owner-reviewed.
 #
-# 07 — Governance documents remain reviewed.
+# 07 — Security and legal documentation remain owner-reviewed.
 #
-# 08 — New files inherit default ownership.
+# 08 — Branding sources remain owner-reviewed.
 #
-# 09 — Ownership may evolve as the project team grows.
+# 09 — New files inherit the repository default owner.
 #
-# 10 — Responsibility remains clear.
+# 10 — Ownership can evolve when the project team genuinely grows.
+#
 #
 # =============================================================================
 #
@@ -619,7 +447,10 @@
 # @thegaminghorizon
 #
 # REPOSITORY
-# THE-GAMING-HORIZON
+# The-Gaming-Horizon
+#
+# APPLICATION
+# THE-GAMING-HORIZON/
 #
 # REVIEW WHAT CHANGES.
 # PROTECT WHAT MATTERS.
