@@ -1797,7 +1797,7 @@ Repository operations are organized under:
 
 Documentation:
 
-[`.github/README.md`](.github/README.md)
+[`.github/GITHUB-SYSTEM.md`](.github/GITHUB-SYSTEM.md)
 
 ---
 
