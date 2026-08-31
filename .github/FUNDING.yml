@@ -1,171 +1,279 @@
 # =============================================================================
-#                               GAMING HORIZON
-#                          BEYOND THE HORIZON
+#                              GAMING HORIZON
+#                         BEYOND THE HORIZON
 # =============================================================================
 #
-#                             FUNDING CONFIGURATION
+#                              FUNDING
 #
-# This file controls the "Sponsor" button displayed by GitHub on supported
-# repository pages.
+#                           .github/FUNDING.yml
 #
-# Gaming Horizon is an independently developed browser-first gaming ecosystem.
-# Funding and community support may help with infrastructure, development,
-# tooling, testing, platform operations, and the continued evolution of the
-# project.
+#                       FUNDING SYSTEM v1.0.0
+#
+# =============================================================================
+#
+# THE GAMING HORIZON
+# ------------------
+#
+# Official repository funding configuration for The Gaming Horizon.
+#
+# This file powers GitHub's repository Sponsor / funding interface and
+# directs supporters toward the official Gaming Horizon Support Us experience.
+#
+#
+#                          SUPPORT FLOW
+#
+#                    THE GAMING HORIZON
+#                            │
+#                            ▼
+#                     GITHUB REPOSITORY
+#                            │
+#                            ▼
+#                        SUPPORT
+#                            │
+#                            ▼
+#                       FUNDING.yml
+#                            │
+#                            ▼
+#                 OFFICIAL SUPPORT US PAGE
+#
+#
+# OFFICIAL DESTINATION
+# --------------------
+#
+# https://thegaminghorizon.netlify.app/support-us
+#
+#
+# FUNDING PRINCIPLES
+# ------------------
+#
+# 01 — OFFICIAL
+#      Only destinations officially operated by The Gaming Horizon should
+#      appear in this file.
+#
+# 02 — DIRECT
+#      Supporters should be directed to a clear first-party destination.
+#
+# 03 — TRANSPARENT
+#      Do not list unverified sponsorship platforms or payment destinations.
+#
+# 04 — SECURE
+#      Never place credentials, API keys, payment secrets, tokens, or private
+#      financial configuration inside this repository.
+#
+# 05 — MAINTAINABLE
+#      Funding configuration should remain intentionally small and easy to
+#      verify.
+#
+# 06 — CONSISTENT
+#      The official Support Us page remains the central funding destination
+#      for the Gaming Horizon ecosystem.
+#
 #
 # IMPORTANT
-# -----------------------------------------------------------------------------
-# Only enable funding providers that are officially operated by Gaming Horizon.
-# Do not add unofficial accounts, temporary links, or third-party profiles
-# that are not controlled by the project.
+# ---------
 #
-# GitHub documentation:
-# .github/FUNDING.yml
+# FUNDING.yml is configuration, not a presentation document.
 #
+# GitHub controls how funding links are displayed in the repository interface.
+# Comments, branding text, diagrams, and documentation in this file are useful
+# for maintainers but are not rendered inside GitHub's Sponsor popup.
+#
+#
+# DO NOT ADD UNVERIFIED PROVIDERS
+# ------------------------------
+#
+# Do not enable any provider unless The Gaming Horizon officially operates
+# an account on that platform.
+#
+# Examples of supported GitHub FUNDING.yml providers may include:
+#
+# github
+# patreon
+# open_collective
+# ko_fi
+# tidelift
+# community_bridge
+# liberapay
+# issuehunt
+# polar
+# buy_me_a_coffee
+# thanks_dev
+#
+# These remain intentionally unused until officially configured.
+#
+#
+# SECURITY
+# --------
+#
+# This file must never contain:
+#
+# - passwords;
+# - payment credentials;
+# - private API keys;
+# - access tokens;
+# - private keys;
+# - bank information;
+# - payment processor secrets;
+# - webhook secrets;
+# - authentication credentials;
+# - private supporter information.
+#
+#
+# GOVERNANCE
+# ----------
+#
+# Any future funding destination should be reviewed for:
+#
+# - ownership;
+# - authenticity;
+# - security;
+# - project alignment;
+# - destination accuracy;
+# - long-term maintainability.
+#
+#
+#                         FUNDING ARCHITECTURE
+#
+#                    ┌──────────────────────┐
+#                    │ THE GAMING HORIZON   │
+#                    └──────────┬───────────┘
+#                               │
+#                               ▼
+#                    ┌──────────────────────┐
+#                    │  GITHUB REPOSITORY   │
+#                    └──────────┬───────────┘
+#                               │
+#                               ▼
+#                    ┌──────────────────────┐
+#                    │     FUNDING.yml      │
+#                    └──────────┬───────────┘
+#                               │
+#                               ▼
+#                    ┌──────────────────────┐
+#                    │   SUPPORT US PAGE    │
+#                    └──────────┬───────────┘
+#                               │
+#                               ▼
+#                    ┌──────────────────────┐
+#                    │ OFFICIAL EXPERIENCE  │
+#                    └──────────────────────┘
+#
+#
+# CURRENT STATE
+# -------------
+#
+# SYSTEM      FUNDING
+# VERSION     1.0.0
+# STATUS      ACTIVE
+# TYPE        FIRST-PARTY SUPPORT DESTINATION
+# PROVIDER    CUSTOM
+# DESTINATION OFFICIAL GAMING HORIZON WEBSITE
+#
+#
+# =============================================================================
+#                       ACTIVE FUNDING CONFIGURATION
 # =============================================================================
 
 
 # -----------------------------------------------------------------------------
-# ✦ GITHUB SPONSORS
+# GITHUB SPONSORS
 # -----------------------------------------------------------------------------
 #
-# Enable this only after the Gaming Horizon GitHub account has been approved
-# and activated for GitHub Sponsors.
+# Intentionally disabled.
 #
-# Example:
-# github: [thegaminghorizon]
+# Enable only if @thegaminghorizon is officially enrolled and configured
+# for GitHub Sponsors.
 #
-github:
+# github: thegaminghorizon
 
 
 # -----------------------------------------------------------------------------
-# ✦ PATREON
+# PATREON
 # -----------------------------------------------------------------------------
 #
-# Add an official Gaming Horizon Patreon username only if one is created.
+# Intentionally disabled until an official Gaming Horizon account exists.
 #
-# Example:
-# patreon: gaminghorizon
-#
-patreon:
+# patreon:
 
 
 # -----------------------------------------------------------------------------
-# ✦ OPEN COLLECTIVE
+# OPEN COLLECTIVE
 # -----------------------------------------------------------------------------
 #
-# Intended for projects operating an official Open Collective.
+# Intentionally disabled until an official Gaming Horizon account exists.
 #
-# Example:
-# open_collective: gaming-horizon
-#
-open_collective:
+# open_collective:
 
 
 # -----------------------------------------------------------------------------
-# ✦ KO-FI
+# KO-FI
 # -----------------------------------------------------------------------------
 #
-# Add an official Ko-fi username only if Gaming Horizon begins using Ko-fi.
+# Intentionally disabled until an official Gaming Horizon account exists.
 #
-# Example:
-# ko_fi: gaminghorizon
-#
-ko_fi:
+# ko_fi:
 
 
 # -----------------------------------------------------------------------------
-# ✦ TIDELIFT
+# POLAR
 # -----------------------------------------------------------------------------
 #
-# Relevant primarily when a supported Gaming Horizon package becomes available
-# through the Tidelift ecosystem.
+# Intentionally disabled until an official Gaming Horizon account exists.
 #
-# Example:
-# tidelift: npm/package-name
-#
-tidelift:
+# polar:
 
 
 # -----------------------------------------------------------------------------
-# ✦ COMMUNITY BRIDGE
+# BUY ME A COFFEE
 # -----------------------------------------------------------------------------
 #
-# Enable only if Gaming Horizon becomes an official Community Bridge project.
+# Intentionally disabled until an official Gaming Horizon account exists.
 #
-community_bridge:
+# buy_me_a_coffee:
 
 
-# -----------------------------------------------------------------------------
-# ✦ LIBERAPAY
-# -----------------------------------------------------------------------------
+# =============================================================================
+# OFFICIAL CUSTOM FUNDING DESTINATION
+# =============================================================================
 #
-# Add an official Liberapay username only if the project adopts the platform.
+# GitHub currently allows custom funding destinations through `custom`.
 #
-liberapay:
+# The official Gaming Horizon Support Us page is the authoritative destination
+# exposed from this repository.
+#
+# Keep the URL quoted because it contains ":".
+#
 
-
-# -----------------------------------------------------------------------------
-# ✦ ISSUEHUNT
-# -----------------------------------------------------------------------------
-#
-# Enable only if Gaming Horizon officially participates in IssueHunt.
-#
-issuehunt:
-
-
-# -----------------------------------------------------------------------------
-# ✦ LFX CROWDFUNDING
-# -----------------------------------------------------------------------------
-#
-# Intended for projects officially participating in LFX Crowdfunding.
-#
-lfx_crowdfunding:
-
-
-# -----------------------------------------------------------------------------
-# ✦ POLAR
-# -----------------------------------------------------------------------------
-#
-# Add the official Gaming Horizon Polar username if Polar is adopted for
-# project funding or issue-based rewards.
-#
-polar:
-
-
-# -----------------------------------------------------------------------------
-# ✦ BUY ME A COFFEE
-# -----------------------------------------------------------------------------
-#
-# Add an official Gaming Horizon Buy Me a Coffee username only if one exists.
-#
-buy_me_a_coffee:
-
-
-# -----------------------------------------------------------------------------
-# ✦ THANKS.DEV
-# -----------------------------------------------------------------------------
-#
-# Enable only if Gaming Horizon officially begins accepting support through
-# thanks.dev.
-#
-thanks_dev:
-
-
-# -----------------------------------------------------------------------------
-# ✦ GAMING HORIZON DIRECT SUPPORT
-# -----------------------------------------------------------------------------
-#
-# GitHub allows up to four custom sponsorship URLs.
-#
-# This is the preferred location for Gaming Horizon's own official support
-# page once its permanent public URL has been finalized.
-#
-# Example:
-#
-# custom:
-#   - https://your-official-support-page.example
-#
-# Do not publish temporary, preview, private, or unverified payment links.
-#
 custom:
+  - "https://thegaminghorizon.netlify.app/support-us"
+
+
+# =============================================================================
+# MAINTAINER CHECKLIST
+# =============================================================================
+#
+# Before modifying this file:
+#
+# [ ] Confirm the destination is officially operated by The Gaming Horizon.
+# [ ] Confirm the URL is correct.
+# [ ] Confirm the destination uses HTTPS.
+# [ ] Confirm no secrets are included.
+# [ ] Confirm no unverified funding service is represented as official.
+# [ ] Confirm the destination remains appropriate for repository funding.
+# [ ] Review the Sponsor interface after committing.
+#
+#
+# =============================================================================
+#
+# THE GAMING HORIZON
+#
+# FUNDING SYSTEM
+# VERSION 1.0.0
+#
+# SUPPORT THE POSSIBILITY.
+# SUPPORT THE BUILD.
+# SUPPORT WHAT COMES NEXT.
+#
+#                         BEYOND THE HORIZON
+#
+# =============================================================================
