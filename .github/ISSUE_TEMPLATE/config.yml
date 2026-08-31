@@ -1,1 +1,108 @@
+# =============================================================================
+#                              GAMING HORIZON
+#                         BEYOND THE HORIZON
+# =============================================================================
+#
+#                    ISSUE TEMPLATE CONFIGURATION
+#
+#                   .github/ISSUE_TEMPLATE/config.yml
+#
+#                        ISSUE SYSTEM v1.0.0
+#
+# =============================================================================
+#
+# PURPOSE
+# -------
+# Controls the GitHub issue-template chooser for The Gaming Horizon.
+#
+# This configuration:
+# - Disables unrestricted blank public issues.
+# - Directs contributors toward structured issue templates.
+# - Provides official support and security destinations.
+# - Keeps public issue reporting organized and maintainable.
+#
+# =============================================================================
 
+
+# -----------------------------------------------------------------------------
+# BLANK ISSUES
+# -----------------------------------------------------------------------------
+#
+# Disable completely blank issue creation.
+#
+# Contributors should use one of the structured Gaming Horizon templates
+# whenever possible.
+#
+# This improves:
+#
+# - issue quality;
+# - triage consistency;
+# - reproducibility;
+# - repository organization;
+# - contributor guidance.
+#
+
+blank_issues_enabled: false
+
+
+# -----------------------------------------------------------------------------
+# CONTACT LINKS
+# -----------------------------------------------------------------------------
+#
+# These links appear below the available GitHub issue templates.
+#
+# They should be used for destinations that are more appropriate than opening
+# a normal public repository issue.
+#
+
+contact_links:
+
+  # ---------------------------------------------------------------------------
+  # SECURITY
+  # ---------------------------------------------------------------------------
+  #
+  # Security vulnerabilities should not be disclosed through ordinary
+  # public issues when confidential reporting is appropriate.
+  #
+
+  - name: "🔐 The Gaming Horizon Security"
+    url: "https://github.com/thegaminghorizon/The-Gaming-Horizon/security/policy"
+    about: "Report or review security-related information using The Gaming Horizon Security Policy."
+
+
+  # ---------------------------------------------------------------------------
+  # SUPPORT
+  # ---------------------------------------------------------------------------
+  #
+  # Community or general support questions may be better handled through
+  # the official Gaming Horizon community rather than the repository
+  # issue tracker.
+  #
+
+  - name: "🎫 The Gaming Horizon Support"
+    url: "https://discord.gg/M5PeNThBwF"
+    about: "Get general help, community support, and assistance through the official Gaming Horizon Discord."
+
+
+  # ---------------------------------------------------------------------------
+  # WEBSITE
+  # ---------------------------------------------------------------------------
+  #
+  # Provides direct access to the current Gaming Horizon web experience.
+  #
+
+  - name: "🌐 The Gaming Horizon Website"
+    url: "https://thegaminghorizon.netlify.app/"
+    about: "Visit the official Gaming Horizon website and explore the current browser-first experience."
+
+
+  # ---------------------------------------------------------------------------
+  # REPOSITORY
+  # ---------------------------------------------------------------------------
+  #
+  # Gives contributors a direct way back to the main project repository.
+  #
+
+  - name: "✦ The Gaming Horizon Repository"
+    url: "https://github.com/thegaminghorizon/The-Gaming-Horizon"
+    about: "Return to the main Gaming Horizon repository for project documentation, development, and source information."
