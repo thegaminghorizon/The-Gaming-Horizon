@@ -1219,7 +1219,7 @@ with a clear distinction between showcase concepts and implemented UI.
 Added repository operations documentation under:
 
 ```text
-.github/README.md
+.github/GITHUB-SYSTEM.md
 ```
 
 ---
@@ -2444,7 +2444,7 @@ CURATED PROJECT HISTORY
 | Roadmap | `ROADMAP.md` |
 | Contributing | `CONTRIBUTING.md` |
 | Security | `SECURITY.md` |
-| GitHub System | `.github/README.md` |
+| GitHub System | `.github/GITHUB-SYSTEM.md` |
 | Workflow System | `.github/workflows/README.md` |
 
 ---
