@@ -1,1 +1,1046 @@
+# =============================================================================
+#                              GAMING HORIZON
+#                         BEYOND THE HORIZON
+# =============================================================================
+#
+#                    THE GAMING HORIZON FEEDBACK FORM
+#
+#                   .github/ISSUE_TEMPLATE/feedback.yml
+#
+#                        ISSUE SYSTEM v1.0.0
+#
+# =============================================================================
+#
+# PURPOSE
+# -------
+# Provides a structured GitHub Issue Form for feedback about:
+#
+# - product experience;
+# - usability;
+# - accessibility;
+# - visual design;
+# - discovery;
+# - AI experiences;
+# - developer experience;
+# - community;
+# - documentation;
+# - repository structure;
+# - contributor experience;
+# - project direction.
+#
+# =============================================================================
 
+
+name: "The Gaming Horizon Feedback"
+description: "Share structured feedback about The Gaming Horizon experience, interface, documentation, repository, accessibility, or development direction."
+title: "[FEEDBACK] "
+labels: []
+assignees: []
+
+
+body:
+
+  # ---------------------------------------------------------------------------
+  # INTRODUCTION
+  # ---------------------------------------------------------------------------
+
+  - type: markdown
+    attributes:
+      value: |
+        <div align="center">
+
+        ![The Gaming Horizon](https://raw.githubusercontent.com/thegaminghorizon/The-Gaming-Horizon/main/assets/branding/logos/gaming-horizon-logo-source.png)
+
+        # 💬 The Gaming Horizon Feedback
+
+        **Help improve the experience, documentation, systems, and direction of The Gaming Horizon.**
+
+        `OBSERVE` • `EXPLAIN` • `SUGGEST` • `REVIEW` • `IMPROVE`
+
+        </div>
+
+        ---
+
+        Thank you for taking the time to provide feedback.
+
+        Feedback can highlight:
+
+        - what already works well;
+        - what feels unclear;
+        - what creates friction;
+        - what could be simplified;
+        - what could become more accessible;
+        - what should be preserved;
+        - what could improve in future development.
+
+        > **Important**
+        >
+        > If you are reporting reproducible broken behavior, use **The Gaming Horizon Bug Report** instead.
+        >
+        > If you need to disclose a security vulnerability privately, follow the repository **Security Policy** rather than submitting this public form.
+
+
+  # ---------------------------------------------------------------------------
+  # BEFORE SUBMITTING
+  # ---------------------------------------------------------------------------
+
+  - type: checkboxes
+    id: preliminary-checks
+    attributes:
+      label: "Before You Submit"
+      description: "Confirm that this feedback is ready for public review."
+      options:
+        - label: "I searched existing open and closed issues for similar feedback."
+          required: true
+
+        - label: "This feedback relates directly to The Gaming Horizon or its repository."
+          required: true
+
+        - label: "I have kept this submission focused on one primary topic."
+          required: true
+
+        - label: "I have removed private, confidential, or sensitive information."
+          required: true
+
+
+  # ---------------------------------------------------------------------------
+  # FEEDBACK SUMMARY
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Feedback Summary"
+      description: "Provide a concise overview of your feedback."
+      placeholder: |
+        Example:
+        The game discovery interface has a strong visual hierarchy, but reaching
+        recently viewed experiences currently requires more navigation than expected.
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # FEEDBACK AREA
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: feedback-area
+    attributes:
+      label: "Feedback Area"
+      description: "Select every area related to your feedback."
+      multiple: true
+      options:
+        - "Gateway"
+        - "Homepage"
+        - "Navigation"
+        - "Search / Command Palette"
+        - "Game Discovery"
+        - "Game Cards"
+        - "AI Companion"
+        - "AI Suggestions"
+        - "Community"
+        - "Creators"
+        - "Competition"
+        - "Developer Experience"
+        - "Developer API"
+        - "API Reference"
+        - "Webhooks"
+        - "Authentication / Sign In"
+        - "Waitlist"
+        - "Localization / Language / Currency"
+        - "Music Player"
+        - "Customization"
+        - "Support"
+        - "Roadmap / Development"
+        - "404 / Error Experience"
+        - "Footer"
+        - "Accessibility"
+        - "Responsive Design"
+        - "Documentation"
+        - "Repository Structure"
+        - "GitHub Configuration"
+        - "Contributor Experience"
+        - "Branding"
+        - "Assets"
+        - "Screenshots"
+        - "Showcase Media"
+        - "Other"
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # FEEDBACK TYPE
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: feedback-type
+    attributes:
+      label: "Feedback Type"
+      description: "What kind of feedback are you providing?"
+      multiple: true
+      options:
+        - "Positive Feedback"
+        - "Improvement Suggestion"
+        - "Usability"
+        - "Accessibility"
+        - "Visual Design"
+        - "Navigation"
+        - "Content / Messaging"
+        - "Documentation"
+        - "Developer Experience"
+        - "Repository Experience"
+        - "Contributor Experience"
+        - "Community Experience"
+        - "Performance"
+        - "Responsive Experience"
+        - "General Project Feedback"
+        - "Other"
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # CURRENT EXPERIENCE
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: current-experience
+    attributes:
+      label: "Current Experience"
+      description: "Describe what you currently experience or observe."
+      placeholder: |
+        Explain the current state as clearly as possible.
+
+        Focus on what you actually observed rather than assumptions.
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # WHAT WORKS WELL
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: strengths
+    attributes:
+      label: "What Works Well?"
+      description: "Optional — identify anything that should be preserved or is already working effectively."
+      placeholder: |
+        Examples:
+        - Strong visual hierarchy
+        - Clear navigation
+        - Good responsive behavior
+        - Consistent Gaming Horizon identity
+        - Useful documentation
+
+
+  # ---------------------------------------------------------------------------
+  # IMPROVEMENT AREA
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: "What Could Improve?"
+      description: "Explain the friction, limitation, confusion, or opportunity you identified."
+      placeholder: |
+        Describe what could be improved and where the current experience creates friction.
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # DESIRED EXPERIENCE
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: desired-experience
+    attributes:
+      label: "Desired Experience"
+      description: "Describe what a better outcome would look like."
+      placeholder: |
+        Explain the desired result.
+
+        You do not need to know the technical implementation.
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # WHY IT MATTERS
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: value
+    attributes:
+      label: "Why Does This Matter?"
+      description: "Explain why addressing this feedback could improve The Gaming Horizon."
+      placeholder: |
+        Examples:
+        - Reduces navigation friction
+        - Improves accessibility
+        - Makes documentation easier to understand
+        - Improves contributor experience
+        - Creates better consistency
+        - Simplifies development or maintenance
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # EXPERIENCE FLOW
+  # ---------------------------------------------------------------------------
+
+  - type: markdown
+    attributes:
+      value: |
+        ### ✦ Experience Flow
+
+        When useful, think about the feedback as a journey:
+
+        ```text
+        CURRENT EXPERIENCE
+
+        ENTER
+          │
+          ▼
+        DISCOVER
+          │
+          ▼
+        INTERACT
+          │
+          ▼
+        FRICTION
+          │
+          ▼
+        RESULT
+        ```
+
+        The desired direction may look more like:
+
+        ```text
+        IMPROVED EXPERIENCE
+
+        ENTER
+          │
+          ▼
+        DISCOVER
+          │
+          ▼
+        UNDERSTAND
+          │
+          ▼
+        INTERACT
+          │
+          ▼
+        CLEAR RESULT
+        ```
+
+
+  - type: textarea
+    id: experience-flow
+    attributes:
+      label: "Experience Flow"
+      description: "Optional — describe the sequence of actions involved in your feedback."
+      placeholder: |
+        1. Enter...
+        2. Navigate to...
+        3. Interact with...
+        4. Experience...
+        5. Desired improvement...
+
+
+  # ---------------------------------------------------------------------------
+  # FREQUENCY
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: "How Often Do You Encounter This?"
+      options:
+        - "Every time"
+        - "Frequently"
+        - "Sometimes"
+        - "Rarely"
+        - "Only once"
+        - "Not applicable"
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # EXPERIENCE CONTEXT
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: experience-context
+    attributes:
+      label: "When Did You Notice This?"
+      multiple: true
+      options:
+        - "First visit"
+        - "Regular platform use"
+        - "Returning visit"
+        - "Development / testing"
+        - "Reading documentation"
+        - "Contributing to the repository"
+        - "Using a mobile device"
+        - "Using a desktop device"
+        - "Other"
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # AFFECTED AUDIENCE
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: audience
+    attributes:
+      label: "Who Could Be Affected?"
+      description: "Select all groups that may benefit from this feedback."
+      multiple: true
+      options:
+        - "New users"
+        - "Returning users"
+        - "Players"
+        - "Community members"
+        - "Creators"
+        - "Developers"
+        - "Contributors"
+        - "Maintainers"
+        - "Documentation readers"
+        - "Mobile users"
+        - "Desktop users"
+        - "Accessibility users"
+        - "Everyone"
+        - "Unknown"
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # IMPACT AREAS
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: "Impact Area"
+      description: "What does this feedback primarily affect?"
+      multiple: true
+      options:
+        - "User Experience"
+        - "Discoverability"
+        - "Navigation"
+        - "Accessibility"
+        - "Readability"
+        - "Visual Consistency"
+        - "Performance"
+        - "Responsive Design"
+        - "Developer Experience"
+        - "Contributor Experience"
+        - "Documentation Quality"
+        - "Repository Maintainability"
+        - "Community Experience"
+        - "Project Direction"
+        - "No immediate functional impact"
+        - "Other"
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # ACCESSIBILITY
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: accessibility
+    attributes:
+      label: "Accessibility Impact"
+      description: "Does your feedback involve accessibility?"
+      options:
+        - "Yes"
+        - "No"
+        - "Not sure"
+        - "Not applicable"
+    validations:
+      required: true
+
+
+  - type: dropdown
+    id: accessibility-area
+    attributes:
+      label: "Accessibility Area"
+      description: "Optional — select any accessibility areas related to the feedback."
+      multiple: true
+      options:
+        - "Keyboard Navigation"
+        - "Screen Reader Experience"
+        - "Focus Visibility"
+        - "Text Readability"
+        - "Contrast"
+        - "Motion"
+        - "Interaction Size"
+        - "Alternative Text"
+        - "Semantic Structure"
+        - "Cognitive Clarity"
+        - "Responsive Accessibility"
+        - "Other"
+
+
+  - type: textarea
+    id: accessibility-details
+    attributes:
+      label: "Accessibility Details"
+      description: "Optional — explain the accessibility impact in more detail."
+      placeholder: |
+        Describe the accessibility experience or concern.
+
+
+  # ---------------------------------------------------------------------------
+  # VISUAL DESIGN
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: visual-design
+    attributes:
+      label: "Visual Design Areas"
+      description: "Optional — select relevant visual or presentation areas."
+      multiple: true
+      options:
+        - "Layout"
+        - "Visual Hierarchy"
+        - "Typography"
+        - "Spacing"
+        - "Color Usage"
+        - "Contrast"
+        - "Glassmorphism"
+        - "Lighting"
+        - "Icons"
+        - "Brand Consistency"
+        - "Animation / Motion"
+        - "Responsive Presentation"
+        - "Not applicable"
+
+
+  - type: textarea
+    id: visual-details
+    attributes:
+      label: "Visual Design Feedback"
+      description: "Optional — explain any visual design observations."
+      placeholder: |
+        Describe visual strengths, inconsistencies, or possible improvements.
+
+
+  # ---------------------------------------------------------------------------
+  # CONTENT
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: content-area
+    attributes:
+      label: "Content / Messaging Areas"
+      description: "Optional — select areas related to written content."
+      multiple: true
+      options:
+        - "Headings"
+        - "Descriptions"
+        - "Calls to Action"
+        - "Instructions"
+        - "Error Messages"
+        - "Navigation Labels"
+        - "Development Status"
+        - "Documentation"
+        - "Terminology"
+        - "Not applicable"
+
+
+  - type: textarea
+    id: content-feedback
+    attributes:
+      label: "Content Feedback"
+      description: "Optional — explain how written content or messaging could improve."
+      placeholder: |
+        Describe any unclear, inconsistent, overly complex, or effective content.
+
+
+  # ---------------------------------------------------------------------------
+  # DEVELOPER EXPERIENCE
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: developer-area
+    attributes:
+      label: "Developer Experience Areas"
+      description: "Optional — select relevant developer areas."
+      multiple: true
+      options:
+        - "Developer API"
+        - "API Reference"
+        - "Webhooks"
+        - "Developer Configuration"
+        - "Authentication"
+        - "Documentation"
+        - "Repository Setup"
+        - "Local Development"
+        - "Build System"
+        - "GitHub Workflows"
+        - "Contribution Workflow"
+        - "Not applicable"
+
+
+  - type: textarea
+    id: developer-feedback
+    attributes:
+      label: "Developer Experience Feedback"
+      description: "Optional — describe any developer-facing feedback."
+      placeholder: |
+        Explain where the developer experience works well or could improve.
+
+
+  # ---------------------------------------------------------------------------
+  # DOCUMENTATION
+  # ---------------------------------------------------------------------------
+
+  - type: input
+    id: documentation-path
+    attributes:
+      label: "Related Documentation"
+      description: "Optional — provide the relevant documentation path."
+      placeholder: "Example: assets/screenshots/README.md"
+
+
+  - type: textarea
+    id: documentation-feedback
+    attributes:
+      label: "Documentation Feedback"
+      description: "Optional — explain any documentation-specific feedback."
+      placeholder: |
+        What is clear?
+        What is confusing?
+        What is missing?
+        What should be reorganized?
+
+
+  # ---------------------------------------------------------------------------
+  # REPOSITORY
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: repository-area
+    attributes:
+      label: "Repository Areas"
+      description: "Optional — select areas related to repository feedback."
+      multiple: true
+      options:
+        - "Directory Organization"
+        - "File Naming"
+        - "README Structure"
+        - "Issue Templates"
+        - "Pull Request Process"
+        - "GitHub Actions"
+        - "Dependabot"
+        - "CODEOWNERS"
+        - "Contribution Workflow"
+        - "Documentation Architecture"
+        - "Assets"
+        - "Other"
+        - "Not applicable"
+
+
+  # ---------------------------------------------------------------------------
+  # SUGGESTED IMPROVEMENT
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: "Suggested Improvement"
+      description: "Optional — share a possible direction for improvement."
+      placeholder: |
+        You do not need to know the implementation.
+
+        Describe any solution or direction you believe could improve the experience.
+
+
+  # ---------------------------------------------------------------------------
+  # ALTERNATIVES
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternative Approaches"
+      description: "Optional — describe any other approaches you considered."
+      placeholder: |
+        Alternative idea or approach...
+
+
+  # ---------------------------------------------------------------------------
+  # TRADE-OFFS
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: "Potential Trade-Offs"
+      description: "Optional — identify any trade-offs your suggestion might introduce."
+      placeholder: |
+        Examples:
+        - Additional complexity
+        - Performance cost
+        - Maintenance overhead
+        - Accessibility considerations
+        - More development work
+        - Different user preferences
+
+
+  # ---------------------------------------------------------------------------
+  # USER-PERCEIVED IMPORTANCE
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: importance
+    attributes:
+      label: "Importance From Your Perspective"
+      description: "This represents your experience only and does not assign formal project priority."
+      options:
+        - "Very important"
+        - "Important"
+        - "Moderate"
+        - "Minor"
+        - "Nice to have"
+        - "Feedback only — no priority"
+    validations:
+      required: true
+
+
+  # ---------------------------------------------------------------------------
+  # EVIDENCE
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Screenshots, Recordings, or Supporting Evidence"
+      description: "Optional — drag and drop screenshots or provide supporting context."
+      placeholder: |
+        Add supporting evidence here.
+
+        Before uploading anything, remove:
+        - passwords;
+        - API keys;
+        - access tokens;
+        - private emails;
+        - phone numbers;
+        - session data;
+        - private messages;
+        - personal information;
+        - developer secrets.
+
+
+  # ---------------------------------------------------------------------------
+  # ENVIRONMENT
+  # ---------------------------------------------------------------------------
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: "Device"
+      description: "Optional — select the device type if it affects your feedback."
+      options:
+        - "Desktop"
+        - "Laptop"
+        - "Tablet"
+        - "Phone"
+        - "Other"
+        - "Not applicable"
+
+
+  - type: input
+    id: operating-system
+    attributes:
+      label: "Operating System"
+      description: "Optional."
+      placeholder: "Example: Windows 11"
+
+
+  - type: input
+    id: browser
+    attributes:
+      label: "Browser"
+      description: "Optional."
+      placeholder: "Example: Chrome"
+
+
+  - type: input
+    id: browser-version
+    attributes:
+      label: "Browser Version"
+      description: "Optional."
+      placeholder: "Example: 152"
+
+
+  - type: input
+    id: viewport
+    attributes:
+      label: "Screen / Viewport"
+      description: "Optional."
+      placeholder: "Example: 1920 × 1080"
+
+
+  # ---------------------------------------------------------------------------
+  # RELATED ISSUES
+  # ---------------------------------------------------------------------------
+
+  - type: input
+    id: related-issues
+    attributes:
+      label: "Related Issues"
+      description: "Optional — reference related issues."
+      placeholder: "#123"
+
+
+  # ---------------------------------------------------------------------------
+  # RELATED PULL REQUESTS
+  # ---------------------------------------------------------------------------
+
+  - type: input
+    id: related-prs
+    attributes:
+      label: "Related Pull Requests"
+      description: "Optional — reference related pull requests."
+      placeholder: "#456"
+
+
+  # ---------------------------------------------------------------------------
+  # PROJECT SCOPE
+  # ---------------------------------------------------------------------------
+
+  - type: markdown
+    attributes:
+      value: |
+        ### ✦ Project Scope
+
+        The Gaming Horizon is a **browser-first gaming ecosystem**.
+
+        Feedback should reflect the documented project rather than assume
+        Gaming Horizon is currently:
+
+        ```text
+        CLOUD GAMING
+        GAME STREAMING SERVER
+        DESKTOP GAME LAUNCHER
+        DOWNLOAD CLIENT
+        QUEUE-BASED STREAMING PLATFORM
+        ```
+
+        unless maintained project documentation explicitly establishes such functionality.
+
+
+  - type: checkboxes
+    id: project-scope
+    attributes:
+      label: "Project Scope Confirmation"
+      options:
+        - label: "My feedback reflects the documented scope of The Gaming Horizon."
+          required: true
+
+        - label: "I have separated current functionality from future ideas or suggestions."
+          required: true
+
+
+  # ---------------------------------------------------------------------------
+  # TRUTHFULNESS
+  # ---------------------------------------------------------------------------
+
+  - type: checkboxes
+    id: truthfulness
+    attributes:
+      label: "Accuracy & Context"
+      description: "Confirm that the feedback distinguishes observations, preferences, and assumptions."
+      options:
+        - label: "I have separated observed behavior from assumptions."
+          required: true
+
+        - label: "I have separated personal preference from factual claims."
+          required: true
+
+        - label: "I am not presenting a suggestion as an approved roadmap commitment."
+          required: true
+
+        - label: "I am not claiming an unverified partnership, sponsorship, or endorsement."
+          required: true
+
+        - label: "I am not presenting conceptual artwork as proof of implemented functionality."
+          required: true
+
+
+  # ---------------------------------------------------------------------------
+  # SECURITY
+  # ---------------------------------------------------------------------------
+
+  - type: markdown
+    attributes:
+      value: |
+        ### 🔐 Security
+
+        This is a **public issue form**.
+
+        Do not include:
+
+        ```text
+        PASSWORDS
+        API KEYS
+        ACCESS TOKENS
+        PRIVATE KEYS
+        DATABASE CREDENTIALS
+        SESSION SECRETS
+        RECOVERY CODES
+        PRIVATE USER INFORMATION
+        WEBHOOK SECRETS
+        ```
+
+        Sensitive vulnerabilities should follow the repository Security Policy.
+
+
+  - type: checkboxes
+    id: security
+    attributes:
+      label: "Security Validation"
+      options:
+        - label: "This feedback contains no passwords, API keys, access tokens, private keys, or credentials."
+          required: true
+
+        - label: "This feedback contains no private user information or confidential data."
+          required: true
+
+        - label: "This feedback can safely be discussed in a public GitHub issue."
+          required: true
+
+
+  # ---------------------------------------------------------------------------
+  # ADDITIONAL CONTEXT
+  # ---------------------------------------------------------------------------
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context"
+      description: "Optional — provide anything else that could help reviewers understand your feedback."
+      placeholder: |
+        Additional context...
+
+
+  # ---------------------------------------------------------------------------
+  # REVIEW FLOW
+  # ---------------------------------------------------------------------------
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        ## ✦ Feedback Review Flow
+
+        ```text
+                           FEEDBACK
+                              │
+                              ▼
+                            REVIEW
+                              │
+                 ┌────────────┼────────────┐
+                 │            │            │
+                 ▼            ▼            ▼
+              POSITIVE    IMPROVEMENT   NEEDS INFO
+                 │            │            │
+                 │            ▼            │
+                 │         DISCUSS         │
+                 │            │            │
+                 └────────────┼────────────┘
+                              ▼
+                           DECISION
+                              │
+                  ┌───────────┼───────────┐
+                  ▼           ▼           ▼
+               PRESERVE    IMPROVE      DEFER
+                  │           │           │
+                  └───────────┼───────────┘
+                              ▼
+                            CLOSE
+        ```
+
+        Feedback may lead to:
+
+        - preservation of an effective experience;
+        - documentation improvements;
+        - accessibility improvements;
+        - design refinements;
+        - developer-experience improvements;
+        - repository maintenance;
+        - future feature discussion;
+        - deferred consideration;
+        - no change when the current experience remains preferable.
+
+        Submission does not guarantee implementation.
+
+
+  # ---------------------------------------------------------------------------
+  # FINAL CHECKLIST
+  # ---------------------------------------------------------------------------
+
+  - type: checkboxes
+    id: final-checklist
+    attributes:
+      label: "Final Checklist"
+      description: "Review your feedback before submitting."
+      options:
+        - label: "My title clearly represents this feedback."
+          required: true
+
+        - label: "I explained the current experience."
+          required: true
+
+        - label: "I explained what could improve."
+          required: true
+
+        - label: "I explained the desired outcome."
+          required: true
+
+        - label: "I explained why this feedback matters."
+          required: true
+
+        - label: "Supporting evidence, if included, is safe to publish."
+          required: true
+
+        - label: "I reviewed this submission before sending it."
+          required: true
+
+
+  # ---------------------------------------------------------------------------
+  # FOOTER
+  # ---------------------------------------------------------------------------
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        <div align="center">
+
+        ### THE GAMING HORIZON
+
+        **Feedback System · Version 1.0.0**
+
+        `OBSERVE` • `EXPLAIN` • `SUGGEST` • `REVIEW` • `IMPROVE`
+
+        **Every useful perspective can help shape what comes next.**
+
+        *Beyond the Horizon*
+
+        </div>
