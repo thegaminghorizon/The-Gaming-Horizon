@@ -27,7 +27,6 @@ coverage
 
 # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
-
 # Bower dependency directory (https://bower.io/)
 bower_components
 
@@ -58,7 +57,6 @@ web_modules/
 
 # Optional REPL history
 .node_repl_history
-
 # Output of 'npm pack'
 *.tgz
 
@@ -91,7 +89,6 @@ dist
 
 # vuepress build output
 .vuepress/dist
-
 # vuepress v2.x temp directory
 .temp
 
@@ -127,7 +124,6 @@ dist
 
 # pnpm
 .pnpm-store
-
 # yarn v3
 .pnp.*
 .yarn/*
@@ -141,3 +137,154 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+
+# ==============================================================================
+# THE GAMING HORIZON — PROJECT-SPECIFIC RULES
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Next.js generated files
+# ------------------------------------------------------------------------------
+
+# Generated automatically by Next.js / TypeScript.
+# Source TypeScript configuration remains tracked.
+next-env.d.ts
+
+
+# ------------------------------------------------------------------------------
+# Netlify local development state
+# ------------------------------------------------------------------------------
+
+.netlify/
+
+
+# ------------------------------------------------------------------------------
+# Supabase local development state
+#
+# IMPORTANT:
+# Supabase migrations are intentionally NOT ignored and remain version-controlled.
+# ------------------------------------------------------------------------------
+
+.supabase/
+**/supabase/.branches/
+**/supabase/.temp/
+**/supabase/.cache/
+
+
+# ------------------------------------------------------------------------------
+# Operating-system metadata
+# ------------------------------------------------------------------------------
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+
+# ------------------------------------------------------------------------------
+# IDE / editor local metadata
+# ------------------------------------------------------------------------------
+
+.idea/
+.vscode/
+
+
+# ------------------------------------------------------------------------------
+# Temporary editor files
+# ------------------------------------------------------------------------------
+
+*.swp
+*.swo
+*.bak
+*.orig
+*~
+
+
+# ------------------------------------------------------------------------------
+# Local database files
+# ------------------------------------------------------------------------------
+
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+
+# ------------------------------------------------------------------------------
+# Private keys / certificates
+#
+# These files should not be committed to the public repository.
+# ------------------------------------------------------------------------------
+
+*.pem
+*.key
+*.p12
+*.pfx
+
+
+# ------------------------------------------------------------------------------
+# Local development / assistant metadata
+# ------------------------------------------------------------------------------
+
+.cursor/
+.claude/
+.aider*
+
+
+# ==============================================================================
+# IMPORTANT VERSION-CONTROL RULES
+# ==============================================================================
+#
+# KEEP TRACKED:
+#
+# package.json
+# package-lock.json
+# components.json
+#
+# next.config.mjs
+# tsconfig.json
+# eslint.config.mjs
+# postcss.config.mjs
+# proxy.ts
+# netlify.toml
+#
+# .github/
+# docs/
+# assets/
+# THE-GAMING-HORIZON/
+#
+# Supabase migrations:
+# **/supabase/migrations/
+#
+# Root documentation and governance:
+# README.md
+# BRAND.md
+# CHANGELOG.md
+# CODE_OF_CONDUCT.md
+# CONTRIBUTING.md
+# COPYRIGHT.md
+# LICENSE
+# PRIVACY.md
+# ROADMAP.md
+# SECURITY.md
+# SUPPORT.md
+# TERMS.md
+# THIRD-PARTY-NOTICES.md
+#
+# NEVER COMMIT:
+#
+# passwords
+# API keys
+# access tokens
+# private keys
+# service-role credentials
+# bot tokens
+# deployment credentials
+# database credentials
+# webhook secrets
+# session secrets
+# local environment files
+#
+# ==============================================================================
