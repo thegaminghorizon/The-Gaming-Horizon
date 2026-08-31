@@ -30,10 +30,10 @@ RELATIVE PATH RULE
 Official logo:
 ../../assets/branding/logos/gaming-horizon-logo-source.png
 
-GitHub system:
-../README.md
+GitHub System:
+../GITHUB-SYSTEM.md
 
-Repository README:
+Root README:
 ../../README.md
 
 Contributing:
@@ -53,9 +53,9 @@ License:
 <br>
 
 <img
-  src="../../assets/branding/logos/gaming-horizon-logo-source.png"
-  width="500"
-  alt="The Gaming Horizon Official Logo"
+src="../../assets/branding/logos/gaming-horizon-logo-source.png"
+width="500"
+alt="The Gaming Horizon Official Logo"
 />
 
 <br><br>
@@ -77,7 +77,9 @@ License:
 <br>
 
 <!-- ========================================================= -->
+
 <!--                       SYSTEM STATUS                       -->
+
 <!-- ========================================================= -->
 
 <a href="#status">
@@ -114,7 +116,9 @@ License:
 <br><br>
 
 <!-- ========================================================= -->
+
 <!--                     WORKFLOW OPERATIONS                   -->
+
 <!-- ========================================================= -->
 
 <a href="#triggers">
@@ -157,7 +161,9 @@ License:
 <br><br>
 
 <!-- ========================================================= -->
+
 <!--                     WORKFLOW QUALITY                      -->
+
 <!-- ========================================================= -->
 
 <a href="#permissions">
@@ -194,7 +200,9 @@ License:
 <br><br>
 
 <!-- ========================================================= -->
+
 <!--                       QUICK LINKS                         -->
+
 <!-- ========================================================= -->
 
 <a href="https://github.com/thegaminghorizon/The-Gaming-Horizon/actions">
@@ -225,14 +233,10 @@ License:
 <br><br>
 
 <code>VALIDATE</code>
-&nbsp; • &nbsp;
-<code>TEST</code>
-&nbsp; • &nbsp;
-<code>BUILD</code>
-&nbsp; • &nbsp;
-<code>REVIEW</code>
-&nbsp; • &nbsp;
-<code>IMPROVE</code>
+  •   <code>TEST</code>
+  •   <code>BUILD</code>
+  •   <code>REVIEW</code>
+  •   <code>IMPROVE</code>
 
 <br><br>
 
@@ -287,21 +291,21 @@ ACTIVE DEVELOPMENT
 
 Current automation coverage:
 
-| Area | Status |
-| --- | --- |
-| Continuous Integration | Active |
-| Dependency installation | Active |
-| Package-file validation | Active |
-| Lint execution | Supported |
-| Type checking | Supported when script exists |
-| Automated tests | Supported when script exists |
-| Production build | Active |
-| Runtime diagnostics | Active |
-| GitHub run summaries | Active |
-| Concurrency control | Active |
-| Minimum workflow permissions | Active |
-| Deployment automation | Not defined here |
-| Release automation | Future if required |
+| Area                         | Status                       |
+| ---------------------------- | ---------------------------- |
+| Continuous Integration       | Active                       |
+| Dependency installation      | Active                       |
+| Package-file validation      | Active                       |
+| Lint execution               | Supported                    |
+| Type checking                | Supported when script exists |
+| Automated tests              | Supported when script exists |
+| Production build             | Active                       |
+| Runtime diagnostics          | Active                       |
+| GitHub run summaries         | Active                       |
+| Concurrency control          | Active                       |
+| Minimum workflow permissions | Active                       |
+| Deployment automation        | Not defined here             |
+| Release automation           | Future if required           |
 
 ---
 
@@ -381,19 +385,24 @@ README CORRECTION
 
 ## ✦ Workflow System
 
-Current directory:
+Current relationship:
 
 ```text
 .github/
+│
+├── GITHUB-SYSTEM.md
+│
 └── workflows/
     ├── README.md
+    │   │
+    │   └── ../GITHUB-SYSTEM.md
     └── ci.yml
 ```
 
 Current workflow register:
 
-| Workflow | Purpose | Status |
-| --- | --- | --- |
+| Workflow | Purpose                               | Status |
+| -------- | ------------------------------------- | ------ |
 | `ci.yml` | Validate and build repository changes | Active |
 
 Future workflows should be added only when they solve a real repository need.
@@ -1330,13 +1339,13 @@ defined security and permission model.
 
 ## ✦ CI vs Deployment
 
-| CI | Deployment |
-| --- | --- |
-| Validates changes | Publishes changes |
-| Runs quality checks | Interacts with hosting |
-| Builds project | May require deployment credentials |
+| CI                                  | Deployment                                |
+| ----------------------------------- | ----------------------------------------- |
+| Validates changes                   | Publishes changes                         |
+| Runs quality checks                 | Interacts with hosting                    |
+| Builds project                      | May require deployment credentials        |
 | Can use read-only repository access | May require limited write/external access |
-| Lower privilege | Potentially higher privilege |
+| Lower privilege                     | Potentially higher privilege              |
 
 Keeping these responsibilities separate improves clarity.
 
@@ -1459,21 +1468,21 @@ ci.yml
 
 ## ✦ Workflow Responsibility Matrix
 
-| Responsibility | CI |
-| --- |:---:|
-| Checkout repository | ✓ |
-| Configure Node.js | ✓ |
-| Validate package files | ✓ |
-| Install dependencies | ✓ |
-| Run lint | ✓ when available |
-| Run explicit typecheck | ✓ when available |
-| Run tests | ✓ when available |
-| Build production app | ✓ |
-| Create Action summary | ✓ |
-| Deploy website | — |
-| Publish release | — |
-| Modify repository content | — |
-| Handle production secrets | — |
+| Responsibility            |        CI        |
+| ------------------------- | :--------------: |
+| Checkout repository       |         ✓        |
+| Configure Node.js         |         ✓        |
+| Validate package files    |         ✓        |
+| Install dependencies      |         ✓        |
+| Run lint                  | ✓ when available |
+| Run explicit typecheck    | ✓ when available |
+| Run tests                 | ✓ when available |
+| Build production app      |         ✓        |
+| Create Action summary     |         ✓        |
+| Deploy website            |         —        |
+| Publish release           |         —        |
+| Modify repository content |         —        |
+| Handle production secrets |         —        |
 
 ---
 
@@ -1706,21 +1715,21 @@ The repository should retain clear ownership.
 
 Before merging workflow changes:
 
-- [ ] YAML syntax is valid
-- [ ] Trigger behavior is intentional
-- [ ] Permissions are minimized
-- [ ] No secrets are hard-coded
-- [ ] Third-party actions are justified
-- [ ] Action versions are explicit
-- [ ] Node/runtime version is intentional
-- [ ] Dependency cache behavior is understood
-- [ ] Commands match repository scripts
-- [ ] Timeout is defined where appropriate
-- [ ] Concurrency behavior is understood
-- [ ] Failure behavior is useful
-- [ ] Summary output remains understandable
-- [ ] Documentation is updated if required
-- [ ] No unrelated deployment capability was introduced
+* [ ] YAML syntax is valid
+* [ ] Trigger behavior is intentional
+* [ ] Permissions are minimized
+* [ ] No secrets are hard-coded
+* [ ] Third-party actions are justified
+* [ ] Action versions are explicit
+* [ ] Node/runtime version is intentional
+* [ ] Dependency cache behavior is understood
+* [ ] Commands match repository scripts
+* [ ] Timeout is defined where appropriate
+* [ ] Concurrency behavior is understood
+* [ ] Failure behavior is useful
+* [ ] Summary output remains understandable
+* [ ] Documentation is updated if required
+* [ ] No unrelated deployment capability was introduced
 
 ---
 
@@ -1905,10 +1914,10 @@ Therefore:
 ci.yml
 ```
 
-### GitHub system README
+### GitHub System
 
 ```text
-../README.md
+../GITHUB-SYSTEM.md
 ```
 
 ### Official logo
@@ -1945,30 +1954,30 @@ ci.yml
 
 ## ✦ Path Matrix
 
-| Current document | Destination | Path |
-| --- | --- | --- |
-| `.github/workflows/README.md` | CI | `ci.yml` |
-| `.github/workflows/README.md` | GitHub system | `../README.md` |
-| `.github/workflows/README.md` | Root README | `../../README.md` |
-| `.github/workflows/README.md` | Logo | `../../assets/branding/logos/gaming-horizon-logo-source.png` |
-| `.github/workflows/README.md` | Security | `../../SECURITY.md` |
-| `.github/workflows/README.md` | Contributing | `../../CONTRIBUTING.md` |
+| Current document              | Destination   | Path                                                         |
+| ----------------------------- | ------------- | ------------------------------------------------------------ |
+| `.github/workflows/README.md` | CI            | `ci.yml`                                                     |
+| `.github/workflows/README.md` | GitHub system | `../GITHUB-SYSTEM.md`                                        |
+| `.github/workflows/README.md` | Root README   | `../../README.md`                                            |
+| `.github/workflows/README.md` | Logo          | `../../assets/branding/logos/gaming-horizon-logo-source.png` |
+| `.github/workflows/README.md` | Security      | `../../SECURITY.md`                                          |
+| `.github/workflows/README.md` | Contributing  | `../../CONTRIBUTING.md`                                      |
 
 ---
 
 ## ✦ Repository Policy Matrix
 
-| Policy | Relative path |
-| --- | --- |
-| Repository README | `../../README.md` |
-| Contributing | `../../CONTRIBUTING.md` |
-| Code of Conduct | `../../CODE_OF_CONDUCT.md` |
-| Security | `../../SECURITY.md` |
-| Privacy | `../../PRIVACY.md` |
-| Terms | `../../TERMS.md` |
-| Copyright | `../../COPYRIGHT.md` |
+| Policy              | Relative path                  |
+| ------------------- | ------------------------------ |
+| Repository README   | `../../README.md`              |
+| Contributing        | `../../CONTRIBUTING.md`        |
+| Code of Conduct     | `../../CODE_OF_CONDUCT.md`     |
+| Security            | `../../SECURITY.md`            |
+| Privacy             | `../../PRIVACY.md`             |
+| Terms               | `../../TERMS.md`               |
+| Copyright           | `../../COPYRIGHT.md`           |
 | Third-Party Notices | `../../THIRD-PARTY-NOTICES.md` |
-| License | `../../LICENSE` |
+| License             | `../../LICENSE`                |
 
 ---
 
@@ -2116,18 +2125,18 @@ Add automation when Gaming Horizon genuinely needs it.
 
 A Gaming Horizon workflow should ultimately be:
 
-| # | Standard | Meaning |
-|:---:|---|---|
-| `01` | **Purposeful** | Solves a real automation need |
-| `02` | **Secure** | Uses minimum access and protects secrets |
-| `03` | **Repeatable** | Produces predictable validation |
-| `04` | **Observable** | Failures and results are understandable |
-| `05` | **Efficient** | Avoids unnecessary work |
-| `06` | **Maintainable** | Can be understood and updated |
-| `07` | **Reviewable** | Changes are easy to inspect |
-| `08` | **Reliable** | Supports consistent repository quality |
-| `09` | **Extensible** | Can evolve without unnecessary redesign |
-| `10` | **Aligned** | Supports the wider Gaming Horizon standard |
+|   #  | Standard         | Meaning                                    |
+| :--: | ---------------- | ------------------------------------------ |
+| `01` | **Purposeful**   | Solves a real automation need              |
+| `02` | **Secure**       | Uses minimum access and protects secrets   |
+| `03` | **Repeatable**   | Produces predictable validation            |
+| `04` | **Observable**   | Failures and results are understandable    |
+| `05` | **Efficient**    | Avoids unnecessary work                    |
+| `06` | **Maintainable** | Can be understood and updated              |
+| `07` | **Reviewable**   | Changes are easy to inspect                |
+| `08` | **Reliable**     | Supports consistent repository quality     |
+| `09` | **Extensible**   | Can evolve without unnecessary redesign    |
+| `10` | **Aligned**      | Supports the wider Gaming Horizon standard |
 
 ---
 
@@ -2177,9 +2186,9 @@ REPOSITORY      The-Gaming-Horizon
 <br>
 
 <img
-  src="../../assets/branding/logos/gaming-horizon-logo-source.png"
-  width="340"
-  alt="The Gaming Horizon Official Logo"
+src="../../assets/branding/logos/gaming-horizon-logo-source.png"
+width="340"
+alt="The Gaming Horizon Official Logo"
 />
 
 <br><br>
