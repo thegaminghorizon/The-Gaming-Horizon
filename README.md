@@ -1,35 +1,65 @@
 <!--
 ===============================================================================
-                              GAMING HORIZON
-                         BEYOND THE HORIZON
+                              THE GAMING HORIZON
+                              BEYOND THE HORIZON
 ===============================================================================
 
-                         WEBSITE APPLICATION
+                               ROOT README
 
-                    THE-GAMING-HORIZON/README.md
+                                README.md
 
-                      APPLICATION SYSTEM v1.0.0
+                      REPOSITORY SYSTEM v1.0.0
 
 ===============================================================================
 
 PURPOSE
 -------
-Official documentation for the primary Gaming Horizon browser application
-located inside:
+Primary repository entry point for The Gaming Horizon.
 
-THE-GAMING-HORIZON/
+This README provides a structured overview of:
 
-REPOSITORY
-----------
-https://github.com/thegaminghorizon/The-Gaming-Horizon
+- project identity;
+- browser-first platform direction;
+- official launch;
+- project status;
+- ecosystem systems;
+- confirmed technology;
+- application architecture;
+- repository structure;
+- documentation;
+- development;
+- Beta;
+- Horizon Labs;
+- Beyond;
+- assets and branding;
+- security;
+- privacy;
+- contribution;
+- GitHub infrastructure;
+- repository governance;
+- official network;
+- licensing;
+- project-truth boundaries.
 
-APPLICATION
------------
-THE-GAMING-HORIZON/
+PROJECT
+-------
+THE GAMING HORIZON
+
+COMMON BRAND
+------------
+GAMING HORIZON
+
+TAGLINE
+-------
+BEYOND THE HORIZON
 
 PLATFORM
 --------
-Browser-First Gaming Ecosystem
+Browser-first gaming ecosystem.
+
+OFFICIAL LAUNCH
+---------------
+1 January 2027
 
 VERSION
 -------
@@ -39,16 +69,59 @@ STATUS
 ------
 In Development
 
-OFFICIAL LAUNCH
----------------
-1 January 2027
+MAIN APPLICATION
+----------------
+THE-GAMING-HORIZON/
+
+CONFIRMED TECHNOLOGY
+--------------------
+Next.js
+React
+TypeScript
+npm
+Tailwind CSS
+PostCSS
+Supabase
+GitHub Actions
+Netlify
 
 IMPORTANT
 ---------
-This file documents the application layer.
+The Gaming Horizon repository contains a combination of:
 
-Repository-wide documentation remains available from the root README and
-docs/ directory.
+- current implementation;
+- active development;
+- documentation;
+- pre-release systems;
+- experiments;
+- conceptual architecture;
+- visual showcases;
+- future exploration.
+
+A documented concept, showcase, prototype, Labs experiment, or Beyond idea
+must not automatically be interpreted as an available product feature.
+
+Do not invent:
+
+- users;
+- game counts;
+- creator counts;
+- developer counts;
+- community counts;
+- revenue;
+- funding;
+- partnerships;
+- sponsors;
+- awards;
+- press coverage;
+- infrastructure scale;
+- uptime;
+- latency;
+- adoption;
+- traffic;
+- performance statistics;
+- AI accuracy;
+- completion percentages.
 
 ===============================================================================
 -->
@@ -60,9 +133,9 @@ docs/ directory.
 <br>
 
 <img
-  src="https://raw.githubusercontent.com/thegaminghorizon/The-Gaming-Horizon/main/assets/branding/logos/gaming-horizon-logo-source.png"
-  width="500"
-  alt="Gaming Horizon Official Logo"
+  src="assets/branding/logos/gaming-horizon-logo-source.png"
+  width="520"
+  alt="The Gaming Horizon Official Logo"
 />
 
 <br><br>
@@ -73,14 +146,15 @@ docs/ directory.
 
 <br>
 
-**The primary browser-first application powering the Gaming Horizon experience.**
+**A browser-first gaming ecosystem built around discovery, community,  
+creativity, competition, development, intelligence, and possibility.**
 
 <br><br>
 
 <a href="#status">
   <img
     src="https://img.shields.io/badge/STATUS-IN_DEVELOPMENT-7C3AED?style=flat-square"
-    alt="Status: In Development"
+    alt="In Development"
   />
 </a>
 <a href="#version">
@@ -99,6 +173,12 @@ docs/ directory.
   <img
     src="https://img.shields.io/badge/LAUNCH-01_JAN_2027-0EA5E9?style=flat-square"
     alt="Official Launch 1 January 2027"
+  />
+</a>
+<a href="#license">
+  <img
+    src="https://img.shields.io/badge/LICENSE-APACHE_2.0-0891B2?style=flat-square"
+    alt="Apache License 2.0"
   />
 </a>
 
@@ -128,16 +208,16 @@ docs/ directory.
     alt="Tailwind CSS"
   />
 </a>
-<a href="#supabase">
+<a href="#technology">
   <img
     src="https://img.shields.io/badge/SUPABASE-INTEGRATED-3ECF8E?style=flat-square&logo=supabase&logoColor=white"
     alt="Supabase"
   />
 </a>
-<a href="#package-system">
+<a href="#github-system">
   <img
-    src="https://img.shields.io/badge/NPM-PACKAGE_MANAGER-CB3837?style=flat-square&logo=npm&logoColor=white"
-    alt="npm"
+    src="https://img.shields.io/badge/GITHUB-ACTIONS-2088FF?style=flat-square&logo=githubactions&logoColor=white"
+    alt="GitHub Actions"
   />
 </a>
 
@@ -149,32 +229,34 @@ docs/ directory.
     alt="Enter Gaming Horizon"
   />
 </a>
-<a href="https://github.com/thegaminghorizon/The-Gaming-Horizon">
+<a href="docs/README.md">
   <img
-    src="https://img.shields.io/badge/REPOSITORY-OVERVIEW-181717?style=for-the-badge&logo=github&logoColor=white"
-    alt="Repository Overview"
+    src="https://img.shields.io/badge/EXPLORE-DOCUMENTATION-6366F1?style=for-the-badge&logo=readthedocs&logoColor=white"
+    alt="Explore Documentation"
   />
 </a>
-<a href="https://github.com/thegaminghorizon/The-Gaming-Horizon/tree/main/docs">
+<a href="https://github.com/thegaminghorizon/The-Gaming-Horizon">
   <img
-    src="https://img.shields.io/badge/DOCUMENTATION-EXPLORE-6366F1?style=for-the-badge&logo=readthedocs&logoColor=white"
-    alt="Documentation"
+    src="https://img.shields.io/badge/VIEW-REPOSITORY-181717?style=for-the-badge&logo=github&logoColor=white"
+    alt="View Repository"
   />
 </a>
 
 <br><br>
 
-<code>NEXT.JS</code>
+<code>PLAY</code>
 &nbsp; • &nbsp;
-<code>REACT</code>
+<code>DISCOVER</code>
 &nbsp; • &nbsp;
-<code>TYPESCRIPT</code>
+<code>CONNECT</code>
 &nbsp; • &nbsp;
-<code>TAILWIND CSS</code>
+<code>CREATE</code>
 &nbsp; • &nbsp;
-<code>SUPABASE</code>
+<code>COMPETE</code>
 &nbsp; • &nbsp;
-<code>NPM</code>
+<code>BUILD</code>
+&nbsp; • &nbsp;
+<code>EXPLORE</code>
 
 <br><br>
 
@@ -186,43 +268,101 @@ docs/ directory.
 
 ## ✦ Overview
 
-`THE-GAMING-HORIZON/` contains the primary web application for **Gaming Horizon**.
+**The Gaming Horizon** is a browser-first gaming ecosystem being developed
+around a simple idea:
 
-The application is intentionally separated from repository-level systems such as:
+> **There is always something beyond what the player can currently see.**
 
-```text
-.github/
-assets/
-docs/
-README.md
-SECURITY.md
-ROADMAP.md
-netlify.toml
-```
-
-This architecture keeps application source, dependencies, framework configuration,
-and runtime systems together while allowing documentation, governance, branding,
-automation, and deployment configuration to remain clearly separated.
+Gaming Horizon brings together connected areas of the gaming experience:
 
 ```text
-THE GAMING HORIZON
-        │
-        ▼
-   REPOSITORY
-        │
-        ├─────────────── .github/
-        │
-        ├─────────────── docs/
-        │
-        ├─────────────── assets/
-        │
-        │
-        ▼
-THE-GAMING-HORIZON/
-        │
-        ▼
-  WEB APPLICATION
+DISCOVERY
+
+COMMUNITY
+
+CREATORS
+
+COMPETITION
+
+DEVELOPERS
+
+ARTIFICIAL INTELLIGENCE
+
+EXPERIMENTATION
+
+FUTURE EXPERIENCES
 ```
+
+The objective is not to create the largest possible collection of unrelated
+features.
+
+The objective is to build a coherent platform where one meaningful experience
+can naturally lead to another.
+
+---
+
+## ✦ Core Idea
+
+A player may arrive looking for:
+
+```text
+A GAME
+```
+
+and continue toward:
+
+```text
+A COMMUNITY
+
+A CREATOR
+
+A COMPETITION
+
+A GUIDE
+
+A TOOL
+
+A PROJECT
+
+A NEW POSSIBILITY
+```
+
+That movement is the Horizon.
+
+---
+
+## ✦ Project Principle
+
+> **Build what matters. Remove what does not. Improve what remains.**
+
+Gaming Horizon development should prioritize meaningful value over feature
+count, technical spectacle, or artificial complexity.
+
+---
+
+## ✦ The Horizon
+
+```text
+WHAT YOU KNOW
+      │
+      ▼
+WHAT YOU CAN SEE
+      │
+      ▼
+CURRENT HORIZON
+      │
+      ▼
+WHAT YOU HAVE NOT
+DISCOVERED YET
+```
+
+The project is designed around continuously expanding that boundary.
+
+---
+
+## ✦ Core Brand Line
+
+> **There is always another world beyond the horizon.**
 
 ---
 
@@ -230,35 +370,46 @@ THE-GAMING-HORIZON/
 
 ## ✦ Status
 
-Current application status:
+Current project status:
 
 ```text
 IN DEVELOPMENT
 ```
 
-Gaming Horizon is being actively developed, validated, documented, and refined.
+Gaming Horizon is being actively structured, documented, implemented,
+validated, and refined ahead of its official launch.
 
-The application is preparing toward the official Gaming Horizon launch on:
+---
+
+## ✦ Current-State Principle
+
+Project status should be represented through clear language such as:
 
 ```text
-1 JANUARY 2027
-```
+AVAILABLE
 
-Features that are unfinished or unavailable should remain clearly represented as:
+ACTIVE
 
-```text
 IN DEVELOPMENT
 
 BETA
 
 PRE-RELEASE
 
+EXPERIMENTAL
+
+LIMITED
+
 COMING SOON
 
 AVAILABLE AT LAUNCH
 
-EXPERIMENTAL
+EXPLORING
+
+CONCEPTUAL
 ```
+
+A status should only be used when it accurately represents the actual system.
 
 ---
 
@@ -266,13 +417,20 @@ EXPERIMENTAL
 
 ## ✦ Version
 
-Current application-system version:
+Current repository/documentation system version:
 
 ```text
 1.0.0
 ```
 
-This version represents the current documented application architecture.
+GitHub Releases remain the authoritative source for published repository
+release tags.
+
+Release history should be considered together with:
+
+[`CHANGELOG.md`](CHANGELOG.md)
+
+and the repository's GitHub Releases.
 
 ---
 
@@ -280,13 +438,21 @@ This version represents the current documented application architecture.
 
 ## ✦ Official Launch
 
-Gaming Horizon is preparing toward its official launch on:
+The official Gaming Horizon launch date is:
 
 ```text
 1 JANUARY 2027
 ```
 
-The launch represents a major project milestone rather than the end of development.
+Written form:
+
+```text
+1 January 2027
+```
+
+---
+
+## ✦ Launch Is a Beginning
 
 ```text
 DEVELOPMENT
@@ -295,7 +461,7 @@ DEVELOPMENT
 VALIDATION
      │
      ▼
-BETA / PRE-RELEASE
+BETA
      │
      ▼
 1 JANUARY 2027
@@ -304,16 +470,32 @@ BETA / PRE-RELEASE
 OFFICIAL LAUNCH
      │
      ▼
-CONTINUOUS IMPROVEMENT
+FEEDBACK
+     │
+     ▼
+IMPROVEMENT
+     │
+     ▼
+NEW HORIZON
 ```
+
+Launch does not mean the platform stops evolving.
 
 ---
 
 <a id="platform"></a>
 
-## ✦ Browser-First Platform
+## ✦ Platform
 
-Gaming Horizon is being developed around a **browser-first** philosophy.
+Gaming Horizon is a:
+
+> **Browser-first gaming ecosystem.**
+
+The browser is the primary gateway into the platform.
+
+---
+
+## ✦ Browser-First Model
 
 ```text
 USER
@@ -334,9 +516,9 @@ CONNECTED EXPERIENCE
 Browser-first development emphasizes:
 
 ```text
-ACCESSIBILITY
-
 LOW ENTRY FRICTION
+
+ACCESSIBILITY
 
 RESPONSIVE DESIGN
 
@@ -353,9 +535,9 @@ CROSS-DEVICE ACCESS
 
 ---
 
-## ✦ What Browser-First Does Not Mean
+## ✦ What Gaming Horizon Is Not
 
-Gaming Horizon is not currently defined as:
+Current project direction does **not** define Gaming Horizon as:
 
 ```text
 CLOUD GAMING
@@ -366,22 +548,517 @@ REMOTE GAME EXECUTION
 
 DESKTOP GAME LAUNCHER
 
-DOWNLOAD CLIENT
+GAME DOWNLOAD CLIENT
 
 QUEUE-BASED STREAMING SERVICE
 
 TRADITIONAL GAME MARKETPLACE
 ```
 
-The browser is the primary gateway into the ecosystem.
+Those models should not be used to describe the platform unless formal project
+direction changes.
 
 ---
 
-<a id="structure"></a>
+<a id="preview"></a>
 
-## ✦ Application Structure
+## ✦ Preview
 
-The current application structure is:
+The repository includes real interface captures under:
+
+```text
+assets/screenshots/
+```
+
+A homepage capture can be viewed here:
+
+<p align="center">
+  <img
+    src="assets/screenshots/website/gaming-horizon-hero-homepage.png"
+    width="900"
+    alt="Gaming Horizon browser-first homepage interface"
+  />
+</p>
+
+> **Screenshot:** real interface capture.  
+> **Showcase:** conceptual visual storytelling.
+
+These categories remain intentionally separate.
+
+---
+
+<a id="vision"></a>
+
+## ✦ Vision
+
+Gaming Horizon aims to build a gaming ecosystem where:
+
+```text
+DISCOVERY
+     │
+     ▼
+CONTEXT
+     │
+     ▼
+CONNECTION
+     │
+     ▼
+PARTICIPATION
+     │
+     ▼
+CREATION
+     │
+     ▼
+NEW POSSIBILITY
+```
+
+The long-term vision is documented in:
+
+[`docs/VISION.md`](docs/VISION.md)
+
+---
+
+## ✦ Vision Statement
+
+> **Build a premium browser-first gaming ecosystem where discovery leads to possibility, community creates connection, creativity expands the experience, competition creates progression, developers build what comes next, and new ideas continue beyond the current Horizon.**
+
+---
+
+<a id="ecosystem"></a>
+
+## ✦ Ecosystem
+
+Gaming Horizon is organized around connected ecosystem areas.
+
+```text
+                          GAMING HORIZON
+                                │
+                                ▼
+                             PLATFORM
+                                │
+          ┌─────────────────────┼─────────────────────┐
+          ▼                     ▼                     ▼
+      DISCOVERY             COMMUNITY              CREATORS
+          │                     │                     │
+          ├─────────────────────┼─────────────────────┤
+          ▼                     ▼                     ▼
+       COMPETE              DEVELOPERS                AI
+          │                     │                     │
+          └─────────────────────┼─────────────────────┘
+                                ▼
+                         HORIZON LABS
+                                │
+                                ▼
+                             BEYOND
+```
+
+Detailed ecosystem documentation:
+
+[`docs/ECOSYSTEM.md`](docs/ECOSYSTEM.md)
+
+---
+
+## ✦ Discovery
+
+Discovery should help users move beyond exact search toward meaningful
+exploration.
+
+Potential discovery relationships include:
+
+```text
+GAMES
+
+GENRES
+
+INTERESTS
+
+COMMUNITIES
+
+CREATORS
+
+COMPETITIONS
+
+RELATED EXPERIENCES
+```
+
+Read:
+
+[`docs/DISCOVERY.md`](docs/DISCOVERY.md)
+
+---
+
+## ✦ Community
+
+Community connects the people around the platform.
+
+Its role includes areas such as:
+
+```text
+PARTICIPATION
+
+DISCUSSION
+
+SUPPORT
+
+FEEDBACK
+
+MODERATION
+
+REPORTING
+
+COLLABORATION
+
+TRUST
+```
+
+Read:
+
+[`docs/COMMUNITY.md`](docs/COMMUNITY.md)
+
+---
+
+## ✦ Creators
+
+Creators can expand the ecosystem through:
+
+```text
+CONTENT
+
+GUIDES
+
+ANALYSIS
+
+STORYTELLING
+
+ART
+
+TOOLS
+
+COMMUNITY VALUE
+
+NEW EXPERIENCES
+```
+
+Human creative direction remains central.
+
+Read:
+
+[`docs/CREATORS.md`](docs/CREATORS.md)
+
+---
+
+## ✦ Competition
+
+Competitive experiences should prioritize:
+
+```text
+SKILL
+
+FAIRNESS
+
+CLARITY
+
+INTEGRITY
+
+PROGRESSION
+
+COMMUNITY
+```
+
+Read:
+
+[`docs/COMPETE.md`](docs/COMPETE.md)
+
+---
+
+## ✦ Developers
+
+Developer experience should make Gaming Horizon easier to:
+
+```text
+UNDERSTAND
+
+BUILD
+
+CONTRIBUTE TO
+
+VALIDATE
+
+MAINTAIN
+
+EVOLVE
+```
+
+Read:
+
+[`docs/DEVELOPERS.md`](docs/DEVELOPERS.md)
+
+---
+
+## ✦ Artificial Intelligence
+
+AI may support Gaming Horizon where it creates meaningful value.
+
+Potential areas include:
+
+```text
+DISCOVERY ASSISTANCE
+
+CREATOR ASSISTANCE
+
+DEVELOPER ASSISTANCE
+
+DOCUMENTATION
+
+CONTEXT
+
+SUPPORT
+
+ACCESSIBILITY
+```
+
+AI remains assistive.
+
+It is not the authority for project truth.
+
+Read:
+
+[`docs/AI.md`](docs/AI.md)
+
+---
+
+<a id="technology"></a>
+
+## ✦ Confirmed Technology
+
+The current application and repository configuration confirm:
+
+| Technology | Role |
+| --- | --- |
+| **Next.js** | Application framework |
+| **React** | Interface runtime |
+| **TypeScript** | Application language and type system |
+| **npm** | Package management |
+| **Tailwind CSS** | Application styling system |
+| **PostCSS** | Stylesheet processing |
+| **Supabase** | Application integration and database migrations |
+| **GitHub Actions** | Repository automation and validation |
+| **Netlify** | Deployment configuration and hosting integration |
+
+The repository remains authoritative if this technical foundation changes.
+
+---
+
+## ✦ Technology Model
+
+```text
+                         APPLICATION
+                              │
+            ┌─────────────────┼─────────────────┐
+            ▼                 ▼                 ▼
+         NEXT.JS            REACT           TYPESCRIPT
+            │                 │                 │
+            └─────────────────┼─────────────────┘
+                              ▼
+                             NPM
+                              │
+                              ▼
+                         SOURCE CODE
+                              │
+       ┌──────────────────────┼──────────────────────┐
+       ▼                      ▼                      ▼
+      app/                components/              lib/
+                              │
+                              ▼
+                           public/
+                              │
+                              ▼
+                            DATA
+                              │
+                              ▼
+                         SUPABASE
+
+
+TAILWIND CSS / POSTCSS ─────► STYLING PIPELINE
+
+GITHUB ACTIONS ─────────────► VALIDATION
+
+NETLIFY ────────────────────► DEPLOYMENT
+```
+
+---
+
+<a id="architecture"></a>
+
+## ✦ Architecture
+
+Gaming Horizon architecture is designed around clear responsibilities,
+browser-first delivery, trust boundaries, maintainability, accessibility, and
+controlled evolution.
+
+Core principle:
+
+> **Architecture supports the experience, not the other way around.**
+
+Read:
+
+[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
+
+---
+
+## ✦ Platform Architecture
+
+```text
+                         BROWSER
+                            │
+                            ▼
+                        NEXT.JS APP
+                            │
+       ┌────────────────────┼────────────────────┐
+       ▼                    ▼                    ▼
+      app/              components/            lib/
+       │                    │                    │
+       └────────────────────┼────────────────────┘
+                            ▼
+                     APPLICATION LOGIC
+                            │
+                   ┌────────┴────────┐
+                   ▼                 ▼
+                DATA             SERVICES /
+                                  INTEGRATIONS
+                   │
+                   ▼
+                SUPABASE
+```
+
+This is a conceptual structural map rather than a claim of every runtime
+service.
+
+---
+
+<a id="repository-structure"></a>
+
+## ✦ Repository Structure
+
+The repository separates application source, documentation, assets, GitHub
+infrastructure, policies, and deployment configuration.
+
+```text
+The-Gaming-Horizon/
+│
+├── .github/
+│   │
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── README.md
+│   │   ├── bug_report.md
+│   │   ├── config.yml
+│   │   ├── custom.md
+│   │   ├── feature_request.md
+│   │   ├── feedback.yml
+│   │   └── question.yml
+│   │
+│   ├── workflows/
+│   │   ├── README.md
+│   │   ├── ci.yml
+│   │   └── stale.yml
+│   │
+│   ├── CODEOWNERS
+│   ├── FUNDING.yml
+│   ├── GITHUB-SYSTEM.md
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   └── dependabot.yml
+│
+├── THE-GAMING-HORIZON/
+│   │
+│   ├── app/
+│   ├── components/
+│   ├── lib/
+│   ├── public/
+│   │
+│   ├── supabase/
+│   │   └── migrations/
+│   │
+│   ├── README.md
+│   ├── components.json
+│   ├── next.config.mjs
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.mjs
+│   ├── proxy.ts
+│   └── tsconfig.json
+│
+├── assets/
+│   │
+│   ├── branding/
+│   │   ├── banners/
+│   │   ├── icons/
+│   │   ├── logos/
+│   │   └── README.md
+│   │
+│   ├── screenshots/
+│   │   ├── features/
+│   │   ├── website/
+│   │   └── README.md
+│   │
+│   ├── showcase/
+│   └── README.md
+│
+├── docs/
+│   ├── AI.md
+│   ├── ARCHITECTURE.md
+│   ├── BETA.md
+│   ├── BEYOND.md
+│   ├── COMMUNITY.md
+│   ├── COMPETE.md
+│   ├── CREATORS.md
+│   ├── DEVELOPERS.md
+│   ├── DEVELOPMENT.md
+│   ├── DIRECTION.md
+│   ├── DISCOVERY.md
+│   ├── ECOSYSTEM.md
+│   ├── LABS.md
+│   ├── NETWORK.md
+│   ├── PLATFORM.md
+│   ├── PROJECT-INFORMATION.md
+│   ├── README.md
+│   └── VISION.md
+│
+├── .gitignore
+├── BRAND.md
+├── CHANGELOG.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── COPYRIGHT.md
+├── LICENSE
+├── PRIVACY.md
+├── README.md
+├── ROADMAP.md
+├── SECURITY.md
+├── SUPPORT.md
+├── TERMS.md
+├── THIRD-PARTY-NOTICES.md
+└── netlify.toml
+```
+
+> [!IMPORTANT]
+> Application package and framework configuration files live inside
+> `THE-GAMING-HORIZON/`.
+>
+> `netlify.toml` intentionally remains at repository root.
+
+---
+
+<a id="application"></a>
+
+## ✦ Application
+
+The primary Gaming Horizon application is located under:
+
+```text
+THE-GAMING-HORIZON/
+```
+
+Current application structure:
 
 ```text
 THE-GAMING-HORIZON/
@@ -403,40 +1080,15 @@ THE-GAMING-HORIZON/
 └── tsconfig.json
 ```
 
-> [!IMPORTANT]
-> These technical configuration files live inside `THE-GAMING-HORIZON/`.
-> They are not located at the repository root.
+Application-specific documentation:
+
+[`THE-GAMING-HORIZON/README.md`](THE-GAMING-HORIZON/README.md)
 
 ---
 
-## ✦ Responsibility Map
+## ✦ Application Responsibilities
 
-| Resource | Responsibility |
-| --- | --- |
-| `app/` | Next.js routes, layouts, pages, metadata, and application composition |
-| `components/` | Reusable interface components |
-| `lib/` | Shared logic, helpers, integrations, and service boundaries |
-| `public/` | Runtime public assets |
-| `supabase/` | Supabase-related application systems |
-| `supabase/migrations/` | Version-controlled database migrations |
-| `components.json` | Component-system configuration |
-| `next.config.mjs` | Next.js configuration |
-| `package.json` | npm package manifest |
-| `package-lock.json` | Reproducible dependency lockfile |
-| `postcss.config.mjs` | PostCSS / Tailwind CSS configuration |
-| `proxy.ts` | Request/session proxy |
-| `tsconfig.json` | TypeScript configuration |
-| `README.md` | Application documentation |
-
----
-
-<a id="app"></a>
-
-## ✦ `app/`
-
-The `app/` directory contains the Next.js application-router architecture.
-
-Responsibilities can include:
+### `app/`
 
 ```text
 ROUTES
@@ -447,461 +1099,329 @@ PAGES
 
 METADATA
 
+ROUTE COMPOSITION
+
 LOADING STATES
 
 ERROR STATES
-
-APPLICATION SHELLS
-
-ROUTE COMPOSITION
 ```
 
-Application routes should remain understandable and organized around the
-experience they provide.
-
----
-
-<a id="components"></a>
-
-## ✦ `components/`
-
-The `components/` directory contains reusable interface systems.
-
-Examples include:
+### `components/`
 
 ```text
-NAVIGATION
+REUSABLE UI
 
-BUTTONS
+NAVIGATION
 
 CARDS
 
-PANELS
-
 FORMS
 
-DIALOGS
+PANELS
 
-LAYOUT SYSTEMS
-
-FEATURE INTERFACES
-
-SHARED INTERACTIONS
+SHARED INTERACTION
 ```
 
-Components should be reusable when reuse creates real value.
-
-Avoid unnecessary abstraction.
-
----
-
-<a id="lib"></a>
-
-## ✦ `lib/`
-
-The `lib/` directory contains shared application logic.
-
-Potential responsibilities include:
+### `lib/`
 
 ```text
 UTILITIES
 
-VALIDATION
+SHARED LOGIC
 
-DATA HELPERS
+VALIDATION
 
 TYPES
 
-AUTHENTICATION HELPERS
+DATA HELPERS
 
 SUPABASE HELPERS
 
 SERVICE BOUNDARIES
-
-SHARED APPLICATION LOGIC
 ```
 
-Logic used by multiple application areas should generally remain separate from
-route-specific presentation.
+### `public/`
+
+```text
+RUNTIME PUBLIC APPLICATION ASSETS
+```
+
+### `supabase/migrations/`
+
+```text
+VERSIONED DATABASE EVOLUTION
+```
 
 ---
 
-<a id="public"></a>
+## ✦ Application Configuration
 
-## ✦ `public/`
-
-The `public/` directory stores assets required directly by the running website.
-
-Examples may include:
+The application-specific configuration remains colocated with the application.
 
 ```text
-FAVICONS
-
-STATIC IMAGES
-
-MANIFEST ASSETS
-
-PUBLIC MEDIA
-
-DIRECTLY SERVED FILES
+THE-GAMING-HORIZON/
+│
+├── components.json
+├── next.config.mjs
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── proxy.ts
+└── tsconfig.json
 ```
 
-Repository documentation and branding assets remain under:
+### `package.json`
+
+Defines application dependencies and npm scripts.
+
+### `package-lock.json`
+
+Provides the reproducible npm dependency tree used by:
 
 ```text
-/assets/
-```
-
-at repository root.
-
----
-
-<a id="technology"></a>
-
-## ✦ Confirmed Application Technology
-
-The current application configuration includes:
-
-| Technology | Responsibility |
-| --- | --- |
-| **Next.js** | Web application framework |
-| **React** | Interface runtime |
-| **TypeScript** | Type-safe application development |
-| **npm** | Package and dependency management |
-| **Tailwind CSS** | Styling system |
-| **PostCSS** | Stylesheet processing |
-| **Supabase** | Application integration and database migration system |
-| **GitHub Actions** | Continuous integration |
-| **Netlify** | Deployment platform configuration |
-
-The repository remains the authoritative source if the technical stack changes.
-
----
-
-<a id="package-system"></a>
-
-## ✦ Package System
-
-Application package files:
-
-```text
-THE-GAMING-HORIZON/package.json
-
-THE-GAMING-HORIZON/package-lock.json
-```
-
-The expected dependency relationship is:
-
-```text
-package.json
-     │
-     ▼
-package-lock.json
-     │
-     ▼
 npm ci
-     │
-     ▼
-PRODUCTION BUILD
 ```
 
-The lockfile should remain synchronized with the manifest.
+### `next.config.mjs`
 
-Do not manually fabricate `package-lock.json`.
+Defines current Next.js application configuration.
+
+### `tsconfig.json`
+
+Defines TypeScript compiler behavior and project path aliases.
+
+### `postcss.config.mjs`
+
+Defines the Tailwind CSS PostCSS processing pipeline.
+
+### `components.json`
+
+Defines component-system configuration.
+
+### `proxy.ts`
+
+Handles the application request/session proxy relationship with the existing
+Supabase session utility.
 
 ---
 
-## ✦ Current npm Commands
+<a id="documentation"></a>
 
-The application provides the primary commands:
+## ✦ Documentation
 
-```bash
-npm run dev
-npm run build
-npm run start
-```
+Gaming Horizon uses a dedicated documentation architecture rather than placing
+every project system inside the root README.
 
-### Development
+Start here:
 
-```bash
-npm run dev
-```
-
-Starts the Next.js development environment.
-
-### Production Build
-
-```bash
-npm run build
-```
-
-Generates the production application build.
-
-### Production Start
-
-```bash
-npm run start
-```
-
-Runs the built Next.js application.
+[`docs/README.md`](docs/README.md)
 
 ---
 
-<a id="nextjs"></a>
-
-## ✦ Next.js
-
-Configuration:
+## ✦ Documentation Map
 
 ```text
-next.config.mjs
-```
-
-The current configuration includes:
-
-```text
-NEXT.JS APPLICATION SETTINGS
-
-IMAGE FORMAT CONFIGURATION
-
-CURRENT TYPESCRIPT BUILD BEHAVIOR
-```
-
-Configuration should remain minimal and only introduce additional overrides
-when the application genuinely requires them.
-
----
-
-## ✦ TypeScript Build Boundary
-
-The current Next.js configuration contains existing TypeScript build-error
-handling used by the application.
-
-Long-term preference:
-
-```text
-TYPE ERROR
-    │
-    ▼
-IDENTIFY
-    │
-    ▼
-CORRECT
-    │
-    ▼
-VALIDATE
-    │
-    ▼
-STRICT BUILD
-```
-
-Ignoring build errors should not become a permanent replacement for healthy
-TypeScript validation.
-
----
-
-<a id="typescript"></a>
-
-## ✦ TypeScript
-
-Configuration:
-
-```text
-tsconfig.json
-```
-
-Current TypeScript configuration supports:
-
-```text
-STRICT TYPE CHECKING
-
-NEXT.JS INTEGRATION
-
-BUNDLER MODULE RESOLUTION
-
-PROJECT PATH ALIASES
-
-INCREMENTAL COMPILATION
-
-REACT JSX
-```
-
-The application path alias:
-
-```text
-@/*
-```
-
-maps to the application root.
-
-Example:
-
-```ts
-import { something } from '@/lib/something'
+                         PROJECT INFORMATION
+                                  │
+                                  ▼
+                               VISION
+                                  │
+                                  ▼
+                              DIRECTION
+                                  │
+               ┌──────────────────┼──────────────────┐
+               ▼                  ▼                  ▼
+           ECOSYSTEM           PLATFORM         ARCHITECTURE
+               │                  │                  │
+               ├──────────────────┼──────────────────┤
+               ▼                  ▼                  ▼
+          DISCOVERY          COMMUNITY           CREATORS
+               │                  │                  │
+               ├──────────────────┼──────────────────┤
+               ▼                  ▼                  ▼
+            COMPETE           DEVELOPERS             AI
+               │                  │                  │
+               └──────────────────┼──────────────────┘
+                                  ▼
+                           DEVELOPMENT
+                                  │
+                        ┌─────────┴─────────┐
+                        ▼                   ▼
+                      BETA                LABS
+                                            │
+                                            ▼
+                                         BEYOND
 ```
 
 ---
 
-<a id="components-config"></a>
+## ✦ Documentation Index
 
-## ✦ Component Configuration
-
-Configuration:
-
-```text
-components.json
-```
-
-The component system currently supports:
-
-```text
-REACT SERVER COMPONENTS
-
-TYPESCRIPT
-
-TAILWIND CSS
-
-CSS VARIABLES
-
-LUCIDE ICONS
-
-PROJECT PATH ALIASES
-```
-
-The configured component style should remain aligned with the actual source.
+| System | Documentation |
+| --- | --- |
+| **Documentation Gateway** | [`docs/README.md`](docs/README.md) |
+| **Project Information** | [`docs/PROJECT-INFORMATION.md`](docs/PROJECT-INFORMATION.md) |
+| **Vision** | [`docs/VISION.md`](docs/VISION.md) |
+| **Direction** | [`docs/DIRECTION.md`](docs/DIRECTION.md) |
+| **Ecosystem** | [`docs/ECOSYSTEM.md`](docs/ECOSYSTEM.md) |
+| **Platform** | [`docs/PLATFORM.md`](docs/PLATFORM.md) |
+| **Architecture** | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) |
+| **Discovery** | [`docs/DISCOVERY.md`](docs/DISCOVERY.md) |
+| **Community** | [`docs/COMMUNITY.md`](docs/COMMUNITY.md) |
+| **Creators** | [`docs/CREATORS.md`](docs/CREATORS.md) |
+| **Developers** | [`docs/DEVELOPERS.md`](docs/DEVELOPERS.md) |
+| **Compete** | [`docs/COMPETE.md`](docs/COMPETE.md) |
+| **AI** | [`docs/AI.md`](docs/AI.md) |
+| **Development** | [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md) |
+| **Beta** | [`docs/BETA.md`](docs/BETA.md) |
+| **Horizon Labs** | [`docs/LABS.md`](docs/LABS.md) |
+| **Network** | [`docs/NETWORK.md`](docs/NETWORK.md) |
+| **Beyond** | [`docs/BEYOND.md`](docs/BEYOND.md) |
 
 ---
 
-<a id="styles"></a>
+## ✦ Navigation
 
-## ✦ Tailwind CSS & PostCSS
+<div align="center">
 
-PostCSS configuration:
+<a href="docs/VISION.md">
+  <img
+    src="https://img.shields.io/badge/VISION-READ-7C3AED?style=flat-square"
+    alt="Vision"
+  />
+</a>
+<a href="docs/DIRECTION.md">
+  <img
+    src="https://img.shields.io/badge/DIRECTION-EXPLORE-6366F1?style=flat-square"
+    alt="Direction"
+  />
+</a>
+<a href="docs/ECOSYSTEM.md">
+  <img
+    src="https://img.shields.io/badge/ECOSYSTEM-UNDERSTAND-2563EB?style=flat-square"
+    alt="Ecosystem"
+  />
+</a>
+<a href="docs/PLATFORM.md">
+  <img
+    src="https://img.shields.io/badge/PLATFORM-EXPLORE-0EA5E9?style=flat-square"
+    alt="Platform"
+  />
+</a>
+<a href="docs/ARCHITECTURE.md">
+  <img
+    src="https://img.shields.io/badge/ARCHITECTURE-STUDY-181717?style=flat-square"
+    alt="Architecture"
+  />
+</a>
 
-```text
-postcss.config.mjs
-```
+<br><br>
 
-The current stylesheet pipeline uses:
+<a href="docs/DISCOVERY.md">
+  <img
+    src="https://img.shields.io/badge/DISCOVERY-EXPLORE-7C3AED?style=flat-square"
+    alt="Discovery"
+  />
+</a>
+<a href="docs/COMMUNITY.md">
+  <img
+    src="https://img.shields.io/badge/COMMUNITY-CONNECT-5865F2?style=flat-square"
+    alt="Community"
+  />
+</a>
+<a href="docs/CREATORS.md">
+  <img
+    src="https://img.shields.io/badge/CREATORS-CREATE-A855F7?style=flat-square"
+    alt="Creators"
+  />
+</a>
+<a href="docs/COMPETE.md">
+  <img
+    src="https://img.shields.io/badge/COMPETE-PROGRESS-2563EB?style=flat-square"
+    alt="Compete"
+  />
+</a>
+<a href="docs/DEVELOPERS.md">
+  <img
+    src="https://img.shields.io/badge/DEVELOPERS-BUILD-181717?style=flat-square"
+    alt="Developers"
+  />
+</a>
+<a href="docs/AI.md">
+  <img
+    src="https://img.shields.io/badge/AI-ASSIST-0EA5E9?style=flat-square"
+    alt="AI"
+  />
+</a>
 
-```text
-@tailwindcss/postcss
-```
-
-Application styling should continue considering:
-
-```text
-ACCESSIBILITY
-
-RESPONSIVENESS
-
-PERFORMANCE
-
-CONSISTENCY
-
-READABILITY
-
-MAINTAINABILITY
-```
-
----
-
-<a id="supabase"></a>
-
-## ✦ Supabase
-
-Gaming Horizon maintains Supabase-related application systems under:
-
-```text
-supabase/
-```
-
-Database migrations are stored under:
-
-```text
-supabase/migrations/
-```
-
-Migrations should remain version-controlled.
-
-```text
-DATABASE CHANGE
-      │
-      ▼
-MIGRATION
-      │
-      ▼
-VERSION CONTROL
-      │
-      ▼
-REVIEW
-      │
-      ▼
-CONTROLLED DEPLOYMENT
-```
-
----
-
-## ✦ Supabase Security
-
-Never expose privileged server credentials through browser code.
-
-Never commit:
-
-```text
-SUPABASE SERVICE ROLE KEYS
-
-DATABASE PASSWORDS
-
-PRIVATE ACCESS TOKENS
-
-SECRET API KEYS
-
-SERVER-ONLY CREDENTIALS
-```
-
-Security policy:
-
-[SECURITY.md](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/SECURITY.md)
-
----
-
-<a id="proxy"></a>
-
-## ✦ Request Proxy
-
-Application proxy:
-
-```text
-proxy.ts
-```
-
-The proxy delegates request/session processing to the Supabase proxy utility
-maintained under application shared logic.
-
-```text
-REQUEST
-   │
-   ▼
-proxy.ts
-   │
-   ▼
-SUPABASE SESSION UTILITY
-   │
-   ▼
-REQUEST / RESPONSE CONTEXT
-```
-
-Static resources and common image formats are excluded where configured by the
-proxy matcher.
+</div>
 
 ---
 
 <a id="development"></a>
 
-## ✦ Local Development
+## ✦ Development
 
-From the repository root:
+Gaming Horizon development is guided by:
+
+> **Build what matters. Remove what does not. Improve what remains.**
+
+Development documentation:
+
+[`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md)
+
+Developer documentation:
+
+[`docs/DEVELOPERS.md`](docs/DEVELOPERS.md)
+
+Application documentation:
+
+[`THE-GAMING-HORIZON/README.md`](THE-GAMING-HORIZON/README.md)
+
+Contribution guidance:
+
+[`CONTRIBUTING.md`](CONTRIBUTING.md)
+
+---
+
+## ✦ Development Lifecycle
+
+```text
+NEED
+ │
+ ▼
+UNDERSTAND
+ │
+ ▼
+DESIGN
+ │
+ ▼
+ARCHITECT
+ │
+ ▼
+BUILD
+ │
+ ▼
+VALIDATE
+ │
+ ▼
+REVIEW
+ │
+ ▼
+RELEASE
+ │
+ ▼
+LEARN
+ │
+ ▼
+IMPROVE
+```
+
+---
+
+## ✦ Local Application Development
+
+From repository root:
 
 ```bash
 cd THE-GAMING-HORIZON
@@ -909,50 +1429,19 @@ npm ci
 npm run dev
 ```
 
-For dependency changes:
+When dependency changes are required:
 
 ```bash
 cd THE-GAMING-HORIZON
 npm install
 ```
 
-Commit the resulting `package.json` and `package-lock.json` changes together
-when appropriate.
+The resulting `package.json` and `package-lock.json` changes should remain
+synchronized.
 
 ---
-
-## ✦ Development Flow
-
-```text
-REQUIREMENT
-     │
-     ▼
-IMPLEMENTATION
-     │
-     ▼
-LOCAL VALIDATION
-     │
-     ▼
-CI
-     │
-     ▼
-REVIEW
-     │
-     ▼
-MERGE
-```
-
----
-
-<a id="build"></a>
 
 ## ✦ Production Build
-
-From the application directory:
-
-```bash
-npm run build
-```
 
 From repository root:
 
@@ -961,82 +1450,745 @@ cd THE-GAMING-HORIZON
 npm run build
 ```
 
-The production build is also validated through GitHub Actions.
+The application production build is also validated by GitHub Actions.
 
 ---
 
-<a id="ci"></a>
+## ✦ Development Priorities
 
-## ✦ Continuous Integration
+Gaming Horizon development should consistently consider:
 
-CI workflow:
+```text
+PURPOSE
 
-[`.github/workflows/ci.yml`](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/.github/workflows/ci.yml)
+SECURITY
+
+PRIVACY
+
+ACCESSIBILITY
+
+PERFORMANCE
+
+RELIABILITY
+
+RESPONSIVE DESIGN
+
+MAINTAINABILITY
+
+DOCUMENTATION
+```
+
+---
+
+<a id="beta"></a>
+
+## ✦ Beta
+
+Beta exists to answer:
+
+> **Does the experience work well enough in real use to move closer to release?**
+
+Beta validation may include:
+
+```text
+USABILITY
+
+ACCESSIBILITY
+
+RESPONSIVENESS
+
+PERFORMANCE
+
+SECURITY
+
+PRIVACY
+
+RELIABILITY
+
+FEEDBACK
+```
+
+Read:
+
+[`docs/BETA.md`](docs/BETA.md)
+
+---
+
+<a id="labs"></a>
+
+## ✦ Horizon Labs
+
+Horizon Labs provides space to experiment before commitment.
+
+```text
+CONCEPT
+   │
+   ▼
+PROTOTYPE
+   │
+   ▼
+EXPERIMENTAL
+   │
+   ▼
+LIMITED
+   │
+   ▼
+PRE-RELEASE
+```
+
+An experiment may:
+
+```text
+GRADUATE
+
+CHANGE
+
+RETURN TO RESEARCH
+
+BE ARCHIVED
+```
+
+Read:
+
+[`docs/LABS.md`](docs/LABS.md)
+
+---
+
+<a id="beyond"></a>
+
+## ✦ Beyond
+
+Beyond preserves room for ideas that do not yet belong inside established
+Gaming Horizon systems.
+
+```text
+CURRENT PLATFORM
+      │
+      ▼
+CURRENT HORIZON
+      │
+      ▼
+QUESTIONS
+      │
+      ▼
+POSSIBILITIES
+      │
+      ▼
+BEYOND
+```
+
+Beyond is exploratory.
+
+It is **not** a release commitment.
+
+Read:
+
+[`docs/BEYOND.md`](docs/BEYOND.md)
+
+---
+
+<a id="quality-foundations"></a>
+
+## ✦ Quality Foundations
+
+Gaming Horizon should not separate technical quality from product quality.
+
+```text
+                    QUALITY
+                       │
+      ┌────────────────┼────────────────┐
+      ▼                ▼                ▼
+  SECURITY          PRIVACY        ACCESSIBILITY
+      │                │                │
+      ├────────────────┼────────────────┤
+      ▼                ▼                ▼
+ PERFORMANCE      RELIABILITY      MAINTAINABILITY
+      │                │                │
+      └────────────────┼────────────────┘
+                       ▼
+                 USER EXPERIENCE
+```
+
+---
+
+## ✦ Accessibility
+
+Accessibility is foundational.
+
+Consider:
+
+```text
+SEMANTIC HTML
+
+KEYBOARD NAVIGATION
+
+VISIBLE FOCUS
+
+SCREEN READERS
+
+FORM LABELS
+
+CONTRAST
+
+REDUCED MOTION
+
+RESPONSIVE DESIGN
+
+TOUCH TARGETS
+
+ERROR FEEDBACK
+```
+
+---
+
+## ✦ Performance
+
+Premium presentation should not mean unnecessary weight.
+
+```text
+PREMIUM
+   ≠
+HEAVY
+```
+
+Performance considerations include:
+
+```text
+CLIENT JAVASCRIPT
+
+MEDIA
+
+NETWORK REQUESTS
+
+ANIMATION
+
+THIRD-PARTY SYSTEMS
+
+DATA FETCHING
+
+RENDERING COST
+```
+
+---
+
+## ✦ Reliability
+
+Systems should expect failure.
+
+```text
+NETWORK FAILURE
+
+MISSING DATA
+
+SERVICE FAILURE
+
+INVALID INPUT
+
+AUTHENTICATION FAILURE
+
+CONFIGURATION FAILURE
+```
+
+Optional systems should degrade gracefully where practical.
+
+---
+
+<a id="security"></a>
+
+## ✦ Security
+
+Security guidance:
+
+[`SECURITY.md`](SECURITY.md)
+
+Core trust principle:
+
+```text
+BROWSER
+   │
+   ▼
+UNTRUSTED INPUT
+   │
+   ▼
+VALIDATE
+   │
+=============== TRUST BOUNDARY ===============
+   │
+   ▼
+TRUSTED LOGIC
+   │
+   ▼
+AUTHORIZATION
+   │
+   ▼
+PROTECTED RESOURCE
+```
+
+Never commit:
+
+```text
+PASSWORDS
+
+API KEYS
+
+ACCESS TOKENS
+
+PRIVATE KEYS
+
+SERVICE ROLE KEYS
+
+DATABASE CREDENTIALS
+
+DEPLOYMENT TOKENS
+
+BOT TOKENS
+
+WEBHOOK SECRETS
+```
+
+---
+
+<a id="privacy"></a>
+
+## ✦ Privacy
+
+Privacy guidance:
+
+[`PRIVACY.md`](PRIVACY.md)
+
+Gaming Horizon should follow:
+
+```text
+REAL PURPOSE
+      │
+      ▼
+MINIMUM NECESSARY DATA
+      │
+      ▼
+PROTECT
+      │
+      ▼
+CONTROL ACCESS
+      │
+      ▼
+RETAIN ONLY AS NEEDED
+```
+
+---
+
+<a id="brand"></a>
+
+## ✦ Brand
+
+The official Gaming Horizon brand system is documented in:
+
+[`BRAND.md`](BRAND.md)
+
+Brand personality:
+
+```text
+PREMIUM
+
+FUTURISTIC
+
+CINEMATIC
+
+GAMING-FOCUSED
+
+INNOVATIVE
+
+CONFIDENT
+
+ELEGANT
+
+ACCESSIBLE
+
+INTERNATIONAL
+
+TRUSTWORTHY
+```
+
+---
+
+## ✦ Visual Direction
+
+Primary visual direction includes:
+
+```text
+DEEP CHARCOAL
+
+MIDNIGHT BLACK
+
+NAVY
+
+PURPLE
+
+ELECTRIC BLUE
+
+CYAN
+
+VIOLET
+
+SUBTLE MAGENTA
+
+GLASSMORPHISM
+
+CINEMATIC GRADIENTS
+
+ATMOSPHERIC DEPTH
+
+CONTROLLED MOTION
+```
+
+---
+
+## ✦ Official Logo
+
+Authoritative source:
+
+```text
+assets/branding/logos/gaming-horizon-logo-source.png
+```
+
+Do not:
+
+```text
+REDRAW
+
+STRETCH
+
+SQUASH
+
+DISTORT
+
+ARBITRARILY RECOLOR
+
+REPLACE WITH AN AI RECREATION
+```
+
+the official logo.
+
+---
+
+<a id="assets"></a>
+
+## ✦ Assets
+
+Repository assets are organized into dedicated systems.
+
+```text
+assets/
+│
+├── branding/
+│   ├── banners/
+│   ├── icons/
+│   └── logos/
+│
+├── screenshots/
+│   ├── features/
+│   └── website/
+│
+└── showcase/
+```
+
+Asset documentation:
+
+[`assets/README.md`](assets/README.md)
+
+---
+
+## ✦ Branding Assets
+
+[`assets/branding/README.md`](assets/branding/README.md)
+
+Includes:
+
+```text
+LOGOS
+
+BANNERS
+
+ICONS
+```
+
+---
+
+## ✦ Screenshots
+
+[`assets/screenshots/README.md`](assets/screenshots/README.md)
+
+Definition:
+
+```text
+SCREENSHOT
+      =
+REAL INTERFACE CAPTURE
+```
+
+---
+
+## ✦ Showcase
+
+[`assets/showcase/README.md`](assets/showcase/README.md)
+
+Definition:
+
+```text
+SHOWCASE
+      =
+CONCEPTUAL VISUAL STORYTELLING
+```
+
+---
+
+## ✦ Screenshot vs Showcase
+
+```text
+SCREENSHOT
+    ≠
+SHOWCASE
+```
+
+```text
+SHOWCASE
+    ≠
+FEATURE PROOF
+```
+
+This distinction is part of Gaming Horizon's project-truth standard.
+
+---
+
+<a id="github-system"></a>
+
+## ✦ GitHub System
+
+Repository operations are organized under:
+
+```text
+.github/
+```
+
+Dedicated GitHub-system documentation:
+
+[`.github/GITHUB-SYSTEM.md`](.github/GITHUB-SYSTEM.md)
+
+---
+
+## ✦ GitHub Infrastructure
+
+Current GitHub infrastructure includes:
+
+```text
+ISSUE TEMPLATES
+
+PULL REQUEST TEMPLATE
+
+CODEOWNERS
+
+GITHUB ACTIONS
+
+DEPENDABOT
+
+STALE MANAGEMENT
+
+FUNDING CONFIGURATION
+
+GITHUB SYSTEM DOCUMENTATION
+```
+
+---
+
+## ✦ Workflows
 
 Workflow documentation:
 
-[`.github/workflows/README.md`](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/.github/workflows/README.md)
+[`.github/workflows/README.md`](.github/workflows/README.md)
 
-The workflow runs application commands from:
+Current workflow files:
 
 ```text
-THE-GAMING-HORIZON/
+.github/workflows/
+│
+├── README.md
+├── ci.yml
+└── stale.yml
 ```
 
-and uses:
+Repository Actions:
+
+```text
+https://github.com/thegaminghorizon/The-Gaming-Horizon/actions
+```
+
+---
+
+## ✦ Continuous Integration
+
+The primary CI workflow:
+
+```text
+.github/workflows/ci.yml
+```
+
+is configured for the nested application.
+
+```text
+REPOSITORY
+     │
+     ▼
+GITHUB ACTIONS
+     │
+     ▼
+THE-GAMING-HORIZON/
+     │
+     ├── package validation
+     ├── npm ci
+     ├── available quality checks
+     └── production build
+```
+
+The workflow uses:
 
 ```text
 THE-GAMING-HORIZON/package-lock.json
 ```
 
-for npm dependency caching.
+for npm dependency caching and reproducible installation.
 
 ---
 
-## ✦ CI Architecture
+## ✦ Dependabot
+
+Dependabot configuration:
 
 ```text
-PUSH / PULL REQUEST
-        │
-        ▼
-CHECKOUT
-        │
-        ▼
-SETUP NODE.JS
-        │
-        ▼
-VALIDATE PACKAGE FILES
-        │
-        ▼
-npm ci
-        │
-        ▼
-AVAILABLE QUALITY CHECKS
-        │
-        ▼
-PRODUCTION BUILD
-        │
-        ▼
-RESULT
+.github/dependabot.yml
+```
+
+Current dependency monitoring:
+
+```text
+NPM
+ │
+ ▼
+/THE-GAMING-HORIZON
+
+
+GITHUB ACTIONS
+ │
+ ▼
+/
+```
+
+This ensures npm dependency checks follow the actual application manifest
+location.
+
+---
+
+## ✦ CODEOWNERS
+
+Repository ownership configuration:
+
+```text
+.github/CODEOWNERS
+```
+
+Current default owner:
+
+```text
+@thegaminghorizon
+```
+
+Critical application, automation, documentation, branding, policy, and
+deployment paths remain explicitly owner-reviewed.
+
+---
+
+## ✦ Issues
+
+Issue tracker:
+
+```text
+https://github.com/thegaminghorizon/The-Gaming-Horizon/issues
+```
+
+Issue-template documentation:
+
+[`.github/ISSUE_TEMPLATE/README.md`](.github/ISSUE_TEMPLATE/README.md)
+
+Current issue-template system includes:
+
+```text
+BUG REPORT
+
+FEATURE REQUEST
+
+FEEDBACK
+
+QUESTION
+
+CUSTOM ISSUE
+```
+
+---
+
+## ✦ Pull Requests
+
+Pull requests:
+
+```text
+https://github.com/thegaminghorizon/The-Gaming-Horizon/pulls
+```
+
+Meaningful changes should generally move through:
+
+```text
+ISSUE / NEED
+      │
+      ▼
+BRANCH
+      │
+      ▼
+IMPLEMENTATION
+      │
+      ▼
+LOCAL VALIDATION
+      │
+      ▼
+PULL REQUEST
+      │
+      ▼
+CI
+      │
+      ▼
+REVIEW
+      │
+      ▼
+MERGE
 ```
 
 ---
 
 <a id="deployment"></a>
 
-## ✦ Netlify Deployment
+## ✦ Deployment
 
 Repository deployment configuration:
 
-[`netlify.toml`](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/netlify.toml)
+```text
+netlify.toml
+```
 
-Netlify identifies:
+The configuration intentionally remains at repository root.
+
+It identifies:
 
 ```text
 THE-GAMING-HORIZON
 ```
 
-as the application base directory.
+as the Netlify application base directory.
 
 ```text
 REPOSITORY ROOT
@@ -1051,319 +2203,8 @@ base = THE-GAMING-HORIZON
 npm run build
       │
       ▼
-NEXT.JS OUTPUT
+NEXT.JS BUILD
 ```
-
-`netlify.toml` intentionally remains at repository root.
-
----
-
-<a id="environment"></a>
-
-## ✦ Environment Variables
-
-Real environment files must not be committed.
-
-Never commit:
-
-```text
-.env
-
-.env.local
-
-.env.production
-
-.env.development
-
-DATABASE PASSWORDS
-
-SUPABASE SERVICE ROLE KEYS
-
-DEPLOYMENT TOKENS
-
-API SECRETS
-```
-
-Safe templates may be committed when they contain no real credentials.
-
-Repository ignore configuration:
-
-[`.gitignore`](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/.gitignore)
-
----
-
-<a id="security"></a>
-
-## ✦ Security
-
-Security is part of application architecture.
-
-Important areas include:
-
-```text
-INPUT VALIDATION
-
-AUTHENTICATION
-
-AUTHORIZATION
-
-SESSION MANAGEMENT
-
-DATABASE ACCESS
-
-SECRET MANAGEMENT
-
-DEPENDENCY SECURITY
-
-REQUEST BOUNDARIES
-
-ERROR HANDLING
-```
-
-Repository security policy:
-
-[`SECURITY.md`](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/SECURITY.md)
-
----
-
-## ✦ Trust Boundary
-
-```text
-BROWSER
-   │
-   ▼
-UNTRUSTED INPUT
-   │
-   ▼
-VALIDATION
-   │
-=============== TRUST BOUNDARY ===============
-   │
-   ▼
-APPLICATION LOGIC
-   │
-   ▼
-AUTHORIZATION
-   │
-   ▼
-PROTECTED RESOURCE
-```
-
-Client input should never be trusted simply because it originated from a
-Gaming Horizon interface.
-
----
-
-<a id="accessibility"></a>
-
-## ✦ Accessibility
-
-Accessibility is a core quality requirement.
-
-Application development should consider:
-
-```text
-SEMANTIC HTML
-
-KEYBOARD NAVIGATION
-
-VISIBLE FOCUS
-
-SCREEN READER SUPPORT
-
-FORM LABELS
-
-COLOR CONTRAST
-
-REDUCED MOTION
-
-RESPONSIVE DESIGN
-
-TOUCH TARGETS
-
-ERROR FEEDBACK
-```
-
-Accessibility should be considered during implementation rather than added only
-at the end.
-
----
-
-<a id="performance"></a>
-
-## ✦ Performance
-
-Gaming Horizon's premium visual direction should remain efficient.
-
-```text
-PREMIUM
-   ≠
-HEAVY
-```
-
-Performance considerations include:
-
-```text
-CLIENT JAVASCRIPT
-
-IMAGE DELIVERY
-
-MEDIA
-
-FONT LOADING
-
-NETWORK REQUESTS
-
-ANIMATION
-
-THIRD-PARTY CODE
-
-DATA FETCHING
-
-RENDERING COST
-```
-
----
-
-<a id="reliability"></a>
-
-## ✦ Reliability
-
-The application should account for expected failure conditions.
-
-Examples:
-
-```text
-NETWORK FAILURE
-
-SERVICE FAILURE
-
-MISSING DATA
-
-INVALID INPUT
-
-AUTHENTICATION FAILURE
-
-DATABASE FAILURE
-
-CONFIGURATION FAILURE
-```
-
-Optional functionality should degrade gracefully where practical.
-
----
-
-<a id="architecture"></a>
-
-## ✦ Application Architecture
-
-```text
-                         BROWSER
-                            │
-                            ▼
-                        NEXT.JS APP
-                            │
-       ┌────────────────────┼────────────────────┐
-       ▼                    ▼                    ▼
-      app/              components/            lib/
-       │                    │                    │
-       └────────────────────┼────────────────────┘
-                            ▼
-                     APPLICATION LOGIC
-                            │
-                  ┌─────────┴─────────┐
-                  ▼                   ▼
-              INTERFACE             DATA /
-                                  SERVICES
-                                      │
-                                      ▼
-                                  SUPABASE
-```
-
-This is a structural architecture map, not a claim that every possible service
-has already been implemented.
-
-Full architecture documentation:
-
-[`ARCHITECTURE.md`](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/docs/ARCHITECTURE.md)
-
----
-
-<a id="project-truth"></a>
-
-## ✦ Project Truth
-
-The application may contain:
-
-```text
-IMPLEMENTED SYSTEMS
-
-IN-DEVELOPMENT FEATURES
-
-PLACEHOLDERS
-
-PRE-RELEASE INTERFACES
-
-EXPERIMENTAL CODE
-
-FUTURE-FACING STRUCTURE
-```
-
-These states must remain distinguishable.
-
-```text
-SOURCE FILE
-    ≠
-PUBLIC FEATURE
-
-ROUTE
-    ≠
-PRODUCTION-READY EXPERIENCE
-
-UI MOCKUP
-    ≠
-WORKING BACKEND
-
-SHOWCASE
-    ≠
-SCREENSHOT
-
-EXPERIMENT
-    ≠
-RELEASE COMMITMENT
-```
-
----
-
-## ✦ No Invented Claims
-
-Application documentation must not invent:
-
-```text
-USER COUNTS
-
-UPTIME
-
-REQUEST VOLUME
-
-PERFORMANCE BENCHMARKS
-
-LATENCY
-
-DATABASE SCALE
-
-AI ACCURACY
-
-TRAFFIC
-
-REVENUE
-
-PARTNERSHIPS
-
-INFRASTRUCTURE CAPACITY
-```
-
-Documentation should represent actual repository evidence.
 
 ---
 
@@ -1371,22 +2212,614 @@ Documentation should represent actual repository evidence.
 
 ## ✦ Contributing
 
-Contribution guide:
+Contributions are welcome when they meaningfully improve the project.
 
-[`CONTRIBUTING.md`](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/CONTRIBUTING.md)
+Read the full contribution guide:
 
-Code of Conduct:
+[`CONTRIBUTING.md`](CONTRIBUTING.md)
 
-[`CODE_OF_CONDUCT.md`](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/CODE_OF_CONDUCT.md)
+---
 
-Application changes should aim to remain:
+## ✦ Ways to Contribute
+
+Useful contributions may include:
+
+```text
+BUG FIXES
+
+FEATURE IMPROVEMENTS
+
+ACCESSIBILITY
+
+PERFORMANCE
+
+SECURITY
+
+DOCUMENTATION
+
+TESTING
+
+ARCHITECTURE
+
+DESIGN SYSTEMS
+
+DEVELOPER EXPERIENCE
+
+COMMUNITY SYSTEMS
+```
+
+---
+
+## ✦ Contributor Standard
+
+A contribution should aim to be:
 
 ```text
 PURPOSEFUL
 
 FOCUSED
 
+ACCESSIBLE
+
 SECURE
+
+PRIVATE
+
+PERFORMANT
+
+RELIABLE
+
+MAINTAINABLE
+
+TESTED
+
+DOCUMENTED
+
+TRUTHFUL
+```
+
+---
+
+## ✦ Code of Conduct
+
+All participation should follow:
+
+[`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
+
+Core principle:
+
+> **Challenge ideas without attacking people.**
+
+---
+
+<a id="project-truth"></a>
+
+## ✦ Project Truth
+
+Gaming Horizon documentation and presentation must distinguish between what
+exists and what is only being explored.
+
+---
+
+## ✦ Truth Boundaries
+
+```text
+VISION
+    ≠
+ROADMAP
+
+
+ROADMAP
+    ≠
+IMPLEMENTATION
+
+
+CONCEPT
+    ≠
+FEATURE
+
+
+PROTOTYPE
+    ≠
+PRODUCT
+
+
+LAB EXPERIMENT
+    ≠
+RELEASE COMMITMENT
+
+
+SHOWCASE
+    ≠
+SCREENSHOT
+
+
+AI OUTPUT
+    ≠
+PROJECT FACT
+```
+
+---
+
+## ✦ No Invented Metrics
+
+Do not claim unsupported:
+
+```text
+USER COUNTS
+
+GAME COUNTS
+
+CREATOR COUNTS
+
+COMMUNITY SIZE
+
+REPOSITORY TRAFFIC
+
+UPTIME
+
+LATENCY
+
+AI ACCURACY
+
+SEARCH ACCURACY
+
+REVENUE
+
+FUNDING
+
+MARKET SHARE
+
+GROWTH RATE
+```
+
+---
+
+## ✦ No Invented Partnerships
+
+Use of external platforms or technologies does not imply:
+
+```text
+PARTNERSHIP
+
+SPONSORSHIP
+
+ENDORSEMENT
+
+CERTIFICATION
+```
+
+unless such a relationship is actually confirmed.
+
+---
+
+## ✦ Project-State Architecture
+
+```text
+CURRENT
+  │
+  ├── AVAILABLE
+  └── ACTIVE
+
+
+DEVELOPMENT
+  │
+  ├── IN DEVELOPMENT
+  ├── BETA
+  └── PRE-RELEASE
+
+
+EXPERIMENTATION
+  │
+  ├── CONCEPT
+  ├── PROTOTYPE
+  ├── EXPERIMENTAL
+  └── LIMITED
+
+
+FUTURE
+  │
+  ├── EXPLORING
+  └── BEYOND
+```
+
+---
+
+<a id="changelog"></a>
+
+## ✦ Changelog
+
+Repository change history:
+
+[`CHANGELOG.md`](CHANGELOG.md)
+
+The changelog should separate:
+
+```text
+UNRELEASED DEVELOPMENT
+```
+
+from:
+
+```text
+CONFIRMED VERSIONED RELEASES
+```
+
+---
+
+## ✦ Changelog vs Git History
+
+```text
+GIT HISTORY
+    =
+DETAILED COMMIT HISTORY
+```
+
+```text
+CHANGELOG
+    =
+CURATED MEANINGFUL PROJECT HISTORY
+```
+
+---
+
+<a id="governance"></a>
+
+## ✦ Governance
+
+Gaming Horizon repository governance currently includes:
+
+| Area | Document |
+| --- | --- |
+| Contribution | [`CONTRIBUTING.md`](CONTRIBUTING.md) |
+| Conduct | [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) |
+| Security | [`SECURITY.md`](SECURITY.md) |
+| Privacy | [`PRIVACY.md`](PRIVACY.md) |
+| Support | [`SUPPORT.md`](SUPPORT.md) |
+| Terms | [`TERMS.md`](TERMS.md) |
+| Copyright | [`COPYRIGHT.md`](COPYRIGHT.md) |
+| Third-Party Notices | [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md) |
+| Brand | [`BRAND.md`](BRAND.md) |
+| Roadmap | [`ROADMAP.md`](ROADMAP.md) |
+| License | [`LICENSE`](LICENSE) |
+
+---
+
+<a id="copyright"></a>
+
+## ✦ Copyright
+
+Copyright and reuse guidance:
+
+[`COPYRIGHT.md`](COPYRIGHT.md)
+
+The repository distinguishes between:
+
+```text
+SOFTWARE
+
+DOCUMENTATION
+
+BRANDING
+
+SCREENSHOTS
+
+SHOWCASE MATERIAL
+
+THIRD-PARTY MATERIAL
+```
+
+---
+
+<a id="license"></a>
+
+## ✦ License
+
+Software covered by the repository license is made available under the:
+
+```text
+Apache License
+Version 2.0
+```
+
+Read the authoritative legal text:
+
+[`LICENSE`](LICENSE)
+
+---
+
+## ✦ Brand Licensing Boundary
+
+```text
+APACHE 2.0 SOFTWARE LICENSE
+        ≠
+AUTOMATIC UNRESTRICTED
+BRAND PERMISSION
+```
+
+Gaming Horizon branding, logos, visual identity, and other creative assets may
+require separate consideration.
+
+See:
+
+[`BRAND.md`](BRAND.md)
+
+and:
+
+[`COPYRIGHT.md`](COPYRIGHT.md)
+
+---
+
+## ✦ Third-Party Notices
+
+Third-party notices and attribution:
+
+[`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md)
+
+Third-party technologies, services, names, logos, and assets remain subject to
+their respective rights and licenses.
+
+---
+
+<a id="network"></a>
+
+## ✦ Official Network
+
+Official Gaming Horizon network documentation:
+
+[`docs/NETWORK.md`](docs/NETWORK.md)
+
+---
+
+## ✦ Website
+
+```text
+https://thegaminghorizon.netlify.app/
+```
+
+Primary browser-first Gaming Horizon destination.
+
+---
+
+## ✦ Support Us
+
+```text
+https://thegaminghorizon.netlify.app/support-us
+```
+
+---
+
+## ✦ GitHub
+
+Organization:
+
+```text
+https://github.com/thegaminghorizon
+```
+
+Repository:
+
+```text
+https://github.com/thegaminghorizon/The-Gaming-Horizon
+```
+
+---
+
+## ✦ Discord
+
+```text
+https://discord.gg/M5PeNThBwF
+```
+
+---
+
+## ✦ X
+
+```text
+https://x.com/gamingshorizon
+```
+
+---
+
+## ✦ Instagram
+
+```text
+https://www.instagram.com/thegaminghorizon/
+```
+
+---
+
+## ✦ Network Model
+
+```text
+                          GAMING HORIZON
+                                │
+          ┌─────────────────────┼─────────────────────┐
+          ▼                     ▼                     ▼
+       WEBSITE                GITHUB                DISCORD
+          │                     │                     │
+          ▼                     ▼                     ▼
+      PLATFORM             DEVELOPMENT            COMMUNITY
+          │                     │                     │
+          └─────────────┬───────┴───────┬─────────────┘
+                        ▼               ▼
+                        X           INSTAGRAM
+                        │               │
+                        └───────┬───────┘
+                                ▼
+                        PUBLIC PRESENCE
+```
+
+---
+
+## ✦ External Platform Boundary
+
+```text
+OFFICIAL ACCOUNT
+      ≠
+PARTNERSHIP
+```
+
+```text
+HOSTED ON SERVICE
+      ≠
+SPONSORSHIP
+```
+
+---
+
+<a id="recommended-reading"></a>
+
+## ✦ Recommended Reading
+
+For a complete understanding of Gaming Horizon:
+
+```text
+01
+README.md
+   │
+   ▼
+02
+docs/PROJECT-INFORMATION.md
+   │
+   ▼
+03
+docs/VISION.md
+   │
+   ▼
+04
+docs/DIRECTION.md
+   │
+   ▼
+05
+docs/ECOSYSTEM.md
+   │
+   ▼
+06
+docs/PLATFORM.md
+   │
+   ▼
+07
+docs/ARCHITECTURE.md
+   │
+   ▼
+08
+docs/DEVELOPMENT.md
+   │
+   ▼
+09
+SYSTEM DOCUMENTATION
+   │
+   ├── DISCOVERY
+   ├── COMMUNITY
+   ├── CREATORS
+   ├── COMPETE
+   ├── DEVELOPERS
+   └── AI
+   │
+   ▼
+10
+THE-GAMING-HORIZON/README.md
+   │
+   ▼
+11
+docs/BETA.md
+   │
+   ▼
+12
+docs/LABS.md
+   │
+   ▼
+13
+docs/BEYOND.md
+```
+
+---
+
+## ✦ Quick Navigation
+
+### Project
+
+- [`Project Information`](docs/PROJECT-INFORMATION.md)
+- [`Vision`](docs/VISION.md)
+- [`Direction`](docs/DIRECTION.md)
+- [`Ecosystem`](docs/ECOSYSTEM.md)
+- [`Platform`](docs/PLATFORM.md)
+- [`Architecture`](docs/ARCHITECTURE.md)
+
+### Experience
+
+- [`Discovery`](docs/DISCOVERY.md)
+- [`Community`](docs/COMMUNITY.md)
+- [`Creators`](docs/CREATORS.md)
+- [`Compete`](docs/COMPETE.md)
+- [`AI`](docs/AI.md)
+
+### Engineering
+
+- [`Application`](THE-GAMING-HORIZON/README.md)
+- [`Developers`](docs/DEVELOPERS.md)
+- [`Development`](docs/DEVELOPMENT.md)
+- [`Beta`](docs/BETA.md)
+- [`Horizon Labs`](docs/LABS.md)
+
+### Future
+
+- [`Network`](docs/NETWORK.md)
+- [`Beyond`](docs/BEYOND.md)
+- [`Roadmap`](ROADMAP.md)
+
+### Repository
+
+- [`Brand`](BRAND.md)
+- [`Changelog`](CHANGELOG.md)
+- [`Contributing`](CONTRIBUTING.md)
+- [`Code of Conduct`](CODE_OF_CONDUCT.md)
+- [`Security`](SECURITY.md)
+- [`Privacy`](PRIVACY.md)
+- [`Support`](SUPPORT.md)
+- [`Terms`](TERMS.md)
+- [`Copyright`](COPYRIGHT.md)
+- [`Third-Party Notices`](THIRD-PARTY-NOTICES.md)
+- [`License`](LICENSE)
+
+### Assets
+
+- [`Asset Library`](assets/README.md)
+- [`Branding`](assets/branding/README.md)
+- [`Logos`](assets/branding/logos/README.md)
+- [`Banners`](assets/branding/banners/README.md)
+- [`Icons`](assets/branding/icons/README.md)
+- [`Screenshots`](assets/screenshots/README.md)
+- [`Showcase`](assets/showcase/README.md)
+
+### Development Operations
+
+- [`GitHub System`](.github/GITHUB-SYSTEM.md)
+- [`Workflow System`](.github/workflows/README.md)
+- [`Issue Template System`](.github/ISSUE_TEMPLATE/README.md)
+- [`Application Documentation`](THE-GAMING-HORIZON/README.md)
+
+---
+
+<a id="repository-standard"></a>
+
+## ✦ Repository Standard
+
+Gaming Horizon should remain:
+
+```text
+CLEAR
+
+STRUCTURED
+
+DOCUMENTED
+
+BROWSER-FIRST
+
+SECURE
+
+PRIVATE
 
 ACCESSIBLE
 
@@ -1396,187 +2829,297 @@ RELIABLE
 
 MAINTAINABLE
 
-REVIEWABLE
+TRUTHFUL
 
-DOCUMENTED
+EVOLVABLE
 ```
 
 ---
 
-<a id="related-documentation"></a>
+## ✦ What the Project Should Avoid
 
-## ✦ Related Documentation
-
-| Area | Resource |
-| --- | --- |
-| Repository Overview | [README.md](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/README.md) |
-| Documentation Gateway | [docs/README.md](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/docs/README.md) |
-| Project Information | [PROJECT-INFORMATION.md](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/docs/PROJECT-INFORMATION.md) |
-| Vision | [VISION.md](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/docs/VISION.md) |
-| Platform | [PLATFORM.md](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/docs/PLATFORM.md) |
-| Architecture | [ARCHITECTURE.md](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/docs/ARCHITECTURE.md) |
-| Developers | [DEVELOPERS.md](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/docs/DEVELOPERS.md) |
-| Development | [DEVELOPMENT.md](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/docs/DEVELOPMENT.md) |
-| Beta | [BETA.md](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/docs/BETA.md) |
-| Security | [SECURITY.md](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/SECURITY.md) |
-| Support | [SUPPORT.md](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/SUPPORT.md) |
-| GitHub System | [GITHUB-SYSTEM.md](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/.github/GITHUB-SYSTEM.md) |
-| Workflow System | [workflows/README.md](https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/.github/workflows/README.md) |
-
----
-
-<a id="repository-relationship"></a>
-
-## ✦ Repository Relationship
+Gaming Horizon should avoid becoming:
 
 ```text
-The-Gaming-Horizon/
-│
-├── .github/
-│   ├── ISSUE_TEMPLATE/
-│   ├── workflows/
-│   ├── CODEOWNERS
-│   ├── FUNDING.yml
-│   ├── GITHUB-SYSTEM.md
-│   ├── PULL_REQUEST_TEMPLATE.md
-│   └── dependabot.yml
-│
-├── assets/
-│
-├── docs/
-│
-├── THE-GAMING-HORIZON/
-│   ├── app/
-│   ├── components/
-│   ├── lib/
-│   ├── public/
-│   ├── supabase/
-│   │   └── migrations/
-│   ├── README.md
-│   ├── components.json
-│   ├── next.config.mjs
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── postcss.config.mjs
-│   ├── proxy.ts
-│   └── tsconfig.json
-│
-├── README.md
-├── ROADMAP.md
-├── SECURITY.md
-├── SUPPORT.md
-└── netlify.toml
+FEATURE-BLOATED
+
+OVER-ENGINEERED
+
+GENERIC
+
+CLOUD-GAMING-BY-ASSUMPTION
+
+AI-FOR-EVERYTHING
+
+INACCESSIBLE
+
+SURVEILLANCE-DRIVEN
+
+PERFORMANCE-HEAVY
+
+MARKETING-FIRST
+
+METRIC-OBSESSED
+
+DISCONNECTED
 ```
 
 ---
 
-<a id="standard"></a>
+## ✦ What the Project Should Become
 
-## ✦ Application Standard
-
-A Gaming Horizon application change should ultimately be:
-
-| # | Standard | Meaning |
-|:---:|---|---|
-| `01` | **Browser-First** | Browser remains the primary gateway |
-| `02` | **Purposeful** | Features solve meaningful problems |
-| `03` | **Accessible** | Interfaces support broader use |
-| `04` | **Secure** | Trust boundaries are respected |
-| `05` | **Private** | Data use remains purposeful and controlled |
-| `06` | **Performant** | Premium presentation avoids unnecessary weight |
-| `07` | **Reliable** | Failure states are considered |
-| `08` | **Maintainable** | Code remains understandable |
-| `09` | **Modular** | Systems can evolve without unnecessary coupling |
-| `10` | **Truthful** | Implementation status remains accurately represented |
-
----
-
-## ✦ Application Golden Rules
-
-### `01` — Browser first
-
-The browser remains the primary Gaming Horizon gateway.
-
-### `02` — Architecture serves experience
-
-Technical complexity should exist only when it improves or protects the system.
-
-### `03` — Protect secrets
-
-Privileged credentials must never reach the browser or repository.
-
-### `04` — Validate input
-
-Client-controlled input is untrusted.
-
-### `05` — Build accessibly
-
-Accessibility belongs inside implementation quality.
-
-### `06` — Protect performance
-
-Premium presentation should not create unnecessary browser cost.
-
-### `07` — Justify dependencies
-
-Every dependency should solve a real application requirement.
-
-### `08` — Preserve migrations
-
-Database evolution should remain version-controlled.
-
-### `09` — Keep configuration with the application
-
-Framework and package configuration belongs inside `THE-GAMING-HORIZON/`.
-
-### `10` — Preserve project truth
-
-Conceptual or unfinished functionality must not be represented as complete.
-
----
-
-## ✦ Current Application Register
+Gaming Horizon should aim to become:
 
 ```text
-APPLICATION       THE-GAMING-HORIZON/
+GAMING-FOCUSED
 
-STATUS            IN DEVELOPMENT
+DISCOVERY-DRIVEN
 
-VERSION           1.0.0
+COMMUNITY-CONNECTED
 
-OFFICIAL LAUNCH   1 JANUARY 2027
+CREATOR-FRIENDLY
 
-PLATFORM          BROWSER-FIRST
+COMPETITION-AWARE
 
-FRAMEWORK         NEXT.JS
+DEVELOPER-READY
 
-INTERFACE         REACT
+AI-ASSISTED
 
-LANGUAGE          TYPESCRIPT
+BROWSER-FIRST
 
-PACKAGE MANAGER   NPM
+ACCESSIBLE
 
-STYLING           TAILWIND CSS
+SECURE
 
-CSS PROCESSING    POSTCSS
+PRIVATE
 
-DATA SYSTEM       SUPABASE
+PERFORMANT
 
-SESSION PROXY     proxy.ts
+RELIABLE
 
-COMPONENT CONFIG  components.json
+PREMIUM
 
-NEXT CONFIG       next.config.mjs
+ADAPTABLE
 
-TYPE CONFIG       tsconfig.json
+EVOLVABLE
+```
 
-PACKAGE MANIFEST  package.json
+---
 
-LOCKFILE          package-lock.json
+## ✦ Repository Golden Rules
 
-DEPLOY CONFIG     ../netlify.toml
+### `01`
 
-CI                ../.github/workflows/ci.yml
+**Gaming remains the center of the platform.**
+
+### `02`
+
+**Gaming Horizon remains browser-first.**
+
+### `03`
+
+**Discovery should expand possibility.**
+
+### `04`
+
+**Community should create meaningful connection.**
+
+### `05`
+
+**Creators should expand the ecosystem through human creativity.**
+
+### `06`
+
+**Competition should preserve fairness, clarity, and integrity.**
+
+### `07`
+
+**Developers should be able to understand and evolve the platform responsibly.**
+
+### `08`
+
+**AI should assist human intent rather than replace it.**
+
+### `09`
+
+**Security, privacy, accessibility, performance, and reliability are shared responsibilities.**
+
+### `10`
+
+**Concepts, experiments, showcases, and future ideas must not be represented as implemented features.**
+
+### `11`
+
+**Application configuration belongs with the application.**
+
+### `12`
+
+**Build what matters. Remove what does not. Improve what remains.**
+
+### `13`
+
+**There is always another world beyond the horizon.**
+
+---
+
+## ✦ Complete System Architecture
+
+```text
+                            THE GAMING HORIZON
+                                   │
+                                   ▼
+                               BROWSER
+                                   │
+                                   ▼
+                                PLATFORM
+                                   │
+          ┌────────────────────────┼────────────────────────┐
+          ▼                        ▼                        ▼
+      DISCOVERY                COMMUNITY                 CREATORS
+          │                        │                        │
+          ├────────────────────────┼────────────────────────┤
+          ▼                        ▼                        ▼
+       COMPETE                 DEVELOPERS                   AI
+          │                        │                        │
+          └────────────────────────┼────────────────────────┘
+                                   ▼
+                              APPLICATION
+                                   │
+              ┌────────────────────┼────────────────────┐
+              ▼                    ▼                    ▼
+             app/              components/            lib/
+                                   │
+                                   ▼
+                                 DATA
+                                   │
+                                   ▼
+                               SUPABASE
+                                   │
+             ┌─────────────────────┼─────────────────────┐
+             ▼                     ▼                     ▼
+         SECURITY               PRIVACY            ACCESSIBILITY
+             │                     │                     │
+             ├─────────────────────┼─────────────────────┤
+             ▼                     ▼                     ▼
+        PERFORMANCE           RELIABILITY        MAINTAINABILITY
+             │                     │                     │
+             └─────────────────────┼─────────────────────┘
+                                   ▼
+                              DEVELOPMENT
+                                   │
+                        ┌──────────┴──────────┐
+                        ▼                     ▼
+                      BETA                   LABS
+                                               │
+                                               ▼
+                                            BEYOND
+                                               │
+                                               ▼
+                                      NEXT GAMING HORIZON
+```
+
+---
+
+## ✦ Project Summary
+
+```text
+PROJECT          THE GAMING HORIZON
+
+BRAND            GAMING HORIZON
+
+TAGLINE          BEYOND THE HORIZON
+
+VERSION          1.0.0
+
+STATUS           IN DEVELOPMENT
+
+PLATFORM         BROWSER-FIRST GAMING ECOSYSTEM
+
+OFFICIAL LAUNCH  1 JANUARY 2027
+
+APPLICATION      THE-GAMING-HORIZON/
+
+FRAMEWORK        NEXT.JS
+
+INTERFACE        REACT
+
+LANGUAGE         TYPESCRIPT
+
+PACKAGE MANAGER  NPM
+
+STYLING          TAILWIND CSS
+
+CSS PROCESSING   POSTCSS
+
+DATA SYSTEM      SUPABASE
+
+AUTOMATION       GITHUB ACTIONS
+
+DEPLOYMENT       NETLIFY
+
+CORE SYSTEMS     DISCOVERY
+                 COMMUNITY
+                 CREATORS
+                 COMPETITION
+                 DEVELOPERS
+                 AI
+                 HORIZON LABS
+                 BEYOND
+
+FOUNDATIONS      SECURITY
+                 PRIVACY
+                 ACCESSIBILITY
+                 PERFORMANCE
+                 RELIABILITY
+                 MAINTAINABILITY
+
+DOCUMENTATION    docs/
+
+ASSETS           assets/
+
+GITHUB SYSTEM    .github/GITHUB-SYSTEM.md
+
+DEPLOY CONFIG    netlify.toml
+
+LICENSE          APACHE LICENSE 2.0
+
+WEBSITE          https://thegaminghorizon.netlify.app/
+
+REPOSITORY       https://github.com/thegaminghorizon/The-Gaming-Horizon
+```
+
+---
+
+## ✦ Final Standard
+
+```text
+                           PLAY
+                            │
+                            ▼
+                         DISCOVER
+                            │
+                            ▼
+                          CONNECT
+                            │
+               ┌────────────┼────────────┐
+               ▼            ▼            ▼
+            CREATE       COMPETE        BUILD
+               │            │            │
+               └────────────┼────────────┘
+                            ▼
+                          LEARN
+                            │
+                            ▼
+                         IMPROVE
+                            │
+                            ▼
+                          EVOLVE
+                            │
+                            ▼
+                         HORIZON
+                            │
+                            ▼
+                          BEYOND
 ```
 
 ---
@@ -1586,9 +3129,9 @@ CI                ../.github/workflows/ci.yml
 <br>
 
 <img
-  src="https://raw.githubusercontent.com/thegaminghorizon/The-Gaming-Horizon/main/assets/branding/logos/gaming-horizon-logo-source.png"
+  src="assets/branding/logos/gaming-horizon-logo-source.png"
   width="340"
-  alt="Gaming Horizon Official Logo"
+  alt="The Gaming Horizon Official Logo"
 />
 
 <br><br>
@@ -1597,45 +3140,72 @@ CI                ../.github/workflows/ci.yml
 
 <br>
 
-<sub>Browser Application · Version 1.0.0</sub>
+<sub>Browser-First Gaming Ecosystem · Version 1.0.0</sub>
 
 <br><br>
 
-<a href="https://github.com/thegaminghorizon/The-Gaming-Horizon">
+<a href="docs/PROJECT-INFORMATION.md">
   <img
-    src="https://img.shields.io/badge/REPOSITORY-OVERVIEW-181717?style=flat-square&logo=github&logoColor=white"
-    alt="Repository Overview"
+    src="https://img.shields.io/badge/PROJECT-UNDERSTAND-7C3AED?style=flat-square"
+    alt="Understand the Project"
   />
 </a>
-<a href="https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/docs/PLATFORM.md">
+<a href="docs/VISION.md">
   <img
-    src="https://img.shields.io/badge/PLATFORM-BROWSER_FIRST-2563EB?style=flat-square"
-    alt="Platform"
+    src="https://img.shields.io/badge/VISION-EXPLORE-6366F1?style=flat-square"
+    alt="Explore the Vision"
   />
 </a>
-<a href="https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/docs/ARCHITECTURE.md">
+<a href="THE-GAMING-HORIZON/README.md">
   <img
-    src="https://img.shields.io/badge/ARCHITECTURE-EXPLORE-6366F1?style=flat-square"
-    alt="Architecture"
+    src="https://img.shields.io/badge/APPLICATION-EXPLORE-2563EB?style=flat-square"
+    alt="Explore the Application"
   />
 </a>
-<a href="https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/CONTRIBUTING.md">
+<a href="docs/DEVELOPMENT.md">
   <img
-    src="https://img.shields.io/badge/CONTRIBUTE-BUILD-0EA5E9?style=flat-square"
-    alt="Contribute"
+    src="https://img.shields.io/badge/DEVELOPMENT-BUILD-0EA5E9?style=flat-square"
+    alt="Build Gaming Horizon"
   />
 </a>
-<a href="https://github.com/thegaminghorizon/The-Gaming-Horizon/blob/main/SECURITY.md">
+<a href="docs/BEYOND.md">
   <img
-    src="https://img.shields.io/badge/SECURITY-REVIEW-0891B2?style=flat-square"
-    alt="Security"
+    src="https://img.shields.io/badge/BEYOND-DISCOVER_WHAT_IS_NEXT-8B5CF6?style=flat-square"
+    alt="Beyond the Horizon"
   />
 </a>
+
+<br><br>
+
+<a href="https://thegaminghorizon.netlify.app/">
+  <img
+    src="https://img.shields.io/badge/WEBSITE-ENTER_THE_HORIZON-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white"
+    alt="Enter the Horizon"
+  />
+</a>
+<a href="https://discord.gg/M5PeNThBwF">
+  <img
+    src="https://img.shields.io/badge/DISCORD-JOIN_THE_COMMUNITY-5865F2?style=for-the-badge&logo=discord&logoColor=white"
+    alt="Join the Community"
+  />
+</a>
+
+<br><br>
+
+<code>
+PLAY · DISCOVER · CONNECT · CREATE · COMPETE · BUILD · EXPLORE
+</code>
 
 <br><br>
 
 <strong>
 Build what matters. Remove what does not. Improve what remains.
+</strong>
+
+<br><br>
+
+<strong>
+Your next gaming adventure starts here.
 </strong>
 
 <br><br>
